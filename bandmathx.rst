@@ -230,7 +230,7 @@ produces a vector of 4 components made of band 1, band 2, band 1 and
 band 1 values from the first input. Note that curly brackets must be
 used in order to select the desired band indices.
 
-**Function dotpr ** This function allows the dot product between two
+** Function dotpr ** This function allows the dot product between two
 vectors or matrices (actually in our case, a kernel and a neighbourhood
 of pixels):
 
