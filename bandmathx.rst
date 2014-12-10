@@ -1,3 +1,5 @@
+.. highlight:: c++
+
 .. role:: math(raw)
    :format: html latex
 ..
