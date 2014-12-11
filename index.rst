@@ -13,6 +13,7 @@ Contents:
 
    pleiades
    bandmathx
+   testapp
 
 Indices and tables
 ==================
