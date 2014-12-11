@@ -15,40 +15,41 @@ This section describes in details the parameters available for this application.
 
 Parameters table for Color Mapping:
 
++---------------------------+----------------------------+------------------------------------+
+|Parameter Key              |Parameter Type              |Parameter Description               |
 +===========================+============================+====================================+
-|       Parameter Key       |       Parameter Type       |       Parameter Description        |
-+===========================+============================+====================================+
-|            in             |        Input image         |            Input image             |
+|in                         |Input image                 |Input image                         |
 +---------------------------+----------------------------+------------------------------------+
-|            out            |        Output image        |            Output image            |
+|out                        |Output image                |Output image                        |
 +---------------------------+----------------------------+------------------------------------+
-|            ram            |            Int             |                Int                 |
+|ram                        |Int                         |Int                                 |
 +---------------------------+----------------------------+------------------------------------+
-|            op             |          Choices           |              Choices               |
+|op                         |Choices                     |Choices                             |
 +---------------------------+----------------------------+------------------------------------+
-| op.colortolabel.notfound  |            Int             |                Int                 |
+|op.colortolabel.notfound   |Int                         |Int                                 |
 +---------------------------+----------------------------+------------------------------------+
-|          method           |          Choices           |              Choices               |
+|method                     |Choices                     |Choices                             |
 +---------------------------+----------------------------+------------------------------------+
-|     method.custom.lut     |      Input File name       |          Input File name           |
+|method.custom.lut          |Input File name             |Input File name                     |
 +---------------------------+----------------------------+------------------------------------+
-|   method.continuous.lut   |          Choices           |              Choices               |
+|method.continuous.lut      |Choices                     |Choices                             |
 +---------------------------+----------------------------+------------------------------------+
-|   method.continuous.min   |           Float            |               Float                |
+|method.continuous.min      |Float                       |Float                               |
 +---------------------------+----------------------------+------------------------------------+
-|   method.continuous.max   |           Float            |               Float                |
+|method.continuous.max      |Float                       |Float                               |
 +---------------------------+----------------------------+------------------------------------+
-| method.optimal.background |            Int             |                Int                 |
+|method.optimal.background  |Int                         |Int                                 |
 +---------------------------+----------------------------+------------------------------------+
-|      method.image.in      |        Input image         |            Input image             |
+|method.image.in            |Input image                 |Input image                         |
 +---------------------------+----------------------------+------------------------------------+
-| method.image.nodatavalue  |           Float            |               Float                |
+|method.image.nodatavalue   |Float                       |Float                               |
 +---------------------------+----------------------------+------------------------------------+
-|     method.image.low      |            Int             |                Int                 |
+|method.image.low           |Int                         |Int                                 |
 +---------------------------+----------------------------+------------------------------------+
-|      method.image.up      |            Int             |                Int                 |
+|method.image.up            |Int                         |Int                                 |
 +---------------------------+----------------------------+------------------------------------+
-|           inxml           | XML input parameters file  |     XML input parameters file      |
+|inxml                      |XML input parameters file   |XML input parameters file           |
 +---------------------------+----------------------------+------------------------------------+
-|          outxml           | XML output parameters file |     XML output parameters file     |
+|outxml                     |XML output parameters file  |XML output parameters file          |
 +---------------------------+----------------------------+------------------------------------+
+
