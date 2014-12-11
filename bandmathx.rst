@@ -58,6 +58,8 @@ In this document, we will keep the default convention. Following list
 summaries the available variables for input #0 (and so on for every
 input).
 
+Variables and their descriptions:
+
 +-----------------------+--------------------------------------------------------------------------------------+----------+
 | Variables             | Description                                                                          | Type     |
 +=======================+======================================================================================+==========+
@@ -79,8 +81,6 @@ input).
 +-----------------------+--------------------------------------------------------------------------------------+----------+
 | im1PhyX and im1PhyY   | spacing of first input in X and Y directions                                         | Scalar   |
 +-----------------------+--------------------------------------------------------------------------------------+----------+
-
-Variables and their descriptions.
 
 [variables]
 
@@ -117,6 +117,8 @@ if im1 is made of n components.
 On the other hand, the variable im1b1 for instance is represented as a
 scalar; so we have the following different possibilities:
 
+Correct / incorrect expressions:
+
 +-----------------------+---------------------------------------------------------------------------------+
 | Expression            | Status                                                                          |
 +=======================+=================================================================================+
@@ -131,7 +133,6 @@ scalar; so we have the following different possibilities:
 | im1 + {im2b1,im2b2}   | correct if im1 represents a pixel of two components (equivalent to im1 + im2)   |
 +-----------------------+---------------------------------------------------------------------------------+
 
-Correct / incorrect expressions.
 
 Similar remarks can be made for the multiplication/division; for
 instance, the following formula is incorrect:
@@ -319,6 +320,8 @@ the near-infrareds band.
 
 The table below summarises the different functions and operators.
 
+Functions and operators summary:
+
 +----------------+-------------------------------------------------------------------------------+
 | Variables      | Remark                                                                        |
 +================+===============================================================================+
@@ -374,8 +377,6 @@ The table below summarises the different functions and operators.
 +----------------+-------------------------------------------------------------------------------+
 | vsqrt          | adapation of an existing function to vectors : one input                      |
 +----------------+-------------------------------------------------------------------------------+
-
-Functions and operators summary.
 
 [variables]
 
