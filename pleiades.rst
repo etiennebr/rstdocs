@@ -275,8 +275,8 @@ starting at 0. For instance, one can use the following:
 
     otbcli_ExtractROI -in IMG_PHR1A_PMS_201201151100183_SEN_IPU_20120222_0901-001_R2C1.JP2:5 -out test.tif uint16
 
-.. |image1| image:: Art/MonteverdiImages/pleiades_open.png
-.. |image2| image:: Art/MonteverdiImages/pleiades_monteverdi.png
-.. |image3| image:: Art/MonteverdiImages/pleiades_viewer.png
-.. |image4| image:: Art/MonteverdiImages/pleiades_mtiles_open.png
-.. |image5| image:: Art/MonteverdiImages/pleiades_uncom.png
+.. |image1| image:: ./Art/MonteverdiImages/pleiades_open.png
+.. |image2| image:: ./Art/MonteverdiImages/pleiades_monteverdi.png
+.. |image3| image:: ./Art/MonteverdiImages/pleiades_viewer.png
+.. |image4| image:: ./Art/MonteverdiImages/pleiades_mtiles_open.png
+.. |image5| image:: ./Art/MonteverdiImages/pleiades_uncom.png
