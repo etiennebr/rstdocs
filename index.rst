@@ -11,6 +11,7 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
+   pleiades
    bandmathx
 
 Indices and tables
