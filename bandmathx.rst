@@ -58,26 +58,28 @@ In this document, we will keep the default convention. Following list
 summaries the available variables for input #0 (and so on for every
 input).
 
-\|\|l\|l\|l\|\| **Variables & **Description & **Type
-im1 & a pixel from first input, made of n components/bands (first image
-is indexed by 1) & Vector
-im1bj & jth component of a pixel from first input (first band is indexed
-by 1) & Scalar
-im1bjNkxp & a neighbourhood (“N”) of pixels of the jth component from
-first input, of size kxp & Matrix
-im1bjMini & global statistic : minimum of the jth band from first input
-& Scalar
-im1bjMaxi & global statistic : maximum of the jth band from first input
-& Scalar
-im1bjMean & global statistic : mean of the jth band from first input &
-Scalar
-im1bjSum & global statistic : sum of the jth band from first input &
-Scalar
-im1bjVar & global statistic : variance of the jth band from first input
-& Scalar
-im1PhyX and im1PhyY & spacing of first input in X and Y directions &
-Scalar
-******
++-----------------------+--------------------------------------------------------------------------------------+----------+
+| Variables             | Description                                                                          | Type     |
++=======================+======================================================================================+==========+
+| im1                   | a pixel from first input, made of n components/bands (first image is indexed by 1)   | Vector   |
++-----------------------+--------------------------------------------------------------------------------------+----------+
+| im1bj                 | jth component of a pixel from first input (first band is indexed by 1)               | Scalar   |
++-----------------------+--------------------------------------------------------------------------------------+----------+
+| im1bjNkxp             | a neighbourhood (”N”) of pixels of the jth component from first input, of size kxp   | Matrix   |
++-----------------------+--------------------------------------------------------------------------------------+----------+
+| im1bjMini             | global statistic : minimum of the jth band from first input                          | Scalar   |
++-----------------------+--------------------------------------------------------------------------------------+----------+
+| im1bjMaxi             | global statistic : maximum of the jth band from first input                          | Scalar   |
++-----------------------+--------------------------------------------------------------------------------------+----------+
+| im1bjMean             | global statistic : mean of the jth band from first input                             | Scalar   |
++-----------------------+--------------------------------------------------------------------------------------+----------+
+| im1bjSum              | global statistic : sum of the jth band from first input                              | Scalar   |
++-----------------------+--------------------------------------------------------------------------------------+----------+
+| im1bjVar              | global statistic : variance of the jth band from first input                         | Scalar   |
++-----------------------+--------------------------------------------------------------------------------------+----------+
+| im1PhyX and im1PhyY   | spacing of first input in X and Y directions                                         | Scalar   |
++-----------------------+--------------------------------------------------------------------------------------+----------+
+Variables and their descriptions.
 
 [variables]
 
@@ -114,16 +116,21 @@ if im1 is made of n components.
 On the other hand, the variable im1b1 for instance is represented as a
 scalar; so we have the following different possibilities:
 
-\|\|c\|c\|\| **Expression & **Status
-im1b1 + 1 & correct
-{im1b1} + {1} & correct
-im1b1 + {1} & incorrect
-{im1b1} + 1 & incorrect
-im1 + {im2b1,im2b2} & correct if im1 represents a pixel of two
-components (equivalent to im1 + im2)
-****
++-----------------------+---------------------------------------------------------------------------------+
+| Expression            | Status                                                                          |
++=======================+=================================================================================+
+| im1b1 + 1             | correct                                                                         |
++-----------------------+---------------------------------------------------------------------------------+
+| {im1b1} + {1}         | correct                                                                         |
++-----------------------+---------------------------------------------------------------------------------+
+| im1b1 + {1}           | incorrect                                                                       |
++-----------------------+---------------------------------------------------------------------------------+
+| {im1b1} + 1           | incorrect                                                                       |
++-----------------------+---------------------------------------------------------------------------------+
+| im1 + {im2b1,im2b2}   | correct if im1 represents a pixel of two components (equivalent to im1 + im2)   |
++-----------------------+---------------------------------------------------------------------------------+
 
-[correctness]
+Correct / incorrect expressions.
 
 Similar remarks can be made for the multiplication/division; for
 instance, the following formula is incorrect:
@@ -311,35 +318,63 @@ the near-infrareds band.
 
 The table below summarises the different functions and operators.
 
-\|\|l\|l\|\| **Variables & **Remark
-ndvi & two inputs
-bands & two inputs; length of second vector input gives the dimension of
-the output
-dotptr & many inputs
-cat & many inputs
-mean & many inputs
-var & many inputs
-median & many inputs
-maj & many inputs
-corr & two inputs
-div and dv & operators
-mult and mlt & operators
-pow and pw & operators
-vnorm & adapation of an existing function to vectors : one input
-vabs & adapation of an existing function to vectors : one input
-vmin & adapation of an existing function to vectors : one input
-vmax & adapation of an existing function to vectors : one input
-vcos & adapation of an existing function to vectors : one input
-vsin & adapation of an existing function to vectors : one input
-vtan & adapation of an existing function to vectors : one input
-vtanh & adapation of an existing function to vectors : one input
-vsinh & adapation of an existing function to vectors : one input
-vcosh & adapation of an existing function to vectors : one input
-vlog & adapation of an existing function to vectors : one input
-vlog10 & adapation of an existing function to vectors : one input
-vexp & adapation of an existing function to vectors : one input
-vsqrt & adapation of an existing function to vectors : one input
-****
++----------------+-------------------------------------------------------------------------------+
+| Variables      | Remark                                                                        |
++================+===============================================================================+
+| ndvi           | two inputs                                                                    |
++----------------+-------------------------------------------------------------------------------+
+| bands          | two inputs; length of second vector input gives the dimension of the output   |
++----------------+-------------------------------------------------------------------------------+
+| dotptr         | many inputs                                                                   |
++----------------+-------------------------------------------------------------------------------+
+| cat            | many inputs                                                                   |
++----------------+-------------------------------------------------------------------------------+
+| mean           | many inputs                                                                   |
++----------------+-------------------------------------------------------------------------------+
+| var            | many inputs                                                                   |
++----------------+-------------------------------------------------------------------------------+
+| median         | many inputs                                                                   |
++----------------+-------------------------------------------------------------------------------+
+| maj            | many inputs                                                                   |
++----------------+-------------------------------------------------------------------------------+
+| corr           | two inputs                                                                    |
++----------------+-------------------------------------------------------------------------------+
+| div and dv     | operators                                                                     |
++----------------+-------------------------------------------------------------------------------+
+| mult and mlt   | operators                                                                     |
++----------------+-------------------------------------------------------------------------------+
+| pow and pw     | operators                                                                     |
++----------------+-------------------------------------------------------------------------------+
+| vnorm          | adapation of an existing function to vectors : one input                      |
++----------------+-------------------------------------------------------------------------------+
+| vabs           | adapation of an existing function to vectors : one input                      |
++----------------+-------------------------------------------------------------------------------+
+| vmin           | adapation of an existing function to vectors : one input                      |
++----------------+-------------------------------------------------------------------------------+
+| vmax           | adapation of an existing function to vectors : one input                      |
++----------------+-------------------------------------------------------------------------------+
+| vcos           | adapation of an existing function to vectors : one input                      |
++----------------+-------------------------------------------------------------------------------+
+| vsin           | adapation of an existing function to vectors : one input                      |
++----------------+-------------------------------------------------------------------------------+
+| vtan           | adapation of an existing function to vectors : one input                      |
++----------------+-------------------------------------------------------------------------------+
+| vtanh          | adapation of an existing function to vectors : one input                      |
++----------------+-------------------------------------------------------------------------------+
+| vsinh          | adapation of an existing function to vectors : one input                      |
++----------------+-------------------------------------------------------------------------------+
+| vcosh          | adapation of an existing function to vectors : one input                      |
++----------------+-------------------------------------------------------------------------------+
+| vlog           | adapation of an existing function to vectors : one input                      |
++----------------+-------------------------------------------------------------------------------+
+| vlog10         | adapation of an existing function to vectors : one input                      |
++----------------+-------------------------------------------------------------------------------+
+| vexp           | adapation of an existing function to vectors : one input                      |
++----------------+-------------------------------------------------------------------------------+
+| vsqrt          | adapation of an existing function to vectors : one input                      |
++----------------+-------------------------------------------------------------------------------+
+
+Functions and operators summary.
 
 [variables]
 
@@ -424,6 +459,9 @@ defines the kernel1, whose elements are given as follows:
 +-------+-------+-------+
 | 1,3   | 1,4   | 1,5   |
 +-------+-------+-------+
+
+Definition of kernel1.
+
 
 [correctness]
 
