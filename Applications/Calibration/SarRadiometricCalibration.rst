@@ -31,12 +31,18 @@ Parameters table for SAR Radiometric calibration:
 |outxml       |XML output parameters file|XML output parameters file        |
 +-------------+--------------------------+----------------------------------+
 
-- **Input Complex Image:** Input complex image
-- **Output Image:** Output calibrated complex image
-- **Available RAM (Mb):** Available memory for processing (in MB)
-- **Disable Noise:** Flag to disable noise
-- **Load otb application from xml file:** Load otb application from xml file
-- **Save otb application to xml file:** Save otb application to xml file
+- **Input Complex Image:** Input complex image.
+
+- **Output Image:** Output calibrated complex image.
+
+- **Available RAM (Mb):** Available memory for processing (in MB).
+
+- **Disable Noise:** Flag to disable noise.
+
+- **Load otb application from xml file:** Load otb application from xml file.
+
+- **Save otb application to xml file:** Save otb application to xml file.
+
 
 
 Example

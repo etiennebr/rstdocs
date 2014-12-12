@@ -44,17 +44,29 @@ Parameters table for Hoover compare segmentation:
 +-------------+--------------------------+-----------------------------------+
 
 - **Input ground truth:** A partial ground truth segmentation image.
+
 - **Input machine segmentation:** A machine segmentation image.
-- **Background label:** Label value of the background in the input segmentations
+
+- **Background label:** Label value of the background in the input segmentations.
+
 - **Overlapping threshold:** Overlapping threshold used to find Hoover instances.
+
 - **Colored ground truth output:** The colored ground truth output image.
+
 - **Colored machine segmentation output:** The colored machine segmentation output image.
-- **Correct detection score:** Overall score for correct detection (RC)
-- **Over-segmentation score:** Overall score for over segmentation (RF)
-- **Under-segmentation score:** Overall score for under segmentation (RA)
-- **Missed detection score:** Overall score for missed detection (RM)
-- **Load otb application from xml file:** Load otb application from xml file
-- **Save otb application to xml file:** Save otb application to xml file
+
+- **Correct detection score:** Overall score for correct detection (RC).
+
+- **Over-segmentation score:** Overall score for over segmentation (RF).
+
+- **Under-segmentation score:** Overall score for under segmentation (RA).
+
+- **Missed detection score:** Overall score for missed detection (RM).
+
+- **Load otb application from xml file:** Load otb application from xml file.
+
+- **Save otb application to xml file:** Save otb application to xml file.
+
 
 
 Example
@@ -103,5 +115,5 @@ See Also
 
 These additional ressources can be useful for further information: 
 
-`otbHooverMatrixFilter, otbHooverInstanceFilter, otbLabelMapToAttributeImageFilter <http://www.readthedocs.org/otbHooverMatrixFilter, otbHooverInstanceFilter, otbLabelMapToAttributeImageFilter.html>`_
+otbHooverMatrixFilter, otbHooverInstanceFilter, otbLabelMapToAttributeImageFilter
 

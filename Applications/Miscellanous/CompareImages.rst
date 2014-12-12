@@ -54,18 +54,18 @@ Parameters table for Images comparaison:
 **Reference image properties**
 
 
-- **Reference image:** Image used as reference in the comparison
+- **Reference image:** Image used as reference in the comparison.
 
-- **Reference image channel:** Used channel for the reference image
+- **Reference image channel:** Used channel for the reference image.
 
 
 
 **Measured image properties**
 
 
-- **Measured image:** Image used as measured in the comparison
+- **Measured image:** Image used as measured in the comparison.
 
-- **Measured image channel:** Used channel for the measured image
+- **Measured image channel:** Used channel for the measured image.
 
 
 
@@ -83,19 +83,19 @@ Parameters table for Images comparaison:
 
 
 **MSE**
-Mean Squared Error value
+Mean Squared Error value.
 
 **MAE**
-Mean Absolute Error value
+Mean Absolute Error value.
 
 **PSNR**
-Peak Signal to Noise Ratio value
+Peak Signal to Noise Ratio value.
 
 **Load otb application from xml file**
-Load otb application from xml file
+Load otb application from xml file.
 
 **Save otb application to xml file**
-Save otb application to xml file
+Save otb application to xml file.
 
 Example
 -------
@@ -152,5 +152,5 @@ See Also
 
 These additional ressources can be useful for further information: 
 
-`BandMath application, ImageStatistics <http://www.readthedocs.org/BandMath application, ImageStatistics.html>`_
+BandMath application, ImageStatistics
 

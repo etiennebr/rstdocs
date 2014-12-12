@@ -33,13 +33,20 @@ Parameters table for TrainOGRLayersClassifier:
 |outxml       |XML output parameters file|XML output parameters file                            |
 +-------------+--------------------------+------------------------------------------------------+
 
-- **Name of the input shapefile:** Name of the input shapefile
+- **Name of the input shapefile:** Name of the input shapefile.
+
 - **XML file containing mean and variance of each feature.:** XML file containing mean and variance of each feature.
+
 - **Output model filename.:** Output model filename.
+
 - **List of features to consider for classification.:** List of features to consider for classification.
+
 - **Field containing the class id for supervision:** Field containing the class id for supervision. Only geometries with this field available will be taken into account.
-- **Load otb application from xml file:** Load otb application from xml file
-- **Save otb application to xml file:** Save otb application to xml file
+
+- **Load otb application from xml file:** Load otb application from xml file.
+
+- **Save otb application to xml file:** Save otb application to xml file.
+
 
 
 Example
@@ -87,5 +94,5 @@ See Also
 
 These additional ressources can be useful for further information: 
 
-`OGRLayerClassifier,ComputeOGRLayersFeaturesStatistics <http://www.readthedocs.org/OGRLayerClassifier,ComputeOGRLayersFeaturesStatistics.html>`_
+OGRLayerClassifier,ComputeOGRLayersFeaturesStatistics
 

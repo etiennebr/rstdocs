@@ -62,7 +62,7 @@ Input image.
 Output image.
 
 **Available RAM (Mb)**
-Available memory for processing (in MB)
+Available memory for processing (in MB).
 
 **Extraction mode**
  Available choices are: 
@@ -71,15 +71,17 @@ Available memory for processing (in MB)
 
 - **Fit** : In fit mode, extract is made to best fit a reference image.
 
- - **Reference image** : Reference image to define the ROI
+ - **Reference image** : Reference image to define the ROI.
 
  - **Elevation management** : This group of parameters allows to manage elevation values. Supported formats are SRTM, DTED or any geotiff. DownloadSRTMTiles application could be a useful tool to list/download tiles related to a product.
 
- - **DEM directory** : This parameter allows to select a directory containing Digital Elevation Model tiles
+ - **DEM directory** : This parameter allows to select a directory containing Digital Elevation Model tiles.
 
  - **Geoid File** : Use a geoid grid to get the height above the ellipsoid in case there is no DEM available, no coverage for some points or pixels with no_data in the DEM tiles. A version of the geoid can be found on the OTB website (http://hg.orfeo-toolbox.org/OTB-Data/raw-file/404aa6e4b3e0/Input/DEM/egm96.grd).
 
  - **Default elevation** : This parameter allows to set the default height above ellipsoid when there is no DEM available, no coverage for some points or pixels with no_data in the DEM tiles, and no geoid file has been set. This is also used by some application as an average elevation value.
+
+
 
 **Start X**
 ROI start x position.
@@ -97,10 +99,10 @@ size along y in pixels.
 Channels to write in the output image.
 
 **Load otb application from xml file**
-Load otb application from xml file
+Load otb application from xml file.
 
 **Save otb application to xml file**
-Save otb application to xml file
+Save otb application to xml file.
 
 Example
 -------

@@ -36,13 +36,21 @@ Parameters table for Image Classification:
 +-------------+--------------------------+----------------------------------+
 
 - **Input Image:** The input image to classify.
+
 - **Input Mask:** The mask allows to restrict classification of the input image to the area where mask pixel values are greater than 0.
+
 - **Model file:** A model file (produced by TrainImagesClassifier application, maximal class label = 65535).
+
 - **Statistics file:** A XML file containing mean and standard deviation to center and reduce samples before classification (produced by ComputeImagesStatistics application).
-- **Output Image:** Output image containing class labels
-- **Available RAM (Mb):** Available memory for processing (in MB)
-- **Load otb application from xml file:** Load otb application from xml file
-- **Save otb application to xml file:** Save otb application to xml file
+
+- **Output Image:** Output image containing class labels.
+
+- **Available RAM (Mb):** Available memory for processing (in MB).
+
+- **Load otb application from xml file:** Load otb application from xml file.
+
+- **Save otb application to xml file:** Save otb application to xml file.
+
 
 
 Example
@@ -92,5 +100,5 @@ See Also
 
 These additional ressources can be useful for further information: 
 
-`TrainImagesClassifier, ValidateImagesClassifier, ComputeImagesStatistics <http://www.readthedocs.org/TrainImagesClassifier, ValidateImagesClassifier, ComputeImagesStatistics.html>`_
+TrainImagesClassifier, ValidateImagesClassifier, ComputeImagesStatistics
 

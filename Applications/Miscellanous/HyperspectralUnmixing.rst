@@ -39,20 +39,27 @@ Parameters table for Hyperspectral data unmixing:
 |outxml       |XML output parameters file|XML output parameters file        |
 +-------------+--------------------------+----------------------------------+
 
-- **Input Image Filename:** The hyperspectral data cube to unmix
-- **Output Image:** The output abundance map
-- **Input endmembers:** The endmembers (estimated pure pixels) to use for unmixing. Must be stored as a multispectral image, where each pixel is interpreted as an endmember
+- **Input Image Filename:** The hyperspectral data cube to unmix.
+
+- **Output Image:** The output abundance map.
+
+- **Input endmembers:** The endmembers (estimated pure pixels) to use for unmixing. Must be stored as a multispectral image, where each pixel is interpreted as an endmember.
+
 - **Unmixing algorithm:** The algorithm to use for unmixing. Available choices are: 
 
 - **UCLS** : Unconstrained Least Square
 
-- **NCLS** : Non-negative constrained Least Square
+- **NCLS** : Nonnegative constrained Least Square
 
 - **ISRA** : Image Space Reconstruction Algorithm
 
 - **MDMDNMF** : Minimum Dispertion Constrained Non Negative Matrix Factorization
-- **Load otb application from xml file:** Load otb application from xml file
-- **Save otb application to xml file:** Save otb application to xml file
+
+
+- **Load otb application from xml file:** Load otb application from xml file.
+
+- **Save otb application to xml file:** Save otb application to xml file.
+
 
 
 Example
@@ -103,5 +110,5 @@ See Also
 
 These additional ressources can be useful for further information: 
 
-`VertexComponentAnalysis <http://www.readthedocs.org/VertexComponentAnalysis.html>`_
+VertexComponentAnalysis
 

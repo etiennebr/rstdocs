@@ -58,24 +58,43 @@ Parameters table for SOM Classification:
 +-------------+--------------------------+----------------------------------+
 
 - **InputImage:** Input image to classify.
+
 - **OutputImage:** Output classified image (each pixel contains the index of its corresponding vector in the SOM).
-- **ValidityMask:** Validity mask (only pixels corresponding to a mask value greater than 0 will be used for learning)
-- **TrainingProbability:** Probability for a sample to be selected in the training set
-- **TrainingSetSize:** Maximum training set size (in pixels)
-- **StreamingLines:** Number of lines in each streaming block (used during data sampling)
-- **SOM Map:** Output image containing the Self-Organizing Map
-- **SizeX:** X size of the SOM map
-- **SizeY:** Y size of the SOM map
-- **NeighborhoodX:** X size of the initial neighborhood in the SOM map
-- **NeighborhoodY:** Y size of the initial neighborhood in the SOM map
-- **NumberIteration:** Number of iterations for SOM learning
-- **BetaInit:** Initial learning coefficient
-- **BetaFinal:** Final learning coefficient
-- **InitialValue:** Maximum initial neuron weight
-- **Available RAM (Mb):** Available memory for processing (in MB)
+
+- **ValidityMask:** Validity mask (only pixels corresponding to a mask value greater than 0 will be used for learning).
+
+- **TrainingProbability:** Probability for a sample to be selected in the training set.
+
+- **TrainingSetSize:** Maximum training set size (in pixels).
+
+- **StreamingLines:** Number of lines in each streaming block (used during data sampling).
+
+- **SOM Map:** Output image containing the Self-Organizing Map.
+
+- **SizeX:** X size of the SOM map.
+
+- **SizeY:** Y size of the SOM map.
+
+- **NeighborhoodX:** X size of the initial neighborhood in the SOM map.
+
+- **NeighborhoodY:** Y size of the initial neighborhood in the SOM map.
+
+- **NumberIteration:** Number of iterations for SOM learning.
+
+- **BetaInit:** Initial learning coefficient.
+
+- **BetaFinal:** Final learning coefficient.
+
+- **InitialValue:** Maximum initial neuron weight.
+
+- **Available RAM (Mb):** Available memory for processing (in MB).
+
 - **set user defined seed:** Set specific seed. with integer value.
-- **Load otb application from xml file:** Load otb application from xml file
-- **Save otb application to xml file:** Save otb application to xml file
+
+- **Load otb application from xml file:** Load otb application from xml file.
+
+- **Save otb application to xml file:** Save otb application to xml file.
+
 
 
 Example

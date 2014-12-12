@@ -36,13 +36,21 @@ Parameters table for Exact Large-Scale Mean-Shift segmentation, step 3 (optional
 +-------------+--------------------------+----------------------------------+
 
 - **Input image:** The input image.
+
 - **Segmented image:**  The segmented image input. Segmented image input is the segmentation of the input image.
+
 - **Output Image:** The output image. The output image is the input image where the minimal regions have been merged.
+
 - **Minimum Region Size:** Minimum Region Size. If, after the segmentation, a region is of size lower than this criterion, the region is merged with the "nearest" region (radiometrically).
+
 - **Size of tiles in pixel (X-axis):** Size of tiles along the X-axis.
+
 - **Size of tiles in pixel (Y-axis):** Size of tiles along the Y-axis.
-- **Load otb application from xml file:** Load otb application from xml file
-- **Save otb application to xml file:** Save otb application to xml file
+
+- **Load otb application from xml file:** Load otb application from xml file.
+
+- **Save otb application to xml file:** Save otb application to xml file.
+
 
 
 Example
@@ -96,5 +104,5 @@ See Also
 
 These additional ressources can be useful for further information: 
 
-`LSMSSegmentation, LSMSVectorization, MeanShiftSmoothing <http://www.readthedocs.org/LSMSSegmentation, LSMSVectorization, MeanShiftSmoothing.html>`_
+LSMSSegmentation, LSMSVectorization, MeanShiftSmoothing
 

@@ -47,23 +47,23 @@ Parameters table for SFS Texture Extraction:
 The input image to compute the features on.
 
 **Selected Channel**
-The selected channel index
+The selected channel index.
 
 **Available RAM (Mb)**
-Available memory for processing (in MB)
+Available memory for processing (in MB).
 
 **Texture feature parameters**
 This group of parameters allows to define SFS texture parameters.    The available texture features are SFS'Length, SFS'Width, SFS'PSI, SFS'W-Mean, SFS'Ratio and SFS'SD.    They are provided in this exact order in the output image.
 
-- **Spectral Threshold:** Spectral Threshold
+- **Spectral Threshold:** Spectral Threshold.
 
-- **Spatial Threshold:** Spatial Threshold
+- **Spatial Threshold:** Spatial Threshold.
 
-- **Number of Direction:** Number of Direction
+- **Number of Direction:** Number of Direction.
 
-- **Alpha:** Alpha
+- **Alpha:** Alpha.
 
-- **Ratio Maximum Consideration Number:** Ratio Maximum Consideration Number
+- **Ratio Maximum Consideration Number:** Ratio Maximum Consideration Number.
 
 
 
@@ -71,10 +71,10 @@ This group of parameters allows to define SFS texture parameters.    The availab
 Output image containing the SFS texture features.
 
 **Load otb application from xml file**
-Load otb application from xml file
+Load otb application from xml file.
 
 **Save otb application to xml file**
-Save otb application to xml file
+Save otb application to xml file.
 
 Example
 -------
@@ -125,5 +125,5 @@ See Also
 
 These additional ressources can be useful for further information: 
 
-`otbSFSTexturesImageFilter class <http://www.readthedocs.org/otbSFSTexturesImageFilter class.html>`_
+otbSFSTexturesImageFilter class
 

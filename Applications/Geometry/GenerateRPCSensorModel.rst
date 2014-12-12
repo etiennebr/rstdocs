@@ -58,25 +58,26 @@ Parameters table for Generate a RPC sensor model:
 +----------------+--------------------------+--------------------------------------------------+
 
 **Output geom file**
-Geom file containing the generated RPC sensor model
+Geom file containing the generated RPC sensor model.
 
 **Input file containing tie points**
 Input file containing tie points. Points are stored in following format: row col lon lat. Line beginning with # are ignored.
 
 **Output file containing output precision statistics**
-Output file containing the following info: ref_lon ref_lat elevation predicted_lon predicted_lat x_error_ref(meters) y_error_ref(meters) global_error_ref(meters) x_error(meters) y_error(meters) overall_error(meters)
+Output file containing the following info: ref_lon ref_lat elevation predicted_lon predicted_lat x_error_ref(meters) y_error_ref(meters) global_error_ref(meters) x_error(meters) y_error(meters) overall_error(meters).
 
 **Output vector file with residues**
-File containing segments representing residues
+File containing segments representing residues.
 
 **Output Cartographic Map Projection**
 Parameters of the output map projection to be used. Available choices are: 
 
 - **Universal Trans-Mercator (UTM)** : A system of transverse mercator projections dividing the surface of Earth between 80S and 84N latitude.
 
- - **Zone number** : The zone number ranges from 1 to 60 and allows to define the transverse mercator projection (along with the hemisphere)
+ - **Zone number** : The zone number ranges from 1 to 60 and allows to define the transverse mercator projection (along with the hemisphere).
 
  - **Northern Hemisphere** : The transverse mercator projections are defined by their zone number as well as the hemisphere. Activate this parameter if your image is in the northern hemisphere.
+
 
 - **Lambert II Etendu** : This is a Lambert Conformal Conic projection mainly used in France.
 
@@ -86,12 +87,14 @@ Parameters of the output map projection to be used. Available choices are:
 
 - **EPSG Code** : This code is a generic way of identifying map projections, and allows to specify a large amount of them. See www.spatialreference.org to find which EPSG code is associated to your projection;
 
- - **EPSG Code** : See www.spatialreference.org to find which EPSG code is associated to your projection
+ - **EPSG Code** : See www.spatialreference.org to find which EPSG code is associated to your projection.
+
+
 
 **Elevation management**
 This group of parameters allows to manage elevation values. Supported formats are SRTM, DTED or any geotiff. DownloadSRTMTiles application could be a useful tool to list/download tiles related to a product.
 
-- **DEM directory:** This parameter allows to select a directory containing Digital Elevation Model tiles
+- **DEM directory:** This parameter allows to select a directory containing Digital Elevation Model tiles.
 
 - **Geoid File:** Use a geoid grid to get the height above the ellipsoid in case there is no DEM available, no coverage for some points or pixels with no_data in the DEM tiles. A version of the geoid can be found on the OTB website (http://hg.orfeo-toolbox.org/OTB-Data/raw-file/404aa6e4b3e0/Input/DEM/egm96.grd).
 
@@ -100,10 +103,10 @@ This group of parameters allows to manage elevation values. Supported formats ar
 
 
 **Load otb application from xml file**
-Load otb application from xml file
+Load otb application from xml file.
 
 **Save otb application to xml file**
-Save otb application to xml file
+Save otb application to xml file.
 
 Example
 -------
@@ -152,5 +155,5 @@ See Also
 
 These additional ressources can be useful for further information: 
 
-`OrthoRectication,HomologousPointsExtraction,RefineSensorModel <http://www.readthedocs.org/OrthoRectication,HomologousPointsExtraction,RefineSensorModel.html>`_
+OrthoRectication,HomologousPointsExtraction,RefineSensorModel
 

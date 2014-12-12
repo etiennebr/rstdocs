@@ -44,17 +44,29 @@ Parameters table for Unsupervised KMeans image classification:
 +-------------+--------------------------+----------------------------------+
 
 - **Input Image:** Input image to classify.
+
 - **Output Image:** Output image containing the class indexes.
-- **Available RAM (Mb):** Available memory for processing (in MB)
+
+- **Available RAM (Mb):** Available memory for processing (in MB).
+
 - **Validity Mask:** Validity mask. Only non-zero pixels will be used to estimate KMeans modes.
+
 - **Training set size:** Size of the training set (in pixels).
+
 - **Number of classes:** Number of modes, which will be used to generate class membership.
+
 - **Maximum number of iterations:** Maximum number of iterations for the learning step.
+
 - **Convergence threshold:** Convergence threshold for class centroid  (L2 distance, by default 0.0001).
-- **Centroid filename:** Output text file containing centroid positions
+
+- **Centroid filename:** Output text file containing centroid positions.
+
 - **set user defined seed:** Set specific seed. with integer value.
-- **Load otb application from xml file:** Load otb application from xml file
-- **Save otb application to xml file:** Save otb application to xml file
+
+- **Load otb application from xml file:** Load otb application from xml file.
+
+- **Save otb application to xml file:** Save otb application to xml file.
+
 
 
 Example

@@ -38,15 +38,15 @@ Parameters table for Line segment detection:
 +-------------+--------------------------+----------------------------------+
 
 **Input Image**
-Input image on which lines will be detected.
+ Input image on which lines will be detected.
 
 **Output Detected lines**
-Output detected line segments (vector data).
+ Output detected line segments (vector data).
 
 **Elevation management**
 This group of parameters allows to manage elevation values. Supported formats are SRTM, DTED or any geotiff. DownloadSRTMTiles application could be a useful tool to list/download tiles related to a product.
 
-- **DEM directory:** This parameter allows to select a directory containing Digital Elevation Model tiles
+- **DEM directory:** This parameter allows to select a directory containing Digital Elevation Model tiles.
 
 - **Geoid File:** Use a geoid grid to get the height above the ellipsoid in case there is no DEM available, no coverage for some points or pixels with no_data in the DEM tiles. A version of the geoid can be found on the OTB website (http://hg.orfeo-toolbox.org/OTB-Data/raw-file/404aa6e4b3e0/Input/DEM/egm96.grd).
 
@@ -55,13 +55,13 @@ This group of parameters allows to manage elevation values. Supported formats ar
 
 
 **No rescaling in [0, 255]**
-By default, the input image amplitude is rescaled between [0,255]. Turn on this parameter to skip rescaling
+By default, the input image amplitude is rescaled between [0,255]. Turn on this parameter to skip rescaling.
 
 **Load otb application from xml file**
-Load otb application from xml file
+Load otb application from xml file.
 
 **Save otb application to xml file**
-Save otb application to xml file
+Save otb application to xml file.
 
 Example
 -------
@@ -106,5 +106,5 @@ See Also
 
 These additional ressources can be useful for further information: 
 
-`On Line demonstration of the LSD algorithm is available here: http://www.ipol.im/pub/algo/gjmr_line_segment_detector/ <http://www.readthedocs.org/On Line demonstration of the LSD algorithm is available here: http://www.ipol.im/pub/algo/gjmr_line_segment_detector/.html>`_
+On Line demonstration of the LSD algorithm is available here: http://www.ipol.im/pub/algo/gjmr_line_segment_detector/
 

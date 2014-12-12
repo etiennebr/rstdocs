@@ -30,10 +30,15 @@ Parameters table for Compute Images second order statistics:
 +-------------+--------------------------+----------------------------------+
 
 - **Input images:** List of input images filenames.
+
 - **Background Value:** Background value to ignore in statistics computation.
+
 - **Output XML file:** XML filename where the statistics are saved for future reuse.
-- **Load otb application from xml file:** Load otb application from xml file
-- **Save otb application to xml file:** Save otb application to xml file
+
+- **Load otb application from xml file:** Load otb application from xml file.
+
+- **Save otb application to xml file:** Save otb application to xml file.
+
 
 
 Example
@@ -79,5 +84,5 @@ See Also
 
 These additional ressources can be useful for further information: 
 
-`Documentation of the TrainImagesClassifier application. <http://www.readthedocs.org/Documentation of the TrainImagesClassifier application..html>`_
+Documentation of the TrainImagesClassifier application.
 

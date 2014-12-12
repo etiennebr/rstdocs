@@ -96,13 +96,13 @@ Parameters table for Color Mapping:
 +-------------------------------+--------------------------+------------------------------------------------------------+
 
 **Input Image**
-Input image filename
+Input image filename.
 
 **Output Image**
-Output image filename
+Output image filename.
 
 **Available RAM (Mb)**
-Available memory for processing (in MB)
+Available memory for processing (in MB).
 
 **Operation**
 Selection of the operation to execute (default is : label to color). Available choices are: 
@@ -113,14 +113,17 @@ Selection of the operation to execute (default is : label to color). Available c
 
  - **Not Found Label** : Label to use for unknown colors.
 
+
+
 **Color mapping method**
 Selection of color mapping methods and their parameters. Available choices are: 
 
-- **Color mapping with custom labeled look-up table** : Apply a user-defined look-up table to a labeled image. Look-up table is loaded from a text file.
+- **Color mapping with custom labeled look-up table** : Apply a userdefined lookup table to a labeled image. Lookup table is loaded from a text file.
 
- - **Look-up table file** : An ASCII file containing the look-up table with one color per line (for instance the line '1 255 0 0' means that all pixels with label 1 will be replaced by RGB color 255 0 0) Lines beginning with a # are ignored
+ - **Look-up table file** : An ASCII file containing the look-up table with one color per line (for instance the line '1 255 0 0' means that all pixels with label 1 will be replaced by RGB color 255 0 0) Lines beginning with a # are ignored.
 
-- **Color mapping with continuous look-up table** : Apply a continuous look-up table to a range of input values.
+
+- **Color mapping with continuous look-up table** : Apply a continuous lookup table to a range of input values.
 
  - **Look-up tables** : Available look-up tables.
 
@@ -128,25 +131,29 @@ Selection of color mapping methods and their parameters. Available choices are:
 
  - **Mapping range higher value** : Set the higher input value of the mapping range.
 
-- **Compute an optimized look-up table** : [label to color] Compute an optimal look-up table such that neighboring labels in a segmentation are mapped to highly contrasted colors. [color to label] Searching all the colors present in the image to compute a continuous label list
 
- - **Background label** : Value of the background label
+- **Compute an optimized look-up table** : [label to color] Compute an optimal lookup table such that neighboring labels in a segmentation are mapped to highly contrasted colors.[color to label] Searching all the colors present in the image to compute a continuous label list
+
+ - **Background label** : Value of the background label.
+
 
 - **Color mapping with look-up table calculated on support image**
 
- - **Support Image** : Support image filename. For each label, the LUT is calculated from the mean pixel value in the support image, over the corresponding labeled areas. First of all, the support image is normalized with extrema rejection
+ - **Support Image** : Support image filename. For each label, the LUT is calculated from the mean pixel value in the support image, over the corresponding labeled areas. First of all, the support image is normalized with extrema rejection.
 
  - **NoData value** : NoData value for each channel of the support image, which will not be handled in the LUT estimation. If NOT checked, ALL the pixel values of the support image will be handled in the LUT estimation.
 
- - **lower quantile** : lower quantile for image normalization
+ - **lower quantile** : lower quantile for image normalization.
 
- - **upper quantile** : upper quantile for image normalization
+ - **upper quantile** : upper quantile for image normalization.
+
+
 
 **Load otb application from xml file**
-Load otb application from xml file
+Load otb application from xml file.
 
 **Save otb application to xml file**
-Save otb application to xml file
+Save otb application to xml file.
 
 Example
 -------
@@ -196,5 +203,5 @@ See Also
 
 These additional ressources can be useful for further information: 
 
-`ImageSVMClassifier <http://www.readthedocs.org/ImageSVMClassifier.html>`_
+ImageSVMClassifier
 

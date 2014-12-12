@@ -32,11 +32,17 @@ Parameters table for Band Math:
 +-------------+--------------------------+----------------------------------+
 
 - **Input image list:** Image list to perform computation on.
+
 - **Output Image:** Output image.
-- **Available RAM (Mb):** Available memory for processing (in MB)
+
+- **Available RAM (Mb):** Available memory for processing (in MB).
+
 - **Expression:** The mathematical expression to apply.  Use im1b1 for the first band, im1b2 for the second one...
-- **Load otb application from xml file:** Load otb application from xml file
-- **Save otb application to xml file:** Save otb application to xml file
+
+- **Load otb application from xml file:** Load otb application from xml file.
+
+- **Save otb application to xml file:** Save otb application to xml file.
+
 
 
 Example

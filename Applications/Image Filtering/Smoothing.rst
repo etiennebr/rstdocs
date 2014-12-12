@@ -54,32 +54,36 @@ Input image to smooth.
 Output smoothed image.
 
 **Available RAM (Mb)**
-Available memory for processing (in MB)
+Available memory for processing (in MB).
 
 **Smoothing Type**
-Smoothing kernel to apply Available choices are: 
+Smoothing kernel to apply. Available choices are: 
 
 - **Mean**
 
- - **Radius** : Mean radius (in pixels)
+ - **Radius** : Mean radius (in pixels).
+
 
 - **Gaussian**
 
- - **Radius** : Gaussian radius (in pixels)
+ - **Radius** : Gaussian radius (in pixels).
+
 
 - **Anisotropic Diffusion**
 
- - **Time Step** : Diffusion equation time step
+ - **Time Step** : Diffusion equation time step.
 
- - **Nb Iterations** : Controls the sensitivity of the conductance term
+ - **Nb Iterations** : Controls the sensitivity of the conductance term.
 
  - **Conductance** : 
 
+
+
 **Load otb application from xml file**
-Load otb application from xml file
+Load otb application from xml file.
 
 **Save otb application to xml file**
-Save otb application to xml file
+Save otb application to xml file.
 
 Examples
 --------

@@ -45,19 +45,32 @@ Parameters table for Fuzzy Model estimation:
 |outxml       |XML output parameters file|XML output parameters file        |
 +-------------+--------------------------+----------------------------------+
 
-- **Input Positive Vector Data:** Ground truth vector data for positive samples
-- **Input Negative Vector Data:** Ground truth vector data for negative samples
-- **Belief Support:** Dempster Shafer study hypothesis to compute belief
-- **Plausibility Support:** Dempster Shafer study hypothesis to compute plausibility
-- **Criterion:** Dempster Shafer criterion (by default (belief+plausibility)/2)
-- **Weighting:** Coefficient between 0 and 1 to promote undetection or false detections (default 0.5)
-- **initialization model:** Initialization model (xml file) to be used. If the xml initialization model is set, the descriptor list is not used (specified using the option -desclist)
-- **Descriptor list:** List of the descriptors to be used in the model (must be specified to perform an automatic initialization)
-- **Maximum number of iterations:** Maximum number of optimizer iteration (default 200)
-- **Optimizer Observer:** Activate the optimizer observer
+- **Input Positive Vector Data:** Ground truth vector data for positive samples.
+
+- **Input Negative Vector Data:** Ground truth vector data for negative samples.
+
+- **Belief Support:** Dempster Shafer study hypothesis to compute belief.
+
+- **Plausibility Support:** Dempster Shafer study hypothesis to compute plausibility.
+
+- **Criterion:** Dempster Shafer criterion (by default (belief+plausibility)/2).
+
+- **Weighting:** Coefficient between 0 and 1 to promote undetection or false detections (default 0.5).
+
+- **initialization model:** Initialization model (xml file) to be used. If the xml initialization model is set, the descriptor list is not used (specified using the option -desclist).
+
+- **Descriptor list:** List of the descriptors to be used in the model (must be specified to perform an automatic initialization).
+
+- **Maximum number of iterations:** Maximum number of optimizer iteration (default 200).
+
+- **Optimizer Observer:** Activate the optimizer observer.
+
 - **Output filename:** Output model file name (xml file) contains the optimal model to perform informations fusion.
-- **Load otb application from xml file:** Load otb application from xml file
-- **Save otb application to xml file:** Save otb application to xml file
+
+- **Load otb application from xml file:** Load otb application from xml file.
+
+- **Save otb application to xml file:** Save otb application to xml file.
+
 
 
 Example

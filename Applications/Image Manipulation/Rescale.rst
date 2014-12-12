@@ -34,12 +34,19 @@ Parameters table for Rescale Image:
 +-------------+--------------------------+----------------------------------+
 
 - **Input Image:** The image to scale.
+
 - **Output Image:** The rescaled image filename.
-- **Available RAM (Mb):** Available memory for processing (in MB)
+
+- **Available RAM (Mb):** Available memory for processing (in MB).
+
 - **Output min value:** Minimum value of the output image.
+
 - **Output max value:** Maximum value of the output image.
-- **Load otb application from xml file:** Load otb application from xml file
-- **Save otb application to xml file:** Save otb application to xml file
+
+- **Load otb application from xml file:** Load otb application from xml file.
+
+- **Save otb application to xml file:** Save otb application to xml file.
+
 
 
 Example

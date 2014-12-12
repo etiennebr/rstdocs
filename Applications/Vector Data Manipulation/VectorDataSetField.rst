@@ -31,12 +31,18 @@ Parameters table for Vector data set field:
 |outxml       |XML output parameters file|XML output parameters file        |
 +-------------+--------------------------+----------------------------------+
 
-- **Input:** Input Vector Data
-- **Output:** Output Vector Data
-- **Field:** Field name
-- **Value:** Field value
-- **Load otb application from xml file:** Load otb application from xml file
-- **Save otb application to xml file:** Save otb application to xml file
+- **Input:** Input Vector Data.
+
+- **Output:** Output Vector Data.
+
+- **Field:** Field name.
+
+- **Value:** Field value.
+
+- **Load otb application from xml file:** Load otb application from xml file.
+
+- **Save otb application to xml file:** Save otb application to xml file.
+
 
 
 Example

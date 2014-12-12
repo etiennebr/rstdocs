@@ -76,33 +76,36 @@ The transformed output image.
 **Transform parameters**
 This group of parameters allows to set the transformation to apply.
 
-- **Type of transformation:** Type of transformation. Available transformations are spatial scaling, translation and rotation with scaling factor
+- **Type of transformation:** Type of transformation. Available transformations are spatial scaling, translation and rotation with scaling factor.
 
  Available choices are: 
 
 - **id** : Spatial scaling
 
- - **X scaling** : Scaling factor between the output X spacing and the input X spacing
+ - **X scaling** : Scaling factor between the output X spacing and the input X spacing.
 
- - **Y scaling** : Scaling factor between the output Y spacing and the input Y spacing
+ - **Y scaling** : Scaling factor between the output Y spacing and the input Y spacing.
+
 
 - **translation** : translation
 
  - **The X translation (in physical units)** : The translation value along X axis (in physical units).
 
- - **The Y translation (in physical units)** : The translation value along Y axis (in physical units)
+ - **The Y translation (in physical units)** : The translation value along Y axis (in physical units).
 
- - **X scaling** : Scaling factor between the output X spacing and the input X spacing
+ - **X scaling** : Scaling factor between the output X spacing and the input X spacing.
 
- - **Y scaling** : Scaling factor between the output Y spacing and the input Y spacing
+ - **Y scaling** : Scaling factor between the output Y spacing and the input Y spacing.
+
 
 - **rotation** : rotation
 
- - **Rotation angle** : The rotation angle in degree (values between -180 and 180)
+ - **Rotation angle** : The rotation angle in degree (values between -180 and 180).
 
- - **X scaling** : Scale factor between the X spacing of the rotated output image and the X spacing of the unrotated image
+ - **X scaling** : Scale factor between the X spacing of the rotated output image and the X spacing of the unrotated image.
 
- - **Y scaling** : Scale factor between the Y spacing of the rotated output image and the Y spacing of the unrotated image
+ - **Y scaling** : Scale factor between the Y spacing of the rotated output image and the Y spacing of the unrotated image.
+
 
 
 **Interpolation**
@@ -116,14 +119,16 @@ This group of parameters allows to define how the input image will be interpolat
 
  - **Radius for bicubic interpolation** : This parameter allows to control the size of the bicubic interpolation filter. If the target pixel size is higher than the input pixel size, increasing this parameter will reduce aliasing artefacts.
 
+
+
 **Available RAM (Mb)**
-This allows to set the maximum amount of RAM available for processing. As the writing task is time consuming, it is better to write large pieces of data, which can be achieved by increasing this parameter (pay attention to your system capabilities)
+This allows to set the maximum amount of RAM available for processing. As the writing task is time consuming, it is better to write large pieces of data, which can be achieved by increasing this parameter (pay attention to your system capabilities).
 
 **Load otb application from xml file**
-Load otb application from xml file
+Load otb application from xml file.
 
 **Save otb application to xml file**
-Save otb application to xml file
+Save otb application to xml file.
 
 Example
 -------
@@ -176,5 +181,5 @@ See Also
 
 These additional ressources can be useful for further information: 
 
-`Translation <http://www.readthedocs.org/Translation.html>`_
+Translation
 

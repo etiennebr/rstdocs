@@ -37,15 +37,24 @@ Parameters table for Vector Data validation:
 |outxml       |XML output parameters file|XML output parameters file        |
 +-------------+--------------------------+----------------------------------+
 
-- **Input Vector Data:** Input vector data to validate
-- **Descriptors model filename:** Fuzzy descriptors model (xml file)
-- **Belief Support:** Dempster Shafer study hypothesis to compute belief
-- **Plausibility Support:** Dempster Shafer study hypothesis to compute plausibility
-- **Criterion:** Dempster Shafer criterion (by default (belief+plausibility)/2)
-- **Criterion threshold:** Criterion threshold (default 0.5)
-- **Output Vector Data:** Output VectorData containing only the validated samples
-- **Load otb application from xml file:** Load otb application from xml file
-- **Save otb application to xml file:** Save otb application to xml file
+- **Input Vector Data:** Input vector data to validate.
+
+- **Descriptors model filename:** Fuzzy descriptors model (xml file).
+
+- **Belief Support:** Dempster Shafer study hypothesis to compute belief.
+
+- **Plausibility Support:** Dempster Shafer study hypothesis to compute plausibility.
+
+- **Criterion:** Dempster Shafer criterion (by default (belief+plausibility)/2).
+
+- **Criterion threshold:** Criterion threshold (default 0.5).
+
+- **Output Vector Data:** Output VectorData containing only the validated samples.
+
+- **Load otb application from xml file:** Load otb application from xml file.
+
+- **Save otb application to xml file:** Save otb application to xml file.
+
 
 
 Example
@@ -95,5 +104,5 @@ See Also
 
 These additional ressources can be useful for further information: 
 
-`http://en.wikipedia.org/wiki/Dempster-Shafer_theory <http://www.readthedocs.org/http://en.wikipedia.org/wiki/Dempster-Shafer_theory.html>`_
+http://en.wikipedia.org/wiki/Dempster-Shafer_theory
 

@@ -74,36 +74,36 @@ Parameters table for Stereo-rectification deformation grid generator:
 **Input and output data**
 This group of parameters allows to set the input and output images.
 
-- **Left input image:** The left input image to resample
+- **Left input image:** The left input image to resample.
 
-- **Right input image:** The right input image to resample
+- **Right input image:** The right input image to resample.
 
-- **Left output deformation grid:** The output deformation grid to be used to resample the left input image
+- **Left output deformation grid:** The output deformation grid to be used to resample the left input image.
 
-- **Right output deformation grid:** The output deformation grid to be used to resample the right input image
+- **Right output deformation grid:** The output deformation grid to be used to resample the right input image.
 
 
 
 **Epipolar  geometry and grid parameters**
-Parameters of the epipolar geometry and output grids
+Parameters of the epipolar geometry and output grids.
 
 - **Elevation management:** This group of parameters allows to manage elevation values. Supported formats are SRTM, DTED or any geotiff. DownloadSRTMTiles application could be a useful tool to list/download tiles related to a product.
 
-- **DEM directory:** This parameter allows to select a directory containing Digital Elevation Model tiles
+- **DEM directory:** This parameter allows to select a directory containing Digital Elevation Model tiles.
 
 - **Geoid File:** Use a geoid grid to get the height above the ellipsoid in case there is no DEM available, no coverage for some points or pixels with no_data in the DEM tiles. A version of the geoid can be found on the OTB website (http://hg.orfeo-toolbox.org/OTB-Data/raw-file/404aa6e4b3e0/Input/DEM/egm96.grd).
 
 - **Default elevation:** This parameter allows to set the default height above ellipsoid when there is no DEM available, no coverage for some points or pixels with no_data in the DEM tiles, and no geoid file has been set. This is also used by some application as an average elevation value.
 
-- **Average elevation computed from DEM:** Average elevation computed from the provided DEM
+- **Average elevation computed from DEM:** Average elevation computed from the provided DEM.
 
-- **Sub-sampling step:** Step of sub-sampling for average elevation estimation
+- **Sub-sampling step:** Step of sub-sampling for average elevation estimation.
 
-- **Average elevation value:** Average elevation value estimated from DEM
+- **Average elevation value:** Average elevation value estimated from DEM.
 
-- **Minimum disparity from DEM:** Disparity corresponding to estimated minimum elevation over the left image
+- **Minimum disparity from DEM:** Disparity corresponding to estimated minimum elevation over the left image.
 
-- **Maximum disparity from DEM:** Disparity corresponding to estimated maximum elevation over the left image
+- **Maximum disparity from DEM:** Disparity corresponding to estimated maximum elevation over the left image.
 
 
 
@@ -111,7 +111,7 @@ Parameters of the epipolar geometry and output grids
 
 - **Scale of epipolar images:** The scale parameter allows to generated zoomed-in (scale < 1) or zoomed-out (scale > 1) epipolar images.
 
-- **Step of the deformation grid (in nb. of pixels):** Stereo-rectification deformation grid only varies slowly. Therefore, it is recommanded to use a coarser grid (higher step value) in case of large images
+- **Step of the deformation grid (in nb. of pixels):** Stereo-rectification deformation grid only varies slowly. Therefore, it is recommanded to use a coarser grid (higher step value) in case of large images.
 
 - **Rectified image size X:** The application computes the optimal rectified image size so that the whole left input image fits into the rectified area. However, due to the scale and step parameter, this size may not match the size of the deformation field output. In this case, one can use these output values.
 
@@ -122,21 +122,21 @@ Parameters of the epipolar geometry and output grids
 
 
 **Write inverse fields**
-This group of parameter allows to generate the inverse fields as well
+This group of parameter allows to generate the inverse fields as well.
 
-- **Left inverse deformation grid:** The output deformation grid to be used to resample the epipolar left image
+- **Left inverse deformation grid:** The output deformation grid to be used to resample the epipolar left image.
 
-- **Right inverse deformation grid:** The output deformation grid to be used to resample the epipolar right image
+- **Right inverse deformation grid:** The output deformation grid to be used to resample the epipolar right image.
 
 - **Sub-sampling rate for inversion:** Grid inversion is an heavy process that implies spline regression on control points. To avoid eating to much memory, this parameter allows to first sub-sample the field to invert.
 
 
 
 **Load otb application from xml file**
-Load otb application from xml file
+Load otb application from xml file.
 
 **Save otb application to xml file**
-Save otb application to xml file
+Save otb application to xml file.
 
 Example
 -------
@@ -187,5 +187,5 @@ See Also
 
 These additional ressources can be useful for further information: 
 
-`otbGridBasedImageResampling <http://www.readthedocs.org/otbGridBasedImageResampling.html>`_
+otbGridBasedImageResampling
 

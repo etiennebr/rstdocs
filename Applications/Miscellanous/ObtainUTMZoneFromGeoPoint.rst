@@ -30,10 +30,15 @@ Parameters table for Obtain UTM Zone From Geo Point:
 +-------------+--------------------------+----------------------------------+
 
 - **Latitude:** Latitude value of desired point.
+
 - **Longitude:** Longitude value of desired point.
-- **UTMZone:** UTM Zone
-- **Load otb application from xml file:** Load otb application from xml file
-- **Save otb application to xml file:** Save otb application to xml file
+
+- **UTMZone:** UTM Zone.
+
+- **Load otb application from xml file:** Load otb application from xml file.
+
+- **Save otb application to xml file:** Save otb application to xml file.
+
 
 
 Example

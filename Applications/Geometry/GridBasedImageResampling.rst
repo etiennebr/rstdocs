@@ -70,18 +70,18 @@ Parameters table for Grid Based Image Resampling:
 **Input and output data**
 This group of parameters allows to set the input and output images.
 
-- **Input image:** The input image to resample
+- **Input image:** The input image to resample.
 
-- **Output Image:** The resampled output image
+- **Output Image:** The resampled output image.
 
 
 
 **Resampling grid parameters**
 
 
-- **Input resampling grid:** The resampling grid
+- **Input resampling grid:** The resampling grid.
 
-- **Grid Type:** Allows to choose between two grid types
+- **Grid Type:** Allows to choose between two grid types.
 
  Available choices are: 
 
@@ -91,19 +91,19 @@ This group of parameters allows to set the input and output images.
 
 
 **Output Image parameters**
-Parameters of the output image
+Parameters of the output image.
 
-- **Upper Left X:** X Coordinate of the upper-left pixel of the output resampled image
+- **Upper Left X:** X Coordinate of the upper-left pixel of the output resampled image.
 
-- **Upper Left Y:** Y Coordinate of the upper-left pixel of the output resampled image
+- **Upper Left Y:** Y Coordinate of the upper-left pixel of the output resampled image.
 
-- **Size X:** Size of the output resampled image along X (in pixels)
+- **Size X:** Size of the output resampled image along X (in pixels).
 
-- **Size Y:** Size of the output resampled image along Y (in pixels)
+- **Size Y:** Size of the output resampled image along Y (in pixels).
 
-- **Pixel Size X:** Size of each pixel along X axis
+- **Pixel Size X:** Size of each pixel along X axis.
 
-- **Pixel Size Y:** Size of each pixel along Y axis
+- **Pixel Size Y:** Size of each pixel along Y axis.
 
 - **Default value:** The default value to give to pixel that falls outside of the input image.
 
@@ -120,14 +120,16 @@ This group of parameters allows to define how the input image will be interpolat
 
  - **Radius for bicubic interpolation** : This parameter allows to control the size of the bicubic interpolation filter. If the target pixel size is higher than the input pixel size, increasing this parameter will reduce aliasing artefacts.
 
+
+
 **Available RAM (Mb)**
-Available memory for processing (in MB)
+Available memory for processing (in MB).
 
 **Load otb application from xml file**
-Load otb application from xml file
+Load otb application from xml file.
 
 **Save otb application to xml file**
-Save otb application to xml file
+Save otb application to xml file.
 
 Example
 -------
@@ -181,5 +183,5 @@ See Also
 
 These additional ressources can be useful for further information: 
 
-`otbStereorecificationGridGeneration <http://www.readthedocs.org/otbStereorecificationGridGeneration.html>`_
+otbStereorecificationGridGeneration
 

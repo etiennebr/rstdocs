@@ -64,13 +64,13 @@ This group allows to set parameters for classification map regularization by Maj
 
 
 **Available RAM (Mb)**
-Available memory for processing (in MB)
+Available memory for processing (in MB).
 
 **Load otb application from xml file**
-Load otb application from xml file
+Load otb application from xml file.
 
 **Save otb application to xml file**
-Save otb application to xml file
+Save otb application to xml file.
 
 Example
 -------
@@ -123,5 +123,5 @@ See Also
 
 These additional ressources can be useful for further information: 
 
-`Documentation of the ClassificationMapRegularization application. <http://www.readthedocs.org/Documentation of the ClassificationMapRegularization application..html>`_
+Documentation of the ClassificationMapRegularization application.
 

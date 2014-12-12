@@ -30,10 +30,15 @@ Parameters table for Split Image:
 +-------------+--------------------------+----------------------------------+
 
 - **Input Image:** Input multiband image filename.
-- **Output Image:** Output filename that will be used to get the prefix and the extension of the output images to write
-- **Available RAM (Mb):** Available memory for processing (in MB)
-- **Load otb application from xml file:** Load otb application from xml file
-- **Save otb application to xml file:** Save otb application to xml file
+
+- **Output Image:** Output filename that will be used to get the prefix and the extension of the output images to write.
+
+- **Available RAM (Mb):** Available memory for processing (in MB).
+
+- **Load otb application from xml file:** Load otb application from xml file.
+
+- **Save otb application to xml file:** Save otb application to xml file.
+
 
 
 Example

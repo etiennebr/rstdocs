@@ -144,14 +144,14 @@ This group of parameters allows to parametrize input data.
 
 - **Couples list:** List of index of couples im image list. Couples must be separated by a comma. (index start at 0). for example : 0 1,1 2 will process a first couple composed of the first and the second image in image list, then the first and the third image . note that images are handled by pairs. if left empty couples are created from input index i.e. a first couple will be composed of the first and second image, a second couple with third and fourth image etc. (in this case image list must be even).
 
-- **Image channel used for the block matching:** Used channel for block matching (used for all images)
+- **Image channel used for the block matching:** Used channel for block matching (used for all images).
 
 
 
 **Elevation management**
 This group of parameters allows to manage elevation values. Supported formats are SRTM, DTED or any geotiff. DownloadSRTMTiles application could be a useful tool to list/download tiles related to a product.
 
-- **DEM directory:** This parameter allows to select a directory containing Digital Elevation Model tiles
+- **DEM directory:** This parameter allows to select a directory containing Digital Elevation Model tiles.
 
 - **Geoid File:** Use a geoid grid to get the height above the ellipsoid in case there is no DEM available, no coverage for some points or pixels with no_data in the DEM tiles. A version of the geoid can be found on the OTB website (http://hg.orfeo-toolbox.org/OTB-Data/raw-file/404aa6e4b3e0/Input/DEM/egm96.grd).
 
@@ -162,11 +162,11 @@ This group of parameters allows to manage elevation values. Supported formats ar
 **Output parameters**
 This group of parameters allows to choose the DSM resolution, nodata value, and projection parameters.
 
-- **Output resolution:** Spatial sampling distance of the output elevation : the cell size (in m)
+- **Output resolution:** Spatial sampling distance of the output elevation : the cell size (in m).
 
-- **NoData value:** DSM empty cells are filled with this value (optional -32768 by default)
+- **NoData value:** DSM empty cells are filled with this value (optional -32768 by default).
 
-- **Method to fuse measures in each DSM cell:** This parameter allows to choose the method used to fuse elevation measurements in each output DSM cell
+- **Method to fuse measures in each DSM cell:** This parameter allows to choose the method used to fuse elevation measurements in each output DSM cell.
 
  Available choices are: 
 
@@ -177,7 +177,7 @@ This group of parameters allows to choose the DSM resolution, nodata value, and 
 - **The cell is filled with the mean of measured elevation values**
 
 - **accumulator mode. The cell is filled with the the number of values (for debugging purposes).**
-- **Output DSM:** Output elevation image
+- **Output DSM:** Output elevation image.
 
 - **Parameters estimation modes:** 
 
@@ -187,17 +187,18 @@ This group of parameters allows to choose the DSM resolution, nodata value, and 
 
 - **User Defined** : This mode allows you to fully modify default values.
 
- - **Upper Left X** : Cartographic X coordinate of upper-left corner (meters for cartographic projections, degrees for geographic ones)
+ - **Upper Left X** : Cartographic X coordinate of upper-left corner (meters for cartographic projections, degrees for geographic ones).
 
- - **Upper Left Y** : Cartographic Y coordinate of the upper-left corner (meters for cartographic projections, degrees for geographic ones)
+ - **Upper Left Y** : Cartographic Y coordinate of the upper-left corner (meters for cartographic projections, degrees for geographic ones).
 
- - **Size X** : Size of projected image along X (in pixels)
+ - **Size X** : Size of projected image along X (in pixels).
 
- - **Size Y** : Size of projected image along Y (in pixels)
+ - **Size Y** : Size of projected image along Y (in pixels).
 
- - **Pixel Size X** : Size of each pixel along X axis (meters for cartographic projections, degrees for geographic ones)
+ - **Pixel Size X** : Size of each pixel along X axis (meters for cartographic projections, degrees for geographic ones).
 
- - **Pixel Size Y** : Size of each pixel along Y axis (meters for cartographic projections, degrees for geographic ones)
+ - **Pixel Size Y** : Size of each pixel along Y axis (meters for cartographic projections, degrees for geographic ones).
+
 
 
 **Output Cartographic Map Projection**
@@ -205,9 +206,10 @@ Parameters of the output map projection to be used. Available choices are:
 
 - **Universal Trans-Mercator (UTM)** : A system of transverse mercator projections dividing the surface of Earth between 80S and 84N latitude.
 
- - **Zone number** : The zone number ranges from 1 to 60 and allows to define the transverse mercator projection (along with the hemisphere)
+ - **Zone number** : The zone number ranges from 1 to 60 and allows to define the transverse mercator projection (along with the hemisphere).
 
  - **Northern Hemisphere** : The transverse mercator projections are defined by their zone number as well as the hemisphere. Activate this parameter if your image is in the northern hemisphere.
+
 
 - **Lambert II Etendu** : This is a Lambert Conformal Conic projection mainly used in France.
 
@@ -217,19 +219,21 @@ Parameters of the output map projection to be used. Available choices are:
 
 - **EPSG Code** : This code is a generic way of identifying map projections, and allows to specify a large amount of them. See www.spatialreference.org to find which EPSG code is associated to your projection;
 
- - **EPSG Code** : See www.spatialreference.org to find which EPSG code is associated to your projection
+ - **EPSG Code** : See www.spatialreference.org to find which EPSG code is associated to your projection.
+
+
 
 **Stereorectification Grid parameters**
 This group of parameters allows to choose direct and inverse grid subsampling. These parameters are very useful to tune time and memory consumption.
 
-- **Step of the displacement grid (in pixels):** Stereo-rectification displacement grid only varies slowly. Therefore, it is recommended to use a coarser grid (higher step value) in case of large images
+- **Step of the displacement grid (in pixels):** Stereo-rectification displacement grid only varies slowly. Therefore, it is recommended to use a coarser grid (higher step value) in case of large images.
 
 - **Sub-sampling rate for epipolar grid inversion:** Grid inversion is an heavy process that implies spline regression on control points. To avoid eating to much memory, this parameter allows to first sub-sample the field to invert.
 
 
 
 **Block matching parameters**
-This group of parameters allow to tune the block-matching behavior
+This group of parameters allow to tune the block-matching behavior.
 
 - **Block-matching metric:** 
 
@@ -239,17 +243,17 @@ This group of parameters allow to tune the block-matching behavior
 
 - **Sum of Squared Distances** : Sum of squared distances between pixels value in the metric window
 
-- **Normalized Cross-Correlation** : Normalized Cross-Correlation between the left and right windows
+- **Normalized Cross-Correlation** : Normalized CrossCorrelation between the left and right windows
 
-- **Lp pseudo-norm** : Lp pseudo-norm between the left and right windows
+- **Lp pseudo-norm** : Lp pseudonorm between the left and right windows
 
- - **p value** : Value of the p parameter in Lp pseudo-norm (must be positive)
+ - **p value** : Value of the p parameter in Lp pseudo-norm (must be positive).
 
-- **Radius of blocks for matching filter (in pixels):** The radius of blocks in Block-Matching (in pixels)
+- **Radius of blocks for matching filter (in pixels):** The radius of blocks in Block-Matching (in pixels).
 
-- **Minimum altitude offset (in meters):** Minimum altitude below the selected elevation source (in meters)
+- **Minimum altitude offset (in meters):** Minimum altitude below the selected elevation source (in meters).
 
-- **Maximum altitude offset (in meters):** Maximum altitude above the selected elevation source (in meters)
+- **Maximum altitude offset (in meters):** Maximum altitude above the selected elevation source (in meters).
 
 
 
@@ -260,29 +264,29 @@ This group of parameters allow use optional filters.
 
 - **Use median disparities filtering:** disparities output can be filtered using median post filtering (disabled by default).
 
-- **Correlation metric threshold:** Use block matching metric output to discard pixels with low correlation value (disabled by default, float value)
+- **Correlation metric threshold:** Use block matching metric output to discard pixels with low correlation value (disabled by default, float value).
 
 
 
 **Masks**
 
 
-- **Input left mask:** Mask for left input image
+- **Input left mask:** Mask for left input image.
 
-- **Input right mask:** Mask for right input image
+- **Input right mask:** Mask for right input image.
 
-- **Discard pixels with low local variance:** This parameter allows to discard pixels whose local variance is too small (the size of the neighborhood is given by the radius parameter)
+- **Discard pixels with low local variance:** This parameter allows to discard pixels whose local variance is too small (the size of the neighborhood is given by the radius parameter).
 
 
 
 **Available RAM (Mb)**
-Available memory for processing (in MB)
+Available memory for processing (in MB).
 
 **Load otb application from xml file**
-Load otb application from xml file
+Load otb application from xml file.
 
 **Save otb application to xml file**
-Save otb application to xml file
+Save otb application to xml file.
 
 Example
 -------

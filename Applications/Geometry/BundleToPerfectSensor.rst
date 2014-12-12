@@ -48,15 +48,15 @@ Parameters table for Bundle to perfect sensor:
 +-------------+--------------------------+----------------------------------+
 
 **Input PAN Image**
-Input panchromatic image.
+ Input panchromatic image.
 
 **Input XS Image**
-Input XS image.
+ Input XS image.
 
 **Elevation management**
 This group of parameters allows to manage elevation values. Supported formats are SRTM, DTED or any geotiff. DownloadSRTMTiles application could be a useful tool to list/download tiles related to a product.
 
-- **DEM directory:** This parameter allows to select a directory containing Digital Elevation Model tiles
+- **DEM directory:** This parameter allows to select a directory containing Digital Elevation Model tiles.
 
 - **Geoid File:** Use a geoid grid to get the height above the ellipsoid in case there is no DEM available, no coverage for some points or pixels with no_data in the DEM tiles. A version of the geoid can be found on the OTB website (http://hg.orfeo-toolbox.org/OTB-Data/raw-file/404aa6e4b3e0/Input/DEM/egm96.grd).
 
@@ -65,26 +65,27 @@ This group of parameters allows to manage elevation values. Supported formats ar
 
 
 **Mode**
-Superimposition mode Available choices are: 
+Superimposition mode. Available choices are: 
 
 - **Default mode** : Default superimposition mode : uses any projection reference or sensor model found in the images
 
 - **Pleiades mode** : Pleiades superimposition mode, designed for the case of a P+XS bundle in SENSOR geometry. It uses a simple transform on the XS image : a scaling and a residual translation.
 
+
 **Spacing of the deformation field**
-Spacing of the deformation field. Default is 10 times the PAN image spacing.
+ Spacing of the deformation field. Default is 10 times the PAN image spacing.
 
 **Output image**
-Output image.
+ Output image.
 
 **Available RAM (Mb)**
-Available memory for processing (in MB)
+Available memory for processing (in MB).
 
 **Load otb application from xml file**
-Load otb application from xml file
+Load otb application from xml file.
 
 **Save otb application to xml file**
-Save otb application to xml file
+Save otb application to xml file.
 
 Example
 -------

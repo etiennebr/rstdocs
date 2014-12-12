@@ -43,18 +43,30 @@ Parameters table for Quick Look:
 |outxml       |XML output parameters file|XML output parameters file        |
 +-------------+--------------------------+----------------------------------+
 
-- **Input Image:** The image to read
-- **Output Image:** The subsampled image
-- **Channel List:** Selected channels
-- **ROI Origin X:** first point of ROI in x-direction
-- **ROI Origin Y:** first point of ROI in y-direction
-- **ROI Size X:** size of ROI in x-direction
-- **ROI Size Y:** size of ROI in y-direction
-- **Sampling ratio:** Sampling Ratio, default is 2
-- **Size X:** quicklook size in x-direction (used if no sampling ration is given)
-- **Size Y:** quicklook size in y-direction (used if no sampling ration is given)
-- **Load otb application from xml file:** Load otb application from xml file
-- **Save otb application to xml file:** Save otb application to xml file
+- **Input Image:** The image to read.
+
+- **Output Image:** The subsampled image.
+
+- **Channel List:** Selected channels.
+
+- **ROI Origin X:** first point of ROI in x-direction.
+
+- **ROI Origin Y:** first point of ROI in y-direction.
+
+- **ROI Size X:** size of ROI in x-direction.
+
+- **ROI Size Y:** size of ROI in y-direction.
+
+- **Sampling ratio:** Sampling Ratio, default is 2.
+
+- **Size X:** quicklook size in x-direction (used if no sampling ration is given).
+
+- **Size Y:** quicklook size in y-direction (used if no sampling ration is given).
+
+- **Load otb application from xml file:** Load otb application from xml file.
+
+- **Save otb application to xml file:** Save otb application to xml file.
+
 
 
 Example

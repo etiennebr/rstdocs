@@ -66,7 +66,7 @@ The image to reproject into the geometry of the reference input.
 **Elevation management**
 This group of parameters allows to manage elevation values. Supported formats are SRTM, DTED or any geotiff. DownloadSRTMTiles application could be a useful tool to list/download tiles related to a product.
 
-- **DEM directory:** This parameter allows to select a directory containing Digital Elevation Model tiles
+- **DEM directory:** This parameter allows to select a directory containing Digital Elevation Model tiles.
 
 - **Geoid File:** Use a geoid grid to get the height above the ellipsoid in case there is no DEM available, no coverage for some points or pixels with no_data in the DEM tiles. A version of the geoid can be found on the OTB website (http://hg.orfeo-toolbox.org/OTB-Data/raw-file/404aa6e4b3e0/Input/DEM/egm96.grd).
 
@@ -75,17 +75,18 @@ This group of parameters allows to manage elevation values. Supported formats ar
 
 
 **Spacing of the deformation field**
-Generate a coarser deformation field with the given spacing
+Generate a coarser deformation field with the given spacing.
 
 **Output image**
 Output reprojected image.
 
 **Mode**
-Superimposition mode Available choices are: 
+Superimposition mode. Available choices are: 
 
 - **Default mode** : Default superimposition mode : uses any projection reference or sensor model found in the images
 
 - **Pleiades mode** : Pleiades superimposition mode, designed for the case of a P+XS bundle in SENSOR geometry. It uses a simple transform on the XS image : a scaling and a residual translation.
+
 
 **Interpolation**
 This group of parameters allows to define how the input image will be interpolated during resampling. Available choices are: 
@@ -94,18 +95,20 @@ This group of parameters allows to define how the input image will be interpolat
 
  - **Radius for bicubic interpolation** : This parameter allows to control the size of the bicubic interpolation filter. If the target pixel size is higher than the input pixel size, increasing this parameter will reduce aliasing artefacts.
 
+
 - **Nearest Neighbor interpolation** : Nearest neighbor interpolation leads to poor image quality, but it is very fast.
 
 - **Linear interpolation** : Linear interpolation leads to average image quality but is quite fast
 
+
 **Available RAM (Mb)**
-Available memory for processing (in MB)
+Available memory for processing (in MB).
 
 **Load otb application from xml file**
-Load otb application from xml file
+Load otb application from xml file.
 
 **Save otb application to xml file**
-Save otb application to xml file
+Save otb application to xml file.
 
 Example
 -------

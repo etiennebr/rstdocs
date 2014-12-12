@@ -34,12 +34,19 @@ Parameters table for Local Statistic Extraction:
 +-------------+--------------------------+----------------------------------+
 
 - **Input Image:** The input image to compute the features on.
-- **Selected Channel:** The selected channel index
-- **Available RAM (Mb):** Available memory for processing (in MB)
+
+- **Selected Channel:** The selected channel index.
+
+- **Available RAM (Mb):** Available memory for processing (in MB).
+
 - **Neighborhood radius:** The computational window radius.
+
 - **Feature Output Image:** Output image containing the local statistical moments.
-- **Load otb application from xml file:** Load otb application from xml file
-- **Save otb application to xml file:** Save otb application to xml file
+
+- **Load otb application from xml file:** Load otb application from xml file.
+
+- **Save otb application to xml file:** Save otb application to xml file.
+
 
 
 Example
@@ -89,5 +96,5 @@ See Also
 
 These additional ressources can be useful for further information: 
 
-`otbRadiometricMomentsImageFunction class <http://www.readthedocs.org/otbRadiometricMomentsImageFunction class.html>`_
+otbRadiometricMomentsImageFunction class
 

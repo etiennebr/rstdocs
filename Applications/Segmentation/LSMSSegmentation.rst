@@ -44,17 +44,29 @@ Parameters table for Exact Large-Scale Mean-Shift segmentation, step 2:
 +-------------+--------------------------+----------------------------------------+
 
 - **Filtered image:** The filtered image (cf. Adaptive MeanShift Smoothing application).
+
 - **Spatial image:**  The spatial image. Spatial input is the displacement map (output of the Adaptive MeanShift Smoothing application).
+
 - **Output Image:** The output image. The output image is the segmentation of the filtered image. It is recommended to set the pixel type to uint32.
+
 - **Range radius:** Range radius defining the radius (expressed in radiometry unit) in the multi-spectral space.
+
 - **Spatial radius:** Spatial radius of the neighborhood.
+
 - **Minimum Region Size:** Minimum Region Size. If, after the segmentation, a region is of size lower than this criterion, the region is deleted.
+
 - **Size of tiles in pixel (X-axis):** Size of tiles along the X-axis.
+
 - **Size of tiles in pixel (Y-axis):** Size of tiles along the Y-axis.
+
 - **Directory where to write temporary files:** This applications need to write temporary files for each tile. This parameter allows choosing the path where to write those files. If disabled, the current path will be used.
-- **Temporary files cleaning:** If activated, the application will try to clean all temporary files it created
-- **Load otb application from xml file:** Load otb application from xml file
-- **Save otb application to xml file:** Save otb application to xml file
+
+- **Temporary files cleaning:** If activated, the application will try to clean all temporary files it created.
+
+- **Load otb application from xml file:** Load otb application from xml file.
+
+- **Save otb application to xml file:** Save otb application to xml file.
+
 
 
 Example
@@ -112,5 +124,5 @@ See Also
 
 These additional ressources can be useful for further information: 
 
-`MeanShiftSmoothing, LSMSSmallRegionsMerging, LSMSVectorization <http://www.readthedocs.org/MeanShiftSmoothing, LSMSSmallRegionsMerging, LSMSVectorization.html>`_
+MeanShiftSmoothing, LSMSSmallRegionsMerging, LSMSVectorization
 

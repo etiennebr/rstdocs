@@ -50,7 +50,7 @@ Vector data containing the polylines where the features will be computed.
 **Elevation management**
 This group of parameters allows to manage elevation values. Supported formats are SRTM, DTED or any geotiff. DownloadSRTMTiles application could be a useful tool to list/download tiles related to a product.
 
-- **DEM directory:** This parameter allows to select a directory containing Digital Elevation Model tiles
+- **DEM directory:** This parameter allows to select a directory containing Digital Elevation Model tiles.
 
 - **Geoid File:** Use a geoid grid to get the height above the ellipsoid in case there is no DEM available, no coverage for some points or pixels with no_data in the DEM tiles. A version of the geoid can be found on the OTB website (http://hg.orfeo-toolbox.org/OTB-Data/raw-file/404aa6e4b3e0/Input/DEM/egm96.grd).
 
@@ -59,19 +59,19 @@ This group of parameters allows to manage elevation values. Supported formats ar
 
 
 **Feature expression**
-The feature formula (b1 < 0.3) where b1 is the standard name of input image first band
+The feature formula (b1 < 0.3) where b1 is the standard name of input image first band.
 
 **Feature name**
-The field name corresponding to the feature codename (NONDVI, ROADSA...)
+The field name corresponding to the feature codename (NONDVI, ROADSA...).
 
 **Output Vector Data**
-The output vector data containing polylines with a new field
+The output vector data containing polylines with a new field.
 
 **Load otb application from xml file**
-Load otb application from xml file
+Load otb application from xml file.
 
 **Save otb application to xml file**
-Save otb application to xml file
+Save otb application to xml file.
 
 Example
 -------

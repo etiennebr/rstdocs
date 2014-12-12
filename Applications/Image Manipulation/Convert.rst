@@ -48,42 +48,44 @@ Parameters table for Image Conversion:
 +-----------------+--------------------------+----------------------------------+
 
 **Input image**
-Input image
+Input image.
 
 **Rescale type**
-Transfer function for the rescaling Available choices are: 
+Transfer function for the rescaling. Available choices are: 
 
 - **None**
 
 - **Linear**
 
- - **Gamma correction factor** : Gamma correction factor
+ - **Gamma correction factor** : Gamma correction factor.
+
 
 - **Log2**
 
+
 **Input mask**
-The masked pixels won't be used to adapt the dynamic (the mask must have the same dimensions as the input image)
+The masked pixels won't be used to adapt the dynamic (the mask must have the same dimensions as the input image).
 
 **Histogram Cutting Parameters**
-Parameters to cut the histogram edges before rescaling
+Parameters to cut the histogram edges before rescaling.
 
-- **High Cut Quantile:** Quantiles to cut from histogram high values before computing min/max rescaling (in percent, 2 by default)
+- **High Cut Quantile:** Quantiles to cut from histogram high values before computing min/max rescaling (in percent, 2 by default).
 
-- **Low Cut Quantile:** Quantiles to cut from histogram low values before computing min/max rescaling (in percent, 2 by default)
+- **Low Cut Quantile:** Quantiles to cut from histogram low values before computing min/max rescaling (in percent, 2 by default).
 
 
 
 **Output Image**
-Output image
+Output image.
 
 **Available RAM (Mb)**
-Available memory for processing (in MB)
+Available memory for processing (in MB).
 
 **Load otb application from xml file**
-Load otb application from xml file
+Load otb application from xml file.
 
 **Save otb application to xml file**
-Save otb application to xml file
+Save otb application to xml file.
 
 Example
 -------
@@ -131,5 +133,5 @@ See Also
 
 These additional ressources can be useful for further information: 
 
-`Rescale <http://www.readthedocs.org/Rescale.html>`_
+Rescale
 

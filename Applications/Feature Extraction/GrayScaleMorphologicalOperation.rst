@@ -58,24 +58,26 @@ The input image to be filtered.
 Output image containing the filtered output image.
 
 **Selected Channel**
-The selected channel index
+The selected channel index.
 
 **Available RAM (Mb)**
-Available memory for processing (in MB)
+Available memory for processing (in MB).
 
 **Structuring Element Type**
-Choice of the structuring element type Available choices are: 
+Choice of the structuring element type. Available choices are: 
 
 - **Ball**
 
- - **The Structuring Element X Radius** : The Structuring Element X Radius
+ - **The Structuring Element X Radius** : The Structuring Element X Radius.
 
- - **The Structuring Element Y Radius** : The Structuring Element Y Radius
+ - **The Structuring Element Y Radius** : The Structuring Element Y Radius.
+
 
 - **Cross**
 
+
 **Morphological Operation**
-Choice of the morphological operation Available choices are: 
+Choice of the morphological operation. Available choices are: 
 
 - **Dilate**
 
@@ -85,11 +87,12 @@ Choice of the morphological operation Available choices are:
 
 - **Closing**
 
+
 **Load otb application from xml file**
-Load otb application from xml file
+Load otb application from xml file.
 
 **Save otb application to xml file**
-Save otb application to xml file
+Save otb application to xml file.
 
 Example
 -------
@@ -142,5 +145,5 @@ See Also
 
 These additional ressources can be useful for further information: 
 
-`itkGrayscaleDilateImageFilter, itkGrayscaleErodeImageFilter, itkGrayscaleMorphologicalOpeningImageFilter and itkGrayscaleMorphologicalClosingImageFilter classes <http://www.readthedocs.org/itkGrayscaleDilateImageFilter, itkGrayscaleErodeImageFilter, itkGrayscaleMorphologicalOpeningImageFilter and itkGrayscaleMorphologicalClosingImageFilter classes.html>`_
+itkGrayscaleDilateImageFilter, itkGrayscaleErodeImageFilter, itkGrayscaleMorphologicalOpeningImageFilter and itkGrayscaleMorphologicalClosingImageFilter classes
 

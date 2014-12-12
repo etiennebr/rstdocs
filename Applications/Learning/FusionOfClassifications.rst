@@ -63,6 +63,8 @@ Selection of the fusion method and its parameters. Available choices are:
 
  - **Mass of belief measurement** : Type of confusion matrix measurement used to compute the masses of belief of each classifier.
 
+
+
 **Label for the NoData class**
 Label for the NoData class. Such input pixels keep their NoData label in the output image and are not handled in the fusion process. By default, 'nodatalabel = 0'.
 
@@ -73,10 +75,10 @@ Label for the Undecided class. Pixels with more than 1 fused class are marked as
 The output classification image resulting from the fusion of the input classification images.
 
 **Load otb application from xml file**
-Load otb application from xml file
+Load otb application from xml file.
 
 **Save otb application to xml file**
-Save otb application to xml file
+Save otb application to xml file.
 
 Example
 -------
@@ -130,5 +132,5 @@ See Also
 
 These additional ressources can be useful for further information: 
 
-`ImageClassifier application <http://www.readthedocs.org/ImageClassifier application.html>`_
+ImageClassifier application
 

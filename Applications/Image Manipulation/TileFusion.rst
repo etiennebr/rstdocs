@@ -32,11 +32,17 @@ Parameters table for Image Tile Fusion:
 +-------------+--------------------------+----------------------------------+
 
 - **Input Tile Images:** Input tiles to concatenate (in lexicographic order : (0,0) (1,0) (0,1) (1,1)).
-- **Number of tile columns:** Number of columns in the tile array
-- **Number of tile rows:** Number of rows in the tile array
-- **Output Image:** Output entire image
-- **Load otb application from xml file:** Load otb application from xml file
-- **Save otb application to xml file:** Save otb application to xml file
+
+- **Number of tile columns:** Number of columns in the tile array.
+
+- **Number of tile rows:** Number of rows in the tile array.
+
+- **Output Image:** Output entire image.
+
+- **Load otb application from xml file:** Load otb application from xml file.
+
+- **Save otb application to xml file:** Save otb application to xml file.
+
 
 
 Example

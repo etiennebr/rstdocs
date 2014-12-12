@@ -50,21 +50,21 @@ The image to segment.
 The segmentation shape.
 
 **Mask expression**
-Mask mathematical expression (only if support image is given)
+Mask mathematical expression (only if support image is given).
 
 **Connected Component Expression**
-Formula used for connected component segmentation
+Formula used for connected component segmentation.
 
 **Minimum Object Size**
-Min object size (area in pixel)
+Min object size (area in pixel).
 
 **OBIA Expression**
-OBIA mathematical expression
+OBIA mathematical expression.
 
 **Elevation management**
 This group of parameters allows to manage elevation values. Supported formats are SRTM, DTED or any geotiff. DownloadSRTMTiles application could be a useful tool to list/download tiles related to a product.
 
-- **DEM directory:** This parameter allows to select a directory containing Digital Elevation Model tiles
+- **DEM directory:** This parameter allows to select a directory containing Digital Elevation Model tiles.
 
 - **Geoid File:** Use a geoid grid to get the height above the ellipsoid in case there is no DEM available, no coverage for some points or pixels with no_data in the DEM tiles. A version of the geoid can be found on the OTB website (http://hg.orfeo-toolbox.org/OTB-Data/raw-file/404aa6e4b3e0/Input/DEM/egm96.grd).
 
@@ -73,10 +73,10 @@ This group of parameters allows to manage elevation values. Supported formats ar
 
 
 **Load otb application from xml file**
-Load otb application from xml file
+Load otb application from xml file.
 
 **Save otb application to xml file**
-Save otb application to xml file
+Save otb application to xml file.
 
 Example
 -------

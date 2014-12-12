@@ -58,57 +58,60 @@ Parameters table for Rasterization:
 +----------------------+--------------------------+----------------------------------+
 
 **Input vector dataset**
-The input vector dataset to be rasterized
+The input vector dataset to be rasterized.
 
 **Ouptut image**
-An output image containing the rasterized vector dataset
+An output image containing the rasterized vector dataset.
 
 **Input reference image**
 A reference image from which to import output grid and projection reference system information.
 
 **Output size x**
-Output size along x axis (useless if support image is given)
+Output size along x axis (useless if support image is given).
 
 **Output size y**
-Output size along y axis (useless if support image is given)
+Output size along y axis (useless if support image is given).
 
 **Output EPSG code**
-EPSG code for the output projection reference system (EPSG 4326 for WGS84, 32631 for UTM31N...,useless if support image is given)
+EPSG code for the output projection reference system (EPSG 4326 for WGS84, 32631 for UTM31N...,useless if support image is given).
 
 **Output Upper-left x**
-Output upper-left corner x coordinate (useless if support image is given)
+Output upper-left corner x coordinate (useless if support image is given).
 
 **Output Upper-left y**
-Output upper-left corner y coordinate (useless if support image is given)
+Output upper-left corner y coordinate (useless if support image is given).
 
 **Spacing (GSD) x**
-Spacing (ground sampling distance) along x axis (useless if support image is given)
+Spacing (ground sampling distance) along x axis (useless if support image is given).
 
 **Spacing (GSD) y**
-Spacing (ground sampling distance) along y axis (useless if support image is given)
+Spacing (ground sampling distance) along y axis (useless if support image is given).
 
 **Background value**
-Default value for pixels not belonging to any geometry
+Default value for pixels not belonging to any geometry.
 
 **Rasterization mode**
-Choice of rasterization modes Available choices are: 
+Choice of rasterization modes. Available choices are: 
 
-- **Binary mode** : In this mode, pixels within a geometry will hold the user-defined foreground value
+- **Binary mode** : In this mode, pixels within a geometry will hold the userdefined foreground value
 
- - **Foreground value** : Value for pixels inside a geometry
+ - **Foreground value** : Value for pixels inside a geometry.
 
-- **Attribute burning mode** : In this mode, pixels within a geometry will hold the value of a user-defined field extracted from this geometry.
 
- - **The attribute field to burn** : Name of the attribute field to burn
+- **Attribute burning mode** : In this mode, pixels within a geometry will hold the value of a userdefined field extracted from this geometry.
+
+ - **The attribute field to burn** : Name of the attribute field to burn.
+
+
 
 **Available RAM (Mb)**
-Available memory for processing (in MB)
+Available memory for processing (in MB).
 
 **Load otb application from xml file**
-Load otb application from xml file
+Load otb application from xml file.
 
 **Save otb application to xml file**
-Save otb application to xml file
+Save otb application to xml file.
 
 Example
 -------
@@ -157,5 +160,5 @@ See Also
 
 These additional ressources can be useful for further information: 
 
-`For now, support of input dataset with multiple layers having different projection reference system is limited. <http://www.readthedocs.org/For now, support of input dataset with multiple layers having different projection reference system is limited..html>`_
+For now, support of input dataset with multiple layers having different projection reference system is limited.
 

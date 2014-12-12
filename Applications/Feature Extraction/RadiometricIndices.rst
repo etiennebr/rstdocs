@@ -44,58 +44,37 @@ Parameters table for Radiometric Indices:
 +--------------+--------------------------+----------------------------------+
 
 **Input Image**
-Input image
+Input image.
 
 **Output Image**
-Radiometric indices output image
+Radiometric indices output image.
 
 **Available RAM (Mb)**
-Available memory for processing (in MB)
+Available memory for processing (in MB).
 
 **Channels selection**
-Channels selection
+Channels selection.
 
-- **Blue Channel:** Blue channel index
+- **Blue Channel:** Blue channel index.
 
-- **Green Channel:** Green channel index
+- **Green Channel:** Green channel index.
 
-- **Red Channel:** Red channel index
+- **Red Channel:** Red channel index.
 
-- **NIR Channel:** NIR channel index
+- **NIR Channel:** NIR channel index.
 
-- **Mir Channel:** Mir channel index
+- **Mir Channel:** Mir channel index.
 
 
 
 **Available Radiometric Indices**
-List of available radiometric indices with their relevant channels in brackets:
-
-        Vegetation:NDVI - Normalized difference vegetation index (Red, NIR)
-        Vegetation:TNDVI - Transformed normalized difference vegetation index (Red, NIR)
-        Vegetation:RVI - Ratio vegetation index (Red, NIR)
-        Vegetation:SAVI - Soil adjusted vegetation index (Red, NIR)
-        Vegetation:TSAVI - Transformed soil adjusted vegetation index (Red, NIR)
-        Vegetation:MSAVI - Modified soil adjusted vegetation index (Red, NIR)
-        Vegetation:MSAVI2 - Modified soil adjusted vegetation index 2 (Red, NIR)
-        Vegetation:GEMI - Global environment monitoring index (Red, NIR)
-        Vegetation:IPVI - Infrared percentage vegetation index (Red, NIR)
-        
-        Water:NDWI - Normalized difference water index (Gao 1996) (NIR, MIR)
-        Water:NDWI2 - Normalized difference water index (Mc Feeters 1996) (Green, NIR)
-        Water:MNDWI - Modified normalized difference water index (Xu 2006) (Green, MIR)
-        Water:NDPI - Normalized difference pond index (Lacaux et al.) (MIR, Green)
-        Water:NDTI - Normalized difference turbidity index (Lacaux et al.) (Red, Green)
-        
-        Soil:RI - Redness index (Red, Green)
-        Soil:CI - Color index (Red, Green)
-        Soil:BI - Brightness index (Red, Green)
-        Soil:BI2 - Brightness index 2 (NIR, Red, Green)
+List of available radiometric indices with their relevant channels in brackets:          Vegetation:NDVI - Normalized difference vegetation index (Red, NIR)         Vegetation:TNDVI - Transformed normalized difference vegetation index (Red, NIR)         Vegetation:RVI - Ratio vegetation index (Red, NIR)         Vegetation:SAVI - Soil adjusted vegetation index (Red, NIR)         Vegetation:TSAVI - Transformed soil adjusted vegetation index (Red, NIR)         Vegetation:MSAVI - Modified soil adjusted vegetation index (Red, NIR)         Vegetation:MSAVI2 - Modified soil adjusted vegetation index 2 (Red, NIR)         Vegetation:GEMI - Global environment monitoring index (Red, NIR)         Vegetation:IPVI - Infrared percentage vegetation index (Red, NIR)                  Water:NDWI - Normalized difference water index (Gao 1996) (NIR, MIR)         Water:NDWI2 - Normalized difference water index (Mc Feeters 1996) (Green, NIR)         Water:MNDWI - Modified normalized difference water index (Xu 2006) (Green, MIR)         Water:NDPI - Normalized difference pond index (Lacaux et al.) (MIR, Green)         Water:NDTI - Normalized difference turbidity index (Lacaux et al.) (Red, Green)                  Soil:RI - Redness index (Red, Green)         Soil:CI - Color index (Red, Green)         Soil:BI - Brightness index (Red, Green)         Soil:BI2 - Brightness index 2 (NIR, Red, Green).
 
 **Load otb application from xml file**
-Load otb application from xml file
+Load otb application from xml file.
 
 **Save otb application to xml file**
-Save otb application to xml file
+Save otb application to xml file.
 
 Example
 -------
@@ -138,5 +117,5 @@ See Also
 
 These additional ressources can be useful for further information: 
 
-`otbVegetationIndicesFunctor, otbWaterIndicesFunctor and otbSoilIndicesFunctor classes <http://www.readthedocs.org/otbVegetationIndicesFunctor, otbWaterIndicesFunctor and otbSoilIndicesFunctor classes.html>`_
+otbVegetationIndicesFunctor, otbWaterIndicesFunctor and otbSoilIndicesFunctor classes
 

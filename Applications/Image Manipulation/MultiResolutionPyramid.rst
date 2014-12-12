@@ -38,14 +38,23 @@ Parameters table for Multi Resolution Pyramid:
 +-------------+--------------------------+----------------------------------+
 
 - **Input Image:** 
-- **Output Image:** will be used to get the prefix and the extension of the images to write
-- **Available RAM (Mb):** Available memory for processing (in MB)
+
+- **Output Image:** will be used to get the prefix and the extension of the images to write.
+
+- **Available RAM (Mb):** Available memory for processing (in MB).
+
 - **Number Of Levels:** Number of levels in the pyramid (default is 1).
+
 - **Subsampling factor:** Subsampling factor between each level of the pyramid (default is 2).
+
 - **Variance factor:** Variance factor use in smoothing. It is multiplied by the subsampling factor of each level in the  pyramid (default is 0.6).
+
 - **Use Fast Scheme:** If used, this option allows to speed-up computation by iteratively subsampling previous level of pyramid instead of processing the full input.
-- **Load otb application from xml file:** Load otb application from xml file
-- **Save otb application to xml file:** Save otb application to xml file
+
+- **Load otb application from xml file:** Load otb application from xml file.
+
+- **Save otb application to xml file:** Save otb application to xml file.
+
 
 
 Example

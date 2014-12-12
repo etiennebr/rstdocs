@@ -62,15 +62,15 @@ Input sensor image.
 
 - **Main town near the coordinates computed:** Nearest main town of the computed geographic point.
 
-- **Country of the image:** Country of the input image
+- **Country of the image:** Country of the input image.
 
 
 
 **Load otb application from xml file**
-Load otb application from xml file
+Load otb application from xml file.
 
 **Save otb application to xml file**
-Save otb application to xml file
+Save otb application to xml file.
 
 Example
 -------
@@ -117,5 +117,5 @@ See Also
 
 These additional ressources can be useful for further information: 
 
-`ConvertCartoToGeoPoint application, otbObtainUTMZoneFromGeoPoint <http://www.readthedocs.org/ConvertCartoToGeoPoint application, otbObtainUTMZoneFromGeoPoint.html>`_
+ConvertCartoToGeoPoint application, otbObtainUTMZoneFromGeoPoint
 

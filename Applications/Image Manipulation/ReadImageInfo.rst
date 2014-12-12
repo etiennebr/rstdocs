@@ -104,37 +104,37 @@ Parameters table for Read image information:
 +-----------------------+--------------------------+------------------------------------------+
 
 **Input Image**
-Input image to analyse
+Input image to analyse.
 
 **Display the OSSIM keywordlist**
-Output the OSSIM keyword list. It contains metadata information (sensor model, geometry ). Informations are stored in keyword list (pairs of key/value)
+Output the OSSIM keyword list. It contains metadata information (sensor model, geometry ). Informations are stored in keyword list (pairs of key/value).
 
 **Write the OSSIM keywordlist to a geom file**
 This option allows to extract the OSSIM keywordlist of the image into a geom file.
 
 **Start index X**
-X start index
+X start index.
 
 **Start index Y**
-Y start index
+Y start index.
 
 **Size X**
-X size (in pixels)
+X size (in pixels).
 
 **Size Y**
-Y size (in pixels)
+Y size (in pixels).
 
 **Pixel Size X**
-Pixel size along X (in physical units)
+Pixel size along X (in physical units).
 
 **Pixel Size Y**
-Pixel size along Y (in physical units)
+Pixel size along Y (in physical units).
 
 **Image Origin X**
-Origin along X
+Origin along X.
 
 **Image Origin Y**
-Origin along Y
+Origin along Y.
 
 **Estimated ground spacing X**
 Estimated ground spacing along X (in meters).
@@ -143,13 +143,13 @@ Estimated ground spacing along X (in meters).
 Estimated ground spacing along Y (in meters).
 
 **Number Of Bands**
-Number of bands
+Number of bands.
 
 **Sensor id**
-Sensor identifier
+Sensor identifier.
 
 **Image id**
-Image identifier
+Image identifier.
 
 **Acquisition time**
 Acquisition time.
@@ -179,50 +179,50 @@ Lattitude of the lower left corner.
 Longitude of the lower left corner.
 
 **Nearest town**
-Main town near center of image
+Main town near center of image.
 
 **Country**
-Country of the image
+Country of the image.
 
 **Default RGB Display**
 This group of parameters allows to access to the default rgb composition.
 
-- **Red Band:** Red band Number
+- **Red Band:** Red band Number.
 
-- **Green Band:** Green band Number
+- **Green Band:** Green band Number.
 
-- **Blue Band:** Blue band Number
+- **Blue Band:** Blue band Number.
 
 
 
 **Projection**
-Projection Coordinate System
+Projection Coordinate System.
 
 **Keywordlist**
-Image keyword list
+Image keyword list.
 
 **Ground Control Points informations**
 This group of parameters allows to access to the GCPs informations.
 
-- **GCPs Number:** Number of GCPs
+- **GCPs Number:** Number of GCPs.
 
-- **GCP Projection:** Projection Coordinate System for GCPs
+- **GCP Projection:** Projection Coordinate System for GCPs.
 
-- **GCPs Id:** GCPs identifier
+- **GCPs Id:** GCPs identifier.
 
-- **GCPs Info:** GCPs Information
+- **GCPs Info:** GCPs Information.
 
-- **GCPs Image Coordinates:** GCPs Image coordinates
+- **GCPs Image Coordinates:** GCPs Image coordinates.
 
-- **GCPs Geographic Coordinates:** GCPs Geographic Coordinates
+- **GCPs Geographic Coordinates:** GCPs Geographic Coordinates.
 
 
 
 **Load otb application from xml file**
-Load otb application from xml file
+Load otb application from xml file.
 
 **Save otb application to xml file**
-Save otb application to xml file
+Save otb application to xml file.
 
 Example
 -------

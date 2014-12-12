@@ -42,16 +42,27 @@ Parameters table for Exact Large-Scale Mean-Shift segmentation, step 1 (smoothin
 +-------------+--------------------------+----------------------------------+
 
 - **Input Image:** The input image.
+
 - **Filtered output:** The filtered output image.
+
 - **Spatial image:**  The spatial image output. Spatial image output is a displacement map (pixel position after convergence).
+
 - **Spatial radius:** Spatial radius of the neighborhood.
+
 - **Range radius:** Range radius defining the radius (expressed in radiometry unit) in the multi-spectral space.
+
 - **Mode convergence threshold:** Algorithm iterative scheme will stop if mean-shift vector is below this threshold or if iteration number reached maximum number of iterations.
+
 - **Maximum number of iterations:** Algorithm iterative scheme will stop if convergence hasn't been reached after the maximum number of iterations.
-- **Range radius coefficient:** This coefficient makes dependent the ranger of the colorimetry of the filtered pixel : y = rangeramp*x+ranger.
-- **Mode search.:** If activated pixel iterative convergence is stopped if the path . Be careful, with this option, the result will slightly depend on thread number
-- **Load otb application from xml file:** Load otb application from xml file
-- **Save otb application to xml file:** Save otb application to xml file
+
+- **Range radius coefficient:** This coefficient makes dependent the ranger of the colorimetry of the filtered pixel : y = rangeramp\*x+ranger.
+
+- **Mode search.:** If activated pixel iterative convergence is stopped if the path . Be careful, with this option, the result will slightly depend on thread number.
+
+- **Load otb application from xml file:** Load otb application from xml file.
+
+- **Save otb application to xml file:** Save otb application to xml file.
+
 
 
 Example

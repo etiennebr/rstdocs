@@ -50,28 +50,31 @@ Input image.
 Output image.
 
 **Available RAM (Mb)**
-Available memory for processing (in MB)
+Available memory for processing (in MB).
 
 **speckle filtering method**
  Available choices are: 
 
 - **Lee** : Lee filter
 
- - **Radius** : Radius for lee filter
+ - **Radius** : Radius for lee filter.
 
- - **nb looks** : Nb looks for lee filter
+ - **nb looks** : Nb looks for lee filter.
+
 
 - **Frost** : Frost filter
 
- - **Radius** : Radius for frost filter
+ - **Radius** : Radius for frost filter.
 
- - **deramp** : Decrease factor declaration
+ - **deramp** : Decrease factor declaration.
+
+
 
 **Load otb application from xml file**
-Load otb application from xml file
+Load otb application from xml file.
 
 **Save otb application to xml file**
-Save otb application to xml file
+Save otb application to xml file.
 
 Example
 -------

@@ -58,35 +58,35 @@ Parameters table for Disparity map to elevation map:
 **Input and output data**
 This group of parameters allows to set the input and output images and grids.
 
-- **Input disparity map:** The input disparity map (horizontal disparity in first band, vertical in second)
+- **Input disparity map:** The input disparity map (horizontal disparity in first band, vertical in second).
 
-- **Left sensor image:** Left image in original (sensor) geometry
+- **Left sensor image:** Left image in original (sensor) geometry.
 
-- **Right sensor image:** Right image in original (sensor) geometry
+- **Right sensor image:** Right image in original (sensor) geometry.
 
-- **Left Grid:** Left epipolar grid (deformation grid between sensor et disparity spaces)
+- **Left Grid:** Left epipolar grid (deformation grid between sensor et disparity spaces).
 
-- **Right Grid:** Right epipolar grid (deformation grid between sensor et disparity spaces)
+- **Right Grid:** Right epipolar grid (deformation grid between sensor et disparity spaces).
 
-- **Output elevation map:** Output elevation map in ground projection
+- **Output elevation map:** Output elevation map in ground projection.
 
-- **Disparity mask:** Masked disparity cells won't be projected
+- **Disparity mask:** Masked disparity cells won't be projected.
 
 
 
 **DEM step**
-Spacing of the output elevation map (in meters)
+Spacing of the output elevation map (in meters).
 
 **Minimum elevation expected**
-Minimum elevation expected (in meters)
+Minimum elevation expected (in meters).
 
 **Maximum elevation expected**
-Maximum elevation expected (in meters)
+Maximum elevation expected (in meters).
 
 **Elevation management**
 This group of parameters allows to manage elevation values. Supported formats are SRTM, DTED or any geotiff. DownloadSRTMTiles application could be a useful tool to list/download tiles related to a product.
 
-- **DEM directory:** This parameter allows to select a directory containing Digital Elevation Model tiles
+- **DEM directory:** This parameter allows to select a directory containing Digital Elevation Model tiles.
 
 - **Geoid File:** Use a geoid grid to get the height above the ellipsoid in case there is no DEM available, no coverage for some points or pixels with no_data in the DEM tiles. A version of the geoid can be found on the OTB website (http://hg.orfeo-toolbox.org/OTB-Data/raw-file/404aa6e4b3e0/Input/DEM/egm96.grd).
 
@@ -95,13 +95,13 @@ This group of parameters allows to manage elevation values. Supported formats ar
 
 
 **Available RAM (Mb)**
-Available memory for processing (in MB)
+Available memory for processing (in MB).
 
 **Load otb application from xml file**
-Load otb application from xml file
+Load otb application from xml file.
 
 **Save otb application to xml file**
-Save otb application to xml file
+Save otb application to xml file.
 
 Example
 -------
@@ -154,5 +154,5 @@ See Also
 
 These additional ressources can be useful for further information: 
 
-`otbStereoRectificationGridGenerator otbBlockMatching <http://www.readthedocs.org/otbStereoRectificationGridGenerator otbBlockMatching.html>`_
+otbStereoRectificationGridGenerator otbBlockMatching
 

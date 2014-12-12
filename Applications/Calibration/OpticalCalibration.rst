@@ -102,13 +102,13 @@ Parameters table for Optical calibration:
 +------------------------+--------------------------+------------------------------------------------------------+
 
 **Input**
-Input image filename (values in DN)
+Input image filename (values in DN).
 
 **Output**
-Output calibrated image filename
+Output calibrated image filename.
 
 **Available RAM (Mb)**
-Available memory for processing (in MB)
+Available memory for processing (in MB).
 
 **Calibration Level**
  Available choices are: 
@@ -119,9 +119,9 @@ Available memory for processing (in MB)
 
 - **Image to Top Of Canopy reflectance (atmospheric corrections)**
 
+
 **Convert to milli reflectance**
-Flag to use milli-reflectance instead of reflectance.
-This allows to save the image with integer pixel type (in the range [0, 1000]  instead of floating point in the range [0, 1]. In order to do that, use this option and set the output pixel type (-out filename double for example)
+Flag to use milli-reflectance instead of reflectance. This allows to save the image with integer pixel type (in the range [0, 1000]  instead of floating point in the range [0, 1]. In order to do that, use this option and set the output pixel type (-out filename double for example).
 
 **Clamp of reflectivity values between [0, 100]**
 Clamping in the range [0, 100]. It can be useful to preserve area with specular reflectance.
@@ -129,37 +129,37 @@ Clamping in the range [0, 100]. It can be useful to preserve area with specular 
 **Acquisition parameters**
 This group allows to set the parameters related to the acquisition conditions.
 
-- **Minute:** Minute (0-59)
+- **Minute:** Minute (0-59).
 
-- **Hour:** Hour (0-23)
+- **Hour:** Hour (0-23).
 
-- **Day:** Day (1-31)
+- **Day:** Day (1-31).
 
-- **Month:** Month (1-12)
+- **Month:** Month (1-12).
 
-- **Year:** Year
+- **Year:** Year.
 
-- **Flux Normalization:** Flux Normalization Coefficient
+- **Flux Normalization:** Flux Normalization Coefficient.
 
-- **Sun angles:** This group contains the sun angles
+- **Sun angles:** This group contains the sun angles.
 
-- **Sun elevation angle (°):** Sun elevation angle (in degrees)
+- **Sun elevation angle (°):** Sun elevation angle (in degrees).
 
-- **Sun azimuth angle (°):** Sun azimuth angle (in degrees)
-
-
-
-- **Viewing angles:** This group contains the sensor viewing angles
-
-- **Viewing elevation angle (°):** Viewing elevation angle (in degrees)
-
-- **Viewing azimuth angle (°):** Viewing azimuth angle (in degrees)
+- **Sun azimuth angle (°):** Sun azimuth angle (in degrees).
 
 
 
-- **Gains | biases:** Gains | biases
+- **Viewing angles:** This group contains the sensor viewing angles.
 
-- **Solar illuminations:** Solar illuminations (one value per band)
+- **Viewing elevation angle (°):** Viewing elevation angle (in degrees).
+
+- **Viewing azimuth angle (°):** Viewing azimuth angle (in degrees).
+
+
+
+- **Gains | biases:** Gains | biases.
+
+- **Solar illuminations:** Solar illuminations (one value per band).
 
 
 
@@ -179,29 +179,29 @@ This group allows to set the atmospheric parameters.
 - **Urban**
 
 - **Desertic**
-- **Ozone Amount:** Ozone Amount
+- **Ozone Amount:** Ozone Amount.
 
-- **Water Vapor Amount:** Water Vapor Amount (in saturation fraction of water)
+- **Water Vapor Amount:** Water Vapor Amount (in saturation fraction of water).
 
-- **Atmospheric Pressure:** Atmospheric Pressure (in hPa)
+- **Atmospheric Pressure:** Atmospheric Pressure (in hPa).
 
-- **Aerosol Optical Thickness:** Aerosol Optical Thickness
+- **Aerosol Optical Thickness:** Aerosol Optical Thickness.
 
-- **Aeronet File:** Aeronet file containing atmospheric parameters
+- **Aeronet File:** Aeronet file containing atmospheric parameters.
 
-- **Relative Spectral Response File:** Sensor relative spectral response file By default the application gets these informations in the metadata
+- **Relative Spectral Response File:** Sensor relative spectral response file By default the application gets these informations in the metadata.
 
-- **Window radius (adjacency effects):** Window radius for adjacency effects correctionsSetting this parameters will enable the correction ofadjacency effects
+- **Window radius (adjacency effects):** Window radius for adjacency effects correctionsSetting this parameters will enable the correction ofadjacency effects.
 
-- **Pixel size (in km):** Pixel size (in km )used tocompute adjacency effects, it doesn't have tomatch the image spacing
+- **Pixel size (in km):** Pixel size (in km )used tocompute adjacency effects, it doesn't have tomatch the image spacing.
 
 
 
 **Load otb application from xml file**
-Load otb application from xml file
+Load otb application from xml file.
 
 **Save otb application to xml file**
-Save otb application to xml file
+Save otb application to xml file.
 
 Example
 -------
@@ -248,5 +248,5 @@ See Also
 
 These additional ressources can be useful for further information: 
 
-`The OTB CookBook <http://www.readthedocs.org/The OTB CookBook.html>`_
+The OTB CookBook
 

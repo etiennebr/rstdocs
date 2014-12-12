@@ -68,29 +68,53 @@ Parameters table for Fine Registration:
 +-------------+--------------------------+----------------------------------+
 
 - **Reference Image:** The reference image.
+
 - **Secondary Image:** The secondary image.
+
 - **Output Image:** The output image.
-- **Exploration Radius X:** The exploration radius along x (in pixels)
-- **Exploration Radius Y:** The exploration radius along y (in pixels)
-- **Metric Radius X:** Radius along x (in pixels) of the metric computation window
-- **Metric Radius Y:** Radius along y (in pixels) of the metric computation window
-- **Image To Warp:** The image to warp after disparity estimation is completed
-- **Output Warped Image:** The output warped image
-- **Coarse Offset X:** Coarse offset along x (in physical space) between the two images
-- **Coarse Offset Y:** Coarse offset along y (in physical space) between the two images
-- **Sub-Sampling Rate X:** Generates a result at a coarser resolution with a given sub-sampling rate along X
-- **Sub-Sampling Rate Y:** Generates a result at a coarser resolution with a given sub-sampling rate along Y
+
+- **Exploration Radius X:** The exploration radius along x (in pixels).
+
+- **Exploration Radius Y:** The exploration radius along y (in pixels).
+
+- **Metric Radius X:** Radius along x (in pixels) of the metric computation window.
+
+- **Metric Radius Y:** Radius along y (in pixels) of the metric computation window.
+
+- **Image To Warp:** The image to warp after disparity estimation is completed.
+
+- **Output Warped Image:** The output warped image.
+
+- **Coarse Offset X:** Coarse offset along x (in physical space) between the two images.
+
+- **Coarse Offset Y:** Coarse offset along y (in physical space) between the two images.
+
+- **Sub-Sampling Rate X:** Generates a result at a coarser resolution with a given sub-sampling rate along X.
+
+- **Sub-Sampling Rate Y:** Generates a result at a coarser resolution with a given sub-sampling rate along Y.
+
 - **Reference Gaussian Smoothing X:** Performs a gaussian smoothing of the reference image. Parameter is gaussian sigma (in pixels) in X direction.
+
 - **Reference Gaussian Smoothing Y:** Performs a gaussian smoothing of the reference image. Parameter is gaussian sigma (in pixels) in Y direction.
+
 - **Secondary Gaussian Smoothing X:** Performs a gaussian smoothing of the secondary image. Parameter is gaussian sigma (in pixels) in X direction.
+
 - **Secondary Gaussian Smoothing Y:** Performs a gaussian smoothing of the secondary image. Parameter is gaussian sigma (in pixels) in Y direction.
-- **Metric:** Choose the metric used for block matching. Available metrics are cross-correlation (CC), cross-correlation with subtracted mean (CCSM), mean-square difference (MSD), mean reciprocal square difference (MRSD) and mutual information (MI). Default is cross-correlation
-- **SubPixelAccuracy:** Metric extrema location will be refined up to the given accuracy. Default is 0.01
+
+- **Metric:** Choose the metric used for block matching. Available metrics are cross-correlation (CC), cross-correlation with subtracted mean (CCSM), mean-square difference (MSD), mean reciprocal square difference (MRSD) and mutual information (MI). Default is cross-correlation.
+
+- **SubPixelAccuracy:** Metric extrema location will be refined up to the given accuracy. Default is 0.01.
+
 - **Validity Mask Lower Threshold:** Lower threshold to obtain a validity mask.
+
 - **Validity Mask Upper Threshold:** Upper threshold to obtain a validity mask.
-- **Available RAM (Mb):** Available memory for processing (in MB)
-- **Load otb application from xml file:** Load otb application from xml file
-- **Save otb application to xml file:** Save otb application to xml file
+
+- **Available RAM (Mb):** Available memory for processing (in MB).
+
+- **Load otb application from xml file:** Load otb application from xml file.
+
+- **Save otb application to xml file:** Save otb application to xml file.
+
 
 
 Example

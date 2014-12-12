@@ -47,13 +47,13 @@ Parameters table for Edge Feature Extraction:
 The input image to compute the features on.
 
 **Selected Channel**
-The selected channel index
+The selected channel index.
 
 **Available RAM (Mb)**
-Available memory for processing (in MB)
+Available memory for processing (in MB).
 
 **Edge feature**
-Choice of edge feature Available choices are: 
+Choice of edge feature. Available choices are: 
 
 - **Gradient**
 
@@ -65,14 +65,16 @@ Choice of edge feature Available choices are:
 
  - **The Y Radius** : 
 
+
+
 **Feature Output Image**
 Output image containing the edge features.
 
 **Load otb application from xml file**
-Load otb application from xml file
+Load otb application from xml file.
 
 **Save otb application to xml file**
-Save otb application to xml file
+Save otb application to xml file.
 
 Example
 -------
@@ -119,5 +121,5 @@ See Also
 
 These additional ressources can be useful for further information: 
 
-`otb class <http://www.readthedocs.org/otb class.html>`_
+otb class
 

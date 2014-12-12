@@ -72,52 +72,59 @@ The input image to be filtered.
 Output image containing the filtered output image.
 
 **Selected Channel**
-The selected channel index
+The selected channel index.
 
 **Available RAM (Mb)**
-Available memory for processing (in MB)
+Available memory for processing (in MB).
 
 **Structuring Element Type**
-Choice of the structuring element type Available choices are: 
+Choice of the structuring element type. Available choices are: 
 
 - **Ball**
 
- - **The Structuring Element X Radius** : The Structuring Element X Radius
+ - **The Structuring Element X Radius** : The Structuring Element X Radius.
 
- - **The Structuring Element Y Radius** : The Structuring Element Y Radius
+ - **The Structuring Element Y Radius** : The Structuring Element Y Radius.
+
 
 - **Cross**
 
+
 **Morphological Operation**
-Choice of the morphological operation Available choices are: 
+Choice of the morphological operation. Available choices are: 
 
 - **Dilate**
 
- - **Foreground Value** : The Foreground Value
+ - **Foreground Value** : The Foreground Value.
 
- - **Background Value** : The Background Value
+ - **Background Value** : The Background Value.
+
 
 - **Erode**
 
- - **Foreground Value** : The Foreground Value
+ - **Foreground Value** : The Foreground Value.
 
- - **Background Value** : The Background Value
+ - **Background Value** : The Background Value.
+
 
 - **Opening**
 
- - **Foreground Value** : The Foreground Value
+ - **Foreground Value** : The Foreground Value.
 
- - **Background Value** : The Background Value
+ - **Background Value** : The Background Value.
+
 
 - **Closing**
 
- - **Foreground Value** : The Foreground Value
+ - **Foreground Value** : The Foreground Value.
+
+
 
 **Load otb application from xml file**
-Load otb application from xml file
+Load otb application from xml file.
 
 **Save otb application to xml file**
-Save otb application to xml file
+Save otb application to xml file.
 
 Example
 -------
@@ -170,5 +177,5 @@ See Also
 
 These additional ressources can be useful for further information: 
 
-`itkBinaryDilateImageFilter, itkBinaryErodeImageFilter, itkBinaryMorphologicalOpeningImageFilter and itkBinaryMorphologicalClosingImageFilter classes <http://www.readthedocs.org/itkBinaryDilateImageFilter, itkBinaryErodeImageFilter, itkBinaryMorphologicalOpeningImageFilter and itkBinaryMorphologicalClosingImageFilter classes.html>`_
+itkBinaryDilateImageFilter, itkBinaryErodeImageFilter, itkBinaryMorphologicalOpeningImageFilter and itkBinaryMorphologicalClosingImageFilter classes
 

@@ -34,12 +34,19 @@ Parameters table for Exact Large-Scale Mean-Shift segmentation, step 4:
 +-------------+--------------------------+----------------------------------+
 
 - **Input Image:** The input image.
+
 - **Segmented image:**  The segmented image input. Segmented image input is the segmentation of the input image.
+
 - **Output GIS vector file:** The output GIS vector file, representing the vectorized version of the segmented image where the features of the polygons are the radiometric means and variances.
+
 - **Size of tiles in pixel (X-axis):** Size of tiles along the X-axis.
+
 - **Size of tiles in pixel (Y-axis):** Size of tiles along the Y-axis.
-- **Load otb application from xml file:** Load otb application from xml file
-- **Save otb application to xml file:** Save otb application to xml file
+
+- **Load otb application from xml file:** Load otb application from xml file.
+
+- **Save otb application to xml file:** Save otb application to xml file.
+
 
 
 Example
@@ -91,5 +98,5 @@ See Also
 
 These additional ressources can be useful for further information: 
 
-`MeanShiftSmoothing, LSMSSegmentation, LSMSSmallRegionsMerging <http://www.readthedocs.org/MeanShiftSmoothing, LSMSSegmentation, LSMSSmallRegionsMerging.html>`_
+MeanShiftSmoothing, LSMSSegmentation, LSMSSmallRegionsMerging
 

@@ -29,11 +29,16 @@ Parameters table for Images Concatenation:
 |outxml       |XML output parameters file|XML output parameters file        |
 +-------------+--------------------------+----------------------------------+
 
-- **Input images list:** The list of images to concatenate
-- **Output Image:** The concatenated output image
-- **Available RAM (Mb):** Available memory for processing (in MB)
-- **Load otb application from xml file:** Load otb application from xml file
-- **Save otb application to xml file:** Save otb application to xml file
+- **Input images list:** The list of images to concatenate.
+
+- **Output Image:** The concatenated output image.
+
+- **Available RAM (Mb):** Available memory for processing (in MB).
+
+- **Load otb application from xml file:** Load otb application from xml file.
+
+- **Save otb application to xml file:** Save otb application to xml file.
+
 
 
 Example
@@ -79,5 +84,5 @@ See Also
 
 These additional ressources can be useful for further information: 
 
-`Rescale application, Convert <http://www.readthedocs.org/Rescale application, Convert.html>`_
+Rescale application, Convert
 

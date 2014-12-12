@@ -14,16 +14,8 @@ Contents:
    pleiades
    bandmathx
    Applications
-   Applications/Image Manipulation
-   Applications/Image Filtering
-   Applications/Feature Extraction  
-   Applications/Learning
-   Applications/Segmentation
-   Applications/Geometry
-   Applications/Calibration
-   Applications/Stereo
-   Applications/Vector Data Manipulation
-   Applications/Miscellanous
+   
+
 
 
 Indices and tables

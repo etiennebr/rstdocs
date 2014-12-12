@@ -27,10 +27,14 @@ Parameters table for Concatenate:
 |outxml       |XML output parameters file|XML output parameters file        |
 +-------------+--------------------------+----------------------------------+
 
-- **Input VectorDatas to concatenate:** VectorData files to be concatenated in an unique VectorData
-- **Concatenated VectorData:** Output conctenated VectorData
-- **Load otb application from xml file:** Load otb application from xml file
-- **Save otb application to xml file:** Save otb application to xml file
+- **Input VectorDatas to concatenate:** VectorData files to be concatenated in an unique VectorData.
+
+- **Concatenated VectorData:** Output conctenated VectorData.
+
+- **Load otb application from xml file:** Load otb application from xml file.
+
+- **Save otb application to xml file:** Save otb application to xml file.
+
 
 
 Example

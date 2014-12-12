@@ -48,13 +48,13 @@ Parameters table for Pansharpening:
 +-------------------+--------------------------+----------------------------------+
 
 **Input PAN Image**
-Input panchromatic image.
+ Input panchromatic image.
 
 **Input XS Image**
-Input XS image.
+ Input XS image.
 
 **Output image**
-Output image.
+ Output image.
 
 **Algorithm**
 Selection of the pan-sharpening method. Available choices are: 
@@ -67,20 +67,23 @@ Selection of the pan-sharpening method. Available choices are:
 
  - **Y radius** : Set the y radius of the sliding window.
 
+
 - **Bayesian** : Bayesian fusion.
 
  - **Weight** : Set the weighting value.
 
  - **S coefficient** : Set the S coefficient.
 
+
+
 **Available RAM (Mb)**
-Available memory for processing (in MB)
+Available memory for processing (in MB).
 
 **Load otb application from xml file**
-Load otb application from xml file
+Load otb application from xml file.
 
 **Save otb application to xml file**
-Save otb application to xml file
+Save otb application to xml file.
 
 Example
 -------

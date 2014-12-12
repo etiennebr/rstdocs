@@ -31,12 +31,18 @@ Parameters table for Vertex Component Analysis:
 |outxml       |XML output parameters file|XML output parameters file        |
 +-------------+--------------------------+----------------------------------+
 
-- **Input Image:** Input hyperspectral data cube
-- **Number of endmembers:** The number of endmembers to extract from the data cube
-- **Output Endmembers:** The endmebers, stored in a one-line multi-spectral image, each pixel representing an endmember
+- **Input Image:** Input hyperspectral data cube.
+
+- **Number of endmembers:** The number of endmembers to extract from the data cube.
+
+- **Output Endmembers:** The endmebers, stored in a one-line multi-spectral image, each pixel representing an endmember.
+
 - **set user defined seed:** Set specific seed. with integer value.
-- **Load otb application from xml file:** Load otb application from xml file
-- **Save otb application to xml file:** Save otb application to xml file
+
+- **Load otb application from xml file:** Load otb application from xml file.
+
+- **Save otb application to xml file:** Save otb application to xml file.
+
 
 
 Example

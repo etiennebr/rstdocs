@@ -47,32 +47,35 @@ Parameters table for Confusion matrix Computation:
 The input classification image.
 
 **Matrix output**
-Filename to store the output matrix (csv format)
+Filename to store the output matrix (csv format).
 
 **Ground truth**
-Choice of ground truth format Available choices are: 
+Choice of ground truth format. Available choices are: 
 
 - **Ground truth as a raster image**
 
- - **Input reference image** : Input image containing the ground truth labels
+ - **Input reference image** : Input image containing the ground truth labels.
+
 
 - **Ground truth as a vector data file**
 
- - **Input reference vector data** : Input vector data of the ground truth
+ - **Input reference vector data** : Input vector data of the ground truth.
 
- - **Field name** : Field name containing the label values
+ - **Field name** : Field name containing the label values.
+
+
 
 **Value for nodata pixels**
 Label for the NoData class. Such input pixels will be discarded from the ground truth and from the input classification map. By default, 'nodatalabel = 0'.
 
 **Available RAM (Mb)**
-Available memory for processing (in MB)
+Available memory for processing (in MB).
 
 **Load otb application from xml file**
-Load otb application from xml file
+Load otb application from xml file.
 
 **Save otb application to xml file**
-Save otb application to xml file
+Save otb application to xml file.
 
 Example
 -------

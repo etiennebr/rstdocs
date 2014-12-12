@@ -44,36 +44,36 @@ Parameters table for Vector Data Transformation:
 +-----------------+--------------------------+----------------------------------+
 
 **Input Vector data**
-Input vector data to transform
+Input vector data to transform.
 
 **Output Vector data**
-Output transformed vector data
+Output transformed vector data.
 
 **Support image**
-Image needed as a support to the vector data
+Image needed as a support to the vector data.
 
 **Transform parameters**
-Group of parameters to define the transform
+Group of parameters to define the transform.
 
-- **Translation X:** Translation in the X direction (in pixels)
+- **Translation X:** Translation in the X direction (in pixels).
 
-- **Translation Y:** Translation in the Y direction (in pixels)
+- **Translation Y:** Translation in the Y direction (in pixels).
 
-- **Rotation Angle:** Angle of the rotation to apply in degrees
+- **Rotation Angle:** Angle of the rotation to apply in degrees.
 
-- **Center X:** X coordinate of the rotation center (in physical units)
+- **Center X:** X coordinate of the rotation center (in physical units).
 
-- **Center Y:** Y coordinate of the rotation center (in physical units)
+- **Center Y:** Y coordinate of the rotation center (in physical units).
 
-- **Scale:** The scale to apply
+- **Scale:** The scale to apply.
 
 
 
 **Load otb application from xml file**
-Load otb application from xml file
+Load otb application from xml file.
 
 **Save otb application to xml file**
-Save otb application to xml file
+Save otb application to xml file.
 
 Example
 -------

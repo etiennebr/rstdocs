@@ -45,15 +45,18 @@ The list of images on which you want to determine corresponding SRTM tiles.
 
  - **Output directory** : Directory where zipped tiles will be save. You'll need to unzip all tile files before using them in your application.
 
+
 - **List tiles** : List tiles in an existing local directory.
 
  - **Input directory** : Input directory where SRTM tiles can are located.
 
+
+
 **Load otb application from xml file**
-Load otb application from xml file
+Load otb application from xml file.
 
 **Save otb application to xml file**
-Save otb application to xml file
+Save otb application to xml file.
 
 Example
 -------

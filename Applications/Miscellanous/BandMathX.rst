@@ -37,13 +37,21 @@ Parameters table for Band Math X:
 +-------------+--------------------------+----------------------------------+
 
 - **Input image list:** Image list to perform computation on.
+
 - **Output Image:** Output image.
-- **Available RAM (Mb):** Available memory for processing (in MB)
+
+- **Available RAM (Mb):** Available memory for processing (in MB).
+
 - **Expressions:** Mathematical expression to apply.
+
 - **Import context:** A txt file containing user's constants and expressions.
+
 - **Export context:** A txt file where to save user's constants and expressions.
-- **Load otb application from xml file:** Load otb application from xml file
-- **Save otb application to xml file:** Save otb application to xml file
+
+- **Load otb application from xml file:** Load otb application from xml file.
+
+- **Save otb application to xml file:** Save otb application to xml file.
+
 
 
 Example

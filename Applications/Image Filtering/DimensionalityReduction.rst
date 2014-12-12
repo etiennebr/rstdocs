@@ -88,6 +88,7 @@ Selection of the reduction dimension method. Available choices are:
 
  - **Set the y radius of the sliding window.** : 
 
+
 - **MAF** : Maximum Autocorrelation Factor.
 
 - **ICA** : Independant Component Analysis.
@@ -96,6 +97,8 @@ Selection of the reduction dimension method. Available choices are:
 
  - **Give the increment weight of W in [0, 1]** : 
 
+
+
 **Number of Components.**
 Number of relevant components kept. By default all components are kept.
 
@@ -103,13 +106,13 @@ Number of relevant components kept. By default all components are kept.
 center AND reduce data before Dimensionality reduction.
 
 **Transformation matrix output (text format)**
-Filename to store the transformation matrix (csv format)
+Filename to store the transformation matrix (csv format).
 
 **Load otb application from xml file**
-Load otb application from xml file
+Load otb application from xml file.
 
 **Save otb application to xml file**
-Save otb application to xml file
+Save otb application to xml file.
 
 Example
 -------
@@ -156,5 +159,5 @@ See Also
 
 These additional ressources can be useful for further information: 
 
-`"Kernel maximum autocorrelation factor and minimum noise fraction transformations," IEEE Transactions on Image Processing, vol. 20, no. 3, pp. 612-624, (2011) <http://www.readthedocs.org/"Kernel maximum autocorrelation factor and minimum noise fraction transformations," IEEE Transactions on Image Processing, vol. 20, no. 3, pp. 612-624, (2011).html>`_
+"Kernel maximum autocorrelation factor and minimum noise fraction transformations," IEEE Transactions on Image Processing, vol. 20, no. 3, pp. 612-624, (2011)
 

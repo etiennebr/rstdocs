@@ -42,21 +42,21 @@ Parameters table for Open Street Map layers importations applications:
 +-------------+--------------------------+---------------------------------------------+
 
 **Output vector data**
-Generated output vector data path
+Generated output vector data path.
 
 **Support image**
-Image used as support to estimate the models
+Image used as support to estimate the models.
 
 **OSM tag key**
-OSM tag key to extract (highway, building...)
+OSM tag key to extract (highway, building...).
 
 **OSM tag value**
-OSM tag value to extract (motorway, footway...)
+OSM tag value to extract (motorway, footway...).
 
 **Elevation management**
 This group of parameters allows to manage elevation values. Supported formats are SRTM, DTED or any geotiff. DownloadSRTMTiles application could be a useful tool to list/download tiles related to a product.
 
-- **DEM directory:** This parameter allows to select a directory containing Digital Elevation Model tiles
+- **DEM directory:** This parameter allows to select a directory containing Digital Elevation Model tiles.
 
 - **Geoid File:** Use a geoid grid to get the height above the ellipsoid in case there is no DEM available, no coverage for some points or pixels with no_data in the DEM tiles. A version of the geoid can be found on the OTB website (http://hg.orfeo-toolbox.org/OTB-Data/raw-file/404aa6e4b3e0/Input/DEM/egm96.grd).
 
@@ -65,15 +65,13 @@ This group of parameters allows to manage elevation values. Supported formats ar
 
 
 **option to display available key/value classes**
-Print the key/value classes available for the bounding box of the input image 
-
-  ** If not used : Note that the options OSMKey (-key) and Output (-out) become mandatory
+Print the key/value classes available for the bounding box of the input image  				  \*\* If not used : Note that the options OSMKey (-key) and Output (-out) become mandatory.
 
 **Load otb application from xml file**
-Load otb application from xml file
+Load otb application from xml file.
 
 **Save otb application to xml file**
-Save otb application to xml file
+Save otb application to xml file.
 
 Example
 -------
@@ -120,5 +118,5 @@ See Also
 
 These additional ressources can be useful for further information: 
 
-`Convertion <http://www.readthedocs.org/Convertion.html>`_
+Convertion
 

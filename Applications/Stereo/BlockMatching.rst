@@ -118,20 +118,20 @@ Parameters table for Pixel-wise Block-Matching:
 **Input and output data**
 This group of parameters allows to set the input and output images.
 
-- **Left input image:** The left input image (reference)
+- **Left input image:** The left input image (reference).
 
-- **Right input image:** The right input (secondary)
+- **Right input image:** The right input (secondary).
 
-- **The output disparity map:** An image containing the estimated disparities as well as the metric values if the option is used
+- **The output disparity map:** An image containing the estimated disparities as well as the metric values if the option is used.
 
 - **The output mask corresponding to all criterions:** A mask image corresponding to all citerions (see masking parameters). Only required if variance threshold or nodata criterions are set.
 
-- **Output optimal metric values as well:** If used, the output image will have a second component with metric optimal values
+- **Output optimal metric values as well:** If used, the output image will have a second component with metric optimal values.
 
 
 
 **Image masking parameters**
-This group of parameters allows to determine the masking parameters to prevent disparities estimation for some pixels of the left image
+This group of parameters allows to determine the masking parameters to prevent disparities estimation for some pixels of the left image.
 
 - **Discard left pixels from mask image:** This parameter allows to provide a custom mask for the left image.Block matching will be only perform on pixels inside the mask.
 
@@ -139,12 +139,12 @@ This group of parameters allows to determine the masking parameters to prevent d
 
 - **Discard pixels with no-data value:** This parameter allows to discard pixels whose value is equal to the user-defined no-data value.
 
-- **Discard pixels with low local variance:** This parameter allows to discard pixels whose local variance is too small (the size of the neighborhood is given by the radius parameter)
+- **Discard pixels with low local variance:** This parameter allows to discard pixels whose local variance is too small (the size of the neighborhood is given by the radius parameter).
 
 
 
 **Block matching parameters**
-This group of parameters allow to tune the block-matching behaviour
+This group of parameters allow to tune the block-matching behaviour.
 
 - **Block-matching metric:** 
 
@@ -152,44 +152,44 @@ This group of parameters allow to tune the block-matching behaviour
 
 - **Sum of Squared Distances** : Sum of squared distances between pixels value in the metric window
 
-- **Normalized Cross-Correlation** : Normalized Cross-Correlation between the left and right windows
+- **Normalized Cross-Correlation** : Normalized CrossCorrelation between the left and right windows
 
-- **Lp pseudo-norm** : Lp pseudo-norm between the left and right windows
+- **Lp pseudo-norm** : Lp pseudonorm between the left and right windows
 
- - **p value** : Value of the p parameter in Lp pseudo-norm (must be positive)
+ - **p value** : Value of the p parameter in Lp pseudo-norm (must be positive).
 
-- **Radius of blocks:** The radius (in pixels) of blocks in Block-Matching
+- **Radius of blocks:** The radius (in pixels) of blocks in Block-Matching.
 
-- **Minimum horizontal disparity:** Minimum horizontal disparity to explore (can be negative)
+- **Minimum horizontal disparity:** Minimum horizontal disparity to explore (can be negative).
 
-- **Maximum horizontal disparity:** Maximum horizontal disparity to explore (can be negative)
+- **Maximum horizontal disparity:** Maximum horizontal disparity to explore (can be negative).
 
-- **Minimum vertical disparity:** Minimum vertical disparity to explore (can be negative)
+- **Minimum vertical disparity:** Minimum vertical disparity to explore (can be negative).
 
-- **Maximum vertical disparity:** Maximum vertical disparity to explore (can be negative)
+- **Maximum vertical disparity:** Maximum vertical disparity to explore (can be negative).
 
-- **Sub-pixel interpolation:** Estimate disparities with sub-pixel precision
+- **Sub-pixel interpolation:** Estimate disparities with sub-pixel precision.
 
  Available choices are: 
 
-- **None** : No sub-pixel 
+- **None** : No subpixel 
 
 - **Parabolic** : Parabolic fit
 
 - **Triangular** : Triangular fit
 
 - **Dichotomy** : Dichotomic search
-- **Computation step:** Location step between computed disparities
+- **Computation step:** Location step between computed disparities.
 
-- **X start index:** X start index of the subsampled grid (wrt the input image grid)
+- **X start index:** X start index of the subsampled grid (wrt the input image grid).
 
-- **Y start index:** Y start index of the subsampled grid (wrt the input image grid)
+- **Y start index:** Y start index of the subsampled grid (wrt the input image grid).
 
-- **Median filtering:** Use a median filter to get a smooth disparity map
+- **Median filtering:** Use a median filter to get a smooth disparity map.
 
-- **Radius:** Radius for median filter
+- **Radius:** Radius for median filter.
 
-- **Incoherence threshold:** Incoherence threshold between original and filtered disparity
+- **Incoherence threshold:** Incoherence threshold between original and filtered disparity.
 
 
 
@@ -201,33 +201,35 @@ This group of parameters allow to tune the block-matching behaviour
 
 - **Uniform initial disparity** : Use an uniform initial disparity estimate
 
- - **Horizontal initial disparity** : Value of the uniform horizontal disparity initial estimate (in pixels)
+ - **Horizontal initial disparity** : Value of the uniform horizontal disparity initial estimate (in pixels).
 
- - **Vertical initial disparity** : Value of the uniform vertical disparity initial estimate (in pixels)
+ - **Vertical initial disparity** : Value of the uniform vertical disparity initial estimate (in pixels).
 
- - **Horizontal exploration radius** : Horizontal exploration radius around the initial disparity estimate (in pixels)
+ - **Horizontal exploration radius** : Horizontal exploration radius around the initial disparity estimate (in pixels).
 
- - **Vertical exploration radius** : Vertical exploration radius around the initial disparity estimate (in pixels)
+ - **Vertical exploration radius** : Vertical exploration radius around the initial disparity estimate (in pixels).
+
 
 - **Initial disparity maps** : Use initial disparity maps
 
- - **Horizontal initial disparity map** : Map of the initial horizontal disparities
+ - **Horizontal initial disparity map** : Map of the initial horizontal disparities.
 
- - **Vertical initial disparity map** : Map of the initial vertical disparities
+ - **Vertical initial disparity map** : Map of the initial vertical disparities.
 
- - **Horizontal exploration radius** : Horizontal exploration radius around the initial disparity estimate (in pixels)
+ - **Horizontal exploration radius** : Horizontal exploration radius around the initial disparity estimate (in pixels).
 
- - **Vertical exploration radius** : Vertical exploration radius around the initial disparity estimate (in pixels)
+ - **Vertical exploration radius** : Vertical exploration radius around the initial disparity estimate (in pixels).
+
 
 
 **Available RAM (Mb)**
-Available memory for processing (in MB)
+Available memory for processing (in MB).
 
 **Load otb application from xml file**
-Load otb application from xml file
+Load otb application from xml file.
 
 **Save otb application to xml file**
-Save otb application to xml file
+Save otb application to xml file.
 
 Example
 -------
@@ -280,5 +282,5 @@ See Also
 
 These additional ressources can be useful for further information: 
 
-`otbStereoRectificationGridGenerator <http://www.readthedocs.org/otbStereoRectificationGridGenerator.html>`_
+otbStereoRectificationGridGenerator
 

@@ -70,7 +70,7 @@ Parameters table for Vector Data reprojection:
 **Input data**
 
 
-- **Input vector data:** The input vector data to reproject
+- **Input vector data:** The input vector data to reproject.
 
 - **Use image keywords list:** Optional input image to fill vector data with image kwl.
 
@@ -79,7 +79,7 @@ Parameters table for Vector Data reprojection:
 **Output data**
 
 
-- **Output vector data:** The reprojected vector data
+- **Output vector data:** The reprojected vector data.
 
 - **Output Projection choice:** 
 
@@ -87,23 +87,25 @@ Parameters table for Vector Data reprojection:
 
 - **Use image projection ref** : Vector data will be reprojected in image projection ref.
 
- - **Image used to get projection map** : Projection map will be found using image metadata
+ - **Image used to get projection map** : Projection map will be found using image metadata.
+
 
 - **User defined projection**
 
  - **Output Cartographic Map Projection** : Parameters of the output map projection to be used.
 
- - **Zone number** : The zone number ranges from 1 to 60 and allows to define the transverse mercator projection (along with the hemisphere)
+ - **Zone number** : The zone number ranges from 1 to 60 and allows to define the transverse mercator projection (along with the hemisphere).
 
  - **Northern Hemisphere** : The transverse mercator projections are defined by their zone number as well as the hemisphere. Activate this parameter if your image is in the northern hemisphere.
 
- - **EPSG Code** : See www.spatialreference.org to find which EPSG code is associated to your projection
+ - **EPSG Code** : See www.spatialreference.org to find which EPSG code is associated to your projection.
+
 
 
 **Elevation management**
 This group of parameters allows to manage elevation values. Supported formats are SRTM, DTED or any geotiff. DownloadSRTMTiles application could be a useful tool to list/download tiles related to a product.
 
-- **DEM directory:** This parameter allows to select a directory containing Digital Elevation Model tiles
+- **DEM directory:** This parameter allows to select a directory containing Digital Elevation Model tiles.
 
 - **Geoid File:** Use a geoid grid to get the height above the ellipsoid in case there is no DEM available, no coverage for some points or pixels with no_data in the DEM tiles. A version of the geoid can be found on the OTB website (http://hg.orfeo-toolbox.org/OTB-Data/raw-file/404aa6e4b3e0/Input/DEM/egm96.grd).
 
@@ -112,10 +114,10 @@ This group of parameters allows to manage elevation values. Supported formats ar
 
 
 **Load otb application from xml file**
-Load otb application from xml file
+Load otb application from xml file.
 
 **Save otb application to xml file**
-Save otb application to xml file
+Save otb application to xml file.
 
 Example
 -------

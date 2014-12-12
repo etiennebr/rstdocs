@@ -76,23 +76,24 @@ Parameters table for Homologous Points Extraction:
 +---------------------+--------------------------+---------------------------------------------------------------------------+
 
 **Input Image 1**
-First input image
+ First input image.
 
 **Input band 1**
-Index of the band from input image 1 to use for keypoints extraction
+Index of the band from input image 1 to use for keypoints extraction.
 
 **Input Image 2**
-Second input image
+ Second input image.
 
 **Input band 2**
-Index of the band from input image 1 to use for keypoints extraction
+Index of the band from input image 1 to use for keypoints extraction.
 
 **Keypoints detection algorithm**
-Choice of the detection algorithm to use Available choices are: 
+Choice of the detection algorithm to use. Available choices are: 
 
 - **SURF algorithm**
 
 - **SIFT algorithm**
+
 
 **Distance threshold for matching**
 The distance threshold for matching.
@@ -107,21 +108,23 @@ If set to true, matches should be consistent in both ways.
 
 - **Search keypoints in small spatial bins regularly spread accross first image** : This method allows to retrieve a set of tie points regulary spread accross image 1. Corresponding bins in image 2 are retrieved using sensor and geographical information if available. The first bin position takes into account the margin parameter. Bins are cropped to the largest image region shrinked by the margin parameter for both in1 and in2 images.
 
- - **Size of bin** : Radius of the spatial bin in pixels
+ - **Size of bin** : Radius of the spatial bin in pixels.
 
  - **Size of bin (y direction)** : Radius of the spatial bin in pixels (y direction). If not set, the mode.geobins.binsize value is used.
 
- - **Steps between bins** : Steps between bins in pixels
+ - **Steps between bins** : Steps between bins in pixels.
 
  - **Steps between bins (y direction)** : Steps between bins in pixels (y direction). If not set, the mode.geobins.binstep value is used.
 
- - **Margin from image border to start/end bins (in pixels)** : Margin from image border to start/end bins (in pixels)
+ - **Margin from image border to start/end bins (in pixels)** : Margin from image border to start/end bins (in pixels).
+
+
 
 **Estimated precision of the colocalisation function (in pixels).**
-Estimated precision of the colocalisation function in pixels
+Estimated precision of the colocalisation function in pixels.
 
 **Filter points according to geographical or sensor based colocalisation**
-If enabled, this option allows to filter matches according to colocalisation from sensor or geographical information, using the given tolerancy expressed in pixels
+If enabled, this option allows to filter matches according to colocalisation from sensor or geographical information, using the given tolerancy expressed in pixels.
 
 **If enabled, points from second image will be exported in WGS84**
 
@@ -129,7 +132,7 @@ If enabled, this option allows to filter matches according to colocalisation fro
 **Elevation management**
 This group of parameters allows to manage elevation values. Supported formats are SRTM, DTED or any geotiff. DownloadSRTMTiles application could be a useful tool to list/download tiles related to a product.
 
-- **DEM directory:** This parameter allows to select a directory containing Digital Elevation Model tiles
+- **DEM directory:** This parameter allows to select a directory containing Digital Elevation Model tiles.
 
 - **Geoid File:** Use a geoid grid to get the height above the ellipsoid in case there is no DEM available, no coverage for some points or pixels with no_data in the DEM tiles. A version of the geoid can be found on the OTB website (http://hg.orfeo-toolbox.org/OTB-Data/raw-file/404aa6e4b3e0/Input/DEM/egm96.grd).
 
@@ -138,16 +141,16 @@ This group of parameters allows to manage elevation values. Supported formats ar
 
 
 **Output file with tie points**
-File containing the list of tie points
+File containing the list of tie points.
 
 **Output vector file with tie points**
-File containing segments representing matches
+File containing segments representing matches .
 
 **Load otb application from xml file**
-Load otb application from xml file
+Load otb application from xml file.
 
 **Save otb application to xml file**
-Save otb application to xml file
+Save otb application to xml file.
 
 Example
 -------
@@ -196,5 +199,5 @@ See Also
 
 These additional ressources can be useful for further information: 
 
-`RefineSensorModel <http://www.readthedocs.org/RefineSensorModel.html>`_
+RefineSensorModel
 

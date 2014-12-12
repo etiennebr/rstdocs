@@ -33,13 +33,20 @@ Parameters table for Pixel Value:
 |outxml       |XML output parameters file|XML output parameters file        |
 +-------------+--------------------------+----------------------------------+
 
-- **Input Image:** Input image
+- **Input Image:** Input image.
+
 - **Col index:** Column index of the wanted pixel (starts at 0).
+
 - **Line index:** Line index of the wanted pixel (starts at 0).
-- **Channels:** Displayed channels
-- **Pixel Value:** Pixel radiometric value
-- **Load otb application from xml file:** Load otb application from xml file
-- **Save otb application to xml file:** Save otb application to xml file
+
+- **Channels:** Displayed channels.
+
+- **Pixel Value:** Pixel radiometric value.
+
+- **Load otb application from xml file:** Load otb application from xml file.
+
+- **Save otb application to xml file:** Save otb application to xml file.
+
 
 
 Example
