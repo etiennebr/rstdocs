@@ -209,8 +209,7 @@ Examples
 --------
 
 
-Example 1
----------
+:Example 1:
 
 Example of use with vector mode and watershed segmentationTo run this example in command-line, use the following: 
 
@@ -242,8 +241,7 @@ To run this example from Python, use the following code snippet:
 	# The following line execute the application
 	Segmentation.ExecuteAndWriteOutput()
 
-Example 2
----------
+:Example 2:
 
 Example of use with raster mode and mean-shift segmentationTo run this example in command-line, use the following: 
 

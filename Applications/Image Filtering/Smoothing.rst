@@ -89,8 +89,7 @@ Examples
 --------
 
 
-Example 1
----------
+:Example 1:
 
 Image smoothing using a mean filter.To run this example in command-line, use the following: 
 
@@ -121,8 +120,7 @@ To run this example from Python, use the following code snippet:
 	# The following line execute the application
 	Smoothing.ExecuteAndWriteOutput()
 
-Example 2
----------
+:Example 2:
 
 Image smoothing using an anisotropic diffusion filter.To run this example in command-line, use the following: 
 
