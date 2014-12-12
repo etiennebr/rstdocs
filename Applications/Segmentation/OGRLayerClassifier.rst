@@ -79,15 +79,18 @@ To run this example from Python, use the following code snippet:
 	# The following line execute the application
 	OGRLayerClassifier.ExecuteAndWriteOutput()
 
-:Limitations:
+Limitations
+-----------
 
 Experimental. Only shapefiles are supported for now.
 
-:Authors:
+Authors
+-------
 
 This application has been written by David Youssefi during internship at CNES.
 
-:See Also:
+See Also
+--------
 
 These additional ressources can be useful for further information: 
 

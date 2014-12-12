@@ -107,11 +107,13 @@ To run this example from Python, use the following code snippet:
 	# The following line execute the application
 	ComputePolylineFeatureFromImage.ExecuteAndWriteOutput()
 
-:Limitations:
+Limitations
+-----------
 
 Since it does not rely on streaming process, take care of the size of input image before launching application.
 
-:Authors:
+Authors
+-------
 
 This application has been written by OTB-Team.
 

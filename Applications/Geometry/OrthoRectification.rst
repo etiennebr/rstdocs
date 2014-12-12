@@ -249,15 +249,18 @@ To run this example from Python, use the following code snippet:
 	# The following line execute the application
 	OrthoRectification.ExecuteAndWriteOutput()
 
-:Limitations:
+Limitations
+-----------
 
 Supported sensors are Pleiades, SPOT5 (TIF format), Ikonos, Quickbird, Worldview2, GeoEye.
 
-:Authors:
+Authors
+-------
 
 This application has been written by OTB-Team.
 
-:See Also:
+See Also
+--------
 
 These additional ressources can be useful for further information: 
 

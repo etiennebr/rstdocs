@@ -172,15 +172,18 @@ To run this example from Python, use the following code snippet:
 	# The following line execute the application
 	StereoRectificationGridGenerator.ExecuteAndWriteOutput()
 
-:Limitations:
+Limitations
+-----------
 
 Generation of the deformation grid is not streamable, pay attention to this fact when setting the grid step.
 
-:Authors:
+Authors
+-------
 
 This application has been written by OTB-Team.
 
-:See Also:
+See Also
+--------
 
 These additional ressources can be useful for further information: 
 

@@ -114,11 +114,13 @@ To run this example from Python, use the following code snippet:
 	# The following line execute the application
 	ConnectedComponentSegmentation.ExecuteAndWriteOutput()
 
-:Limitations:
+Limitations
+-----------
 
 Due to the tiling scheme in case of large images, some segments can be arbitrarily split across multiple tiles.
 
-:Authors:
+Authors
+-------
 
 This application has been written by OTB-Team.
 

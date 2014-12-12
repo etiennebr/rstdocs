@@ -69,15 +69,18 @@ To run this example from Python, use the following code snippet:
 	# The following line execute the application
 	ComputeImagesStatistics.ExecuteAndWriteOutput()
 
-:Limitations:
+Limitations
+-----------
 
 Each image of the set must contain the same bands as the others (i.e. same types, in the same order).
 
-:Authors:
+Authors
+-------
 
 This application has been written by OTB-Team.
 
-:See Also:
+See Also
+--------
 
 These additional ressources can be useful for further information: 
 
