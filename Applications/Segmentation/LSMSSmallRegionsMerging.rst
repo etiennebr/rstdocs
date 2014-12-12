@@ -89,18 +89,15 @@ To run this example from Python, use the following code snippet:
 	# The following line execute the application
 	LSMSSmallRegionsMerging.ExecuteAndWriteOutput()
 
-Limitations
------------
+:Limitations:
 
 This application is part of the Large-Scale Mean-Shift segmentation workflow (LSMS) and may not be suited for any other purpose.
 
-Authors
--------
+:Authors:
 
 This application has been written by David Youssefi.
 
-See Also
---------
+:See Also:
 
 These additional ressources can be useful for further information: 
 

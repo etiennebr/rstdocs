@@ -77,13 +77,11 @@ To run this example from Python, use the following code snippet:
 	# The following line execute the application
 	VectorDataSetField.ExecuteAndWriteOutput()
 
-Limitations
------------
+:Limitations:
 
 Doesn't work with KML files yet
 
-Authors
--------
+:Authors:
 
 This application has been written by OTB-Team.
 

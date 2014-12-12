@@ -85,18 +85,15 @@ To run this example from Python, use the following code snippet:
 	# The following line execute the application
 	ImageClassifier.ExecuteAndWriteOutput()
 
-Limitations
------------
+:Limitations:
 
 The input image must have the same type, order and number of bands than the images used to produce the statistics file and the SVM model file. If a statistics file was used during training by the TrainImagesClassifier, it is mandatory to use the same statistics file for classification. If an input mask is used, its size must match the input image size.
 
-Authors
--------
+:Authors:
 
 This application has been written by OTB-Team.
 
-See Also
---------
+:See Also:
 
 These additional ressources can be useful for further information: 
 

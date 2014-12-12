@@ -144,18 +144,15 @@ To run this example from Python, use the following code snippet:
 	# The following line execute the application
 	DimensionalityReduction.ExecuteAndWriteOutput()
 
-Limitations
------------
+:Limitations:
 
 This application does not provide the inverse transform and the transformation matrix export for the MAF.
 
-Authors
--------
+:Authors:
 
 This application has been written by OTB-Team.
 
-See Also
---------
+:See Also:
 
 These additional ressources can be useful for further information: 
 

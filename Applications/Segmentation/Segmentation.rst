@@ -276,20 +276,17 @@ To run this example from Python, use the following code snippet:
 	# The following line execute the application
 	Segmentation.ExecuteAndWriteOutput()
 
-Limitations
------------
+:Limitations:
 
 In raster mode, the application can not handle large input images. Stitching step of vector mode might become slow with very large input images. 
 MeanShift filter results depends on the number of threads used. 
 Watershed and multiscale geodesic morphology segmentation will be performed on the amplitude  of the input image.
 
-Authors
--------
+:Authors:
 
 This application has been written by OTB-Team.
 
-See Also
---------
+:See Also:
 
 These additional ressources can be useful for further information: 
 

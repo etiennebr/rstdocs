@@ -103,13 +103,11 @@ To run this example from Python, use the following code snippet:
 	# The following line execute the application
 	MeanShiftSmoothing.ExecuteAndWriteOutput()
 
-Limitations
------------
+:Limitations:
 
 With mode search option, the result will slightly depend on thread number.
 
-Authors
--------
+:Authors:
 
 This application has been written by OTB-Team.
 

@@ -97,14 +97,12 @@ To run this example from Python, use the following code snippet:
 	# The following line execute the application
 	Quicklook.ExecuteAndWriteOutput()
 
-Limitations
------------
+:Limitations:
 
 This application does not provide yet the optimal way to decode coarser level of resolution from JPEG2000 images (like in Monteverdi).
 Trying to subsampled huge JPEG200 image with the application will lead to poor performances for now.
 
-Authors
--------
+:Authors:
 
 This application has been written by OTB-Team.
 

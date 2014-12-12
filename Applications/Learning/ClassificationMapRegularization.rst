@@ -108,18 +108,15 @@ To run this example from Python, use the following code snippet:
 	# The following line execute the application
 	ClassificationMapRegularization.ExecuteAndWriteOutput()
 
-Limitations
------------
+:Limitations:
 
 The input image must be a single band labeled image (with a maximal class label = 65535). The structuring element radius must have a minimum value equal to 1 pixel. Please note that the Undecided value must be different from existing labels in the input labeled image.
 
-Authors
--------
+:Authors:
 
 This application has been written by OTB-Team.
 
-See Also
---------
+:See Also:
 
 These additional ressources can be useful for further information: 
 

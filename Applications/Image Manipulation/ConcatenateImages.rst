@@ -69,18 +69,15 @@ To run this example from Python, use the following code snippet:
 	# The following line execute the application
 	ConcatenateImages.ExecuteAndWriteOutput()
 
-Limitations
------------
+:Limitations:
 
 All input images must have the same size.
 
-Authors
--------
+:Authors:
 
 This application has been written by OTB-Team.
 
-See Also
---------
+:See Also:
 
 These additional ressources can be useful for further information: 
 

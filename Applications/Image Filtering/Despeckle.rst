@@ -108,13 +108,11 @@ To run this example from Python, use the following code snippet:
 	# The following line execute the application
 	Despeckle.ExecuteAndWriteOutput()
 
-Limitations
------------
+:Limitations:
 
 None
 
-Authors
--------
+:Authors:
 
 This application has been written by OTB-Team.
 

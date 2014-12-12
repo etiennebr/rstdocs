@@ -84,14 +84,12 @@ To run this example from Python, use the following code snippet:
 	# The following line execute the application
 	BandMathX.ExecuteAndWriteOutput()
 
-Limitations
------------
+:Limitations:
 
 The application is currently unable to produce one output image per expression, contrary to otbBandMathXImageFilter.
 Separating expressions by semi-colons (;) will concatenate their results into a unique multiband output image.
 
-Authors
--------
+:Authors:
 
 This application has been written by OTB-Team.
 
