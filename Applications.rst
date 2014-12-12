@@ -15,4 +15,4 @@ Applications
 	Applications/Stereo
 	Applications/Learning
 	Applications/Segmentation
-	Applications/Miscellanous
+	Applications/Miscellaneous
