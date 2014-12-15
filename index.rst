@@ -9,13 +9,15 @@ Welcome to OTB CookBook's documentation!
 Contents:
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
 
-   pleiades
-   bandmathx
+   OTB-Applications
+   Monteverdi
+   Monteverdi2
+   Recipes
    Applications
-   
 
+   
 
 
 Indices and tables
