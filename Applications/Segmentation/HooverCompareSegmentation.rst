@@ -6,7 +6,9 @@ Compare two segmentations with Hoover metrics
 Detailed description
 --------------------
 
-This application compares a machine segmentation (MS) with a partial ground truth segmentation (GT). The Hoover metrics are used to estimate scores for correct detection, oversegmentation, undersegmentation and missed detection. The application can output the overall Hoover scores along with coloredimages of the MS and GT segmentation showing the state of each region (correct detection, oversegmentation, undersegmentation, missed) The Hoover metrics are described in : Hoover et al., "An experimental comparison of range image segmentation algorithms", IEEE PAMI vol. 18, no. 7, July 1996.
+This application compares a machine segmentation (MS) with a partial ground truth segmentation (GT). The Hoover metrics are used to estimate scores for correct detection, over-segmentation, under-segmentation and missed detection.
+ The application can output the overall Hoover scores along with coloredimages of the MS and GT segmentation showing the state of each region (correct detection, over-segmentation, under-segmentation, missed)
+ The Hoover metrics are described in : Hoover et al., "An experimental comparison of range image segmentation algorithms", IEEE PAMI vol. 18, no. 7, July 1996.
 
 Parameters
 ----------

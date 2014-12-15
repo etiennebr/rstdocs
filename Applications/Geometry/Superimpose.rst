@@ -85,7 +85,9 @@ Superimposition mode. Available choices are:
 
 - **Default mode** : Default superimposition mode : uses any projection reference or sensor model found in the images
 
+
 - **Pleiades mode** : Pleiades superimposition mode, designed for the case of a P+XS bundle in SENSOR geometry. It uses a simple transform on the XS image : a scaling and a residual translation.
+
 
 
 **Interpolation**
@@ -93,12 +95,15 @@ This group of parameters allows to define how the input image will be interpolat
 
 - **Bicubic interpolation** : Bicubic interpolation leads to very good image quality but is slow.
 
+
  - **Radius for bicubic interpolation** : This parameter allows to control the size of the bicubic interpolation filter. If the target pixel size is higher than the input pixel size, increasing this parameter will reduce aliasing artefacts.
 
 
-- **Nearest Neighbor interpolation** : Nearest neighbor interpolation leads to poor image quality, but it is very fast.
+ - **Nearest Neighbor interpolation** : Nearest neighbor interpolation leads to poor image quality, but it is very fast.
 
-- **Linear interpolation** : Linear interpolation leads to average image quality but is quite fast
+
+ - **Linear interpolation** : Linear interpolation leads to average image quality but is quite fast
+
 
 
 **Available RAM (Mb)**

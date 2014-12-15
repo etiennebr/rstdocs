@@ -6,7 +6,7 @@ Perform mean shift filtering
 Detailed description
 --------------------
 
-This application performs mean shift fitlering (multithreaded).
+This application performs mean shift fitlering (multi-threaded).
 
 Parameters
 ----------

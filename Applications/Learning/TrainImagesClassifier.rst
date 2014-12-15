@@ -6,7 +6,10 @@ Train a classifier from multiple pairs of images and training vector data.
 Detailed description
 --------------------
 
-This application performs a classifier training from multiple pairs of input images and training vector data. Samples are composed of pixel values in each band optionally centered and reduced using an XML statistics file produced by the ComputeImagesStatistics application. The training vector data must contain polygons with a positive integer field representing the class label. The name of this field can be set using the "Class label field" parameter. Training and validation sample lists are built such that each class is equally represented in both lists. One parameter allows to control the ratio between the number of samples in training and validation sets. Two parameters allow to manage the size of the training and validation sets per class and per image. Several classifier parameters can be set depending on the chosen classifier. In the validation process, the confusion matrix is organized the following way: rows = reference labels, columns = produced labels. In the header of the optional confusion matrix output file, the validation (reference) and predicted (produced) class labels are ordered according to the rows/columns of the confusion matrix. This application is based on LibSVM and on OpenCV Machine Learning classifiers, and is compatible with OpenCV 2.3.1 and later.
+This application performs a classifier training from multiple pairs of input images and training vector data. Samples are composed of pixel values in each band optionally centered and reduced using an XML statistics file produced by the ComputeImagesStatistics application.
+ The training vector data must contain polygons with a positive integer field representing the class label. The name of this field can be set using the "Class label field" parameter. Training and validation sample lists are built such that each class is equally represented in both lists. One parameter allows to control the ratio between the number of samples in training and validation sets. Two parameters allow to manage the size of the training and validation sets per class and per image.
+ Several classifier parameters can be set depending on the chosen classifier. In the validation process, the confusion matrix is organized the following way: rows = reference labels, columns = produced labels. In the header of the optional confusion matrix output file, the validation (reference) and predicted (produced) class labels are ordered according to the rows/columns of the confusion matrix.
+ This application is based on LibSVM and on OpenCV Machine Learning classifiers, and is compatible with OpenCV 2.3.1 and later.
 
 Parameters
 ----------
@@ -124,6 +127,7 @@ This group of parameters allows to set training and validation sample lists para
 Choice of the classifier to use for the training. Available choices are: 
 
 - **LibSVM classifier** : This group of parameters allows to set SVM classifier parameters.
+
 
  - **SVM Kernel Type** : SVM Kernel Type.
 

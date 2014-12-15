@@ -85,9 +85,11 @@ This group of parameters allows to set the input and output images.
 
  Available choices are: 
 
-- **Displacement  grid: $G(x_out,y_out) = (x_in-x_out, y_in-y_out)$** : A deformation grid contains at each grid position the offset to apply to this position in order to get to the corresponding point in the input image to resample
+ - **Displacement  grid: $G(x_out,y_out) = (x_in-x_out, y_in-y_out)$** : A deformation grid contains at each grid position the offset to apply to this position in order to get to the corresponding point in the input image to resample
 
-- **Localisation grid: $G(x_out,y_out) = (x_in, y_in)$** : A localisation grid contains at each grid position the corresponding position in the input image to resample
+
+ - **Localisation grid: $G(x_out,y_out) = (x_in, y_in)$** : A localisation grid contains at each grid position the corresponding position in the input image to resample
+
 
 
 **Output Image parameters**
@@ -114,9 +116,12 @@ This group of parameters allows to define how the input image will be interpolat
 
 - **Nearest Neighbor interpolation** : Nearest neighbor interpolation leads to poor image quality, but it is very fast.
 
+
 - **Linear interpolation** : Linear interpolation leads to average image quality but is quite fast
 
+
 - **Bicubic interpolation**
+
 
  - **Radius for bicubic interpolation** : This parameter allows to control the size of the bicubic interpolation filter. If the target pixel size is higher than the input pixel size, increasing this parameter will reduce aliasing artefacts.
 

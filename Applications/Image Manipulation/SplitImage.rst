@@ -6,7 +6,7 @@ Split a N multiband image into N images
 Detailed description
 --------------------
 
-This application splits a Nbands image into N monoband images. The output images filename will be generated from the output parameter. Thus if the input image has 2 channels, and the user has set an output outimage.tif, the generated images will be outimage_0.tif and outimage_1.tif
+This application splits a N-bands image into N mono-band images. The output images filename will be generated from the output parameter. Thus if the input image has 2 channels, and the user has set an output outimage.tif, the generated images will be outimage_0.tif and outimage_1.tif
 
 Parameters
 ----------

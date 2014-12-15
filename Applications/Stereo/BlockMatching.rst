@@ -6,7 +6,7 @@ Performs block-matching to estimate pixel-wise disparities between two images
 Detailed description
 --------------------
 
-This application allows to performs blockmatching to estimate pixelwise disparities between two images. The application allows to choose the blockmatching method to use. It also allows to input masks (related to the left and right input image) of pixels for which the disparity should be investigated. Additionally, two criteria can be optionally used to disable disparity investigation for some pixel: a nodata value, and a threshold on the local variance. This allows to speedup computation by avoiding to investigate disparities that will not be reliable anyway. For efficiency reasons, if the optimal metric values image is desired, it will be concatenated to the output image (which will then have three bands : horizontal disparity, vertical disparity and metric value). One can split these images afterward.
+This application allows to performs block-matching to estimate pixel-wise disparities between two images. The application allows to choose the block-matching method to use. It also allows to input masks (related to the left and right input image) of pixels for which the disparity should be investigated. Additionally, two criteria can be optionally used to disable disparity investigation for some pixel: a no-data value, and a threshold on the local variance. This allows to speed-up computation by avoiding to investigate disparities that will not be reliable anyway. For efficiency reasons, if the optimal metric values image is desired, it will be concatenated to the output image (which will then have three bands : horizontal disparity, vertical disparity and metric value). One can split these images afterward.
 
 Parameters
 ----------
@@ -150,13 +150,16 @@ This group of parameters allow to tune the block-matching behaviour.
 
  Available choices are: 
 
-- **Sum of Squared Distances** : Sum of squared distances between pixels value in the metric window
+ - **Sum of Squared Distances** : Sum of squared distances between pixels value in the metric window
 
-- **Normalized Cross-Correlation** : Normalized CrossCorrelation between the left and right windows
 
-- **Lp pseudo-norm** : Lp pseudonorm between the left and right windows
+ - **Normalized Cross-Correlation** : Normalized CrossCorrelation between the left and right windows
 
- - **p value** : Value of the p parameter in Lp pseudo-norm (must be positive).
+
+ - **Lp pseudo-norm** : Lp pseudonorm between the left and right windows
+
+
+  - **p value** : Value of the p parameter in Lp pseudo-norm (must be positive).
 
 - **Radius of blocks:** The radius (in pixels) of blocks in Block-Matching.
 
@@ -172,13 +175,17 @@ This group of parameters allow to tune the block-matching behaviour.
 
  Available choices are: 
 
-- **None** : No subpixel 
+ - **None** : No subpixel 
 
-- **Parabolic** : Parabolic fit
 
-- **Triangular** : Triangular fit
+ - **Parabolic** : Parabolic fit
 
-- **Dichotomy** : Dichotomic search
+
+ - **Triangular** : Triangular fit
+
+
+ - **Dichotomy** : Dichotomic search
+
 - **Computation step:** Location step between computed disparities.
 
 - **X start index:** X start index of the subsampled grid (wrt the input image grid).
@@ -197,28 +204,31 @@ This group of parameters allow to tune the block-matching behaviour.
 
  Available choices are: 
 
-- **None** : No initial disparity used
-
-- **Uniform initial disparity** : Use an uniform initial disparity estimate
-
- - **Horizontal initial disparity** : Value of the uniform horizontal disparity initial estimate (in pixels).
-
- - **Vertical initial disparity** : Value of the uniform vertical disparity initial estimate (in pixels).
-
- - **Horizontal exploration radius** : Horizontal exploration radius around the initial disparity estimate (in pixels).
-
- - **Vertical exploration radius** : Vertical exploration radius around the initial disparity estimate (in pixels).
+ - **None** : No initial disparity used
 
 
-- **Initial disparity maps** : Use initial disparity maps
+ - **Uniform initial disparity** : Use an uniform initial disparity estimate
 
- - **Horizontal initial disparity map** : Map of the initial horizontal disparities.
 
- - **Vertical initial disparity map** : Map of the initial vertical disparities.
+  - **Horizontal initial disparity** : Value of the uniform horizontal disparity initial estimate (in pixels).
 
- - **Horizontal exploration radius** : Horizontal exploration radius around the initial disparity estimate (in pixels).
+  - **Vertical initial disparity** : Value of the uniform vertical disparity initial estimate (in pixels).
 
- - **Vertical exploration radius** : Vertical exploration radius around the initial disparity estimate (in pixels).
+  - **Horizontal exploration radius** : Horizontal exploration radius around the initial disparity estimate (in pixels).
+
+  - **Vertical exploration radius** : Vertical exploration radius around the initial disparity estimate (in pixels).
+
+
+  - **Initial disparity maps** : Use initial disparity maps
+
+
+   - **Horizontal initial disparity map** : Map of the initial horizontal disparities.
+
+   - **Vertical initial disparity map** : Map of the initial vertical disparities.
+
+   - **Horizontal exploration radius** : Horizontal exploration radius around the initial disparity estimate (in pixels).
+
+   - **Vertical exploration radius** : Vertical exploration radius around the initial disparity estimate (in pixels).
 
 
 

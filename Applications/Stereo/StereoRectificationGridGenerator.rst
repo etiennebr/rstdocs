@@ -6,7 +6,7 @@ Generates two deformation fields to stereo-rectify (i.e. resample in epipolar ge
 Detailed description
 --------------------
 
-This application generates a pair of deformation grid to stereorectify a pair of stereo images according to sensor modelling and a mean elevation hypothesis. The deformation grids can be passed to the StereoRectificationGridGenerator application for actual resampling in epipolar geometry.
+This application generates a pair of deformation grid to stereo-rectify a pair of stereo images according to sensor modelling and a mean elevation hypothesis. The deformation grids can be passed to the StereoRectificationGridGenerator application for actual resampling in epipolar geometry.
 
 Parameters
 ----------

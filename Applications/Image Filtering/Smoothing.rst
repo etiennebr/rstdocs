@@ -61,21 +61,24 @@ Smoothing kernel to apply. Available choices are:
 
 - **Mean**
 
+
  - **Radius** : Mean radius (in pixels).
 
 
-- **Gaussian**
-
- - **Radius** : Gaussian radius (in pixels).
+ - **Gaussian**
 
 
-- **Anisotropic Diffusion**
+  - **Radius** : Gaussian radius (in pixels).
 
- - **Time Step** : Diffusion equation time step.
 
- - **Nb Iterations** : Controls the sensitivity of the conductance term.
+  - **Anisotropic Diffusion**
 
- - **Conductance** : 
+
+   - **Time Step** : Diffusion equation time step.
+
+   - **Nb Iterations** : Controls the sensitivity of the conductance term.
+
+   - **Conductance** : 
 
 
 

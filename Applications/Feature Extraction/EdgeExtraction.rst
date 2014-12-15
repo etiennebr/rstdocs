@@ -57,9 +57,12 @@ Choice of edge feature. Available choices are:
 
 - **Gradient**
 
+
 - **Sobel**
 
+
 - **Touzi**
+
 
  - **The X Radius** : 
 

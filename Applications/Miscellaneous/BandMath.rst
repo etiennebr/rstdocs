@@ -6,7 +6,7 @@ Perform a mathematical operation on monoband images
 Detailed description
 --------------------
 
-This application performs a mathematical operation on monoband images. Mathematical formula interpretation is done via MuParser libraries http://muparser.sourceforge.net/.For MuParser version prior to v2 use 'and' and 'or' logical operators, and ternary operator 'if(; ; )'.For MuParser version superior to 2.0 uses '&&' and '||' logical operators, and C++ like ternary ifthenelse operator.
+This application performs a mathematical operation on monoband images. Mathematical formula interpretation is done via MuParser libraries http://muparser.sourceforge.net/.For MuParser version prior to v2 use 'and' and 'or' logical operators, and ternary operator 'if(; ; )'.For MuParser version superior to 2.0 uses '&&' and '||' logical operators, and C++ like ternary if-then-else operator.
 
 Parameters
 ----------

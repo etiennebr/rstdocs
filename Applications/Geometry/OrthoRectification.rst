@@ -3,10 +3,12 @@ Ortho-rectification
 
 This application allows to ortho-rectify optical images from supported sensors.
 
+
 Detailed description
 --------------------
 
-An inverse sensor model is built from the input image metadata to convert geographical to raw geometry coordinates. This inverse sensor model is then combined with the chosen map projection to build a global coordinate mapping grid. Last, this grid is used to resample using the chosen interpolation algorithm. A Digital Elevation Model can be specified to account for terrain deformations. In case of SPOT5 images, the sensor model can be approximated by an RPC model in order to speedup computation.
+An inverse sensor model is built from the input image metadata to convert geographical to raw geometry coordinates. This inverse sensor model is then combined with the chosen map projection to build a global coordinate mapping grid. Last, this grid is used to resample using the chosen interpolation algorithm. A Digital Elevation Model can be specified to account for terrain deformations. 
+In case of SPOT5 images, the sensor model can be approximated by an RPC model in order to speed-up computation.
 
 Parameters
 ----------
@@ -123,20 +125,25 @@ Parameters of the output map projection to be used. Available choices are:
 
 - **Universal Trans-Mercator (UTM)** : A system of transverse mercator projections dividing the surface of Earth between 80S and 84N latitude.
 
+
  - **Zone number** : The zone number ranges from 1 to 60 and allows to define the transverse mercator projection (along with the hemisphere).
 
  - **Northern Hemisphere** : The transverse mercator projections are defined by their zone number as well as the hemisphere. Activate this parameter if your image is in the northern hemisphere.
 
 
-- **Lambert II Etendu** : This is a Lambert Conformal Conic projection mainly used in France.
+ - **Lambert II Etendu** : This is a Lambert Conformal Conic projection mainly used in France.
 
-- **Lambert93** : This is a Lambert 93 projection mainly used in France.
 
-- **WGS 84** : This is a Geographical projection
+ - **Lambert93** : This is a Lambert 93 projection mainly used in France.
 
-- **EPSG Code** : This code is a generic way of identifying map projections, and allows to specify a large amount of them. See www.spatialreference.org to find which EPSG code is associated to your projection;
 
- - **EPSG Code** : See www.spatialreference.org to find which EPSG code is associated to your projection.
+ - **WGS 84** : This is a Geographical projection
+
+
+ - **EPSG Code** : This code is a generic way of identifying map projections, and allows to specify a large amount of them. See www.spatialreference.org to find which EPSG code is associated to your projection;
+
+
+  - **EPSG Code** : See www.spatialreference.org to find which EPSG code is associated to your projection.
 
 
 
@@ -147,15 +154,20 @@ This group of parameters allows to define the grid on which the input image will
 
  Available choices are: 
 
-- **User Defined** : This mode allows you to fully modify default values.
+ - **User Defined** : This mode allows you to fully modify default values.
 
-- **Automatic Size from Spacing** : This mode allows you to automatically compute the optimal image size from given spacing (pixel size) values
 
-- **Automatic Spacing from Size** : This mode allows you to automatically compute the optimal image spacing (pixel size) from the given size
+ - **Automatic Size from Spacing** : This mode allows you to automatically compute the optimal image size from given spacing (pixel size) values
 
-- **Automatic Size from Spacing and output corners** : This mode allows you to automatically compute the optimal image size from spacing (pixel size) and output corners
 
-- **Fit to ortho** : Fit the size, origin and spacing to an existing ortho image (uses the value of outputs.ortho)
+ - **Automatic Spacing from Size** : This mode allows you to automatically compute the optimal image spacing (pixel size) from the given size
+
+
+ - **Automatic Size from Spacing and output corners** : This mode allows you to automatically compute the optimal image size from spacing (pixel size) and output corners
+
+
+ - **Fit to ortho** : Fit the size, origin and spacing to an existing ortho image (uses the value of outputs.ortho)
+
 - **Upper Left X:** Cartographic X coordinate of upper-left corner (meters for cartographic projections, degrees for geographic ones).
 
 - **Upper Left Y:** Cartographic Y coordinate of the upper-left corner (meters for cartographic projections, degrees for geographic ones).
@@ -196,12 +208,15 @@ This group of parameters allows to define how the input image will be interpolat
 
 - **Bicubic interpolation**
 
+
  - **Radius for bicubic interpolation** : This parameter allows to control the size of the bicubic interpolation filter. If the target pixel size is higher than the input pixel size, increasing this parameter will reduce aliasing artefacts.
 
 
-- **Nearest Neighbor interpolation** : Nearest neighbor interpolation leads to poor image quality, but it is very fast.
+ - **Nearest Neighbor interpolation** : Nearest neighbor interpolation leads to poor image quality, but it is very fast.
 
-- **Linear interpolation** : Linear interpolation leads to average image quality but is quite fast
+
+ - **Linear interpolation** : Linear interpolation leads to average image quality but is quite fast
+
 
 
 **Speed optimization parameters**

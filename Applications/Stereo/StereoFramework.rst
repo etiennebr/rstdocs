@@ -6,7 +6,20 @@ Compute the ground elevation based on one or multiple stereo pair(s)
 Detailed description
 --------------------
 
-Compute the ground elevation with a stereo block matching algorithm between one or mulitple stereo pair in sensor geometry. The output is projected in desired geographic or cartographic map projection (UTM by default). The pipeline is made of the following steps:for each sensor pair :	 compute the epipolar displacement grids from the stereo pair (direct and inverse)	 resample the stereo pair into epipolar geometry using BCO interpolation	 create masks for each epipolar image : remove black borders and resample input masks	 compute horizontal disparities with a block matching algorithm	 refine disparities to subpixel precision with a dichotomy algorithm	 apply an optional median filter	 filter disparities based on the correlation score  and exploration bounds	 translate disparities in sensor geometry	  convert disparity to 3D Map.Then fuse all 3D maps to produce DSM.
+Compute the ground elevation with a stereo block matching algorithm between one or mulitple stereo pair in sensor geometry. The output is projected in desired geographic or cartographic map projection (UTM by default). The pipeline is made of the following steps:
+for each sensor pair :
+
+	- compute the epipolar displacement grids from the stereo pair (direct and inverse)
+	- resample the stereo pair into epipolar geometry using BCO interpolation
+	- create masks for each epipolar image : remove black borders and resample input masks
+	- compute horizontal disparities with a block matching algorithm
+	- refine disparities to sub-pixel precision with a dichotomy algorithm
+	- apply an optional median filter
+	- filter disparities based on the correlation score  and exploration bounds
+	- translate disparities in sensor geometry
+	- convert disparity to 3D Map.
+
+Then fuse all 3D maps to produce DSM.
 
 Parameters
 ----------
@@ -170,34 +183,40 @@ This group of parameters allows to choose the DSM resolution, nodata value, and 
 
  Available choices are: 
 
-- **The cell is filled with the maximum measured elevation values**
+ - **The cell is filled with the maximum measured elevation values**
 
-- **The cell is filled with the minimum measured elevation values**
 
-- **The cell is filled with the mean of measured elevation values**
+ - **The cell is filled with the minimum measured elevation values**
 
-- **accumulator mode. The cell is filled with the the number of values (for debugging purposes).**
+
+ - **The cell is filled with the mean of measured elevation values**
+
+
+ - **accumulator mode. The cell is filled with the the number of values (for debugging purposes).**
+
 - **Output DSM:** Output elevation image.
 
 - **Parameters estimation modes:** 
 
  Available choices are: 
 
-- **Fit to sensor image** : Fit the size, origin and spacing to an existing ortho image (uses the value of outputs.ortho)
+ - **Fit to sensor image** : Fit the size, origin and spacing to an existing ortho image (uses the value of outputs.ortho)
 
-- **User Defined** : This mode allows you to fully modify default values.
 
- - **Upper Left X** : Cartographic X coordinate of upper-left corner (meters for cartographic projections, degrees for geographic ones).
+ - **User Defined** : This mode allows you to fully modify default values.
 
- - **Upper Left Y** : Cartographic Y coordinate of the upper-left corner (meters for cartographic projections, degrees for geographic ones).
 
- - **Size X** : Size of projected image along X (in pixels).
+  - **Upper Left X** : Cartographic X coordinate of upper-left corner (meters for cartographic projections, degrees for geographic ones).
 
- - **Size Y** : Size of projected image along Y (in pixels).
+  - **Upper Left Y** : Cartographic Y coordinate of the upper-left corner (meters for cartographic projections, degrees for geographic ones).
 
- - **Pixel Size X** : Size of each pixel along X axis (meters for cartographic projections, degrees for geographic ones).
+  - **Size X** : Size of projected image along X (in pixels).
 
- - **Pixel Size Y** : Size of each pixel along Y axis (meters for cartographic projections, degrees for geographic ones).
+  - **Size Y** : Size of projected image along Y (in pixels).
+
+  - **Pixel Size X** : Size of each pixel along X axis (meters for cartographic projections, degrees for geographic ones).
+
+  - **Pixel Size Y** : Size of each pixel along Y axis (meters for cartographic projections, degrees for geographic ones).
 
 
 
@@ -206,20 +225,25 @@ Parameters of the output map projection to be used. Available choices are:
 
 - **Universal Trans-Mercator (UTM)** : A system of transverse mercator projections dividing the surface of Earth between 80S and 84N latitude.
 
+
  - **Zone number** : The zone number ranges from 1 to 60 and allows to define the transverse mercator projection (along with the hemisphere).
 
  - **Northern Hemisphere** : The transverse mercator projections are defined by their zone number as well as the hemisphere. Activate this parameter if your image is in the northern hemisphere.
 
 
-- **Lambert II Etendu** : This is a Lambert Conformal Conic projection mainly used in France.
+ - **Lambert II Etendu** : This is a Lambert Conformal Conic projection mainly used in France.
 
-- **Lambert93** : This is a Lambert 93 projection mainly used in France.
 
-- **WGS 84** : This is a Geographical projection
+ - **Lambert93** : This is a Lambert 93 projection mainly used in France.
 
-- **EPSG Code** : This code is a generic way of identifying map projections, and allows to specify a large amount of them. See www.spatialreference.org to find which EPSG code is associated to your projection;
 
- - **EPSG Code** : See www.spatialreference.org to find which EPSG code is associated to your projection.
+ - **WGS 84** : This is a Geographical projection
+
+
+ - **EPSG Code** : This code is a generic way of identifying map projections, and allows to specify a large amount of them. See www.spatialreference.org to find which EPSG code is associated to your projection;
+
+
+  - **EPSG Code** : See www.spatialreference.org to find which EPSG code is associated to your projection.
 
 
 
@@ -239,15 +263,19 @@ This group of parameters allow to tune the block-matching behavior.
 
  Available choices are: 
 
-- **Sum of Squared Distances divided by mean of block** : derived version of Sum of Squared Distances between pixels value in the metric window (SSD divided by mean over window)
+ - **Sum of Squared Distances divided by mean of block** : derived version of Sum of Squared Distances between pixels value in the metric window (SSD divided by mean over window)
 
-- **Sum of Squared Distances** : Sum of squared distances between pixels value in the metric window
 
-- **Normalized Cross-Correlation** : Normalized CrossCorrelation between the left and right windows
+ - **Sum of Squared Distances** : Sum of squared distances between pixels value in the metric window
 
-- **Lp pseudo-norm** : Lp pseudonorm between the left and right windows
 
- - **p value** : Value of the p parameter in Lp pseudo-norm (must be positive).
+ - **Normalized Cross-Correlation** : Normalized CrossCorrelation between the left and right windows
+
+
+ - **Lp pseudo-norm** : Lp pseudonorm between the left and right windows
+
+
+  - **p value** : Value of the p parameter in Lp pseudo-norm (must be positive).
 
 - **Radius of blocks for matching filter (in pixels):** The radius of blocks in Block-Matching (in pixels).
 

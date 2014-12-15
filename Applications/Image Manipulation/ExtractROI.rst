@@ -69,7 +69,9 @@ Available memory for processing (in MB).
 
 - **Standard** : In standard mode, extract is done according the coordinates entered by the user
 
+
 - **Fit** : In fit mode, extract is made to best fit a reference image.
+
 
  - **Reference image** : Reference image to define the ROI.
 

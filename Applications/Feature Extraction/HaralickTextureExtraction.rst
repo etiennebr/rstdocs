@@ -88,9 +88,12 @@ Choice of The Texture Set. Available choices are:
 
 - **Simple Haralick Texture Features** : This group of parameters defines the 8 local Haralick texture feature output image.    The image channels are: Energy, Entropy, Correlation, Inverse Difference Moment,    Inertia, Cluster Shade, Cluster Prominence and Haralick Correlation
 
+
 - **Advanced Texture Features** : This group of parameters defines the 9 advanced texture feature output image.    The image channels are: Mean, Variance, Sum Average, Sum Variance,    Sum Entropy, Difference of Entropies, Difference of Variances, IC1 and IC2
 
+
 - **Higher Order Texture Features** : This group of parameters defines the 11 higher order texture feature output image.    The image channels are: Short Run Emphasis, Long Run Emphasis, GreyLevel Nonuniformity, Run Length Nonuniformity, Run Percentage,     Low GreyLevel Run Emphasis, High GreyLevel Run Emphasis, Short Run Low GreyLevel Emphasis, Short Run High GreyLevel Emphasis,     Long Run Low GreyLevel Emphasis and Long Run High GreyLevel Emphasis
+
 
 
 **Output Image**

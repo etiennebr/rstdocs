@@ -6,7 +6,11 @@ Performs segmentation of an image, and output either a raster or a vector file. 
 Detailed description
 --------------------
 
-This application allows to perform various segmentation algorithms on a multispectral image.Available segmentation algorithms are two different versions of MeanShift segmentation algorithm (one being multithreaded), simple pixel based connected components according to a userdefined criterion, and watershed from the gradient of the intensity (norm of spectral bands vector). The application has two different modes that affects the nature of its output.In raster mode, the output of the application is a classical image of unique labels identifying the segmented regions. The labeled output can be passed to the ColorMapping application to render regions with contrasted colours. Please note that this mode loads the whole input image into memory, and as such can not handle large images. To segment large data, one can use the vector mode. In this case, the output of the application is a vector file or database. The input image is split into tiles (whose size can be set using the tilesize parameter), and each tile is loaded, segmented with the chosen algorithm, vectorized, and written into the output file or database. This piecewise behavior ensure that memory will never get overloaded, and that images of any size can be processed. There are few more options in the vector mode. The simplify option allows to simplify the geometry (i.e. remove nodes in polygons) according to a userdefined tolerance. The stitch option allows to application to try to stitch together polygons corresponding to segmented region that may have been split by the tiling scheme. 
+This application allows to perform various segmentation algorithms on a multispectral image.Available segmentation algorithms are two different versions of Mean-Shift segmentation algorithm (one being multi-threaded), simple pixel based connected components according to a user-defined criterion, and watershed from the gradient of the intensity (norm of spectral bands vector). The application has two different modes that affects the nature of its output.
+
+In raster mode, the output of the application is a classical image of unique labels identifying the segmented regions. The labeled output can be passed to the ColorMapping application to render regions with contrasted colours. Please note that this mode loads the whole input image into memory, and as such can not handle large images. 
+
+To segment large data, one can use the vector mode. In this case, the output of the application is a vector file or database. The input image is split into tiles (whose size can be set using the tilesize parameter), and each tile is loaded, segmented with the chosen algorithm, vectorized, and written into the output file or database. This piece-wise behavior ensure that memory will never get overloaded, and that images of any size can be processed. There are few more options in the vector mode. The simplify option allows to simplify the geometry (i.e. remove nodes in polygons) according to a user-defined tolerance. The stitch option allows to application to try to stitch together polygons corresponding to segmented region that may have been split by the tiling scheme. 
 
 Parameters
 ----------
@@ -117,6 +121,7 @@ Choice of segmentation algorithm (mean-shift by default). Available choices are:
 
 - **Mean-Shift** : OTB implementation of the MeanShift algorithm (multithreaded).
 
+
  - **Spatial radius** : Spatial radius of the neighborhood.
 
  - **Range radius** : Range radius defining the radius (expressed in radiometry unit) in the multispectral space.
@@ -128,38 +133,42 @@ Choice of segmentation algorithm (mean-shift by default). Available choices are:
  - **Minimum region size** : Minimum size of a region (in pixel unit) in segmentation. Smaller clusters will be merged to the neighboring cluster with the closest radiometry. If set to 0 no pruning is done.
 
 
-- **Edison mean-shift** : Edison implementation of meanshift algorithm, by its authors.
-
- - **Spatial radius** : Spatial radius defining neighborhood.
-
- - **Range radius** : Range radius defining the radius (expressed in radiometry unit) in the multi-spectral space.
-
- - **Minimum region size** : Minimum size of a region in segmentation. Smaller clusters will be merged to the neighboring cluster with the closest radiometry.
-
- - **Scale factor** : Scaling of the image before processing. This is useful for images with narrow decimal ranges (like [0,1] for instance). .
+ - **Edison mean-shift** : Edison implementation of meanshift algorithm, by its authors.
 
 
-- **Connected components** : Simple pixelbased connectedcomponents algorithm with a userdefined connection condition.
+  - **Spatial radius** : Spatial radius defining neighborhood.
 
- - **Condition** : User defined connection condition, written as a mathematical expression. Available variables are p(i)b(i), intensity_p(i) and distance (example of expression : distance < 10 ).
+  - **Range radius** : Range radius defining the radius (expressed in radiometry unit) in the multi-spectral space.
 
+  - **Minimum region size** : Minimum size of a region in segmentation. Smaller clusters will be merged to the neighboring cluster with the closest radiometry.
 
-- **Watershed** : The traditional watershed algorithm. The height function is the gradient magnitude of the amplitude (square root of the sum of squared bands).
-
- - **Depth Threshold** : Depth threshold Units in percentage of the maximum depth in the image.
-
- - **Flood Level** : flood level for generating the merge tree from the initial segmentation (between 0 and 1).
+  - **Scale factor** : Scaling of the image before processing. This is useful for images with narrow decimal ranges (like [0,1] for instance). .
 
 
-- **Morphological profiles based segmentation** : Segmentation based on morphological profiles, as described in Martino Pesaresi and Jon Alti Benediktsson, Member, IEEE: A new approach for the morphological segmentation of high resolution satellite imagery. IEEE Transactions on geoscience and remote sensing, vol. 39, NO. 2, February 2001, p. 309320.
+  - **Connected components** : Simple pixelbased connectedcomponents algorithm with a userdefined connection condition.
 
- - **Profile Size** : Size of the profiles.
 
- - **Initial radius** : Initial radius of the structuring element (in pixels).
+   - **Condition** : User defined connection condition, written as a mathematical expression. Available variables are p(i)b(i), intensity_p(i) and distance (example of expression : distance < 10 ).
 
- - **Radius step.** : Radius step along the profile (in pixels).
 
- - **Threshold of the final decision rule** : Profiles values under the threshold will be ignored.
+   - **Watershed** : The traditional watershed algorithm. The height function is the gradient magnitude of the amplitude (square root of the sum of squared bands).
+
+
+    - **Depth Threshold** : Depth threshold Units in percentage of the maximum depth in the image.
+
+    - **Flood Level** : flood level for generating the merge tree from the initial segmentation (between 0 and 1).
+
+
+    - **Morphological profiles based segmentation** : Segmentation based on morphological profiles, as described in Martino Pesaresi and Jon Alti Benediktsson, Member, IEEE: A new approach for the morphological segmentation of high resolution satellite imagery. IEEE Transactions on geoscience and remote sensing, vol. 39, NO. 2, February 2001, p. 309320.
+
+
+     - **Profile Size** : Size of the profiles.
+
+     - **Initial radius** : Initial radius of the structuring element (in pixels).
+
+     - **Radius step.** : Radius step along the profile (in pixels).
+
+     - **Threshold of the final decision rule** : Profiles values under the threshold will be ignored.
 
 
 
@@ -167,6 +176,7 @@ Choice of segmentation algorithm (mean-shift by default). Available choices are:
 Choice of processing mode, either raster or large-scale. Available choices are: 
 
 - **Tile-based large-scale segmentation with vector output** : In this mode, the application will output a vector file or database, and process the input image piecewise. This allows to perform segmentation of very large images.
+
 
  - **Output vector file** : The output vector file or database (name can be anything understood by OGR).
 
@@ -193,9 +203,10 @@ Choice of processing mode, either raster or large-scale. Available choices are:
  - **OGR options for layer creation** : A list of layer creation options in the form KEY=VALUE that will be passed directly to OGR without any validity checking. Options may depend on the file format, and can be found in OGR documentation.
 
 
-- **Standard segmentation with labeled raster output** : In this mode, the application will output a standard labeled raster. This mode can not handle large data.
+ - **Standard segmentation with labeled raster output** : In this mode, the application will output a standard labeled raster. This mode can not handle large data.
 
- - **Output labeled image** : The output labeled image.
+
+  - **Output labeled image** : The output labeled image.
 
 
 

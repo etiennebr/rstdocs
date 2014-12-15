@@ -6,7 +6,8 @@ Convert an image to a different format, eventually rescaling the data and/or cha
 Detailed description
 --------------------
 
-This application performs an image pixel type conversion (short, ushort, uchar, int, uint, float and double types are handled). The output image is written in the specified format (ie. that corresponds to the given extension). The convertion can include a rescale using the image 2 percent minimum and maximum values. The rescale can be linear or log2.
+This application performs an image pixel type conversion (short, ushort, uchar, int, uint, float and double types are handled). The output image is written in the specified format (ie. that corresponds to the given extension).
+ The convertion can include a rescale using the image 2 percent minimum and maximum values. The rescale can be linear or log2.
 
 Parameters
 ----------
@@ -55,12 +56,15 @@ Transfer function for the rescaling. Available choices are:
 
 - **None**
 
+
 - **Linear**
+
 
  - **Gamma correction factor** : Gamma correction factor.
 
 
-- **Log2**
+ - **Log2**
+
 
 
 **Input mask**

@@ -6,7 +6,7 @@ Allows to compute homologous points between images using keypoints
 Detailed description
 --------------------
 
-This application allows to compute homologous points between images using keypoints.  SIFT or SURF keypoints can be used and the band on which keypoints are computed can be set independantly for both images. The application offers two modes : the first is the full mode where keypoints are extracted from the full extent of both images (please note that in this mode large image file are not supported). The second mode, called geobins, allows to setup spatial binning to get fewer points spread accross the entire image. In this mode, the corresponding spatial bin in the second image is estimated using geographical transform or sensor modelling, and is padded according to the user defined precision. Last, in both modes the application can filter matches whose colocalisation in first image exceed this precision. The elevation parameters are to deal more precisely with sensor modelling in case of sensor geometry data. The outvector option allows to create a vector file with segments corresponding to the localisation error between the matches. It can be useful to assess the precision of a registration for instance. The vector file is always reprojected to EPSG:4326 to allow display in a GIS. This is done via reprojection or by applying the image sensor models.
+This application allows to compute homologous points between images using keypoints.  SIFT or SURF keypoints can be used and the band on which keypoints are computed can be set independantly for both images. The application offers two modes : the first is the full mode where keypoints are extracted from the full extent of both images (please note that in this mode large image file are not supported). The second mode, called geobins, allows to set-up spatial binning to get fewer points spread accross the entire image. In this mode, the corresponding spatial bin in the second image is estimated using geographical transform or sensor modelling, and is padded according to the user defined precision. Last, in both modes the application can filter matches whose colocalisation in first image exceed this precision. The elevation parameters are to deal more precisely with sensor modelling in case of sensor geometry data. The outvector option allows to create a vector file with segments corresponding to the localisation error between the matches. It can be useful to assess the precision of a registration for instance. The vector file is always reprojected to EPSG:4326 to allow display in a GIS. This is done via reprojection or by applying the image sensor models.
 
 Parameters
 ----------
@@ -92,7 +92,9 @@ Choice of the detection algorithm to use. Available choices are:
 
 - **SURF algorithm**
 
+
 - **SIFT algorithm**
+
 
 
 **Distance threshold for matching**
@@ -106,7 +108,9 @@ If set to true, matches should be consistent in both ways.
 
 - **Extract and match all keypoints (no streaming)** : Extract and match all keypoints, loading both images entirely into memory
 
+
 - **Search keypoints in small spatial bins regularly spread accross first image** : This method allows to retrieve a set of tie points regulary spread accross image 1. Corresponding bins in image 2 are retrieved using sensor and geographical information if available. The first bin position takes into account the margin parameter. Bins are cropped to the largest image region shrinked by the margin parameter for both in1 and in2 images.
+
 
  - **Size of bin** : Radius of the spatial bin in pixels.
 

@@ -3,10 +3,12 @@ Vector Data reprojection
 
 This application allows to reproject a vector data using support image projection reference, or a user specified map projection
 
+
 Detailed description
 --------------------
 
- This application allows to reproject a vector data using support image projection reference, or a user given map projection. If given, image keywordlist can be added to reprojected vectordata.
+ This application allows to reproject a vector data using support image projection reference, or a user given map projection.
+ If given, image keywordlist can be added to reprojected vectordata.
 
 Parameters
 ----------
@@ -85,20 +87,22 @@ Parameters table for Vector Data reprojection:
 
  Available choices are: 
 
-- **Use image projection ref** : Vector data will be reprojected in image projection ref.
-
- - **Image used to get projection map** : Projection map will be found using image metadata.
+ - **Use image projection ref** : Vector data will be reprojected in image projection ref.
 
 
-- **User defined projection**
+  - **Image used to get projection map** : Projection map will be found using image metadata.
 
- - **Output Cartographic Map Projection** : Parameters of the output map projection to be used.
 
- - **Zone number** : The zone number ranges from 1 to 60 and allows to define the transverse mercator projection (along with the hemisphere).
+  - **User defined projection**
 
- - **Northern Hemisphere** : The transverse mercator projections are defined by their zone number as well as the hemisphere. Activate this parameter if your image is in the northern hemisphere.
 
- - **EPSG Code** : See www.spatialreference.org to find which EPSG code is associated to your projection.
+   - **Output Cartographic Map Projection** : Parameters of the output map projection to be used.
+
+   - **Zone number** : The zone number ranges from 1 to 60 and allows to define the transverse mercator projection (along with the hemisphere).
+
+   - **Northern Hemisphere** : The transverse mercator projections are defined by their zone number as well as the hemisphere. Activate this parameter if your image is in the northern hemisphere.
+
+   - **EPSG Code** : See www.spatialreference.org to find which EPSG code is associated to your projection.
 
 
 

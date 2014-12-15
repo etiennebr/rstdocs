@@ -54,14 +54,16 @@ Choice of ground truth format. Available choices are:
 
 - **Ground truth as a raster image**
 
+
  - **Input reference image** : Input image containing the ground truth labels.
 
 
-- **Ground truth as a vector data file**
+ - **Ground truth as a vector data file**
 
- - **Input reference vector data** : Input vector data of the ground truth.
 
- - **Field name** : Field name containing the label values.
+  - **Input reference vector data** : Input vector data of the ground truth.
+
+  - **Field name** : Field name containing the label values.
 
 
 

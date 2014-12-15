@@ -6,7 +6,10 @@ Estimate abundance maps from an hyperspectral image and a set of endmembers.
 Detailed description
 --------------------
 
-The application applies a linear unmixing algorithm to an hyperspectral data cube. This method supposes that the mixture between materials in the scene is macroscopic and simulates a linear mixing model of spectra.The Linear Mixing Model (LMM) acknowledges that reflectance spectrum associated with each pixel is a linear combination of pure materials in the recovery area, commonly known as endmembers. Endmembers can be estimated using the VertexComponentAnalysis application.The application allows to estimate the abundance maps with several algorithms : Unconstrained Least Square (ucls), Fully Constrained Least Square (fcls), Image Space Reconstruction Algorithm (isra) and Nonnegative constrained Least Square (ncls) and Minimum Dispertion Constrained Non Negative Matrix Factorization (MDMDNMF).
+The application applies a linear unmixing algorithm to an hyperspectral data cube. This method supposes that the mixture between materials in the scene is macroscopic and simulates a linear mixing model of spectra.
+The Linear Mixing Model (LMM) acknowledges that reflectance spectrum associated with each pixel is a linear combination of pure materials in the recovery area, commonly known as endmembers. Endmembers can be estimated using the VertexComponentAnalysis application.
+The application allows to estimate the abundance maps with several algorithms : Unconstrained Least Square (ucls), Fully Constrained Least Square (fcls), Image Space Reconstruction Algorithm (isra) and Non-negative constrained Least Square (ncls) and Minimum Dispertion Constrained Non Negative Matrix Factorization (MDMDNMF).
+
 
 Parameters
 ----------
@@ -49,11 +52,15 @@ Parameters table for Hyperspectral data unmixing:
 
 - **UCLS** : Unconstrained Least Square
 
+
 - **NCLS** : Nonnegative constrained Least Square
+
 
 - **ISRA** : Image Space Reconstruction Algorithm
 
+
 - **MDMDNMF** : Minimum Dispertion Constrained Non Negative Matrix Factorization
+
 
 
 - **Load otb application from xml file:** Load otb application from xml file.

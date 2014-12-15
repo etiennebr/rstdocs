@@ -6,7 +6,8 @@ Rasterize a vector dataset.
 Detailed description
 --------------------
 
-This application allows to reproject and rasterize a vector dataset. The grid of the rasterized output can be set by using a reference image, or by setting all parmeters (origin, size, spacing) by hand. In the latter case, at least the spacing (ground sampling distance) is needed (other parameters are computed automatically). The rasterized output can also be in a different projection reference system than the input dataset. There are two rasterize mode available in the application. The first is the binary mode: it allows to render all pixels belonging to a geometry of the input dataset in the foreground color, while rendering the other in background color. The second one allows to render pixels belonging to a geometry woth respect to an attribute of this geometry. The field of the attribute to render can be set by the user. In the second mode, the background value is still used for unassociated pixels.
+This application allows to reproject and rasterize a vector dataset. The grid of the rasterized output can be set by using a reference image, or by setting all parmeters (origin, size, spacing) by hand. In the latter case, at least the spacing (ground sampling distance) is needed (other parameters are computed automatically). The rasterized output can also be in a different projection reference system than the input dataset.
+ There are two rasterize mode available in the application. The first is the binary mode: it allows to render all pixels belonging to a geometry of the input dataset in the foreground color, while rendering the other in background color. The second one allows to render pixels belonging to a geometry woth respect to an attribute of this geometry. The field of the attribute to render can be set by the user. In the second mode, the background value is still used for unassociated pixels.
 
 Parameters
 ----------
@@ -95,12 +96,14 @@ Choice of rasterization modes. Available choices are:
 
 - **Binary mode** : In this mode, pixels within a geometry will hold the userdefined foreground value
 
+
  - **Foreground value** : Value for pixels inside a geometry.
 
 
-- **Attribute burning mode** : In this mode, pixels within a geometry will hold the value of a userdefined field extracted from this geometry.
+ - **Attribute burning mode** : In this mode, pixels within a geometry will hold the value of a userdefined field extracted from this geometry.
 
- - **The attribute field to burn** : Name of the attribute field to burn.
+
+  - **The attribute field to burn** : Name of the attribute field to burn.
 
 
 

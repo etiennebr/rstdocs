@@ -6,7 +6,7 @@ Build a multi-resolution pyramid of the image.
 Detailed description
 --------------------
 
-This application builds a multiresolution pyramid of the input image. User can specified the number of levels of the pyramid and the subsampling factor. To speed up the process, you can use the fast scheme option
+This application builds a multi-resolution pyramid of the input image. User can specified the number of levels of the pyramid and the subsampling factor. To speed up the process, you can use the fast scheme option
 
 Parameters
 ----------

@@ -6,7 +6,7 @@ Fourth step of the exact Large-Scale Mean-Shift segmentation workflow.
 Detailed description
 --------------------
 
-This application performs the fourth step of the exact LargeScale MeanShift segmentation workflow (LSMS). Given a segmentation result (label image), that may have been processed for small regions merging or not, it will convert it to a GIS vector file containing one polygon per segment. Each polygon contains additional fields: mean and variance of each channels from input image (in parameter), segmentation image label, number of pixels in the polygon. For large images one can use the nbtilesx and nbtilesy parameters for tilewise processing, with the guarantees of identical results.
+This application performs the fourth step of the exact Large-Scale Mean-Shift segmentation workflow (LSMS). Given a segmentation result (label image), that may have been processed for small regions merging or not, it will convert it to a GIS vector file containing one polygon per segment. Each polygon contains additional fields: mean and variance of each channels from input image (in parameter), segmentation image label, number of pixels in the polygon. For large images one can use the nbtilesx and nbtilesy parameters for tile-wise processing, with the guarantees of identical results.
 
 Parameters
 ----------

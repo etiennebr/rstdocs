@@ -6,7 +6,11 @@ Maps an input label image to 8-bits RGB using look-up tables.
 Detailed description
 --------------------
 
-This application allows to map a label image to a 8bits RGB image (in both ways) using different methods. The custom method allows to use a custom lookup table. The lookup table is loaded from a text file where each line describes an entry. The typical use of this method is to colorise a classification map. The continuous method allows to map a range of values in a scalar input image to a colored image using continuous lookup table, in order to enhance image interpretation. Several lookup tables can been chosen with different color ranges.The optimal method computes an optimal lookup table. When processing a segmentation label image (label to color), the color difference between adjacent segmented regions is maximized. When processing an unknown color image (color to label), all the present colors are mapped to a continuous label list.  The support image method uses a color support image to associate an average color to each region.
+This application allows to map a label image to a 8-bits RGB image (in both ways) using different methods.
+ -The custom method allows to use a custom look-up table. The look-up table is loaded from a text file where each line describes an entry. The typical use of this method is to colorise a classification map.
+ -The continuous method allows to map a range of values in a scalar input image to a colored image using continuous look-up table, in order to enhance image interpretation. Several look-up tables can been chosen with different color ranges.
+-The optimal method computes an optimal look-up table. When processing a segmentation label image (label to color), the color difference between adjacent segmented regions is maximized. When processing an unknown color image (color to label), all the present colors are mapped to a continuous label list.
+ - The support image method uses a color support image to associate an average color to each region.
 
 Parameters
 ----------
@@ -109,7 +113,9 @@ Selection of the operation to execute (default is : label to color). Available c
 
 - **Label to color**
 
+
 - **Color to label**
+
 
  - **Not Found Label** : Label to use for unknown colors.
 
@@ -120,32 +126,36 @@ Selection of color mapping methods and their parameters. Available choices are:
 
 - **Color mapping with custom labeled look-up table** : Apply a userdefined lookup table to a labeled image. Lookup table is loaded from a text file.
 
+
  - **Look-up table file** : An ASCII file containing the look-up table with one color per line (for instance the line '1 255 0 0' means that all pixels with label 1 will be replaced by RGB color 255 0 0) Lines beginning with a # are ignored.
 
 
-- **Color mapping with continuous look-up table** : Apply a continuous lookup table to a range of input values.
-
- - **Look-up tables** : Available look-up tables.
-
- - **Mapping range lower value** : Set the lower input value of the mapping range.
-
- - **Mapping range higher value** : Set the higher input value of the mapping range.
+ - **Color mapping with continuous look-up table** : Apply a continuous lookup table to a range of input values.
 
 
-- **Compute an optimized look-up table** : [label to color] Compute an optimal lookup table such that neighboring labels in a segmentation are mapped to highly contrasted colors.[color to label] Searching all the colors present in the image to compute a continuous label list
+  - **Look-up tables** : Available look-up tables.
 
- - **Background label** : Value of the background label.
+  - **Mapping range lower value** : Set the lower input value of the mapping range.
+
+  - **Mapping range higher value** : Set the higher input value of the mapping range.
 
 
-- **Color mapping with look-up table calculated on support image**
+  - **Compute an optimized look-up table** : [label to color] Compute an optimal lookup table such that neighboring labels in a segmentation are mapped to highly contrasted colors.[color to label] Searching all the colors present in the image to compute a continuous label list
 
- - **Support Image** : Support image filename. For each label, the LUT is calculated from the mean pixel value in the support image, over the corresponding labeled areas. First of all, the support image is normalized with extrema rejection.
 
- - **NoData value** : NoData value for each channel of the support image, which will not be handled in the LUT estimation. If NOT checked, ALL the pixel values of the support image will be handled in the LUT estimation.
+   - **Background label** : Value of the background label.
 
- - **lower quantile** : lower quantile for image normalization.
 
- - **upper quantile** : upper quantile for image normalization.
+   - **Color mapping with look-up table calculated on support image**
+
+
+    - **Support Image** : Support image filename. For each label, the LUT is calculated from the mean pixel value in the support image, over the corresponding labeled areas. First of all, the support image is normalized with extrema rejection.
+
+    - **NoData value** : NoData value for each channel of the support image, which will not be handled in the LUT estimation. If NOT checked, ALL the pixel values of the support image will be handled in the LUT estimation.
+
+    - **lower quantile** : lower quantile for image normalization.
+
+    - **upper quantile** : upper quantile for image normalization.
 
 
 

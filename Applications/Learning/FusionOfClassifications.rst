@@ -6,7 +6,12 @@ Fuses several classifications maps of the same image on the basis of class label
 Detailed description
 --------------------
 
-This application allows to fuse several classification maps and produces a single more robust classification map. Fusion is done either by mean of Majority Voting, or with the Dempster Shafer combination method on class labels. MAJORITY VOTING: for each pixel, the class with the highest number of votes is selected. DEMPSTER SHAFER: for each pixel, the class label for which the Belief Function is maximal is selected. This Belief Function is calculated by mean of the Dempster Shafer combination of Masses of Belief, and indicates the belief that each input classification map presents for each label value. Moreover, the Masses of Belief are based on the input confusion matrices of each classification map, either by using the PRECISION or RECALL rates, or the OVERALL ACCURACY, or the KAPPA coefficient. Thus, each input classification map needs to be associated with its corresponding input confusion matrix file for the Dempster Shafer fusion.Input pixels with the NODATA label are not handled in the fusion of classification maps. Moreover, pixels for which all the input classifiers are set to NODATA keep this value in the output fused image.In case of number of votes equality, the UNDECIDED label is attributed to the pixel.
+This application allows to fuse several classification maps and produces a single more robust classification map. Fusion is done either by mean of Majority Voting, or with the Dempster Shafer combination method on class labels.
+
+ - MAJORITY VOTING: for each pixel, the class with the highest number of votes is selected.
+ - DEMPSTER SHAFER: for each pixel, the class label for which the Belief Function is maximal is selected. This Belief Function is calculated by mean of the Dempster Shafer combination of Masses of Belief, and indicates the belief that each input classification map presents for each label value. Moreover, the Masses of Belief are based on the input confusion matrices of each classification map, either by using the PRECISION or RECALL rates, or the OVERALL ACCURACY, or the KAPPA coefficient. Thus, each input classification map needs to be associated with its corresponding input confusion matrix file for the Dempster Shafer fusion.
+ - Input pixels with the NODATA label are not handled in the fusion of classification maps. Moreover, pixels for which all the input classifiers are set to NODATA keep this value in the output fused image.
+ - In case of number of votes equality, the UNDECIDED label is attributed to the pixel.
 
 Parameters
 ----------
@@ -57,7 +62,9 @@ Selection of the fusion method and its parameters. Available choices are:
 
 - **Majority Voting** : Fusion of classification maps by majority voting for each output pixel.
 
+
 - **Dempster Shafer combination** : Fusion of classification maps by the Dempster Shafer combination method for each output pixel.
+
 
  - **Confusion Matrices** : A list of confusion matrix files (\*.CSV format) to define the masses of belief and the class labels. Each file should be formatted the following way: the first line, beginning with a '#' symbol, should be a list of the class labels present in the corresponding input classification image, organized in the same order as the confusion matrix rows/columns.
 

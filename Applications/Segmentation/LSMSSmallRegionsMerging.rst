@@ -6,7 +6,7 @@ Third (optional) step of the exact Large-Scale Mean-Shift segmentation workflow.
 Detailed description
 --------------------
 
-This application performs the third step of the exact LargeScale MeanShift segmentation workflow (LSMS). Given a segmentation result (label image) and the original image, it will merge regions whose size in pixels is lower than minsize parameter with the adjacent regions with the adjacent region with closest radiometry and acceptable size. Small regions will be processed by size: first all regions of area, which is equal to 1 pixel will be merged with adjacent region, then all regions of area equal to 2 pixels, until regions of area minsize. For large images one can use the nbtilesx and nbtilesy parameters for tilewise processing, with the guarantees of identical results.
+This application performs the third step of the exact Large-Scale Mean-Shift segmentation workflow (LSMS). Given a segmentation result (label image) and the original image, it will merge regions whose size in pixels is lower than minsize parameter with the adjacent regions with the adjacent region with closest radiometry and acceptable size. Small regions will be processed by size: first all regions of area, which is equal to 1 pixel will be merged with adjacent region, then all regions of area equal to 2 pixels, until regions of area minsize. For large images one can use the nbtilesx and nbtilesy parameters for tile-wise processing, with the guarantees of identical results.
 
 Parameters
 ----------

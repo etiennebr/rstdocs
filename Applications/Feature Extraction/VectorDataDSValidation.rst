@@ -6,7 +6,7 @@ Vector data validation based on the fusion of features using Dempster-Shafer evi
 Detailed description
 --------------------
 
-This application validates or unvalidate the studied samples using the DempsterShafer theory.
+This application validates or unvalidate the studied samples using the Dempster-Shafer theory.
 
 Parameters
 ----------

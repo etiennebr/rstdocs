@@ -6,7 +6,7 @@ Perform P+XS pansharpening
 Detailed description
 --------------------
 
-This application performs P+XS pansharpening. Pansharpening is a process of merging highresolution panchromatic and lower resolution multispectral imagery to create a single highresolution color image. Algorithms available in the applications are: RCS, bayesian fusion and Local Mean and Variance Matching(LMVM).
+This application performs P+XS pansharpening. Pansharpening is a process of merging high-resolution panchromatic and lower resolution multispectral imagery to create a single high-resolution color image. Algorithms available in the applications are: RCS, bayesian fusion and Local Mean and Variance Matching(LMVM).
 
 Parameters
 ----------
@@ -61,18 +61,21 @@ Selection of the pan-sharpening method. Available choices are:
 
 - **RCS** : Simple RCS Pan sharpening operation.
 
+
 - **LMVM** : Local Mean and Variance Matching (LMVM) Pan sharpening.
+
 
  - **X radius** : Set the x radius of the sliding window.
 
  - **Y radius** : Set the y radius of the sliding window.
 
 
-- **Bayesian** : Bayesian fusion.
+ - **Bayesian** : Bayesian fusion.
 
- - **Weight** : Set the weighting value.
 
- - **S coefficient** : Set the S coefficient.
+  - **Weight** : Set the weighting value.
+
+  - **S coefficient** : Set the S coefficient.
 
 
 

@@ -6,7 +6,8 @@ Get the value of a pixel.
 Detailed description
 --------------------
 
-Get the value of a pixel.Pay attention, index starts at 0.
+Get the value of a pixel.
+Pay attention, index starts at 0.
 
 Parameters
 ----------

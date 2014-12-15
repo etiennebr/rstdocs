@@ -68,12 +68,14 @@ Choice of the structuring element type. Available choices are:
 
 - **Ball**
 
+
  - **The Structuring Element X Radius** : The Structuring Element X Radius.
 
  - **The Structuring Element Y Radius** : The Structuring Element Y Radius.
 
 
-- **Cross**
+ - **Cross**
+
 
 
 **Morphological Operation**
@@ -81,11 +83,15 @@ Choice of the morphological operation. Available choices are:
 
 - **Dilate**
 
+
 - **Erode**
+
 
 - **Opening**
 
+
 - **Closing**
+
 
 
 **Load otb application from xml file**

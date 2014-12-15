@@ -61,7 +61,9 @@ The input DEM.
 
 - **DEM** : DEM conversion mode
 
+
 - **3D grid** : 3D grid conversion mode
+
 
 
 **Output Cartographic Map Projection**
@@ -69,20 +71,25 @@ Parameters of the output map projection to be used. Available choices are:
 
 - **Universal Trans-Mercator (UTM)** : A system of transverse mercator projections dividing the surface of Earth between 80S and 84N latitude.
 
+
  - **Zone number** : The zone number ranges from 1 to 60 and allows to define the transverse mercator projection (along with the hemisphere).
 
  - **Northern Hemisphere** : The transverse mercator projections are defined by their zone number as well as the hemisphere. Activate this parameter if your image is in the northern hemisphere.
 
 
-- **Lambert II Etendu** : This is a Lambert Conformal Conic projection mainly used in France.
+ - **Lambert II Etendu** : This is a Lambert Conformal Conic projection mainly used in France.
 
-- **Lambert93** : This is a Lambert 93 projection mainly used in France.
 
-- **WGS 84** : This is a Geographical projection
+ - **Lambert93** : This is a Lambert 93 projection mainly used in France.
 
-- **EPSG Code** : This code is a generic way of identifying map projections, and allows to specify a large amount of them. See www.spatialreference.org to find which EPSG code is associated to your projection;
 
- - **EPSG Code** : See www.spatialreference.org to find which EPSG code is associated to your projection.
+ - **WGS 84** : This is a Geographical projection
+
+
+ - **EPSG Code** : This code is a generic way of identifying map projections, and allows to specify a large amount of them. See www.spatialreference.org to find which EPSG code is associated to your projection;
+
+
+  - **EPSG Code** : See www.spatialreference.org to find which EPSG code is associated to your projection.
 
 
 

@@ -6,7 +6,9 @@ Filters the input labeled image using Majority Voting in a ball shaped neighbord
 Detailed description
 --------------------
 
-This application filters the input labeled image (with a maximal class label = 65535) using Majority Voting in a ball shaped neighbordhood. Majority Voting takes the more representative value of all the pixels identified by the ball shaped structuring element and then sets the center pixel to this majority label value.    NoData is the label of the NOT classified pixels in the input image. These input pixels keep their NoData label in the output image.    Pixels with more than 1 majority class are marked as Undecided if the parameter 'ip.suvbool == true', or keep their Original labels otherwise.
+This application filters the input labeled image (with a maximal class label = 65535) using Majority Voting in a ball shaped neighbordhood. Majority Voting takes the more representative value of all the pixels identified by the ball shaped structuring element and then sets the center pixel to this majority label value.
+    -NoData is the label of the NOT classified pixels in the input image. These input pixels keep their NoData label in the output image.
+    -Pixels with more than 1 majority class are marked as Undecided if the parameter 'ip.suvbool == true', or keep their Original labels otherwise.
 
 Parameters
 ----------

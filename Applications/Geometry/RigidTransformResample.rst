@@ -80,31 +80,34 @@ This group of parameters allows to set the transformation to apply.
 
  Available choices are: 
 
-- **id** : Spatial scaling
-
- - **X scaling** : Scaling factor between the output X spacing and the input X spacing.
-
- - **Y scaling** : Scaling factor between the output Y spacing and the input Y spacing.
+ - **id** : Spatial scaling
 
 
-- **translation** : translation
+  - **X scaling** : Scaling factor between the output X spacing and the input X spacing.
 
- - **The X translation (in physical units)** : The translation value along X axis (in physical units).
-
- - **The Y translation (in physical units)** : The translation value along Y axis (in physical units).
-
- - **X scaling** : Scaling factor between the output X spacing and the input X spacing.
-
- - **Y scaling** : Scaling factor between the output Y spacing and the input Y spacing.
+  - **Y scaling** : Scaling factor between the output Y spacing and the input Y spacing.
 
 
-- **rotation** : rotation
+  - **translation** : translation
 
- - **Rotation angle** : The rotation angle in degree (values between -180 and 180).
 
- - **X scaling** : Scale factor between the X spacing of the rotated output image and the X spacing of the unrotated image.
+   - **The X translation (in physical units)** : The translation value along X axis (in physical units).
 
- - **Y scaling** : Scale factor between the Y spacing of the rotated output image and the Y spacing of the unrotated image.
+   - **The Y translation (in physical units)** : The translation value along Y axis (in physical units).
+
+   - **X scaling** : Scaling factor between the output X spacing and the input X spacing.
+
+   - **Y scaling** : Scaling factor between the output Y spacing and the input Y spacing.
+
+
+   - **rotation** : rotation
+
+
+    - **Rotation angle** : The rotation angle in degree (values between -180 and 180).
+
+    - **X scaling** : Scale factor between the X spacing of the rotated output image and the X spacing of the unrotated image.
+
+    - **Y scaling** : Scale factor between the Y spacing of the rotated output image and the Y spacing of the unrotated image.
 
 
 
@@ -113,9 +116,12 @@ This group of parameters allows to define how the input image will be interpolat
 
 - **Nearest Neighbor interpolation** : Nearest neighbor interpolation leads to poor image quality, but it is very fast.
 
+
 - **Linear interpolation** : Linear interpolation leads to average image quality but is quite fast
 
+
 - **Bicubic interpolation**
+
 
  - **Radius for bicubic interpolation** : This parameter allows to control the size of the bicubic interpolation filter. If the target pixel size is higher than the input pixel size, increasing this parameter will reduce aliasing artefacts.
 

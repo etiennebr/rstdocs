@@ -57,16 +57,18 @@ Available memory for processing (in MB).
 
 - **Lee** : Lee filter
 
+
  - **Radius** : Radius for lee filter.
 
  - **nb looks** : Nb looks for lee filter.
 
 
-- **Frost** : Frost filter
+ - **Frost** : Frost filter
 
- - **Radius** : Radius for frost filter.
 
- - **deramp** : Decrease factor declaration.
+  - **Radius** : Radius for frost filter.
+
+  - **deramp** : Decrease factor declaration.
 
 
 

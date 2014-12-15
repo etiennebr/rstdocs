@@ -69,7 +69,9 @@ Superimposition mode. Available choices are:
 
 - **Default mode** : Default superimposition mode : uses any projection reference or sensor model found in the images
 
+
 - **Pleiades mode** : Pleiades superimposition mode, designed for the case of a P+XS bundle in SENSOR geometry. It uses a simple transform on the XS image : a scaling and a residual translation.
+
 
 
 **Spacing of the deformation field**

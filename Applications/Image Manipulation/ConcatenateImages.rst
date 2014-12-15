@@ -6,7 +6,7 @@ Concatenate a list of images of the same size into a single multi-channel one.
 Detailed description
 --------------------
 
-This application performs images channels concatenation. It will walk the input image list (single or multichannel) and generates a single multichannel image. The channel order is the one of the list.
+This application performs images channels concatenation. It will walk the input image list (single or multi-channel) and generates a single multi-channel image. The channel order is the one of the list.
 
 Parameters
 ----------

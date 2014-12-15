@@ -6,7 +6,7 @@ Perform Dimension reduction of the input image.
 Detailed description
 --------------------
 
-Performs dimensionality reduction on input image. PCA,NAPCA,MAF,ICA methods are available. It is also possible to compute the inverse transform to reconstruct the image. It is also possible to optionnaly export the transformation matrix to a text file.
+Performs dimensionality reduction on input image. PCA,NA-PCA,MAF,ICA methods are available. It is also possible to compute the inverse transform to reconstruct the image. It is also possible to optionnaly export the transformation matrix to a text file.
 
 Parameters
 ----------
@@ -82,20 +82,24 @@ Selection of the reduction dimension method. Available choices are:
 
 - **PCA** : Principal Component Analysis.
 
+
 - **NA-PCA** : Noise Adjusted Principal Component Analysis.
+
 
  - **Set the x radius of the sliding window.** : 
 
  - **Set the y radius of the sliding window.** : 
 
 
-- **MAF** : Maximum Autocorrelation Factor.
+ - **MAF** : Maximum Autocorrelation Factor.
 
-- **ICA** : Independant Component Analysis.
 
- - **number of iterations** : 
+ - **ICA** : Independant Component Analysis.
 
- - **Give the increment weight of W in [0, 1]** : 
+
+  - **number of iterations** : 
+
+  - **Give the increment weight of W in [0, 1]** : 
 
 
 

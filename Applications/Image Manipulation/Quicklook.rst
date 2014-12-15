@@ -6,7 +6,8 @@ Generates a subsampled version of an image extract
 Detailed description
 --------------------
 
-Generates a subsampled version of an extract of an image defined by ROIStart and ROISize. This extract is subsampled using the ratio OR the output image Size.
+Generates a subsampled version of an extract of an image defined by ROIStart and ROISize.
+ This extract is subsampled using the ratio OR the output image Size.
 
 Parameters
 ----------
