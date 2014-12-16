@@ -22,8 +22,7 @@ The naming convention “im[x]b[y]” designates the yth band of the xth
 input image.
 
 The *BandMath* application embeds built-in operators and functions
-(listed
-`here <http://muparser.sourceforge.net/mup_features.html#idDef2>`_ ),
+(listed in `muparser documentation <http://muparser.sourceforge.net/mup_features.html#idDef2>`_ thus
 allowing a vast choice of possible operations.
 
 Segmentation
@@ -45,8 +44,7 @@ manipulate efficiently.
 The experience of segmenting large remote sensing images is packed into
 a single *Segmentation* in **OTB Applications** .
 
-You can find more information about this application
-`here <http://blog.orfeo-toolbox.org/preview/coming-next-large-scale-segmentation>`_ .
+You can find more information about this application in this `blog <http://blog.orfeo-toolbox.org/preview/coming-next-large-scale-segmentation>`_ .
 
 Large-Scale Mean-Shift (LSMS) segmentation
 ------------------------------------------
