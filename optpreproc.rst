@@ -113,9 +113,9 @@ The module produces four outputs:
 -  Difference TOA-TOC image, which allows to get the estimation of
    atmospheric contribution.
 
-image1 [fig:opticalcalibration]
+|image1| [fig:opticalcalibration]
 
-image2 [fig:opticalcalibrationoutput]
+|image2| [fig:opticalcalibrationoutput]
 
 Pan-sharpening
 --------------
@@ -239,14 +239,14 @@ screenshots highlight operations needed to perform Pan-Sharpening.
    multispectral dataset with the same geographic extension and the same
    resolution as the panchromatic image, cf  [fig:qbmulsuper].
 
-   image3 image4 [fig:qbmulsuper]
+   |image3| |image4| [fig:qbmulsuper]
 
 -  Now the *Simple RCS pan-sharpening* module can be used using the
    panchromatic and the multispectral images as inputs. It produces a
    multispectral image with the same resolution and geographic extension
    (cf  [fig:pansharpen]).
 
-   image5 [fig:pansharpen]
+   |image5| [fig:pansharpen]
 
 Please also note that since registration and zooming of the
 multi-spectral image with the panchromatic image relies on sensor
@@ -297,8 +297,8 @@ geoid to manage elevation accurately. For this, you need to specify a
 path to a file which contains the geoid. Geoid corresponds to the
 equipotential surface that would coincide with the mean ocean surface of
 the Earth (see `) <http://en.wikipedia.org/wiki/Geoid>`_ . We provide
-one geoid in the OTB-Data repository available
-`here <http://hg.orfeo-toolbox.org/OTB-Data/file/4722d9e672c6/Input/DEM/egm96.grd>`_ .
+one geoid in the OTB-Data repository [#]_ .
+.. [#] http://hg.orfeo-toolbox.org/OTB-Data/file/4722d9e672c6/Input/DEM/egm96.grd
 
 In all applications, the option **elev.geoid** allows to manage the path
 to the geoid. Finally, it is also possible to use an average elevation
@@ -405,10 +405,8 @@ path, you append a specific key at the end :
     "path_to_image?&skipcarto=true"
 
 The double quote can be necessary for a successful parsing. More details
-about the extended filenames can be found
-`here <http://wiki.orfeo-toolbox.org/index.php/ExtendedFileName>`_ , and
-also in the `OTB Software
-Guide <http://orfeo-toolbox.org/SoftwareGuide>`_  .
+about the extended filenames can be found in the `wiki page <http://wiki.orfeo-toolbox.org/index.php/ExtendedFileName>`_ , and
+also in the `OTB Software Guide <http://orfeo-toolbox.org/SoftwareGuide>`_  .
 
 Ortho-rectification with **OTB Applications** 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -457,24 +455,17 @@ used (example with *lambert93* map projection):
 Map projections handled by the application are the following (please
 note that the ellipsoid is always WGS84):
 
--  | UTM : ``-map utm``
-   | The UTM zone and hemisphere can be set by the options
-   ``-map.utm.zone`` and ``-map.utm.northhem``.
+-  | UTM : ``-map utm``  | The UTM zone and hemisphere can be set by the options ``-map.utm.zone`` and ``-map.utm.northhem``.
 
 -  Lambert 2 etendu: ``-map lambert2``
 
 -  Lambert 93: ``-map lambert93``
 
--  | TransMercator: ``-map transmercator``
-   | The related parameters (false easting, false northing and scale
-   factor) can be set by the options
-   ``-map.transmercator.falseeasting``,
-   ``-map.transmercator.falsenorthing`` and ``-map.transmercator.scale``
+-  | TransMercator: ``-map transmercator`` | The related parameters (false easting, false northing and scale factor) can be set by the options    ``-map.transmercator.falseeasting``, ``-map.transmercator.falsenorthing`` and ``-map.transmercator.scale``
 
 -  WGS : ``-map wgs``
 
--  | Any map projection system with an EPSG code : ``-map epsg``
-   | The EPSG code is set with the option ``-map.epsg.code``
+-  | Any map projection system with an EPSG code : ``-map epsg`` | The EPSG code is set with the option ``-map.epsg.code``
 
 The group ``outputs`` contains parameters to set the origin, size and
 spacing of the output image. For instance, the ground spacing can be
@@ -536,8 +527,8 @@ A few more interesting options are available:
    this value to fit the available memory on your computer might
    speed-up the processing.
 
-.. image1| image:: ./Art/MonteverdiImages/monteverdi_optical_calibration.png
-.. image2| image:: ./Art/MonteverdiImages/monteverdi_optical_calibration_outputs.png
-.. image3| image:: ./Art/MonteverdiImages/monteverdi_QB_PAN_ROI.png
-.. image4| image:: ./Art/MonteverdiImages/monteverdi_QB_MUL_Superimpose.png
-.. image5| image:: ./Art/MonteverdiImages/monteverdi_QB_XS_pan-sharpened.png
+.. |image1| image:: ./Art/MonteverdiImages/monteverdi_optical_calibration.png
+.. |image2| image:: ./Art/MonteverdiImages/monteverdi_optical_calibration_outputs.png
+.. |image3| image:: ./Art/MonteverdiImages/monteverdi_QB_PAN_ROI.png
+.. |image4| image:: ./Art/MonteverdiImages/monteverdi_QB_MUL_Superimpose.png
+.. |image5| image:: ./Art/MonteverdiImages/monteverdi_QB_XS_pan-sharpened.png

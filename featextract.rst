@@ -21,15 +21,15 @@ order in the output image.
 The *LocalStatisticExtraction* application has the following input
 parameters:
 
-- ``-in`` the input image to compute the features on
+-``-in`` the input image to compute the features on
 
-- ``-channel`` the selected channel index in the input image to be
+-``-channel`` the selected channel index in the input image to be
    processed (default value is 1)
 
-- ``-radius`` the computational window radius (default value is 3
+-``-radius`` the computational window radius (default value is 3
    pixels)
 
-- ``-out`` the output image containing the local statistical moments
+-``-out`` the output image containing the local statistical moments
 
 The application can be used like this:
 
@@ -48,21 +48,18 @@ channel of the input image.
 
 The *EdgeExtraction* application has the following input parameters:
 
-- ``-in`` the input image to compute the features on
+-``-in`` the input image to compute the features on
 
-- ``-channel`` the selected channel index in the input image to be
+-``-channel`` the selected channel index in the input image to be
    processed (default value is 1)
 
--  |``-filter`` the choice of edge detection method
-   (gradient/sobel/touzi) (default value is gradient)   
+- ``-filter`` the choice of edge detection method (gradient/sobel/touzi) (default value is gradient)   
 
-- ``(-filter.touzi.xradius)`` the X Radius of the Touzi processing
-   neighborhood (only if filter==touzi) (default value is 1 pixel)
+ -``(-filter.touzi.xradius)`` the X Radius of the Touzi processing neighborhood (only if filter==touzi) (default value is 1 pixel) __
 
--  |``(-filter.touzi.yradius)`` the Y Radius of the Touzi processing
-   neighborhood (only if filter==touzi) (default value is 1 pixel)   
+ - ``(-filter.touzi.yradius)`` the Y Radius of the Touzi processing neighborhood (only if filter==touzi) (default value is 1 pixel)   
 
-- ``-out`` the output mono band image containing the edge features
+-``-out`` the output mono band image containing the edge features
 
 The application can be used like this:
 
@@ -93,26 +90,26 @@ one of the selected indices.
 
 The *RadiometricIndices* application has the following input parameters:
 
-- ``-in`` the input image to compute the features on
+-``-in`` the input image to compute the features on
 
-- ``-out`` the output image containing the radiometric indices
+-``-out`` the output image containing the radiometric indices
 
-- ``-channels.blue`` the Blue channel index in the input image (default
+-``-channels.blue`` the Blue channel index in the input image (default
    value is 1)
 
-- ``-channels.green`` the Green channel index in the input image
+-``-channels.green`` the Green channel index in the input image
    (default value is 1)
 
-- ``-channels.red`` the Red channel index in the input image (default
+-``-channels.red`` the Red channel index in the input image (default
    value is 1)
 
-- ``-channels.nir`` the Near Infrared channel index in the input image
+-``-channels.nir`` the Near Infrared channel index in the input image
    (default value is 1)
 
-- ``-channels.mir`` the Mid-Infrared channel index in the input image
+-``-channels.mir`` the Mid-Infrared channel index in the input image
    (default value is 1)
 
-- ``-list`` the list of available radiometric indices (default value is
+-``-list`` the list of available radiometric indices (default value is
    Vegetation:NDVI)
 
 The available radiometric indices to be listed into -list with their
@@ -185,30 +182,30 @@ fixed radius equal to 1 pixel in both X and Y directions.
 The *BinaryMorphologicalOperation* application has the following input
 parameters:
 
-- ``-in`` the input image to be filtered
+-``-in`` the input image to be filtered
 
-- ``-channel`` the selected channel index in the input image to be
+-``-channel`` the selected channel index in the input image to be
    processed (default value is 1)
 
-- ``-structype`` the choice of the structuring element type
+-``-structype`` the choice of the structuring element type
    (ball/cross) (default value is ball)
 
-- ``(-structype.ball.xradius)`` the ball structuring element X Radius
+-``(-structype.ball.xradius)`` the ball structuring element X Radius
    (only if structype==ball) (default value is 5 pixels)
 
-- ``(-structype.ball.yradius)`` the ball structuring element Y Radius
+-``(-structype.ball.yradius)`` the ball structuring element Y Radius
    (only if structype==ball) (default value is 5 pixels)
 
-- ``-filter`` the choice of the morphological operation
+-``-filter`` the choice of the morphological operation
    (dilate/erode/opening/closing) (default value is dilate)
 
-- ``(-filter.dilate.foreval)`` the foreground value for the dilation
+-``(-filter.dilate.foreval)`` the foreground value for the dilation
    (idem for filter.erode/opening/closing) (default value is 1)
 
-- ``(-filter.dilate.backval)`` the background value for the dilation
+-``(-filter.dilate.backval)`` the background value for the dilation
    (idem for filter.erode/opening/closing) (default value is 0)
 
-- ``-out`` the output filtered image
+-``-out`` the output filtered image
 
 The application can be used like this:
 
@@ -236,24 +233,24 @@ fixed radius equal to 1 pixel in both X and Y directions.
 The *GrayScaleMorphologicalOperation* application has the following
 input parameters:
 
-- ``-in`` the input image to be filtered
+-``-in`` the input image to be filtered
 
-- ``-channel`` the selected channel index in the input image to be
+-``-channel`` the selected channel index in the input image to be
    processed (default value is 1)
 
-- ``-structype`` the choice of the structuring element type
+-``-structype`` the choice of the structuring element type
    (ball/cross) (default value is ball)
 
-- ``(-structype.ball.xradius)`` the ball structuring element X Radius
+-``(-structype.ball.xradius)`` the ball structuring element X Radius
    (only if structype==ball) (default value is 5 pixels)
 
-- ``(-structype.ball.yradius)`` the ball structuring element Y Radius
+-``(-structype.ball.yradius)`` the ball structuring element Y Radius
    (only if structype==ball) (default value is 5 pixels)
 
-- ``-filter`` the choice of the morphological operation
+-``-filter`` the choice of the morphological operation
    (dilate/erode/opening/closing) (default value is dilate)
 
-- ``-out`` the output filtered image
+-``-out`` the output filtered image
 
 The application can be used like this:
 
@@ -284,39 +281,39 @@ output image is multi band with a feature per band.
 The *HaralickTextureExtraction* application has the following input
 parameters:
 
-- ``-in`` the input image to compute the features on
+-``-in`` the input image to compute the features on
 
-- ``-channel`` the selected channel index in the input image to be
+-``-channel`` the selected channel index in the input image to be
    processed (default value is 1)
 
-- ``-texture`` the texture set selection [simple/advanced/higher]
+-``-texture`` the texture set selection [simple/advanced/higher]
    (default value is simple)
 
-- ``-parameters.min`` the input image minimum (default value is 0)
+-``-parameters.min`` the input image minimum (default value is 0)
 
-- ``-parameters.max`` the input image maximum (default value is 255)
+-``-parameters.max`` the input image maximum (default value is 255)
 
-- ``-parameters.xrad`` the X Radius of the processing neighborhood
+-``-parameters.xrad`` the X Radius of the processing neighborhood
    (default value is 2 pixels)
 
-- ``-parameters.yrad`` the Y Radius of the processing neighborhood
+-``-parameters.yrad`` the Y Radius of the processing neighborhood
    (default value is 2 pixels)
 
-- ``-parameters.xoff`` the :math:`\Delta`\ X Offset for the
+-``-parameters.xoff`` the :math:`\Delta`\ X Offset for the
    co-occurrence computation (default value is 1 pixel)
 
-- ``-parameters.yoff`` the :math:`\Delta`\ Y Offset for the
+-``-parameters.yoff`` the :math:`\Delta`\ Y Offset for the
    co-occurrence computation (default value is 1 pixel)
 
-- ``-parameters.nbbin`` the number of bin per axis for histogram
+-``-parameters.nbbin`` the number of bin per axis for histogram
    generation (default value is 8)
 
-- ``-out`` the output multi band image containing the selected texture
+-``-out`` the output multi band image containing the selected texture
    features (one feature per band)
 
 The available values for -texture with their relevant features are:
 
-- ``-texture=simple:`` In this case, 8 local Haralick textures features
+-``-texture=simple:`` In this case, 8 local Haralick textures features
    will be processed. The 8 output image channels are: Energy, Entropy,
    Correlation, Inverse Difference Moment, Inertia, Cluster Shade,
    Cluster Prominence and Haralick Correlation. They are provided in
@@ -364,7 +361,7 @@ The available values for -texture with their relevant features are:
    :math:`= \sum_{i, j}(i - \mu)^2 \cdot g(i, j) = \sum_{i, j}(j - \mu)^2 \cdot g(i, j)`
    (due to matrix symmetry).
 
-- ``-texture=advanced:`` In this case, 10 advanced texture features
+-``-texture=advanced:`` In this case, 10 advanced texture features
    will be processed. The 10 output image channels are: Mean, Variance,
    Dissimilarity, Sum Average, Sum Variance, Sum Entropy, Difference of
    Entropies, Difference of Variances, IC1 and IC2. They are provided in
@@ -406,7 +403,7 @@ The available values for -texture with their relevant features are:
    “Information Measures of Correlation IC2”
    :math:`= f_13 = \sqrt{1 - \exp{-2}|HXY2 - f_9|}`
 
-   Above, :math:`\mu = ` (weighted pixel average)
+   Above, :math:`\mu =` (weighted pixel average)
    :math:`= \sum_{i, j}i \cdot g(i, j) =  \sum_{i, j}j \cdot g(i, j)`
    (due to matrix summetry), and
 
@@ -416,7 +413,7 @@ The available values for -texture with their relevant features are:
    :math:`g_{x-y}(k) =  \sum_{i}\sum_{j}g(i)` where :math:`i-j=k`
    and :math:`k = 0, 1, .., N_{g}-1`
 
-- ``-texture=higher:`` In this case, 11 local higher order statistics
+-``-texture=higher:`` In this case, 11 local higher order statistics
    texture coefficients based on the grey level run-length matrix will
    be processed. The 11 output image channels are: Short Run Emphasis,
    Long Run Emphasis, Grey-Level Nonuniformity, Run Length
@@ -499,24 +496,24 @@ compute the :math:`w - mean` value.
 The *SFSTextureExtraction* application has the following input
 parameters:
 
-- ``-in`` the input image to compute the features on
+-``-in`` the input image to compute the features on
 
-- ``-channel`` the selected channel index in the input image to be
+-``-channel`` the selected channel index in the input image to be
    processed (default value is 1)
 
-- ``-parameters.spethre`` the spectral threshold (default value is 50)
+-``-parameters.spethre`` the spectral threshold (default value is 50)
 
-- ``-parameters.spathre`` the spatial threshold (default value is 100
+-``-parameters.spathre`` the spatial threshold (default value is 100
    pixels)
 
-- ``-parameters.nbdir`` the number of directions (default value is 20)
+-``-parameters.nbdir`` the number of directions (default value is 20)
 
-- ``-parameters.alpha`` the alpha value (default value is 1)
+-``-parameters.alpha`` the alpha value (default value is 1)
 
-- ``-parameters.maxcons`` the ratio Maximum Consideration Number
+-``-parameters.maxcons`` the ratio Maximum Consideration Number
    (default value is 5)
 
-- ``-out`` the output multi band image containing the selected texture
+-``-out`` the output multi band image containing the selected texture
    features (one feature per band)
 
 The application can be used like this:
