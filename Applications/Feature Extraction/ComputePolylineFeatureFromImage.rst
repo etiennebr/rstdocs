@@ -11,9 +11,9 @@ The first step in the classifier fusion based validation is to compute, for each
 Parameters
 ----------
 
-This section describes in details the parameters available for this application. Table~\ref{ComputePolylineFeatureFromImage_param_table}, page~\pageref{ComputePolylineFeatureFromImage_param_table} presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is \verb+ComputePolylineFeatureFromImage+.
+This section describes in details the parameters available for this application. Table [#]_ presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is *ComputePolylineFeatureFromImage* .
 
-Parameters table for Compute Polyline Feature From Image:
+.. [#] Table: Parameters table for Compute Polyline Feature From Image.
 
 +-------------+--------------------------+----------------------------------+
 |Parameter Key|Parameter Type            |Parameter Description             |
@@ -108,12 +108,12 @@ To run this example from Python, use the following code snippet:
 	ComputePolylineFeatureFromImage.ExecuteAndWriteOutput()
 
 Limitations
------------
+~~~~~~~~~~~
 
 Since it does not rely on streaming process, take care of the size of input image before launching application.
 
 Authors
--------
+~~~~~~~
 
 This application has been written by OTB-Team.
 

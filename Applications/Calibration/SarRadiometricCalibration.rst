@@ -11,9 +11,9 @@ This application performs SAR calibration on input complex images.
 Parameters
 ----------
 
-This section describes in details the parameters available for this application. Table~\ref{SarRadiometricCalibration_param_table}, page~\pageref{SarRadiometricCalibration_param_table} presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is \verb+SarRadiometricCalibration+.
+This section describes in details the parameters available for this application. Table [#]_ presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is *SarRadiometricCalibration* .
 
-Parameters table for SAR Radiometric calibration:
+.. [#] Table: Parameters table for SAR Radiometric calibration.
 
 +-------------+--------------------------+----------------------------------+
 |Parameter Key|Parameter Type            |Parameter Description             |
@@ -74,12 +74,12 @@ To run this example from Python, use the following code snippet:
 	SarRadiometricCalibration.ExecuteAndWriteOutput()
 
 Limitations
------------
+~~~~~~~~~~~
 
 None
 
 Authors
--------
+~~~~~~~
 
 This application has been written by OTB-Team.
 

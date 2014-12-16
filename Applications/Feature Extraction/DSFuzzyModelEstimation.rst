@@ -11,9 +11,9 @@ Estimate feature fuzzy model parameters using 2 vector data (ground truth sample
 Parameters
 ----------
 
-This section describes in details the parameters available for this application. Table~\ref{DSFuzzyModelEstimation_param_table}, page~\pageref{DSFuzzyModelEstimation_param_table} presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is \verb+DSFuzzyModelEstimation+.
+This section describes in details the parameters available for this application. Table [#]_ presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is *DSFuzzyModelEstimation* .
 
-Parameters table for Fuzzy Model estimation:
+.. [#] Table: Parameters table for Fuzzy Model estimation.
 
 +-------------+--------------------------+----------------------------------+
 |Parameter Key|Parameter Type            |Parameter Description             |
@@ -114,12 +114,12 @@ To run this example from Python, use the following code snippet:
 	DSFuzzyModelEstimation.ExecuteAndWriteOutput()
 
 Limitations
------------
+~~~~~~~~~~~
 
 None.
 
 Authors
--------
+~~~~~~~
 
 This application has been written by OTB-Team.
 

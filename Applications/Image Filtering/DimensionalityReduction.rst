@@ -11,9 +11,9 @@ Performs dimensionality reduction on input image. PCA,NA-PCA,MAF,ICA methods are
 Parameters
 ----------
 
-This section describes in details the parameters available for this application. Table~\ref{DimensionalityReduction_param_table}, page~\pageref{DimensionalityReduction_param_table} presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is \verb+DimensionalityReduction+.
+This section describes in details the parameters available for this application. Table [#]_ presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is *DimensionalityReduction* .
 
-Parameters table for Dimensionality reduction:
+.. [#] Table: Parameters table for Dimensionality reduction.
 
 +--------------------+--------------------------+------------------------------------------+
 |Parameter Key       |Parameter Type            |Parameter Description                     |
@@ -149,17 +149,17 @@ To run this example from Python, use the following code snippet:
 	DimensionalityReduction.ExecuteAndWriteOutput()
 
 Limitations
------------
+~~~~~~~~~~~
 
 This application does not provide the inverse transform and the transformation matrix export for the MAF.
 
 Authors
--------
+~~~~~~~
 
 This application has been written by OTB-Team.
 
 See Also
---------
+~~~~~~~~
 
 These additional ressources can be useful for further information: 
 

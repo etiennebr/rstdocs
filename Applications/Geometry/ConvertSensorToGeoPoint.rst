@@ -11,9 +11,9 @@ This Application converts a sensor point of an input image to a geographic point
 Parameters
 ----------
 
-This section describes in details the parameters available for this application. Table~\ref{ConvertSensorToGeoPoint_param_table}, page~\pageref{ConvertSensorToGeoPoint_param_table} presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is \verb+ConvertSensorToGeoPoint+.
+This section describes in details the parameters available for this application. Table [#]_ presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is *ConvertSensorToGeoPoint* .
 
-Parameters table for Convert Sensor Point To Geographic Point:
+.. [#] Table: Parameters table for Convert Sensor Point To Geographic Point.
 
 +--------------+--------------------------+---------------------------------------+
 |Parameter Key |Parameter Type            |Parameter Description                  |
@@ -103,17 +103,17 @@ To run this example from Python, use the following code snippet:
 	ConvertSensorToGeoPoint.ExecuteAndWriteOutput()
 
 Limitations
------------
+~~~~~~~~~~~
 
 None
 
 Authors
--------
+~~~~~~~
 
 This application has been written by OTB-Team.
 
 See Also
---------
+~~~~~~~~
 
 These additional ressources can be useful for further information: 
 

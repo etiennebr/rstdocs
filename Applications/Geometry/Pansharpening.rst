@@ -11,9 +11,9 @@ This application performs P+XS pansharpening. Pansharpening is a process of merg
 Parameters
 ----------
 
-This section describes in details the parameters available for this application. Table~\ref{Pansharpening_param_table}, page~\pageref{Pansharpening_param_table} presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is \verb+Pansharpening+.
+This section describes in details the parameters available for this application. Table [#]_ presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is *Pansharpening* .
 
-Parameters table for Pansharpening:
+.. [#] Table: Parameters table for Pansharpening.
 
 +-------------------+--------------------------+----------------------------------+
 |Parameter Key      |Parameter Type            |Parameter Description             |
@@ -120,12 +120,12 @@ To run this example from Python, use the following code snippet:
 	Pansharpening.ExecuteAndWriteOutput()
 
 Limitations
------------
+~~~~~~~~~~~
 
 None
 
 Authors
--------
+~~~~~~~
 
 This application has been written by OTB-Team.
 

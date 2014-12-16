@@ -11,9 +11,9 @@ This application performs binary morphological operations on a mono band image
 Parameters
 ----------
 
-This section describes in details the parameters available for this application. Table~\ref{BinaryMorphologicalOperation_param_table}, page~\pageref{BinaryMorphologicalOperation_param_table} presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is \verb+BinaryMorphologicalOperation+.
+This section describes in details the parameters available for this application. Table [#]_ presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is *BinaryMorphologicalOperation* .
 
-Parameters table for Binary Morphological Operation:
+.. [#] Table: Parameters table for Binary Morphological Operation.
 
 +----------------------+--------------------------+----------------------------------+
 |Parameter Key         |Parameter Type            |Parameter Description             |
@@ -169,17 +169,17 @@ To run this example from Python, use the following code snippet:
 	BinaryMorphologicalOperation.ExecuteAndWriteOutput()
 
 Limitations
------------
+~~~~~~~~~~~
 
 None
 
 Authors
--------
+~~~~~~~
 
 This application has been written by OTB-Team.
 
 See Also
---------
+~~~~~~~~
 
 These additional ressources can be useful for further information: 
 

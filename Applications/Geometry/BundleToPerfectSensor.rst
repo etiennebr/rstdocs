@@ -11,9 +11,9 @@ This application performs P+XS pansharpening. The default mode use Pan and XS se
 Parameters
 ----------
 
-This section describes in details the parameters available for this application. Table~\ref{BundleToPerfectSensor_param_table}, page~\pageref{BundleToPerfectSensor_param_table} presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is \verb+BundleToPerfectSensor+.
+This section describes in details the parameters available for this application. Table [#]_ presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is *BundleToPerfectSensor* .
 
-Parameters table for Bundle to perfect sensor:
+.. [#] Table: Parameters table for Bundle to perfect sensor.
 
 +-------------+--------------------------+----------------------------------+
 |Parameter Key|Parameter Type            |Parameter Description             |
@@ -121,12 +121,12 @@ To run this example from Python, use the following code snippet:
 	BundleToPerfectSensor.ExecuteAndWriteOutput()
 
 Limitations
------------
+~~~~~~~~~~~
 
 None
 
 Authors
--------
+~~~~~~~
 
 This application has been written by OTB-Team.
 

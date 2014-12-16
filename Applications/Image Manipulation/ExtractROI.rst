@@ -11,9 +11,9 @@ This application extracts a Region Of Interest with user defined size, or refere
 Parameters
 ----------
 
-This section describes in details the parameters available for this application. Table~\ref{ExtractROI_param_table}, page~\pageref{ExtractROI_param_table} presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is \verb+ExtractROI+.
+This section describes in details the parameters available for this application. Table [#]_ presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is *ExtractROI* .
 
-Parameters table for Extract ROI:
+.. [#] Table: Parameters table for Extract ROI.
 
 +---------------------+--------------------------+----------------------------------+
 |Parameter Key        |Parameter Type            |Parameter Description             |
@@ -143,12 +143,12 @@ To run this example from Python, use the following code snippet:
 	ExtractROI.ExecuteAndWriteOutput()
 
 Limitations
------------
+~~~~~~~~~~~
 
 None
 
 Authors
--------
+~~~~~~~
 
 This application has been written by OTB-Team.
 

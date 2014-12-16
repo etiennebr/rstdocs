@@ -11,9 +11,9 @@ This application reduce speckle noise. Two methods are available: Lee and Frost.
 Parameters
 ----------
 
-This section describes in details the parameters available for this application. Table~\ref{Despeckle_param_table}, page~\pageref{Despeckle_param_table} presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is \verb+Despeckle+.
+This section describes in details the parameters available for this application. Table [#]_ presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is *Despeckle* .
 
-Parameters table for Despeckle:
+.. [#] Table: Parameters table for Despeckle.
 
 +-------------------+--------------------------+----------------------------------+
 |Parameter Key      |Parameter Type            |Parameter Description             |
@@ -111,12 +111,12 @@ To run this example from Python, use the following code snippet:
 	Despeckle.ExecuteAndWriteOutput()
 
 Limitations
------------
+~~~~~~~~~~~
 
 None
 
 Authors
--------
+~~~~~~~
 
 This application has been written by OTB-Team.
 

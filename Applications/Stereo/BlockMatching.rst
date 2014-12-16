@@ -11,9 +11,9 @@ This application allows to performs block-matching to estimate pixel-wise dispar
 Parameters
 ----------
 
-This section describes in details the parameters available for this application. Table~\ref{BlockMatching_param_table}, page~\pageref{BlockMatching_param_table} presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is \verb+BlockMatching+.
+This section describes in details the parameters available for this application. Table [#]_ presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is *BlockMatching* .
 
-Parameters table for Pixel-wise Block-Matching:
+.. [#] Table: Parameters table for Pixel-wise Block-Matching.
 
 +---------------------------+--------------------------+-----------------------------------------------+
 |Parameter Key              |Parameter Type            |Parameter Description                          |
@@ -153,10 +153,10 @@ This group of parameters allow to tune the block-matching behaviour.
  - **Sum of Squared Distances** : Sum of squared distances between pixels value in the metric window
 
 
- - **Normalized Cross-Correlation** : Normalized CrossCorrelation between the left and right windows
+ - **Normalized Cross-Correlation** : Normalized Cross-Correlation between the left and right windows
 
 
- - **Lp pseudo-norm** : Lp pseudonorm between the left and right windows
+ - **Lp pseudo-norm** : Lp pseudo-norm between the left and right windows
 
 
   - **p value** : Value of the p parameter in Lp pseudo-norm (must be positive).
@@ -175,7 +175,7 @@ This group of parameters allow to tune the block-matching behaviour.
 
  Available choices are: 
 
- - **None** : No subpixel 
+ - **None** : No sub-pixel
 
 
  - **Parabolic** : Parabolic fit
@@ -278,17 +278,17 @@ To run this example from Python, use the following code snippet:
 	BlockMatching.ExecuteAndWriteOutput()
 
 Limitations
------------
+~~~~~~~~~~~
 
 None
 
 Authors
--------
+~~~~~~~
 
 This application has been written by OTB-Team.
 
 See Also
---------
+~~~~~~~~
 
 These additional ressources can be useful for further information: 
 

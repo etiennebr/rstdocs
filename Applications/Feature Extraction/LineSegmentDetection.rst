@@ -12,9 +12,9 @@ This application detects locally straight contours in a image. It is based on Bu
 Parameters
 ----------
 
-This section describes in details the parameters available for this application. Table~\ref{LineSegmentDetection_param_table}, page~\pageref{LineSegmentDetection_param_table} presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is \verb+LineSegmentDetection+.
+This section describes in details the parameters available for this application. Table [#]_ presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is *LineSegmentDetection* .
 
-Parameters table for Line segment detection:
+.. [#] Table: Parameters table for Line segment detection.
 
 +-------------+--------------------------+----------------------------------+
 |Parameter Key|Parameter Type            |Parameter Description             |
@@ -93,17 +93,17 @@ To run this example from Python, use the following code snippet:
 	LineSegmentDetection.ExecuteAndWriteOutput()
 
 Limitations
------------
+~~~~~~~~~~~
 
 None
 
 Authors
--------
+~~~~~~~
 
 This application has been written by OTB-Team.
 
 See Also
---------
+~~~~~~~~
 
 These additional ressources can be useful for further information: 
 

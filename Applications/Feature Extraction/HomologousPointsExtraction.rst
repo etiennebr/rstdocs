@@ -11,9 +11,9 @@ This application allows to compute homologous points between images using keypoi
 Parameters
 ----------
 
-This section describes in details the parameters available for this application. Table~\ref{HomologousPointsExtraction_param_table}, page~\pageref{HomologousPointsExtraction_param_table} presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is \verb+HomologousPointsExtraction+.
+This section describes in details the parameters available for this application. Table [#]_ presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is *HomologousPointsExtraction* .
 
-Parameters table for Homologous Points Extraction:
+.. [#] Table: Parameters table for Homologous Points Extraction.
 
 +---------------------+--------------------------+---------------------------------------------------------------------------+
 |Parameter Key        |Parameter Type            |Parameter Description                                                      |
@@ -189,17 +189,17 @@ To run this example from Python, use the following code snippet:
 	HomologousPointsExtraction.ExecuteAndWriteOutput()
 
 Limitations
------------
+~~~~~~~~~~~
 
 Full mode does not handle large images.
 
 Authors
--------
+~~~~~~~
 
 This application has been written by OTB-Team.
 
 See Also
---------
+~~~~~~~~
 
 These additional ressources can be useful for further information: 
 

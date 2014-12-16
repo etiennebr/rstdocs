@@ -11,9 +11,9 @@ This application computes a global mean and standard deviation for each band of 
 Parameters
 ----------
 
-This section describes in details the parameters available for this application. Table~\ref{ComputeImagesStatistics_param_table}, page~\pageref{ComputeImagesStatistics_param_table} presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is \verb+ComputeImagesStatistics+.
+This section describes in details the parameters available for this application. Table [#]_ presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is *ComputeImagesStatistics* .
 
-Parameters table for Compute Images second order statistics:
+.. [#] Table: Parameters table for Compute Images second order statistics.
 
 +-------------+--------------------------+----------------------------------+
 |Parameter Key|Parameter Type            |Parameter Description             |
@@ -70,17 +70,17 @@ To run this example from Python, use the following code snippet:
 	ComputeImagesStatistics.ExecuteAndWriteOutput()
 
 Limitations
------------
+~~~~~~~~~~~
 
 Each image of the set must contain the same bands as the others (i.e. same types, in the same order).
 
 Authors
--------
+~~~~~~~
 
 This application has been written by OTB-Team.
 
 See Also
---------
+~~~~~~~~
 
 These additional ressources can be useful for further information: 
 

@@ -11,9 +11,9 @@ Generate a vector data from Open Street Map data. A DEM could be use. By default
 Parameters
 ----------
 
-This section describes in details the parameters available for this application. Table~\ref{OSMDownloader_param_table}, page~\pageref{OSMDownloader_param_table} presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is \verb+OSMDownloader+.
+This section describes in details the parameters available for this application. Table [#]_ presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is *OSMDownloader* .
 
-Parameters table for Open Street Map layers importations applications:
+.. [#] Table: Parameters table for Open Street Map layers importations applications.
 
 +-------------+--------------------------+---------------------------------------------+
 |Parameter Key|Parameter Type            |Parameter Description                        |
@@ -104,17 +104,17 @@ To run this example from Python, use the following code snippet:
 	OSMDownloader.ExecuteAndWriteOutput()
 
 Limitations
------------
+~~~~~~~~~~~
 
 None
 
 Authors
--------
+~~~~~~~
 
 This application has been written by OTB-Team.
 
 See Also
---------
+~~~~~~~~
 
 These additional ressources can be useful for further information: 
 

@@ -11,9 +11,9 @@ This application allows to perform image resampling from an input resampling gri
 Parameters
 ----------
 
-This section describes in details the parameters available for this application. Table~\ref{GridBasedImageResampling_param_table}, page~\pageref{GridBasedImageResampling_param_table} presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is \verb+GridBasedImageResampling+.
+This section describes in details the parameters available for this application. Table [#]_ presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is *GridBasedImageResampling* .
 
-Parameters table for Grid Based Image Resampling:
+.. [#] Table: Parameters table for Grid Based Image Resampling.
 
 +-----------------------+--------------------------+---------------------------------------------------------------+
 |Parameter Key          |Parameter Type            |Parameter Description                                          |
@@ -174,17 +174,17 @@ To run this example from Python, use the following code snippet:
 	GridBasedImageResampling.ExecuteAndWriteOutput()
 
 Limitations
------------
+~~~~~~~~~~~
 
 None
 
 Authors
--------
+~~~~~~~
 
 This application has been written by OTB-Team.
 
 See Also
---------
+~~~~~~~~
 
 These additional ressources can be useful for further information: 
 

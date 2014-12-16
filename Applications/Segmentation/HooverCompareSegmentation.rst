@@ -13,9 +13,9 @@ This application compares a machine segmentation (MS) with a partial ground trut
 Parameters
 ----------
 
-This section describes in details the parameters available for this application. Table~\ref{HooverCompareSegmentation_param_table}, page~\pageref{HooverCompareSegmentation_param_table} presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is \verb+HooverCompareSegmentation+.
+This section describes in details the parameters available for this application. Table [#]_ presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is *HooverCompareSegmentation* .
 
-Parameters table for Hoover compare segmentation:
+.. [#] Table: Parameters table for Hoover compare segmentation.
 
 +-------------+--------------------------+-----------------------------------+
 |Parameter Key|Parameter Type            |Parameter Description              |
@@ -103,17 +103,17 @@ To run this example from Python, use the following code snippet:
 	HooverCompareSegmentation.ExecuteAndWriteOutput()
 
 Limitations
------------
+~~~~~~~~~~~
 
 None
 
 Authors
--------
+~~~~~~~
 
 This application has been written by OTB-Team.
 
 See Also
---------
+~~~~~~~~
 
 These additional ressources can be useful for further information: 
 

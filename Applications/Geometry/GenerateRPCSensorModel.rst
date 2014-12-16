@@ -11,9 +11,9 @@ This application generates a RPC sensor model from a list of Ground Control Poin
 Parameters
 ----------
 
-This section describes in details the parameters available for this application. Table~\ref{GenerateRPCSensorModel_param_table}, page~\pageref{GenerateRPCSensorModel_param_table} presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is \verb+GenerateRPCSensorModel+.
+This section describes in details the parameters available for this application. Table [#]_ presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is *GenerateRPCSensorModel* .
 
-Parameters table for Generate a RPC sensor model:
+.. [#] Table: Parameters table for Generate a RPC sensor model.
 
 +----------------+--------------------------+--------------------------------------------------+
 |Parameter Key   |Parameter Type            |Parameter Description                             |
@@ -146,17 +146,17 @@ To run this example from Python, use the following code snippet:
 	GenerateRPCSensorModel.ExecuteAndWriteOutput()
 
 Limitations
------------
+~~~~~~~~~~~
 
 None
 
 Authors
--------
+~~~~~~~
 
 This application has been written by OTB-Team.
 
 See Also
---------
+~~~~~~~~
 
 These additional ressources can be useful for further information: 
 

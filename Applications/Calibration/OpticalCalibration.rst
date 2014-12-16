@@ -31,7 +31,9 @@ In this case, be sure to provide the inverse gain values so that the application
 
 In order to convert TOA radiance to TOA reflectance, the following formula is used :
 
-(2)	R(b) = (pi*L(b)*d*d) / (ESUN(b)*cos(θ))	(no dimension)	where : 
+::
+   
+   (2)	R(b) = (pi*L(b)*d*d) / (ESUN(b)*cos(θ))	(no dimension)	where : 
 
 - L(b) is the spectral radiance for band b 
 - pi is the famous mathematical constant (3.14159...) 
@@ -44,31 +46,39 @@ Note also that ESUN(b) not only depends on the band b, but also on the spectral 
 These values are provided by the user thanks to a txt file following the same convention as before.
 Instead of providing the date of acquisition, the user can also provide a flux normalization coefficient 'fn'. The formula used instead will be the following : 
 
-(3) 	R(b) = (pi*L(b)) / (ESUN(b)*fn*fn*cos(θ)) 
+::
+
+   (3) 	R(b) = (pi*L(b)) / (ESUN(b)*fn*fn*cos(θ)) 
 
 Whatever the formula used (2 or 3), the user should pay attention to the interpretation of the parameters he will provide to the application, by taking into account the original formula that the metadata files assumes.
 
 Below, we give two examples of txt files containing information about gains/biases and solar illuminations :
 
-gainbias.txt :
-# Gain values for each band. Each value must be separated with colons (:), with eventual spaces. Blank lines not allowed.
-10.4416 : 9.529 : 8.5175 : 14.0063
-# Bias values for each band.
-0.0 : 0.0 : 0.0 : 0.0
+:gainbias.txt:
 
-solarillumination.txt : 
-# Solar illumination values in watt/m2/micron ('micron' means actually 'for each band').
-# Each value must be separated with colons (:), with eventual spaces. Blank lines not allowed.
-1540.494123 : 1826.087443 : 1982.671954 : 1094.747446
+::
+
+   # Gain values for each band. Each value must be separated with colons (:), with eventual spaces. Blank lines not allowed.
+   10.4416 : 9.529 : 8.5175 : 14.0063
+   # Bias values for each band.
+   0.0 : 0.0 : 0.0 : 0.0
+
+:solarillumination.txt:
+
+::
+ 
+   # Solar illumination values in watt/m2/micron ('micron' means actually 'for each band').
+   # Each value must be separated with colons (:), with eventual spaces. Blank lines not allowed.
+   1540.494123 : 1826.087443 : 1982.671954 : 1094.747446
 
 Finally, the 'Logs' tab provides usefull messages that can help the user in knowing the process different status.
 
 Parameters
 ----------
 
-This section describes in details the parameters available for this application. Table~\ref{OpticalCalibration_param_table}, page~\pageref{OpticalCalibration_param_table} presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is \verb+OpticalCalibration+.
+This section describes in details the parameters available for this application. Table [#]_ presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is *OpticalCalibration* .
 
-Parameters table for Optical calibration:
+.. [#] Table: Parameters table for Optical calibration.
 
 +------------------------+--------------------------+------------------------------------------------------------+
 |Parameter Key           |Parameter Type            |Parameter Description                                       |
@@ -297,17 +307,17 @@ To run this example from Python, use the following code snippet:
 	OpticalCalibration.ExecuteAndWriteOutput()
 
 Limitations
------------
+~~~~~~~~~~~
 
 None
 
 Authors
--------
+~~~~~~~
 
 This application has been written by OTB-Team.
 
 See Also
---------
+~~~~~~~~
 
 These additional ressources can be useful for further information: 
 

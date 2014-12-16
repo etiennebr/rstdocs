@@ -11,9 +11,9 @@ This application extracts the vector data features belonging to a region specifi
 Parameters
 ----------
 
-This section describes in details the parameters available for this application. Table~\ref{VectorDataExtractROI_param_table}, page~\pageref{VectorDataExtractROI_param_table} presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is \verb+VectorDataExtractROI+.
+This section describes in details the parameters available for this application. Table [#]_ presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is *VectorDataExtractROI* .
 
-Parameters table for VectorData Extract ROI:
+.. [#] Table: Parameters table for VectorData Extract ROI.
 
 +-------------+--------------------------+----------------------------------+
 |Parameter Key|Parameter Type            |Parameter Description             |
@@ -98,12 +98,12 @@ To run this example from Python, use the following code snippet:
 	VectorDataExtractROI.ExecuteAndWriteOutput()
 
 Limitations
------------
+~~~~~~~~~~~
 
 None
 
 Authors
--------
+~~~~~~~
 
 This application has been written by OTB-Team.
 

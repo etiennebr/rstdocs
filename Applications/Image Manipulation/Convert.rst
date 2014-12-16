@@ -12,9 +12,9 @@ This application performs an image pixel type conversion (short, ushort, uchar, 
 Parameters
 ----------
 
-This section describes in details the parameters available for this application. Table~\ref{Convert_param_table}, page~\pageref{Convert_param_table} presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is \verb+Convert+.
+This section describes in details the parameters available for this application. Table [#]_ presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is *Convert* .
 
-Parameters table for Image Conversion:
+.. [#] Table: Parameters table for Image Conversion.
 
 +-----------------+--------------------------+----------------------------------+
 |Parameter Key    |Parameter Type            |Parameter Description             |
@@ -123,17 +123,17 @@ To run this example from Python, use the following code snippet:
 	Convert.ExecuteAndWriteOutput()
 
 Limitations
------------
+~~~~~~~~~~~
 
 None
 
 Authors
--------
+~~~~~~~
 
 This application has been written by OTB-Team.
 
 See Also
---------
+~~~~~~~~
 
 These additional ressources can be useful for further information: 
 

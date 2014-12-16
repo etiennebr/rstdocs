@@ -11,9 +11,9 @@ This application generates a pair of deformation grid to stereo-rectify a pair o
 Parameters
 ----------
 
-This section describes in details the parameters available for this application. Table~\ref{StereoRectificationGridGenerator_param_table}, page~\pageref{StereoRectificationGridGenerator_param_table} presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is \verb+StereoRectificationGridGenerator+.
+This section describes in details the parameters available for this application. Table [#]_ presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is *StereoRectificationGridGenerator* .
 
-Parameters table for Stereo-rectification deformation grid generator:
+.. [#] Table: Parameters table for Stereo-rectification deformation grid generator.
 
 +----------------------------+--------------------------+-----------------------------------------------+
 |Parameter Key               |Parameter Type            |Parameter Description                          |
@@ -173,17 +173,17 @@ To run this example from Python, use the following code snippet:
 	StereoRectificationGridGenerator.ExecuteAndWriteOutput()
 
 Limitations
------------
+~~~~~~~~~~~
 
 Generation of the deformation grid is not streamable, pay attention to this fact when setting the grid step.
 
 Authors
--------
+~~~~~~~
 
 This application has been written by OTB-Team.
 
 See Also
---------
+~~~~~~~~
 
 These additional ressources can be useful for further information: 
 

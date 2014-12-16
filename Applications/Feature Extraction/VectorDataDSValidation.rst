@@ -11,9 +11,9 @@ This application validates or unvalidate the studied samples using the Dempster-
 Parameters
 ----------
 
-This section describes in details the parameters available for this application. Table~\ref{VectorDataDSValidation_param_table}, page~\pageref{VectorDataDSValidation_param_table} presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is \verb+VectorDataDSValidation+.
+This section describes in details the parameters available for this application. Table [#]_ presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is *VectorDataDSValidation* .
 
-Parameters table for Vector Data validation:
+.. [#] Table: Parameters table for Vector Data validation.
 
 +-------------+--------------------------+----------------------------------+
 |Parameter Key|Parameter Type            |Parameter Description             |
@@ -90,17 +90,17 @@ To run this example from Python, use the following code snippet:
 	VectorDataDSValidation.ExecuteAndWriteOutput()
 
 Limitations
------------
+~~~~~~~~~~~
 
 None.
 
 Authors
--------
+~~~~~~~
 
 This application has been written by OTB-Team.
 
 See Also
---------
+~~~~~~~~
 
 These additional ressources can be useful for further information: 
 

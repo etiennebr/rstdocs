@@ -11,9 +11,9 @@ Applies the Vertex Component Analysis to an hyperspectral image to extract endme
 Parameters
 ----------
 
-This section describes in details the parameters available for this application. Table~\ref{VertexComponentAnalysis_param_table}, page~\pageref{VertexComponentAnalysis_param_table} presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is \verb+VertexComponentAnalysis+.
+This section describes in details the parameters available for this application. Table [#]_ presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is *VertexComponentAnalysis* .
 
-Parameters table for Vertex Component Analysis:
+.. [#] Table: Parameters table for Vertex Component Analysis.
 
 +-------------+--------------------------+----------------------------------+
 |Parameter Key|Parameter Type            |Parameter Description             |
@@ -77,12 +77,12 @@ To run this example from Python, use the following code snippet:
 	VertexComponentAnalysis.ExecuteAndWriteOutput()
 
 Limitations
------------
+~~~~~~~~~~~
 
 None
 
 Authors
--------
+~~~~~~~
 
 This application has been written by OTB-Team.
 

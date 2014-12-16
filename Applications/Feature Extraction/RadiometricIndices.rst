@@ -11,9 +11,9 @@ This application computes radiometric indices using the relevant channels of the
 Parameters
 ----------
 
-This section describes in details the parameters available for this application. Table~\ref{RadiometricIndices_param_table}, page~\pageref{RadiometricIndices_param_table} presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is \verb+RadiometricIndices+.
+This section describes in details the parameters available for this application. Table [#]_ presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is *RadiometricIndices* .
 
-Parameters table for Radiometric Indices:
+.. [#] Table: Parameters table for Radiometric Indices.
 
 +--------------+--------------------------+----------------------------------+
 |Parameter Key |Parameter Type            |Parameter Description             |
@@ -103,17 +103,17 @@ To run this example from Python, use the following code snippet:
 	RadiometricIndices.ExecuteAndWriteOutput()
 
 Limitations
------------
+~~~~~~~~~~~
 
 None
 
 Authors
--------
+~~~~~~~
 
 This application has been written by OTB-Team.
 
 See Also
---------
+~~~~~~~~
 
 These additional ressources can be useful for further information: 
 

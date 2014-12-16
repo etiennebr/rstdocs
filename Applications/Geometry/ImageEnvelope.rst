@@ -11,9 +11,9 @@ Build a vector data containing the polygon of the image envelope.
 Parameters
 ----------
 
-This section describes in details the parameters available for this application. Table~\ref{ImageEnvelope_param_table}, page~\pageref{ImageEnvelope_param_table} presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is \verb+ImageEnvelope+.
+This section describes in details the parameters available for this application. Table [#]_ presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is *ImageEnvelope* .
 
-Parameters table for Image Envelope:
+.. [#] Table: Parameters table for Image Envelope.
 
 +-------------+--------------------------+----------------------------------+
 |Parameter Key|Parameter Type            |Parameter Description             |
@@ -97,12 +97,12 @@ To run this example from Python, use the following code snippet:
 	ImageEnvelope.ExecuteAndWriteOutput()
 
 Limitations
------------
+~~~~~~~~~~~
 
 None
 
 Authors
--------
+~~~~~~~
 
 This application has been written by OTB-Team.
 

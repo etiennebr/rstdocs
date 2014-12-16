@@ -11,9 +11,9 @@ Generate a 3D Ply file from a DEM and a color image.
 Parameters
 ----------
 
-This section describes in details the parameters available for this application. Table~\ref{GeneratePlyFile_param_table}, page~\pageref{GeneratePlyFile_param_table} presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is \verb+GeneratePlyFile+.
+This section describes in details the parameters available for this application. Table [#]_ presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is *GeneratePlyFile* .
 
-Parameters table for Ply 3D files generation:
+.. [#] Table: Parameters table for Ply 3D files generation.
 
 +----------------+--------------------------+----------------------------------+
 |Parameter Key   |Parameter Type            |Parameter Description             |
@@ -136,7 +136,7 @@ To run this example from Python, use the following code snippet:
 	GeneratePlyFile.ExecuteAndWriteOutput()
 
 Authors
--------
+~~~~~~~
 
 This application has been written by OTB-Team.
 

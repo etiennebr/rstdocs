@@ -11,9 +11,9 @@ This application computes Haralick, advanced and higher order textures on a mono
 Parameters
 ----------
 
-This section describes in details the parameters available for this application. Table~\ref{HaralickTextureExtraction_param_table}, page~\pageref{HaralickTextureExtraction_param_table} presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is \verb+HaralickTextureExtraction+.
+This section describes in details the parameters available for this application. Table [#]_ presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is *HaralickTextureExtraction* .
 
-Parameters table for Haralick Texture Extraction:
+.. [#] Table: Parameters table for Haralick Texture Extraction.
 
 +----------------+--------------------------+----------------------------------+
 |Parameter Key   |Parameter Type            |Parameter Description             |
@@ -92,7 +92,7 @@ Choice of The Texture Set. Available choices are:
 - **Advanced Texture Features** : This group of parameters defines the 9 advanced texture feature output image.    The image channels are: Mean, Variance, Sum Average, Sum Variance,    Sum Entropy, Difference of Entropies, Difference of Variances, IC1 and IC2
 
 
-- **Higher Order Texture Features** : This group of parameters defines the 11 higher order texture feature output image.    The image channels are: Short Run Emphasis, Long Run Emphasis, GreyLevel Nonuniformity, Run Length Nonuniformity, Run Percentage,     Low GreyLevel Run Emphasis, High GreyLevel Run Emphasis, Short Run Low GreyLevel Emphasis, Short Run High GreyLevel Emphasis,     Long Run Low GreyLevel Emphasis and Long Run High GreyLevel Emphasis
+- **Higher Order Texture Features** : This group of parameters defines the 11 higher order texture feature output image.    The image channels are: Short Run Emphasis, Long Run Emphasis, Grey-Level Nonuniformity, Run Length Nonuniformity, Run Percentage,     Low Grey-Level Run Emphasis, High Grey-Level Run Emphasis, Short Run Low Grey-Level Emphasis, Short Run High Grey-Level Emphasis,     Long Run Low Grey-Level Emphasis and Long Run High Grey-Level Emphasis
 
 
 
@@ -142,17 +142,17 @@ To run this example from Python, use the following code snippet:
 	HaralickTextureExtraction.ExecuteAndWriteOutput()
 
 Limitations
------------
+~~~~~~~~~~~
 
 None
 
 Authors
--------
+~~~~~~~
 
 This application has been written by OTB-Team.
 
 See Also
---------
+~~~~~~~~
 
 These additional ressources can be useful for further information: 
 

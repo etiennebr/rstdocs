@@ -13,9 +13,9 @@ This application filters the input labeled image (with a maximal class label = 6
 Parameters
 ----------
 
-This section describes in details the parameters available for this application. Table~\ref{ClassificationMapRegularization_param_table}, page~\pageref{ClassificationMapRegularization_param_table} presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is \verb+ClassificationMapRegularization+.
+This section describes in details the parameters available for this application. Table [#]_ presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is *ClassificationMapRegularization* .
 
-Parameters table for Classification Map Regularization:
+.. [#] Table: Parameters table for Classification Map Regularization.
 
 +-----------------+--------------------------+----------------------------------------+
 |Parameter Key    |Parameter Type            |Parameter Description                   |
@@ -111,17 +111,17 @@ To run this example from Python, use the following code snippet:
 	ClassificationMapRegularization.ExecuteAndWriteOutput()
 
 Limitations
------------
+~~~~~~~~~~~
 
 The input image must be a single band labeled image (with a maximal class label = 65535). The structuring element radius must have a minimum value equal to 1 pixel. Please note that the Undecided value must be different from existing labels in the input labeled image.
 
 Authors
--------
+~~~~~~~
 
 This application has been written by OTB-Team.
 
 See Also
---------
+~~~~~~~~
 
 These additional ressources can be useful for further information: 
 

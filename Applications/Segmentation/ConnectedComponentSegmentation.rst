@@ -11,9 +11,9 @@ This application allows to perform a masking, connected components segmentation 
 Parameters
 ----------
 
-This section describes in details the parameters available for this application. Table~\ref{ConnectedComponentSegmentation_param_table}, page~\pageref{ConnectedComponentSegmentation_param_table} presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is \verb+ConnectedComponentSegmentation+.
+This section describes in details the parameters available for this application. Table [#]_ presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is *ConnectedComponentSegmentation* .
 
-Parameters table for Connected Component Segmentation:
+.. [#] Table: Parameters table for Connected Component Segmentation.
 
 +-------------+--------------------------+----------------------------------+
 |Parameter Key|Parameter Type            |Parameter Description             |
@@ -115,12 +115,12 @@ To run this example from Python, use the following code snippet:
 	ConnectedComponentSegmentation.ExecuteAndWriteOutput()
 
 Limitations
------------
+~~~~~~~~~~~
 
 Due to the tiling scheme in case of large images, some segments can be arbitrarily split across multiple tiles.
 
 Authors
--------
+~~~~~~~
 
 This application has been written by OTB-Team.
 

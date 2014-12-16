@@ -11,9 +11,9 @@ This application reads a geom file containing a sensor model and a text file con
 Parameters
 ----------
 
-This section describes in details the parameters available for this application. Table~\ref{RefineSensorModel_param_table}, page~\pageref{RefineSensorModel_param_table} presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is \verb+RefineSensorModel+.
+This section describes in details the parameters available for this application. Table [#]_ presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is *RefineSensorModel* .
 
-Parameters table for Refine Sensor Model:
+.. [#] Table: Parameters table for Refine Sensor Model.
 
 +----------------+--------------------------+--------------------------------------------------+
 |Parameter Key   |Parameter Type            |Parameter Description                             |
@@ -153,17 +153,17 @@ To run this example from Python, use the following code snippet:
 	RefineSensorModel.ExecuteAndWriteOutput()
 
 Limitations
------------
+~~~~~~~~~~~
 
 None
 
 Authors
--------
+~~~~~~~
 
 This application has been written by OTB-Team.
 
 See Also
---------
+~~~~~~~~
 
 These additional ressources can be useful for further information: 
 

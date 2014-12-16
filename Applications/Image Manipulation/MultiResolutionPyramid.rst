@@ -11,9 +11,9 @@ This application builds a multi-resolution pyramid of the input image. User can 
 Parameters
 ----------
 
-This section describes in details the parameters available for this application. Table~\ref{MultiResolutionPyramid_param_table}, page~\pageref{MultiResolutionPyramid_param_table} presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is \verb+MultiResolutionPyramid+.
+This section describes in details the parameters available for this application. Table [#]_ presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is *MultiResolutionPyramid* .
 
-Parameters table for Multi Resolution Pyramid:
+.. [#] Table: Parameters table for Multi Resolution Pyramid.
 
 +-------------+--------------------------+----------------------------------+
 |Parameter Key|Parameter Type            |Parameter Description             |
@@ -94,12 +94,12 @@ To run this example from Python, use the following code snippet:
 	MultiResolutionPyramid.ExecuteAndWriteOutput()
 
 Limitations
------------
+~~~~~~~~~~~
 
 None
 
 Authors
--------
+~~~~~~~
 
 This application has been written by OTB-Team.
 

@@ -15,9 +15,9 @@ This application allows to map a label image to a 8-bits RGB image (in both ways
 Parameters
 ----------
 
-This section describes in details the parameters available for this application. Table~\ref{ColorMapping_param_table}, page~\pageref{ColorMapping_param_table} presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is \verb+ColorMapping+.
+This section describes in details the parameters available for this application. Table [#]_ presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is *ColorMapping* .
 
-Parameters table for Color Mapping:
+.. [#] Table: Parameters table for Color Mapping.
 
 +-------------------------------+--------------------------+------------------------------------------------------------+
 |Parameter Key                  |Parameter Type            |Parameter Description                                       |
@@ -124,13 +124,13 @@ Selection of the operation to execute (default is : label to color). Available c
 **Color mapping method**
 Selection of color mapping methods and their parameters. Available choices are: 
 
-- **Color mapping with custom labeled look-up table** : Apply a userdefined lookup table to a labeled image. Lookup table is loaded from a text file.
+- **Color mapping with custom labeled look-up table** : Apply a user-defined look-up table to a labeled image. Look-up table is loaded from a text file.
 
 
  - **Look-up table file** : An ASCII file containing the look-up table with one color per line (for instance the line '1 255 0 0' means that all pixels with label 1 will be replaced by RGB color 255 0 0) Lines beginning with a # are ignored.
 
 
- - **Color mapping with continuous look-up table** : Apply a continuous lookup table to a range of input values.
+ - **Color mapping with continuous look-up table** : Apply a continuous look-up table to a range of input values.
 
 
   - **Look-up tables** : Available look-up tables.
@@ -139,15 +139,11 @@ Selection of color mapping methods and their parameters. Available choices are:
 
   - **Mapping range higher value** : Set the higher input value of the mapping range.
 
-
-  - **Compute an optimized look-up table** : [label to color] Compute an optimal lookup table such that neighboring labels in a segmentation are mapped to highly contrasted colors.[color to label] Searching all the colors present in the image to compute a continuous label list
-
+  - **Compute an optimized look-up table** : [label to color] Compute an optimal look-up table such that neighboring labels in a segmentation are mapped to highly contrasted colors. [color to label] Searching all the colors present in the image to compute a continuous label list
 
    - **Background label** : Value of the background label.
 
-
    - **Color mapping with look-up table calculated on support image**
-
 
     - **Support Image** : Support image filename. For each label, the LUT is calculated from the mean pixel value in the support image, over the corresponding labeled areas. First of all, the support image is normalized with extrema rejection.
 
@@ -156,8 +152,6 @@ Selection of color mapping methods and their parameters. Available choices are:
     - **lower quantile** : lower quantile for image normalization.
 
     - **upper quantile** : upper quantile for image normalization.
-
-
 
 **Load otb application from xml file**
 Load otb application from xml file.
@@ -198,18 +192,18 @@ To run this example from Python, use the following code snippet:
 	ColorMapping.ExecuteAndWriteOutput()
 
 Limitations
------------
+~~~~~~~~~~~
 
 The segmentation optimal method does not support streaming, and thus large images. The operation color to label is not implemented for the methods continuous LUT and support image LUT.
  ColorMapping using support image is not threaded.
 
 Authors
--------
+~~~~~~~
 
 This application has been written by OTB-Team.
 
 See Also
---------
+~~~~~~~~
 
 These additional ressources can be useful for further information: 
 

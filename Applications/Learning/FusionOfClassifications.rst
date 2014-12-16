@@ -8,17 +8,18 @@ Detailed description
 
 This application allows to fuse several classification maps and produces a single more robust classification map. Fusion is done either by mean of Majority Voting, or with the Dempster Shafer combination method on class labels.
 
- - MAJORITY VOTING: for each pixel, the class with the highest number of votes is selected.
- - DEMPSTER SHAFER: for each pixel, the class label for which the Belief Function is maximal is selected. This Belief Function is calculated by mean of the Dempster Shafer combination of Masses of Belief, and indicates the belief that each input classification map presents for each label value. Moreover, the Masses of Belief are based on the input confusion matrices of each classification map, either by using the PRECISION or RECALL rates, or the OVERALL ACCURACY, or the KAPPA coefficient. Thus, each input classification map needs to be associated with its corresponding input confusion matrix file for the Dempster Shafer fusion.
- - Input pixels with the NODATA label are not handled in the fusion of classification maps. Moreover, pixels for which all the input classifiers are set to NODATA keep this value in the output fused image.
- - In case of number of votes equality, the UNDECIDED label is attributed to the pixel.
+- MAJORITY VOTING: for each pixel, the class with the highest number of votes is selected.
+- DEMPSTER SHAFER: for each pixel, the class label for which the Belief Function is maximal is selected. This Belief Function is calculated by mean of the Dempster Shafer combination of Masses of Belief, and indicates the belief that each input classification map presents for each label value. Moreover, the Masses of Belief are based on the input confusion matrices of each classification map, either by using the PRECISION or RECALL rates, or the OVERALL ACCURACY, or the KAPPA coefficient. Thus, each input classification map needs to be associated with its corresponding input confusion matrix file for the Dempster Shafer fusion.
+- Input pixels with the NODATA label are not handled in the fusion of classification maps. Moreover, pixels for which all the input classifiers are set to NODATA keep this value in the output fused image.
+- In case of number of votes equality, the UNDECIDED label is attributed to the pixel.
+
 
 Parameters
 ----------
 
-This section describes in details the parameters available for this application. Table~\ref{FusionOfClassifications_param_table}, page~\pageref{FusionOfClassifications_param_table} presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is \verb+FusionOfClassifications+.
+This section describes in details the parameters available for this application. Table [#]_ presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is *FusionOfClassifications* .
 
-Parameters table for Fusion of Classifications:
+.. [#] Table: Parameters table for Fusion of Classifications.
 
 +-----------------------------------+--------------------------+----------------------------------+
 |Parameter Key                      |Parameter Type            |Parameter Description             |
@@ -125,17 +126,17 @@ To run this example from Python, use the following code snippet:
 	FusionOfClassifications.ExecuteAndWriteOutput()
 
 Limitations
------------
+~~~~~~~~~~~
 
 None
 
 Authors
--------
+~~~~~~~
 
 This application has been written by OTB-Team.
 
 See Also
---------
+~~~~~~~~
 
 These additional ressources can be useful for further information: 
 

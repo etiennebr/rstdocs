@@ -11,9 +11,9 @@ Concatenate several tile files into a single image file.
 Parameters
 ----------
 
-This section describes in details the parameters available for this application. Table~\ref{TileFusion_param_table}, page~\pageref{TileFusion_param_table} presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is \verb+TileFusion+.
+This section describes in details the parameters available for this application. Table [#]_ presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is *TileFusion* .
 
-Parameters table for Image Tile Fusion:
+.. [#] Table: Parameters table for Image Tile Fusion.
 
 +-------------+--------------------------+----------------------------------+
 |Parameter Key|Parameter Type            |Parameter Description             |
@@ -78,12 +78,12 @@ To run this example from Python, use the following code snippet:
 	TileFusion.ExecuteAndWriteOutput()
 
 Limitations
------------
+~~~~~~~~~~~
 
 None
 
 Authors
--------
+~~~~~~~
 
 This application has been written by OTB-Team.
 

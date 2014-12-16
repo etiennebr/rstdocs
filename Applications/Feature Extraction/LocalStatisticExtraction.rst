@@ -11,9 +11,9 @@ This application computes the 4 local statistical moments on every pixel in the 
 Parameters
 ----------
 
-This section describes in details the parameters available for this application. Table~\ref{LocalStatisticExtraction_param_table}, page~\pageref{LocalStatisticExtraction_param_table} presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is \verb+LocalStatisticExtraction+.
+This section describes in details the parameters available for this application. Table [#]_ presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is *LocalStatisticExtraction* .
 
-Parameters table for Local Statistic Extraction:
+.. [#] Table: Parameters table for Local Statistic Extraction.
 
 +-------------+--------------------------+----------------------------------+
 |Parameter Key|Parameter Type            |Parameter Description             |
@@ -82,17 +82,17 @@ To run this example from Python, use the following code snippet:
 	LocalStatisticExtraction.ExecuteAndWriteOutput()
 
 Limitations
------------
+~~~~~~~~~~~
 
 None
 
 Authors
--------
+~~~~~~~
 
 This application has been written by OTB-Team.
 
 See Also
---------
+~~~~~~~~
 
 These additional ressources can be useful for further information: 
 

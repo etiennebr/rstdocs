@@ -11,9 +11,9 @@ This application computes MSE (Mean Squared Error), MAE (Mean Absolute Error) an
 Parameters
 ----------
 
-This section describes in details the parameters available for this application. Table~\ref{CompareImages_param_table}, page~\pageref{CompareImages_param_table} presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is \verb+CompareImages+.
+This section describes in details the parameters available for this application. Table [#]_ presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is *CompareImages* .
 
-Parameters table for Images comparaison:
+.. [#] Table: Parameters table for Images comparaison.
 
 +-------------+--------------------------+------------------------------------------------+
 |Parameter Key|Parameter Type            |Parameter Description                           |
@@ -138,17 +138,17 @@ To run this example from Python, use the following code snippet:
 	CompareImages.ExecuteAndWriteOutput()
 
 Limitations
------------
+~~~~~~~~~~~
 
 None
 
 Authors
--------
+~~~~~~~
 
 This application has been written by OTB-Team.
 
 See Also
---------
+~~~~~~~~
 
 These additional ressources can be useful for further information: 
 

@@ -11,9 +11,9 @@ This application returns the UTM zone of an input geographic point.
 Parameters
 ----------
 
-This section describes in details the parameters available for this application. Table~\ref{ObtainUTMZoneFromGeoPoint_param_table}, page~\pageref{ObtainUTMZoneFromGeoPoint_param_table} presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is \verb+ObtainUTMZoneFromGeoPoint+.
+This section describes in details the parameters available for this application. Table [#]_ presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is *ObtainUTMZoneFromGeoPoint* .
 
-Parameters table for Obtain UTM Zone From Geo Point:
+.. [#] Table: Parameters table for Obtain UTM Zone From Geo Point.
 
 +-------------+--------------------------+----------------------------------+
 |Parameter Key|Parameter Type            |Parameter Description             |
@@ -70,12 +70,12 @@ To run this example from Python, use the following code snippet:
 	ObtainUTMZoneFromGeoPoint.ExecuteAndWriteOutput()
 
 Limitations
------------
+~~~~~~~~~~~
 
 None
 
 Authors
--------
+~~~~~~~
 
 This application has been written by OTB-Team.
 

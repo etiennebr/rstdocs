@@ -11,9 +11,9 @@ This application will apply a trained machine learning model on the selected fea
 Parameters
 ----------
 
-This section describes in details the parameters available for this application. Table~\ref{OGRLayerClassifier_param_table}, page~\pageref{OGRLayerClassifier_param_table} presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is \verb+OGRLayerClassifier+.
+This section describes in details the parameters available for this application. Table [#]_ presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is *OGRLayerClassifier* .
 
-Parameters table for OGRLayerClassifier:
+.. [#] Table: Parameters table for OGRLayerClassifier.
 
 +-------------+--------------------------+------------------------------------------------------+
 |Parameter Key|Parameter Type            |Parameter Description                                 |
@@ -80,17 +80,17 @@ To run this example from Python, use the following code snippet:
 	OGRLayerClassifier.ExecuteAndWriteOutput()
 
 Limitations
------------
+~~~~~~~~~~~
 
 Experimental. Only shapefiles are supported for now.
 
 Authors
--------
+~~~~~~~
 
 This application has been written by David Youssefi during internship at CNES.
 
 See Also
---------
+~~~~~~~~
 
 These additional ressources can be useful for further information: 
 

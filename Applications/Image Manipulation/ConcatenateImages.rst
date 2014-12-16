@@ -11,9 +11,9 @@ This application performs images channels concatenation. It will walk the input 
 Parameters
 ----------
 
-This section describes in details the parameters available for this application. Table~\ref{ConcatenateImages_param_table}, page~\pageref{ConcatenateImages_param_table} presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is \verb+ConcatenateImages+.
+This section describes in details the parameters available for this application. Table [#]_ presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is *ConcatenateImages* .
 
-Parameters table for Images Concatenation:
+.. [#] Table: Parameters table for Images Concatenation.
 
 +-------------+--------------------------+----------------------------------+
 |Parameter Key|Parameter Type            |Parameter Description             |
@@ -70,17 +70,17 @@ To run this example from Python, use the following code snippet:
 	ConcatenateImages.ExecuteAndWriteOutput()
 
 Limitations
------------
+~~~~~~~~~~~
 
 All input images must have the same size.
 
 Authors
--------
+~~~~~~~
 
 This application has been written by OTB-Team.
 
 See Also
---------
+~~~~~~~~
 
 These additional ressources can be useful for further information: 
 

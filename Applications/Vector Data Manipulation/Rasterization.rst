@@ -12,9 +12,9 @@ This application allows to reproject and rasterize a vector dataset. The grid of
 Parameters
 ----------
 
-This section describes in details the parameters available for this application. Table~\ref{Rasterization_param_table}, page~\pageref{Rasterization_param_table} presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is \verb+Rasterization+.
+This section describes in details the parameters available for this application. Table [#]_ presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is *Rasterization* .
 
-Parameters table for Rasterization:
+.. [#] Table: Parameters table for Rasterization.
 
 +----------------------+--------------------------+----------------------------------+
 |Parameter Key         |Parameter Type            |Parameter Description             |
@@ -94,13 +94,13 @@ Default value for pixels not belonging to any geometry.
 **Rasterization mode**
 Choice of rasterization modes. Available choices are: 
 
-- **Binary mode** : In this mode, pixels within a geometry will hold the userdefined foreground value
+- **Binary mode** : In this mode, pixels within a geometry will hold the user-defined foreground value
 
 
  - **Foreground value** : Value for pixels inside a geometry.
 
 
- - **Attribute burning mode** : In this mode, pixels within a geometry will hold the value of a userdefined field extracted from this geometry.
+ - **Attribute burning mode** : In this mode, pixels within a geometry will hold the value of a user-defined field extracted from this geometry.
 
 
   - **The attribute field to burn** : Name of the attribute field to burn.
@@ -149,17 +149,17 @@ To run this example from Python, use the following code snippet:
 	Rasterization.ExecuteAndWriteOutput()
 
 Limitations
------------
+~~~~~~~~~~~
 
 None
 
 Authors
--------
+~~~~~~~
 
 This application has been written by OTB-Team.
 
 See Also
---------
+~~~~~~~~
 
 These additional ressources can be useful for further information: 
 

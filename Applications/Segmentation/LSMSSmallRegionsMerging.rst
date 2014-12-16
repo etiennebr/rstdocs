@@ -11,9 +11,9 @@ This application performs the third step of the exact Large-Scale Mean-Shift seg
 Parameters
 ----------
 
-This section describes in details the parameters available for this application. Table~\ref{LSMSSmallRegionsMerging_param_table}, page~\pageref{LSMSSmallRegionsMerging_param_table} presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is \verb+LSMSSmallRegionsMerging+.
+This section describes in details the parameters available for this application. Table [#]_ presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is *LSMSSmallRegionsMerging* .
 
-Parameters table for Exact Large-Scale Mean-Shift segmentation, step 3 (optional):
+.. [#] Table: Parameters table for Exact Large-Scale Mean-Shift segmentation, step 3 (optional).
 
 +-------------+--------------------------+----------------------------------+
 |Parameter Key|Parameter Type            |Parameter Description             |
@@ -90,17 +90,17 @@ To run this example from Python, use the following code snippet:
 	LSMSSmallRegionsMerging.ExecuteAndWriteOutput()
 
 Limitations
------------
+~~~~~~~~~~~
 
 This application is part of the Large-Scale Mean-Shift segmentation workflow (LSMS) and may not be suited for any other purpose.
 
 Authors
--------
+~~~~~~~
 
 This application has been written by David Youssefi.
 
 See Also
---------
+~~~~~~~~
 
 These additional ressources can be useful for further information: 
 

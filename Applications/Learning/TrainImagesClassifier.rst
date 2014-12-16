@@ -14,9 +14,9 @@ This application performs a classifier training from multiple pairs of input ima
 Parameters
 ----------
 
-This section describes in details the parameters available for this application. Table~\ref{TrainImagesClassifier_param_table}, page~\pageref{TrainImagesClassifier_param_table} presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is \verb+TrainImagesClassifier+.
+This section describes in details the parameters available for this application. Table [#]_ presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is *TrainImagesClassifier* .
 
-Parameters table for Train a classifier from multiple images:
+.. [#] Table: Parameters table for Train a classifier from multiple images.
 
 +---------------------------+--------------------------+------------------------------------------+
 |Parameter Key              |Parameter Type            |Parameter Description                     |
@@ -199,17 +199,17 @@ To run this example from Python, use the following code snippet:
 	TrainImagesClassifier.ExecuteAndWriteOutput()
 
 Limitations
------------
+~~~~~~~~~~~
 
 None
 
 Authors
--------
+~~~~~~~
 
 This application has been written by OTB-Team.
 
 See Also
---------
+~~~~~~~~
 
 These additional ressources can be useful for further information: 
 

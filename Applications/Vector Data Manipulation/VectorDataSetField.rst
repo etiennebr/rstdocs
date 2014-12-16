@@ -11,9 +11,9 @@ Set a specified field to a specified value on all features of a vector data.
 Parameters
 ----------
 
-This section describes in details the parameters available for this application. Table~\ref{VectorDataSetField_param_table}, page~\pageref{VectorDataSetField_param_table} presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is \verb+VectorDataSetField+.
+This section describes in details the parameters available for this application. Table [#]_ presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is *VectorDataSetField* .
 
-Parameters table for Vector data set field:
+.. [#] Table: Parameters table for Vector data set field.
 
 +-------------+--------------------------+----------------------------------+
 |Parameter Key|Parameter Type            |Parameter Description             |
@@ -78,12 +78,12 @@ To run this example from Python, use the following code snippet:
 	VectorDataSetField.ExecuteAndWriteOutput()
 
 Limitations
------------
+~~~~~~~~~~~
 
 Doesn't work with KML files yet
 
 Authors
--------
+~~~~~~~
 
 This application has been written by OTB-Team.
 

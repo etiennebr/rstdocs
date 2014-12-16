@@ -11,9 +11,9 @@ This application trains a SVM classifier based on labeled geometries and a list 
 Parameters
 ----------
 
-This section describes in details the parameters available for this application. Table~\ref{TrainOGRLayersClassifier_param_table}, page~\pageref{TrainOGRLayersClassifier_param_table} presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is \verb+TrainOGRLayersClassifier+.
+This section describes in details the parameters available for this application. Table [#]_ presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is *TrainOGRLayersClassifier* .
 
-Parameters table for TrainOGRLayersClassifier:
+.. [#] Table: Parameters table for TrainOGRLayersClassifier.
 
 +-------------+--------------------------+------------------------------------------------------+
 |Parameter Key|Parameter Type            |Parameter Description                                 |
@@ -80,17 +80,17 @@ To run this example from Python, use the following code snippet:
 	TrainOGRLayersClassifier.ExecuteAndWriteOutput()
 
 Limitations
------------
+~~~~~~~~~~~
 
 Experimental. For now only shapefiles are supported. Tuning of SVM classifier is not available.
 
 Authors
--------
+~~~~~~~
 
 This application has been written by David Youssefi during internship at CNES.
 
 See Also
---------
+~~~~~~~~
 
 These additional ressources can be useful for further information: 
 

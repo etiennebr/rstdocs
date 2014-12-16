@@ -14,9 +14,9 @@ The application allows to estimate the abundance maps with several algorithms : 
 Parameters
 ----------
 
-This section describes in details the parameters available for this application. Table~\ref{HyperspectralUnmixing_param_table}, page~\pageref{HyperspectralUnmixing_param_table} presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is \verb+HyperspectralUnmixing+.
+This section describes in details the parameters available for this application. Table [#]_ presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is *HyperspectralUnmixing* .
 
-Parameters table for Hyperspectral data unmixing:
+.. [#] Table: Parameters table for Hyperspectral data unmixing.
 
 +-------------+--------------------------+----------------------------------+
 |Parameter Key|Parameter Type            |Parameter Description             |
@@ -53,7 +53,7 @@ Parameters table for Hyperspectral data unmixing:
 - **UCLS** : Unconstrained Least Square
 
 
-- **NCLS** : Nonnegative constrained Least Square
+- **NCLS** : Non-negative constrained Least Square
 
 
 - **ISRA** : Image Space Reconstruction Algorithm
@@ -103,17 +103,17 @@ To run this example from Python, use the following code snippet:
 	HyperspectralUnmixing.ExecuteAndWriteOutput()
 
 Limitations
------------
+~~~~~~~~~~~
 
 None
 
 Authors
--------
+~~~~~~~
 
 This application has been written by OTB-Team.
 
 See Also
---------
+~~~~~~~~
 
 These additional ressources can be useful for further information: 
 

@@ -11,9 +11,9 @@ Compute statistics (mean and standard deviation) of the features in a set of OGR
 Parameters
 ----------
 
-This section describes in details the parameters available for this application. Table~\ref{ComputeOGRLayersFeaturesStatistics_param_table}, page~\pageref{ComputeOGRLayersFeaturesStatistics_param_table} presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is \verb+ComputeOGRLayersFeaturesStatistics+.
+This section describes in details the parameters available for this application. Table [#]_ presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is *ComputeOGRLayersFeaturesStatistics* .
 
-Parameters table for ComputeOGRLayersFeaturesStatistics:
+.. [#] Table: Parameters table for ComputeOGRLayersFeaturesStatistics.
 
 +-------------+--------------------------+------------------------------------------------------+
 |Parameter Key|Parameter Type            |Parameter Description                                 |
@@ -70,17 +70,17 @@ To run this example from Python, use the following code snippet:
 	ComputeOGRLayersFeaturesStatistics.ExecuteAndWriteOutput()
 
 Limitations
------------
+~~~~~~~~~~~
 
 Experimental. For now only shapefiles are supported.
 
 Authors
--------
+~~~~~~~
 
 This application has been written by David Youssefi during internship at CNES.
 
 See Also
---------
+~~~~~~~~
 
 These additional ressources can be useful for further information: 
 

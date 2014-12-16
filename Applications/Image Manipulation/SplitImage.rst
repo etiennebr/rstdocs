@@ -11,9 +11,9 @@ This application splits a N-bands image into N mono-band images. The output imag
 Parameters
 ----------
 
-This section describes in details the parameters available for this application. Table~\ref{SplitImage_param_table}, page~\pageref{SplitImage_param_table} presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is \verb+SplitImage+.
+This section describes in details the parameters available for this application. Table [#]_ presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is *SplitImage* .
 
-Parameters table for Split Image:
+.. [#] Table: Parameters table for Split Image.
 
 +-------------+--------------------------+----------------------------------+
 |Parameter Key|Parameter Type            |Parameter Description             |
@@ -70,12 +70,12 @@ To run this example from Python, use the following code snippet:
 	SplitImage.ExecuteAndWriteOutput()
 
 Limitations
------------
+~~~~~~~~~~~
 
 None
 
 Authors
--------
+~~~~~~~
 
 This application has been written by OTB-Team.
 

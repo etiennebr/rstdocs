@@ -11,9 +11,9 @@ This application performs the projection of an image into the geometry of anothe
 Parameters
 ----------
 
-This section describes in details the parameters available for this application. Table~\ref{Superimpose_param_table}, page~\pageref{Superimpose_param_table} presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is \verb+Superimpose+.
+This section describes in details the parameters available for this application. Table [#]_ presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is *Superimpose* .
 
-Parameters table for Superimpose sensor:
+.. [#] Table: Parameters table for Superimpose sensor.
 
 +-----------------------+--------------------------+----------------------------------+
 |Parameter Key          |Parameter Type            |Parameter Description             |
@@ -146,12 +146,12 @@ To run this example from Python, use the following code snippet:
 	Superimpose.ExecuteAndWriteOutput()
 
 Limitations
------------
+~~~~~~~~~~~
 
 None
 
 Authors
--------
+~~~~~~~
 
 This application has been written by OTB-Team.
 

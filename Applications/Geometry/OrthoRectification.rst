@@ -13,9 +13,9 @@ In case of SPOT5 images, the sensor model can be approximated by an RPC model in
 Parameters
 ----------
 
-This section describes in details the parameters available for this application. Table~\ref{OrthoRectification_param_table}, page~\pageref{OrthoRectification_param_table} presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is \verb+OrthoRectification+.
+This section describes in details the parameters available for this application. Table [#]_ presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is *OrthoRectification* .
 
-Parameters table for Ortho-rectification:
+.. [#] Table: Parameters table for Ortho-rectification.
 
 +------------------------+--------------------------+----------------------------------------------+
 |Parameter Key           |Parameter Type            |Parameter Description                         |
@@ -265,17 +265,17 @@ To run this example from Python, use the following code snippet:
 	OrthoRectification.ExecuteAndWriteOutput()
 
 Limitations
------------
+~~~~~~~~~~~
 
 Supported sensors are Pleiades, SPOT5 (TIF format), Ikonos, Quickbird, Worldview2, GeoEye.
 
 Authors
--------
+~~~~~~~
 
 This application has been written by OTB-Team.
 
 See Also
---------
+~~~~~~~~
 
 These additional ressources can be useful for further information: 
 

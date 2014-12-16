@@ -15,9 +15,9 @@ To segment large data, one can use the vector mode. In this case, the output of 
 Parameters
 ----------
 
-This section describes in details the parameters available for this application. Table~\ref{Segmentation_param_table}, page~\pageref{Segmentation_param_table} presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is \verb+Segmentation+.
+This section describes in details the parameters available for this application. Table [#]_ presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is *Segmentation* .
 
-Parameters table for Segmentation:
+.. [#] Table: Parameters table for Segmentation.
 
 +--------------------------+--------------------------+----------------------------------------------------------+
 |Parameter Key             |Parameter Type            |Parameter Description                                     |
@@ -119,7 +119,7 @@ The input image to segment.
 **Segmentation algorithm**
 Choice of segmentation algorithm (mean-shift by default). Available choices are: 
 
-- **Mean-Shift** : OTB implementation of the MeanShift algorithm (multithreaded).
+- **Mean-Shift** : OTB implementation of the Mean-Shift algorithm (multi-threaded).
 
 
  - **Spatial radius** : Spatial radius of the neighborhood.
@@ -133,7 +133,7 @@ Choice of segmentation algorithm (mean-shift by default). Available choices are:
  - **Minimum region size** : Minimum size of a region (in pixel unit) in segmentation. Smaller clusters will be merged to the neighboring cluster with the closest radiometry. If set to 0 no pruning is done.
 
 
- - **Edison mean-shift** : Edison implementation of meanshift algorithm, by its authors.
+ - **Edison mean-shift** : Edison implementation of mean-shift algorithm, by its authors.
 
 
   - **Spatial radius** : Spatial radius defining neighborhood.
@@ -145,7 +145,7 @@ Choice of segmentation algorithm (mean-shift by default). Available choices are:
   - **Scale factor** : Scaling of the image before processing. This is useful for images with narrow decimal ranges (like [0,1] for instance). .
 
 
-  - **Connected components** : Simple pixelbased connectedcomponents algorithm with a userdefined connection condition.
+  - **Connected components** : Simple pixel-based connected-components algorithm with a user-defined connection condition.
 
 
    - **Condition** : User defined connection condition, written as a mathematical expression. Available variables are p(i)b(i), intensity_p(i) and distance (example of expression : distance < 10 ).
@@ -159,7 +159,7 @@ Choice of segmentation algorithm (mean-shift by default). Available choices are:
     - **Flood Level** : flood level for generating the merge tree from the initial segmentation (between 0 and 1).
 
 
-    - **Morphological profiles based segmentation** : Segmentation based on morphological profiles, as described in Martino Pesaresi and Jon Alti Benediktsson, Member, IEEE: A new approach for the morphological segmentation of high resolution satellite imagery. IEEE Transactions on geoscience and remote sensing, vol. 39, NO. 2, February 2001, p. 309320.
+    - **Morphological profiles based segmentation** : Segmentation based on morphological profiles, as described in Martino Pesaresi and Jon Alti Benediktsson, Member, IEEE: A new approach for the morphological segmentation of high resolution satellite imagery. IEEE Transactions on geoscience and remote sensing, vol. 39, NO. 2, February 2001, p. 309-320.
 
 
      - **Profile Size** : Size of the profiles.
@@ -286,19 +286,19 @@ To run this example from Python, use the following code snippet:
 	Segmentation.ExecuteAndWriteOutput()
 
 Limitations
------------
+~~~~~~~~~~~
 
 In raster mode, the application can not handle large input images. Stitching step of vector mode might become slow with very large input images. 
 MeanShift filter results depends on the number of threads used. 
 Watershed and multiscale geodesic morphology segmentation will be performed on the amplitude  of the input image.
 
 Authors
--------
+~~~~~~~
 
 This application has been written by OTB-Team.
 
 See Also
---------
+~~~~~~~~
 
 These additional ressources can be useful for further information: 
 

@@ -11,9 +11,9 @@ This application performs mean shift fitlering (multi-threaded).
 Parameters
 ----------
 
-This section describes in details the parameters available for this application. Table~\ref{MeanShiftSmoothing_param_table}, page~\pageref{MeanShiftSmoothing_param_table} presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is \verb+MeanShiftSmoothing+.
+This section describes in details the parameters available for this application. Table [#]_ presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is *MeanShiftSmoothing* .
 
-Parameters table for Exact Large-Scale Mean-Shift segmentation, step 1 (smoothing):
+.. [#] Table: Parameters table for Exact Large-Scale Mean-Shift segmentation, step 1 (smoothing).
 
 +-------------+--------------------------+----------------------------------+
 |Parameter Key|Parameter Type            |Parameter Description             |
@@ -104,12 +104,12 @@ To run this example from Python, use the following code snippet:
 	MeanShiftSmoothing.ExecuteAndWriteOutput()
 
 Limitations
------------
+~~~~~~~~~~~
 
 With mode search option, the result will slightly depend on thread number.
 
 Authors
--------
+~~~~~~~
 
 This application has been written by OTB-Team.
 

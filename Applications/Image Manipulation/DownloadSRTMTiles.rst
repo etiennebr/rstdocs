@@ -11,9 +11,9 @@ This application allows to select the appropriate SRTM tiles that covers a list 
 Parameters
 ----------
 
-This section describes in details the parameters available for this application. Table~\ref{DownloadSRTMTiles_param_table}, page~\pageref{DownloadSRTMTiles_param_table} presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is \verb+DownloadSRTMTiles+.
+This section describes in details the parameters available for this application. Table [#]_ presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is *DownloadSRTMTiles* .
 
-Parameters table for Download or list SRTM tiles related to a set of images:
+.. [#] Table: Parameters table for Download or list SRTM tiles related to a set of images.
 
 +--------------------+--------------------------+----------------------------------+
 |Parameter Key       |Parameter Type            |Parameter Description             |
@@ -91,12 +91,12 @@ To run this example from Python, use the following code snippet:
 	DownloadSRTMTiles.ExecuteAndWriteOutput()
 
 Limitations
------------
+~~~~~~~~~~~
 
 None
 
 Authors
--------
+~~~~~~~
 
 This application has been written by OTB-Team.
 

@@ -11,9 +11,9 @@ This application performs an image classification based on a model file produced
 Parameters
 ----------
 
-This section describes in details the parameters available for this application. Table~\ref{ImageClassifier_param_table}, page~\pageref{ImageClassifier_param_table} presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is \verb+ImageClassifier+.
+This section describes in details the parameters available for this application. Table [#]_ presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is *ImageClassifier* .
 
-Parameters table for Image Classification:
+.. [#] Table: Parameters table for Image Classification.
 
 +-------------+--------------------------+----------------------------------+
 |Parameter Key|Parameter Type            |Parameter Description             |
@@ -86,17 +86,17 @@ To run this example from Python, use the following code snippet:
 	ImageClassifier.ExecuteAndWriteOutput()
 
 Limitations
------------
+~~~~~~~~~~~
 
 The input image must have the same type, order and number of bands than the images used to produce the statistics file and the SVM model file. If a statistics file was used during training by the TrainImagesClassifier, it is mandatory to use the same statistics file for classification. If an input mask is used, its size must match the input image size.
 
 Authors
--------
+~~~~~~~
 
 This application has been written by OTB-Team.
 
 See Also
---------
+~~~~~~~~
 
 These additional ressources can be useful for further information: 
 

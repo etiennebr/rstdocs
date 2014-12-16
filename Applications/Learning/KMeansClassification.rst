@@ -11,9 +11,9 @@ Performs unsupervised KMeans image classification.
 Parameters
 ----------
 
-This section describes in details the parameters available for this application. Table~\ref{KMeansClassification_param_table}, page~\pageref{KMeansClassification_param_table} presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is \verb+KMeansClassification+.
+This section describes in details the parameters available for this application. Table [#]_ presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is *KMeansClassification* .
 
-Parameters table for Unsupervised KMeans image classification:
+.. [#] Table: Parameters table for Unsupervised KMeans image classification.
 
 +-------------+--------------------------+----------------------------------+
 |Parameter Key|Parameter Type            |Parameter Description             |
@@ -106,12 +106,12 @@ To run this example from Python, use the following code snippet:
 	KMeansClassification.ExecuteAndWriteOutput()
 
 Limitations
------------
+~~~~~~~~~~~
 
 None
 
 Authors
--------
+~~~~~~~
 
 This application has been written by OTB-Team.
 

@@ -13,9 +13,9 @@ Detailed description
 Parameters
 ----------
 
-This section describes in details the parameters available for this application. Table~\ref{VectorDataReprojection_param_table}, page~\pageref{VectorDataReprojection_param_table} presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is \verb+VectorDataReprojection+.
+This section describes in details the parameters available for this application. Table [#]_ presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is *VectorDataReprojection* .
 
-Parameters table for Vector Data reprojection:
+.. [#] Table: Parameters table for Vector Data reprojection.
 
 +------------------------------+--------------------------+----------------------------------+
 |Parameter Key                 |Parameter Type            |Parameter Description             |
@@ -156,7 +156,7 @@ To run this example from Python, use the following code snippet:
 	VectorDataReprojection.ExecuteAndWriteOutput()
 
 Authors
--------
+~~~~~~~
 
 This application has been written by OTB-Team.
 

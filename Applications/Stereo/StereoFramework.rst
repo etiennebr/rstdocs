@@ -17,16 +17,16 @@ for each sensor pair :
 	- apply an optional median filter
 	- filter disparities based on the correlation score  and exploration bounds
 	- translate disparities in sensor geometry
-	- convert disparity to 3D Map.
+	-  convert disparity to 3D Map.
 
 Then fuse all 3D maps to produce DSM.
 
 Parameters
 ----------
 
-This section describes in details the parameters available for this application. Table~\ref{StereoFramework_param_table}, page~\pageref{StereoFramework_param_table} presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is \verb+StereoFramework+.
+This section describes in details the parameters available for this application. Table [#]_ presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is *StereoFramework* .
 
-Parameters table for Stereo Framework:
+.. [#] Table: Parameters table for Stereo Framework.
 
 +-------------------------+--------------------------+--------------------------------------------------------------------------------------------+
 |Parameter Key            |Parameter Type            |Parameter Description                                                                       |
@@ -269,10 +269,10 @@ This group of parameters allow to tune the block-matching behavior.
  - **Sum of Squared Distances** : Sum of squared distances between pixels value in the metric window
 
 
- - **Normalized Cross-Correlation** : Normalized CrossCorrelation between the left and right windows
+ - **Normalized Cross-Correlation** : Normalized Cross-Correlation between the left and right windows
 
 
- - **Lp pseudo-norm** : Lp pseudonorm between the left and right windows
+ - **Lp pseudo-norm** : Lp pseudo-norm between the left and right windows
 
 
   - **p value** : Value of the p parameter in Lp pseudo-norm (must be positive).
@@ -355,7 +355,7 @@ To run this example from Python, use the following code snippet:
 	StereoFramework.ExecuteAndWriteOutput()
 
 Authors
--------
+~~~~~~~
 
 This application has been written by OTB-Team.
 

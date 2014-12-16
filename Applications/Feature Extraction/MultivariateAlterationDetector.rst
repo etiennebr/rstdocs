@@ -11,9 +11,9 @@ This application detects change between two given images.
 Parameters
 ----------
 
-This section describes in details the parameters available for this application. Table~\ref{MultivariateAlterationDetector_param_table}, page~\pageref{MultivariateAlterationDetector_param_table} presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is \verb+MultivariateAlterationDetector+.
+This section describes in details the parameters available for this application. Table [#]_ presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is *MultivariateAlterationDetector* .
 
-Parameters table for Multivariate alteration detector:
+.. [#] Table: Parameters table for Multivariate alteration detector.
 
 +-------------+--------------------------+----------------------------------+
 |Parameter Key|Parameter Type            |Parameter Description             |
@@ -76,17 +76,17 @@ To run this example from Python, use the following code snippet:
 	MultivariateAlterationDetector.ExecuteAndWriteOutput()
 
 Limitations
------------
+~~~~~~~~~~~
 
 None
 
 Authors
--------
+~~~~~~~
 
 This application has been written by OTB-Team.
 
 See Also
---------
+~~~~~~~~
 
 These additional ressources can be useful for further information: 
 

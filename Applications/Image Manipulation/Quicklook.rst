@@ -12,9 +12,9 @@ Generates a subsampled version of an extract of an image defined by ROIStart and
 Parameters
 ----------
 
-This section describes in details the parameters available for this application. Table~\ref{Quicklook_param_table}, page~\pageref{Quicklook_param_table} presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is \verb+Quicklook+.
+This section describes in details the parameters available for this application. Table [#]_ presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is *Quicklook* .
 
-Parameters table for Quick Look:
+.. [#] Table: Parameters table for Quick Look.
 
 +-------------+--------------------------+----------------------------------+
 |Parameter Key|Parameter Type            |Parameter Description             |
@@ -99,13 +99,13 @@ To run this example from Python, use the following code snippet:
 	Quicklook.ExecuteAndWriteOutput()
 
 Limitations
------------
+~~~~~~~~~~~
 
 This application does not provide yet the optimal way to decode coarser level of resolution from JPEG2000 images (like in Monteverdi).
 Trying to subsampled huge JPEG200 image with the application will lead to poor performances for now.
 
 Authors
--------
+~~~~~~~
 
 This application has been written by OTB-Team.
 

@@ -2,7 +2,7 @@ Band Math X
 ^^^^^^^^^^^
 
 This application performs mathematical operations on multiband images.
-Mathematical formula interpretation is done via muParserX library : http://articles.beltoforion.de/article.php?a=muparserx
+Mathematical formula interpretation is done via `muParserX library : <http://articles.beltoforion.de/article.php?a=muparserx>`_
 
 Detailed description
 --------------------
@@ -32,15 +32,18 @@ Thus, it is important to remember that a pixel of n components is always represe
 
 Example :
 
+::
+
                    im1 + im2       (1)
 
 represents the addition of pixels from first and second inputs. This expression is consistent only if
 both inputs have the same number of bands.
 Note that it is also possible to use the following expressions to obtain the same result:
 
+::
+
                    im1b1 + im2b1 
                    im1b2 + im2b2       (2)
-
 
 Nevertheless, the first expression is by far much pleaseant. We call this new functionnality the 'batch mode'
 (performing the same operation in a band-to-band fashion).
@@ -57,6 +60,8 @@ All neighborhood are centred, thus K and P must be odd numbers.
 Many operators come with this new functionnality: dotpr, mean var median min max...
 For instance, if im1 represents the pixel of 3 bands image:
 
+::
+
                im1 - mean(im1b1N5x5,im1b2N5x5,im1b3N5x5)       (3)
 
 could represent a high pass filter (Note that by implying three neighborhoods, the operator mean returns a row vector of three components.
@@ -72,8 +77,7 @@ matrices (for instance cos, sin, ...). These new operators/ functions keep the o
 - mlt, dv and pw operators, that perform multiplication, division or exponentiation of vector/matrices by a scalar (for instance im1 dv 2.0)
 - bands, which is a very usefull operator. It allows to select specific bands from an image, and/or to rearrange them in a new vector;
 for instance bands(im1,{1,2,1,1}) produces a vector of 4 components made of band 1, band 2, band 1 and band 1 values from the first input.
-Note that curly brackets must be used in order to select the desired band indices.
-... and so on.
+Note that curly brackets must be used in order to select the desired band indices. and so on.
 
 
 - Application itself:
@@ -84,14 +88,18 @@ The application takes the following parameters :
 - Setting constants can be done with the 'incontext' parameter. User must provide a txt file with a specific syntax: #type name value
 An example of such a file is given below:
 
-#F expo 1.1
-#M kernel1 { 0.1 , 0.2 , 0.3; 0.4 , 0.5 , 0.6; 0.7 , 0.8 , 0.9; 1 , 1.1 , 1.2; 1.3 , 1.4 , 1.5 }
+::
+
+   #F expo 1.1
+   #M kernel1 { 0.1 , 0.2 , 0.3; 0.4 , 0.5 , 0.6; 0.7 , 0.8 , 0.9; 1 , 1.1 , 1.2; 1.3 , 1.4 , 1.5 }
 
 As we can see,  #I/#F allows the definition of an integer/float constant, whereas #M allows the definition of a vector/matrix.
 In the latter case, elements of a row must be separated by commas, and rows must be separated by semicolons.
 It is also possible to define expressions within the same txt file, with the pattern #E expr. For instance (two expressions; see also limitations section below):
 
-#E dotpr(kernel1,im1b1N3x5) ; im2b1^expo
+::
+
+   #E dotpr(kernel1,im1b1N3x5) ; im2b1^expo
 
 - The 'outcontext' parameter allows to save user's constants and expressions (context).
 - Setting the output image can be done with the 'out' parameter (multi-outputs is not implemented yet).
@@ -103,9 +111,9 @@ Finally, we strongly recommend that the reader takes a look at the cookbook, whe
 Parameters
 ----------
 
-This section describes in details the parameters available for this application. Table~\ref{BandMathX_param_table}, page~\pageref{BandMathX_param_table} presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is \verb+BandMathX+.
+This section describes in details the parameters available for this application. Table [#]_ presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is *BandMathX* .
 
-Parameters table for Band Math X:
+.. [#] Table: Parameters table for Band Math X.
 
 +-------------+--------------------------+----------------------------------+
 |Parameter Key|Parameter Type            |Parameter Description             |
@@ -176,13 +184,13 @@ To run this example from Python, use the following code snippet:
 	BandMathX.ExecuteAndWriteOutput()
 
 Limitations
------------
+~~~~~~~~~~~
 
 The application is currently unable to produce one output image per expression, contrary to otbBandMathXImageFilter.
 Separating expressions by semi-colons (;) will concatenate their results into a unique multiband output image.
 
 Authors
--------
+~~~~~~~
 
 This application has been written by OTB-Team.
 

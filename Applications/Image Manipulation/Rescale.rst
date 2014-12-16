@@ -11,9 +11,9 @@ This application scales the given image pixel intensity between two given values
 Parameters
 ----------
 
-This section describes in details the parameters available for this application. Table~\ref{Rescale_param_table}, page~\pageref{Rescale_param_table} presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is \verb+Rescale+.
+This section describes in details the parameters available for this application. Table [#]_ presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is *Rescale* .
 
-Parameters table for Rescale Image:
+.. [#] Table: Parameters table for Rescale Image.
 
 +-------------+--------------------------+----------------------------------+
 |Parameter Key|Parameter Type            |Parameter Description             |
@@ -83,12 +83,12 @@ To run this example from Python, use the following code snippet:
 	Rescale.ExecuteAndWriteOutput()
 
 Limitations
------------
+~~~~~~~~~~~
 
 None
 
 Authors
--------
+~~~~~~~
 
 This application has been written by OTB-Team.
 

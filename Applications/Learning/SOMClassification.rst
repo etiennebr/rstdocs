@@ -11,9 +11,9 @@ Unsupervised Self Organizing Map image classification.
 Parameters
 ----------
 
-This section describes in details the parameters available for this application. Table~\ref{SOMClassification_param_table}, page~\pageref{SOMClassification_param_table} presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is \verb+SOMClassification+.
+This section describes in details the parameters available for this application. Table [#]_ presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is *SOMClassification* .
 
-Parameters table for SOM Classification:
+.. [#] Table: Parameters table for SOM Classification.
 
 +-------------+--------------------------+----------------------------------+
 |Parameter Key|Parameter Type            |Parameter Description             |
@@ -148,12 +148,12 @@ To run this example from Python, use the following code snippet:
 	SOMClassification.ExecuteAndWriteOutput()
 
 Limitations
------------
+~~~~~~~~~~~
 
 None
 
 Authors
--------
+~~~~~~~
 
 This application has been written by OTB-Team.
 

@@ -11,9 +11,9 @@ This application computes the geographic coordinates from a cartographic one. Us
 Parameters
 ----------
 
-This section describes in details the parameters available for this application. Table~\ref{ConvertCartoToGeoPoint_param_table}, page~\pageref{ConvertCartoToGeoPoint_param_table} presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is \verb+ConvertCartoToGeoPoint+.
+This section describes in details the parameters available for this application. Table [#]_ presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is *ConvertCartoToGeoPoint* .
 
-Parameters table for Cartographic to geographic coordinates conversion:
+.. [#] Table: Parameters table for Cartographic to geographic coordinates conversion.
 
 +--------------------+--------------------------+----------------------------------+
 |Parameter Key       |Parameter Type            |Parameter Description             |
@@ -134,12 +134,12 @@ To run this example from Python, use the following code snippet:
 	ConvertCartoToGeoPoint.ExecuteAndWriteOutput()
 
 Limitations
------------
+~~~~~~~~~~~
 
 None
 
 Authors
--------
+~~~~~~~
 
 This application has been written by OTB-Team.
 

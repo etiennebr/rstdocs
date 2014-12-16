@@ -11,9 +11,9 @@ This application uses a disparity map computed from a stereo image pair to produ
 Parameters
 ----------
 
-This section describes in details the parameters available for this application. Table~\ref{DisparityMapToElevationMap_param_table}, page~\pageref{DisparityMapToElevationMap_param_table} presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is \verb+DisparityMapToElevationMap+.
+This section describes in details the parameters available for this application. Table [#]_ presents a summary of these parameters and the parameters keys to be used in command-line and programming languages. Application key is *DisparityMapToElevationMap* .
 
-Parameters table for Disparity map to elevation map:
+.. [#] Table: Parameters table for Disparity map to elevation map.
 
 +-------------+--------------------------+----------------------------------+
 |Parameter Key|Parameter Type            |Parameter Description             |
@@ -140,17 +140,17 @@ To run this example from Python, use the following code snippet:
 	DisparityMapToElevationMap.ExecuteAndWriteOutput()
 
 Limitations
------------
+~~~~~~~~~~~
 
 None
 
 Authors
--------
+~~~~~~~
 
 This application has been written by OTB-Team.
 
 See Also
---------
+~~~~~~~~
 
 These additional ressources can be useful for further information: 
 
