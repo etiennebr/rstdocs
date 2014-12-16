@@ -426,20 +426,20 @@ original labels.
 
 image15 image16 image17 [fig:ClassificationMapRegularizationApplication]
 
-.. image1 ./Art/MonteverdiImages/monteverdi_vectorization_module_for_classification.png
-.. image2 ./Art/MonteverdiImages/classification_chain_inputimage.jpg
-.. image3 ./Art/MonteverdiImages/classification_chain_fancyclassif_fusion.jpg
-.. image4 ./Art/MonteverdiImages/classification_chain_fancyclassif.jpg
-.. image5 ./Art/MonteverdiImages/QB_1_ortho_C1_CM.png
-.. image6 ./Art/MonteverdiImages/QB_1_ortho_C2_CM.png
-.. image7 ./Art/MonteverdiImages/QB_1_ortho_C3_CM.png
-.. image8 ./Art/MonteverdiImages/QB_1_ortho_C4_CM.png
-.. image9 ./Art/MonteverdiImages/QB_1_ortho_C5_CM.png
-.. image10 ./Art/MonteverdiImages/QB_1_ortho_C6_CM.png
-.. image11 ./Art/MonteverdiImages/classification_chain_inputimage.jpg
-.. image12 ./Art/MonteverdiImages/QB_1_ortho_MV_C123456_CM.png
-.. image13 ./Art/MonteverdiImages/classification_chain_inputimage.jpg
-.. image14 ./Art/MonteverdiImages/QB_1_ortho_DS_V_P_C123456_CM.png
-.. image15 ./Art/MonteverdiImages/classification_chain_inputimage.jpg
-.. image16 ./Art/MonteverdiImages/classification_chain_fancyclassif_CMR_input.png
-.. image17 ./Art/MonteverdiImages/classification_chain_fancyclassif_CMR_3.png
+.. image1| image:: ./Art/MonteverdiImages/monteverdi_vectorization_module_for_classification.png
+.. image2| image:: ./Art/MonteverdiImages/classification_chain_inputimage.jpg
+.. image3| image:: ./Art/MonteverdiImages/classification_chain_fancyclassif_fusion.jpg
+.. image4| image:: ./Art/MonteverdiImages/classification_chain_fancyclassif.jpg
+.. image5| image:: ./Art/MonteverdiImages/QB_1_ortho_C1_CM.png
+.. image6| image:: ./Art/MonteverdiImages/QB_1_ortho_C2_CM.png
+.. image7| image:: ./Art/MonteverdiImages/QB_1_ortho_C3_CM.png
+.. image8| image:: ./Art/MonteverdiImages/QB_1_ortho_C4_CM.png
+.. image9| image:: ./Art/MonteverdiImages/QB_1_ortho_C5_CM.png
+.. image10| image:: ./Art/MonteverdiImages/QB_1_ortho_C6_CM.png
+.. image11| image:: ./Art/MonteverdiImages/classification_chain_inputimage.jpg
+.. image12| image:: ./Art/MonteverdiImages/QB_1_ortho_MV_C123456_CM.png
+.. image13| image:: ./Art/MonteverdiImages/classification_chain_inputimage.jpg
+.. image14| image:: ./Art/MonteverdiImages/QB_1_ortho_DS_V_P_C123456_CM.png
+.. image15| image:: ./Art/MonteverdiImages/classification_chain_inputimage.jpg
+.. image16| image:: ./Art/MonteverdiImages/classification_chain_fancyclassif_CMR_input.png
+.. image17| image:: ./Art/MonteverdiImages/classification_chain_fancyclassif_CMR_3.png

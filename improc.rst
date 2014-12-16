@@ -22,7 +22,8 @@ The naming convention “im[x]b[y]” designates the yth band of the xth
 input image.
 
 The *BandMath* application embeds built-in operators and functions
-(listed in the `muparser documentation <http://muparser.sourceforge.net/mup_features.html#idDef2>`_ 
+(listed
+`here <http://muparser.sourceforge.net/mup_features.html#idDef2>`_ ),
 allowing a vast choice of possible operations.
 
 Segmentation

@@ -1,6 +1,3 @@
-.. role:: m(math)
-
-
 Feature extraction
 ==================
 
@@ -53,13 +50,17 @@ The *EdgeExtraction* application has the following input parameters:
 
 - ``-in`` the input image to compute the features on
 
-- ``-channel`` the selected channel index in the input image to be processed (default value is 1)
+- ``-channel`` the selected channel index in the input image to be
+   processed (default value is 1)
 
-- ``-filter`` the choice of edge detection method (gradient/sobel/touzi) (default value is gradient)   
+-  |``-filter`` the choice of edge detection method
+   (gradient/sobel/touzi) (default value is gradient)   
 
-- ``(-filter.touzi.xradius)`` the X Radius of the Touzi processing neighborhood (only if filter==touzi) (default value is 1 pixel)
+- ``(-filter.touzi.xradius)`` the X Radius of the Touzi processing
+   neighborhood (only if filter==touzi) (default value is 1 pixel)
 
-- ``(-filter.touzi.yradius)`` the Y Radius of the Touzi processing neighborhood (only if filter==touzi) (default value is 1 pixel)   
+-  |``(-filter.touzi.yradius)`` the Y Radius of the Touzi processing
+   neighborhood (only if filter==touzi) (default value is 1 pixel)   
 
 - ``-out`` the output mono band image containing the edge features
 

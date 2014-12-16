@@ -22,9 +22,8 @@ Estimate epipolar geometry transformation
 -----------------------------------------
 
 The aim of this application is to generate resampled grids to transform
-images in epipolar geometry. `Epipolar geometry <http://en.wikipedia.org/wiki/Epipolar_geometry>`_ is the geometry of stereo
-vision.
-
+images in epipolar geometry. Epipolar geometry is the geometry of stereo
+vision (see `here <http://en.wikipedia.org/wiki/Epipolar_geometry>`_ ).
 The operation of stereo rectification determines transformations to
 apply to each image such that pairs of conjugate epipolar lines become
 collinear, parallel to one of the image axes and aligned. In this
@@ -79,9 +78,8 @@ complicated in the case of VHR optical images.That is because most of
 passive remote sensing from space use a push-broom sensor, which
 corresponds to a line of sensors arranged perpendicularly to the flight
 direction of the spacecraft. This acquisition configuration implies a
-slightly different strategy for stereo-rectification (see [#]
-
-.. [#] http://en.wikipedia.org/wiki/Epipolar_geometry#Epipolar_geometry_of_pushbroom_sensor>.
+slightly different strategy for stereo-rectification (see
+`here <http://en.wikipedia.org/wiki/Epipolar_geometry#Epipolar_geometry_of_pushbroom_sensor>`_ ).
 
 We will now explain how to use the *StereoRectificationGridGenerator*
 application to produce two images which are **deformation grids** to
@@ -196,7 +194,8 @@ range of disparities. In theory, the block matching can perform a blind
 exploration and search for a infinite range of disparities between the
 stereo pair. We need now to evaluate a range of disparities where the
 block matching will be performed (in the general case from the deepest
-point on Earth, `the Challenger Deep <http://en.wikipedia.org/wiki/Challenger_Deep>`_ . to the Everest
+point on Earth, `the Challenger
+Deep <http://en.wikipedia.org/wiki/Challenger_Deep>`_ . to the Everest
 summit!)
 
 We deliberately exaggerated but you can imagine that without a smaller
@@ -498,8 +497,8 @@ pair
 Then fuse all 3D maps to produce DSM with desired geographic or
 cartographic projection and parametrizable extent.
 
-.. image1 ./Art/MonteverdiImages/stereo_image1_epipolar.png
-.. image2 ./Art/MonteverdiImages/stereo_image2_epipolar.png
-.. image3 ./Art/MonteverdiImages/stereo_disparity_horizontal.png
-.. image4 ./Art/MonteverdiImages/stereo_disparity_metric.png
-.. image5 ./Art/MonteverdiImages/stereo_dem_zoom.png
+.. image1| image:: ./Art/MonteverdiImages/stereo_image1_epipolar.png
+.. image2| image:: ./Art/MonteverdiImages/stereo_image2_epipolar.png
+.. image3| image:: ./Art/MonteverdiImages/stereo_disparity_horizontal.png
+.. image4| image:: ./Art/MonteverdiImages/stereo_disparity_metric.png
+.. image5| image:: ./Art/MonteverdiImages/stereo_dem_zoom.png

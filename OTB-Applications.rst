@@ -536,7 +536,7 @@ the application name. Use in this case:
 It will retrieve the application name and related parameters from the
 input xml file and launch in this case the BandMath applications.
 
-.. image1 ./Art/QtImages/rescale_param.png
-.. image2 ./Art/QtImages/rescale_logs.png
-.. image3 ./Art/QtImages/rescale_progress.png
-.. image4 ./Art/QtImages/rescale_documentation.png
+.. image1| image:: ./Art/QtImages/rescale_param.png
+.. image2| image:: ./Art/QtImages/rescale_logs.png
+.. image3| image:: ./Art/QtImages/rescale_progress.png
+.. image4| image:: ./Art/QtImages/rescale_documentation.png

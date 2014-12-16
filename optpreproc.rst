@@ -294,11 +294,11 @@ files. Subdirectories are not supported.
 
 Depending on the reference of the elevation, you also need to use a
 geoid to manage elevation accurately. For this, you need to specify a
-path to a file which contains the geoid. `Geoid <http://en.wikipedia.org/wiki/Geoid>`_ corresponds to the
+path to a file which contains the geoid. Geoid corresponds to the
 equipotential surface that would coincide with the mean ocean surface of
-the Earth . We provide one geoid in the OTB-Data repository available [#]
-
-.. [#] http://hg.orfeo-toolbox.org/OTB-Data/file/4722d9e672c6/Input/DEM/egm96.grd> .
+the Earth (see `) <http://en.wikipedia.org/wiki/Geoid>`_ . We provide
+one geoid in the OTB-Data repository available
+`here <http://hg.orfeo-toolbox.org/OTB-Data/file/4722d9e672c6/Input/DEM/egm96.grd>`_ .
 
 In all applications, the option **elev.geoid** allows to manage the path
 to the geoid. Finally, it is also possible to use an average elevation
@@ -457,23 +457,31 @@ used (example with *lambert93* map projection):
 Map projections handled by the application are the following (please
 note that the ellipsoid is always WGS84):
 
--  | UTM : ``-map utm``   | The UTM zone and hemisphere can be set by the options ``-map.utm.zone`` and ``-map.utm.northhem``.
+-  | UTM : ``-map utm``
+   | The UTM zone and hemisphere can be set by the options
+   ``-map.utm.zone`` and ``-map.utm.northhem``.
 
--  Lambert 2 etendu: ``-map lambert2`` 
+-  Lambert 2 etendu: ``-map lambert2``
 
 -  Lambert 93: ``-map lambert93``
 
--  | TransMercator: ``-map transmercator``  | The related parameters (false easting, false northing and scale factor) can be set by the options ``-map.transmercator.falseeasting``, ``-map.transmercator.falsenorthing`` and ``-map.transmercator.scale``
+-  | TransMercator: ``-map transmercator``
+   | The related parameters (false easting, false northing and scale
+   factor) can be set by the options
+   ``-map.transmercator.falseeasting``,
+   ``-map.transmercator.falsenorthing`` and ``-map.transmercator.scale``
 
 -  WGS : ``-map wgs``
 
--  | Any map projection system with an EPSG code : ``-map epsg`` | The EPSG code is set with the option ``-map.epsg.code``
+-  | Any map projection system with an EPSG code : ``-map epsg``
+   | The EPSG code is set with the option ``-map.epsg.code``
 
 The group ``outputs`` contains parameters to set the origin, size and
 spacing of the output image. For instance, the ground spacing can be
 specified as follows:
 
 ::
+
 
     otbcli_OrthoRectification -io.in input_image
                               -io.out output_image
@@ -528,8 +536,8 @@ A few more interesting options are available:
    this value to fit the available memory on your computer might
    speed-up the processing.
 
-.. image1 ./Art/MonteverdiImages/monteverdi_optical_calibration.png
-.. image2 ./Art/MonteverdiImages/monteverdi_optical_calibration_outputs.png
-.. image3 ./Art/MonteverdiImages/monteverdi_QB_PAN_ROI.png
-.. image4 ./Art/MonteverdiImages/monteverdi_QB_MUL_Superimpose.png
-.. image5 ./Art/MonteverdiImages/monteverdi_QB_XS_pan-sharpened.png
+.. image1| image:: ./Art/MonteverdiImages/monteverdi_optical_calibration.png
+.. image2| image:: ./Art/MonteverdiImages/monteverdi_optical_calibration_outputs.png
+.. image3| image:: ./Art/MonteverdiImages/monteverdi_QB_PAN_ROI.png
+.. image4| image:: ./Art/MonteverdiImages/monteverdi_QB_MUL_Superimpose.png
+.. image5| image:: ./Art/MonteverdiImages/monteverdi_QB_XS_pan-sharpened.png

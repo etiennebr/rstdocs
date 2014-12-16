@@ -754,22 +754,22 @@ methods. It allows to compute:
 
    -  output: 3 bands real image
 
-.. image1 ./Art/MonteverdiImages/monteverdi_mainwindow.png
-.. image2 ./Art/MonteverdiImages/monteverdi_inputs_window.png
-.. image3 ./Art/MonteverdiImages/monteverdi_viewer_pixel_description.png
-.. image4 ./Art/MonteverdiImages/monteverdi_viewer_vector_data.png
-.. image5 ./Art/MonteverdiImages/monteverdi_viewer_rgb_composition.png
-.. image6 ./Art/MonteverdiImages/monteverdi_viewer_histogram.png
-.. image7 ./Art/MonteverdiImages/monteverdi_viewer_pixel_description.png
-.. image8 ./Art/MonteverdiImages/monteverdi_caching_module.png
-.. image9 ./Art/MonteverdiImages/monteverdi_concatenate_before_after.png
-.. image10 ./Art/MonteverdiImages/monteverdi_export_dataset.png
-.. image11 ./Art/MonteverdiImages/monteverdi_ortho_extent.png
-.. image12 ./Art/MonteverdiImages/monteverdi_band_math_ndvi_threshold.png
-.. image13 ./Art/MonteverdiImages/monteverdi_band_math_result.png
-.. image14 ./Art/MonteverdiImages/monteverdi_NDWI2_substraction.png
-.. image15 ./Art/MonteverdiImages/monteverdi_connected_component_segmentation.png
-.. image16 ./Art/MonteverdiImages/monteverdi_Capture_Boats.png
-.. image17 ./Art/MonteverdiImages/monteverdi_Capture_Boats_CC.png
-.. image18 ./Art/MonteverdiImages/monteverdi_mean_shift.png
-.. image19 ./Art/MonteverdiImages/monteverdi_sarpol_conversion_schema.png
+.. image1| image:: ./Art/MonteverdiImages/monteverdi_mainwindow.png
+.. image2| image:: ./Art/MonteverdiImages/monteverdi_inputs_window.png
+.. image3| image:: ./Art/MonteverdiImages/monteverdi_viewer_pixel_description.png
+.. image4| image:: ./Art/MonteverdiImages/monteverdi_viewer_vector_data.png
+.. image5| image:: ./Art/MonteverdiImages/monteverdi_viewer_rgb_composition.png
+.. image6| image:: ./Art/MonteverdiImages/monteverdi_viewer_histogram.png
+.. image7| image:: ./Art/MonteverdiImages/monteverdi_viewer_pixel_description.png
+.. image8| image:: ./Art/MonteverdiImages/monteverdi_caching_module.png
+.. image9| image:: ./Art/MonteverdiImages/monteverdi_concatenate_before_after.png
+.. image10| image:: ./Art/MonteverdiImages/monteverdi_export_dataset.png
+.. image11| image:: ./Art/MonteverdiImages/monteverdi_ortho_extent.png
+.. image12| image:: ./Art/MonteverdiImages/monteverdi_band_math_ndvi_threshold.png
+.. image13| image:: ./Art/MonteverdiImages/monteverdi_band_math_result.png
+.. image14| image:: ./Art/MonteverdiImages/monteverdi_NDWI2_substraction.png
+.. image15| image:: ./Art/MonteverdiImages/monteverdi_connected_component_segmentation.png
+.. image16| image:: ./Art/MonteverdiImages/monteverdi_Capture_Boats.png
+.. image17| image:: ./Art/MonteverdiImages/monteverdi_Capture_Boats_CC.png
+.. image18| image:: ./Art/MonteverdiImages/monteverdi_mean_shift.png
+.. image19| image:: ./Art/MonteverdiImages/monteverdi_sarpol_conversion_schema.png
