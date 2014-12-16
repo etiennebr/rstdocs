@@ -6,9 +6,9 @@ Introduction
 
 The **OTB Applications** package makes available a set of simple
 software tools, which were designed to demonstrate what can be done with
-**Orfeo ToolBox** . Many users started using these applications for real
+**Orfeo Toolbox** . Many users started using these applications for real
 processing tasks, so we tried to make them more generic, more robust and
-easy to use. **Orfeo ToolBox** users have been asking for an integrated
+easy to use. **Orfeo Toolbox** users have been asking for an integrated
 application for a while, since using several applications for a complete
 processing (ortho-rectification, segmentation, classification, etc.) can
 be a burden. Recently, the OTB team received a request from CNES’
@@ -22,39 +22,45 @@ Installation
 
 The application is called **Monteverdi** , since this is the name of the
 Orfeo composer. The application allows you to build interactivelly
-remote sensing processes based on the **Orfeo ToolBox** . This is also
+remote sensing processes based on the **Orfeo Toolbox** . This is also
 in remembering of the great (and once open source) Khoros/Cantata
 software.
 
 Installation of **Monteverdi** is very simple. Standard installer
 packages are available on the main platforms thanks to OTB-Developpers
 and external users. These packages are available few days after the
-release. Get the latest information on binary packages on the in the
-section download.
+release. Get the latest information on binary packages on the `Orfeo
+ToolBox website <http://orfeo-toolbox.org>`_  in the section download.
 
 We will discribe in the following sections the way to install monteverdi
 on:
 
 -  Windows platform (XP/Seven)
+
 -  Ubuntu 12.04 and higher
+
 -  OpenSuse 12.X and higher
+
 -  MacOSX 10.8
 
 If you want build from source or if we don’t provide packages for your
-system, some informations are available into the , in the section
+system, some informations are available into the `OTB Software
+Guide <http://orfeo-toolbox.org/SoftwareGuide>`_  , in the section
 **(**\ Building from Source)
 
 Windows XP/Seven/8.1
 ~~~~~~~~~~~~~~~~~~~~
 
 For Windows XP/Seven/8.1 users, there is a classical standalone
-installation program for Monteverdi, available from the after each
+installation program for Monteverdi, available from the `OTB download
+page <http://sourceforge.net/projects/orfeo-toolbox/>`_  after each
 release.
 
 Since version 1.12, it is also possible to get Monteverdi package
-through for Windows XP/Seven users. Package for Monteverdi is available
-directly in the OSGeo4W installer when you select the **otb-monteverdi**
-package. Follow the instructions in the OSGeo4W installer and select the
+through `OSGeo4W <http://trac.osgeo.org/osgeo4w/>`_  for Windows
+XP/Seven users. Package for Monteverdi is available directly in the
+OSGeo4W installer when you select the **otb-monteverdi** package. Follow
+the instructions in the OSGeo4W installer and select the
 **otb-monteverdi**. The installer will proceed with the installation of
 the package and all its dependencies. Monteverdi will be directly
 installed in the OSGeo4W repository and a shortcut will be added to your
@@ -68,8 +74,10 @@ MacOS X
 ~~~~~~~
 
 A standard DMG package is available for Monteverdi for MacOS X 10.8.
-Please go the . Click on the file to launch Monteverdi. This DMG file is
-also compatible with MacOSX 10.9.
+Please go the `OTB download
+page <http://sourceforge.net/projects/orfeo-toolbox/>`_  . Click on the
+file to launch Monteverdi. This DMG file is also compatible with MacOSX
+10.9.
 
 Ubuntu 12.04 and higher
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -78,7 +86,7 @@ For Ubuntu 12.04 and higher, Monteverdi package may be available as
 Debian package through APT repositories.
 
 Since release 1.14, Monteverdi packages are available in the
-`ubuntugis-unstable <https://launchpad.net/~ubuntugis/+archive/ubuntugis-unstable>`_
+`ubuntugis-unstable <https://launchpad.net/~ubuntugis/+archive/ubuntugis-unstable>`_ 
 repository.
 
 You can add it by using these command-lines:
@@ -132,7 +140,7 @@ Now run:
 
 Alternatively you can use the One-Click Installer from the `openSUSE
 Download
-page <http://software.opensuse.org/search?q=Orfeo&baseproject=openSUSE%3A11.4&lang=en&include_home=true&exclude_debug=true>`_
+page <http://software.opensuse.org/search?q=Orfeo&baseproject=openSUSE%3A11.4&lang=en&include_home=true&exclude_debug=true>`_ 
 or add the above repositories and install through Yast Package
 Management.
 
@@ -178,8 +186,8 @@ format. So opening a data set will create a “reader” which will appear
 in the main window. At any time, you can use the “save data set” option
 in order to store to a file the result of any processing module.
 
-Open an image with **Monteverdi**
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Open an image with **Monteverdi** 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The application allows to interactively select raster/vector dataset by
 browsing your computer. Monteverdi takes advantage of the automatic
@@ -189,8 +197,8 @@ SAR or vector data).
 The input dataset is added to the “Data and Process” tree, which
 describes the dataset content and each node corresponds to a layer.
 
-Visualize an image with **Monteverdi**
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Visualize an image with **Monteverdi** 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This module allows to visualize raster or vector data. It allows to
 create RGB composition from the input rasters. It is also possible to
@@ -200,17 +208,24 @@ projection of the input image or Digital Elevation informations.
 The viewer offers three types of data visualisation:
 
 -  The Scroll window : to navigate quickly inside the entire scene
+
 -  The Full resolution window: the view of the region of interest
    selected in the scroll window
+
 -  The Zoom window
+
 -  The Pixel description: give access to dynamic informations on the
    current pixel pointed. Informations display are:
 
    -  The current index
+
    -  The pixel value
+
    -  The computed value (the dynamic of hte input image is modified to
       get a proper visualization
+
    -  The coordinates of the current pixel (longitude and latitude)
+
    -  In case where there is a Internet connection available, Monteverdi
       displays the estimate location of the current pixel (country +
       city)
@@ -247,7 +262,7 @@ Cache dataset
 ~~~~~~~~~~~~~
 
 The “cache data set” (see figure  [fig:cachingmodule]) is a very
-interesting functionality. As you know, **Orfeo ToolBox** implements
+interesting functionality. As you know, **Orfeo Toolbox** implements
 processing on demand, so when you build a processing pipeline, no
 processing takes place unless you ask for it explicitly. That means that
 you can plug together the opening of a data set, an orthorectification
@@ -290,7 +305,7 @@ Dynamic I/O definition
 ~~~~~~~~~~~~~~~~~~~~~~
 
 Management of image formats in **Monteverdi** works in the same manner
-as in the **Orfeo ToolBox** . The principle is that the software
+as in the **Orfeo Toolbox** . The principle is that the software
 automatically recognize the image format. Communication between modules
 follow also the same principle and the Input definition of modules
 request to all available outputs of the same type in the “Data and
@@ -313,6 +328,7 @@ two ways to select the region:
 
 -  By indicating the X and Y coordinatres of the upper-left coordinates
    and the X-Y size of the regions.
+
 -  By interactivelly selecting the region of interest in the input
    image.
 
@@ -340,11 +356,17 @@ pan-sharpened 8 bands WorldView2 with a resolution of :math:`46`
 centimeters). Since the module allows to cast pixels in other types :
 
 -  unsigned char (8 bits)
+
 -  short (16 bits)
+
 -  int (32 bits)
+
 -  float (32 bits)
+
 -  double (64 bits)
+
 -  unsigned short (16 bits)
+
 -  unsigned int (32 bits)
 
 image10 [fig:exportdataset]
@@ -372,6 +394,7 @@ tabs:
    orthorectified image (the longitude and latitude coordinates are
    calculated through meta-data informations. It is also possible to
    specify the map projection of the output.
+
 -  Output image: The module allows to only orthorectified a Region Of
    interest inside the input dataset. This tab allows to set the size of
    the ROI around the center pixel coordinate or from the upper left
@@ -379,10 +402,12 @@ tabs:
    resolution in the line or column directions by setting the “Spacing
    X” and the “Spacing Y” respectively, and choosing interpolation
    method.
+
 -  DEM: Indicate path to a directory containing SRTM elevation file. The
    application is able to detect inside the direcory which DEM files are
    relevant in the process. You can find detailed informations on how to
    get a usable DEM
+
 -  Image extent: Compare the initial image extension with the preview
    the orthorectified result. This preview is automatically updated if
    the user change the “Size X” or “Size Y” values in the “Output Image”
@@ -405,6 +430,7 @@ ways to generate the GCPs:
 
 -  With Internet access: dynamically generate the correspondance on the
    input image and Open Street Map layers.
+
 -  Without Internet access: Set manually Ground control points :
    indicate index position and cartographic coordinates in the input
    image.
@@ -433,8 +459,10 @@ retrieve reflectance of the observed physical objects. The process can
 be split in 3 main steps:
 
 -  Derived luminance from the raw value in the input image.
+
 -  Convert the luminance to reflectance to produce the TOA image(Top Of
    Atmosphere).
+
 -  Inverse a radiative transfer code, which simulates the reflection of
    solar radiation by a coupled atmosphere-surface system. This step
    produce the TOC (Top of Canopy) imagery, which is the final result of
@@ -459,7 +487,7 @@ Band Math
 The Band Math module allows to perform complex mathematical operations
 over images. It is based on the mathematical parser library muParser and
 comes with a bunch of build-in functions and operators (listed
-`here <http://muparser.sourceforge.net/mup_features.html#idDef2>`_).
+`here <http://muparser.sourceforge.net/mup_features.html#idDef2>`_ ).
 This home-brewed digital calculator is also bundled with custom
 functions allowing to compute a full expression result simply and really
 quickly, since the filter supports streaming and multi-threading. The
@@ -487,7 +515,7 @@ Connected Component Segmentation module
 
 The Connected Component Segmentation module allows segmentation and
 object analysis using user defined criteria at each step. This module
-uses `muParser <http://muparser.sourceforge.net/>`_ library using the
+uses `muParser <http://muparser.sourceforge.net/>`_  library using the
 the same scheme as it is done in Band math module (see
 [Band:sub:`m`\ ath module] for a detailled explanation). It relies on
 three main steps process :
@@ -526,7 +554,7 @@ Object analysis post processing :
 
 A detailled presentation of parameters and variables, can be found on
 the
-`wiki <http://wiki.orfeo-toolbox.org/index.php/Connected_component_segmentation_module>`_.
+`wiki <http://wiki.orfeo-toolbox.org/index.php/Connected_component_segmentation_module>`_ .
 
 Results are then exported in shape file format. Graphical user interface
 is presented on Figure
@@ -580,7 +608,7 @@ data format.
 
 A detailled presentation of this module, and examples can be found on
 the
-`wiki <http://wiki.orfeo-toolbox.org/index.php/Connected_component_segmentation_module>`_.
+`wiki <http://wiki.orfeo-toolbox.org/index.php/Connected_component_segmentation_module>`_ .
 
 A boat detection example is presented on Figure [fig:boat detection].
 Results can be seen on Figure [fig:boat detection result].
@@ -672,7 +700,7 @@ scattering matrix yielding an eight dimensional measurement space
 space is compressed to five dimensions: three amplitudes (:math:`|HH|`,
 :math:`|HV|`, and :math:`|VV|`); and two phase measurements, (co-pol:
 HH-VV, and cross-pol: HH-HV). (see
-`grss-ieee <http://www.grss-ieee.org/technical-briefs/imaging-radar-polarimetry>`_).
+`grss-ieee <http://www.grss-ieee.org/technical-briefs/imaging-radar-polarimetry>`_ ).
 
 Synthesis
 '''''''''
@@ -692,8 +720,11 @@ As we saw in the previous main section, the basic measurement is a
 measurement space. But other measurements exist:
 
 -  covariance matrix and with its reciprocal specific case
+
 -  coherency matrix and with its reciprocal specific case
+
 -  circular coherency matrix and with its reciprocal specific case
+
 -  Mueller matrix and with its reciprocal specific case...
 
 Modules in the Conversion subsection allow to proceed these conversions
@@ -711,13 +742,34 @@ methods. It allows to compute:
 -  The polarimetric synthesis:
 
    -  input: 4 bands complex image
+
    -  output: mono channel real image
+
    -  parameters: the synthesis parameters (incident and reflected
       :math:`\psi` and :math:`\chi` angles)
 
 -  The reciprocal H alpha image:
 
    -  input: 6 bands complex image
+
    -  output: 3 bands real image
 
-
+.. image1 ./Art/MonteverdiImages/monteverdi_mainwindow.png
+.. image2 ./Art/MonteverdiImages/monteverdi_inputs_window.png
+.. image3 ./Art/MonteverdiImages/monteverdi_viewer_pixel_description.png
+.. image4 ./Art/MonteverdiImages/monteverdi_viewer_vector_data.png
+.. image5 ./Art/MonteverdiImages/monteverdi_viewer_rgb_composition.png
+.. image6 ./Art/MonteverdiImages/monteverdi_viewer_histogram.png
+.. image7 ./Art/MonteverdiImages/monteverdi_viewer_pixel_description.png
+.. image8 ./Art/MonteverdiImages/monteverdi_caching_module.png
+.. image9 ./Art/MonteverdiImages/monteverdi_concatenate_before_after.png
+.. image10 ./Art/MonteverdiImages/monteverdi_export_dataset.png
+.. image11 ./Art/MonteverdiImages/monteverdi_ortho_extent.png
+.. image12 ./Art/MonteverdiImages/monteverdi_band_math_ndvi_threshold.png
+.. image13 ./Art/MonteverdiImages/monteverdi_band_math_result.png
+.. image14 ./Art/MonteverdiImages/monteverdi_NDWI2_substraction.png
+.. image15 ./Art/MonteverdiImages/monteverdi_connected_component_segmentation.png
+.. image16 ./Art/MonteverdiImages/monteverdi_Capture_Boats.png
+.. image17 ./Art/MonteverdiImages/monteverdi_Capture_Boats_CC.png
+.. image18 ./Art/MonteverdiImages/monteverdi_mean_shift.png
+.. image19 ./Art/MonteverdiImages/monteverdi_sarpol_conversion_schema.png

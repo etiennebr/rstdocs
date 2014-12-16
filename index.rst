@@ -6,8 +6,6 @@
 Welcome to OTB CookBook's documentation!
 ========================================
 
-Contents:
-
 .. toctree::
    :maxdepth: 3
 

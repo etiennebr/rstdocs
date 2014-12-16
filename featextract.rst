@@ -1,3 +1,6 @@
+.. role:: m(math)
+
+
 Feature extraction
 ==================
 
@@ -18,14 +21,18 @@ neighborhood. The output image is multi band with one statistical moment
 Variance, the Skewness and the Kurtosis. They are provided in this exact
 order in the output image.
 
-The application has the following input parameters:
+The *LocalStatisticExtraction* application has the following input
+parameters:
 
--  ``-in`` the input image to compute the features on
--  ``-channel`` the selected channel index in the input image to be
+- ``-in`` the input image to compute the features on
+
+- ``-channel`` the selected channel index in the input image to be
    processed (default value is 1)
--  ``-radius`` the computational window radius (default value is 3
+
+- ``-radius`` the computational window radius (default value is 3
    pixels)
--  ``-out`` the output image containing the local statistical moments
+
+- ``-out`` the output image containing the local statistical moments
 
 The application can be used like this:
 
@@ -42,18 +49,19 @@ Edge extraction
 This application Computes edge features on every pixel in the selected
 channel of the input image.
 
-The application has the following input parameters:
+The *EdgeExtraction* application has the following input parameters:
 
--  ``-in`` the input image to compute the features on
--  ``-channel`` the selected channel index in the input image to be
-   processed (default value is 1)
--  \| ``-filter`` the choice of edge detection method
-   (gradient/sobel/touzi) (default value is gradient)   
--  ``(-filter.touzi.xradius)`` the X Radius of the Touzi processing
-   neighborhood (only if filter==touzi) (default value is 1 pixel)
--  \| ``(-filter.touzi.yradius)`` the Y Radius of the Touzi processing
-   neighborhood (only if filter==touzi) (default value is 1 pixel)   
--  ``-out`` the output mono band image containing the edge features
+- ``-in`` the input image to compute the features on
+
+- ``-channel`` the selected channel index in the input image to be processed (default value is 1)
+
+- ``-filter`` the choice of edge detection method (gradient/sobel/touzi) (default value is gradient)   
+
+- ``(-filter.touzi.xradius)`` the X Radius of the Touzi processing neighborhood (only if filter==touzi) (default value is 1 pixel)
+
+- ``(-filter.touzi.yradius)`` the Y Radius of the Touzi processing neighborhood (only if filter==touzi) (default value is 1 pixel)   
+
+- ``-out`` the output mono band image containing the edge features
 
 The application can be used like this:
 
@@ -82,21 +90,28 @@ This application computes radiometric indices using the channels of the
 input image. The output is a multi band image into which each channel is
 one of the selected indices.
 
-The application has the following input parameters:
+The *RadiometricIndices* application has the following input parameters:
 
--  ``-in`` the input image to compute the features on
--  ``-out`` the output image containing the radiometric indices
--  ``-channels.blue`` the Blue channel index in the input image (default
+- ``-in`` the input image to compute the features on
+
+- ``-out`` the output image containing the radiometric indices
+
+- ``-channels.blue`` the Blue channel index in the input image (default
    value is 1)
--  ``-channels.green`` the Green channel index in the input image
+
+- ``-channels.green`` the Green channel index in the input image
    (default value is 1)
--  ``-channels.red`` the Red channel index in the input image (default
+
+- ``-channels.red`` the Red channel index in the input image (default
    value is 1)
--  ``-channels.nir`` the Near Infrared channel index in the input image
+
+- ``-channels.nir`` the Near Infrared channel index in the input image
    (default value is 1)
--  ``-channels.mir`` the Mid-Infrared channel index in the input image
+
+- ``-channels.mir`` the Mid-Infrared channel index in the input image
    (default value is 1)
--  ``-list`` the list of available radiometric indices (default value is
+
+- ``-list`` the list of available radiometric indices (default value is
    Vegetation:NDVI)
 
 The available radiometric indices to be listed into -list with their
@@ -166,24 +181,33 @@ structuring element (a ball or a cross) having one radius along X and
 another one along Y. NB: the cross shaped structuring element has a
 fixed radius equal to 1 pixel in both X and Y directions.
 
-The application has the following input parameters:
+The *BinaryMorphologicalOperation* application has the following input
+parameters:
 
--  ``-in`` the input image to be filtered
--  ``-channel`` the selected channel index in the input image to be
+- ``-in`` the input image to be filtered
+
+- ``-channel`` the selected channel index in the input image to be
    processed (default value is 1)
--  ``-structype`` the choice of the structuring element type
+
+- ``-structype`` the choice of the structuring element type
    (ball/cross) (default value is ball)
--  ``(-structype.ball.xradius)`` the ball structuring element X Radius
+
+- ``(-structype.ball.xradius)`` the ball structuring element X Radius
    (only if structype==ball) (default value is 5 pixels)
--  ``(-structype.ball.yradius)`` the ball structuring element Y Radius
+
+- ``(-structype.ball.yradius)`` the ball structuring element Y Radius
    (only if structype==ball) (default value is 5 pixels)
--  ``-filter`` the choice of the morphological operation
+
+- ``-filter`` the choice of the morphological operation
    (dilate/erode/opening/closing) (default value is dilate)
--  ``(-filter.dilate.foreval)`` the foreground value for the dilation
+
+- ``(-filter.dilate.foreval)`` the foreground value for the dilation
    (idem for filter.erode/opening/closing) (default value is 1)
--  ``(-filter.dilate.backval)`` the background value for the dilation
+
+- ``(-filter.dilate.backval)`` the background value for the dilation
    (idem for filter.erode/opening/closing) (default value is 0)
--  ``-out`` the output filtered image
+
+- ``-out`` the output filtered image
 
 The application can be used like this:
 
@@ -208,20 +232,27 @@ structuring element (a ball or a cross) having one radius along X and
 another one along Y. NB: the cross shaped structuring element has a
 fixed radius equal to 1 pixel in both X and Y directions.
 
-The application has the following input parameters:
+The *GrayScaleMorphologicalOperation* application has the following
+input parameters:
 
--  ``-in`` the input image to be filtered
--  ``-channel`` the selected channel index in the input image to be
+- ``-in`` the input image to be filtered
+
+- ``-channel`` the selected channel index in the input image to be
    processed (default value is 1)
--  ``-structype`` the choice of the structuring element type
+
+- ``-structype`` the choice of the structuring element type
    (ball/cross) (default value is ball)
--  ``(-structype.ball.xradius)`` the ball structuring element X Radius
+
+- ``(-structype.ball.xradius)`` the ball structuring element X Radius
    (only if structype==ball) (default value is 5 pixels)
--  ``(-structype.ball.yradius)`` the ball structuring element Y Radius
+
+- ``(-structype.ball.yradius)`` the ball structuring element Y Radius
    (only if structype==ball) (default value is 5 pixels)
--  ``-filter`` the choice of the morphological operation
+
+- ``-filter`` the choice of the morphological operation
    (dilate/erode/opening/closing) (default value is dilate)
--  ``-out`` the output filtered image
+
+- ``-out`` the output filtered image
 
 The application can be used like this:
 
@@ -249,31 +280,42 @@ This application computes Haralick, advanced and higher order texture
 features on every pixel in the selected channel of the input image. The
 output image is multi band with a feature per band.
 
-The application has the following input parameters:
+The *HaralickTextureExtraction* application has the following input
+parameters:
 
--  ``-in`` the input image to compute the features on
--  ``-channel`` the selected channel index in the input image to be
+- ``-in`` the input image to compute the features on
+
+- ``-channel`` the selected channel index in the input image to be
    processed (default value is 1)
--  ``-texture`` the texture set selection [simple/advanced/higher]
+
+- ``-texture`` the texture set selection [simple/advanced/higher]
    (default value is simple)
--  ``-parameters.min`` the input image minimum (default value is 0)
--  ``-parameters.max`` the input image maximum (default value is 255)
--  ``-parameters.xrad`` the X Radius of the processing neighborhood
+
+- ``-parameters.min`` the input image minimum (default value is 0)
+
+- ``-parameters.max`` the input image maximum (default value is 255)
+
+- ``-parameters.xrad`` the X Radius of the processing neighborhood
    (default value is 2 pixels)
--  ``-parameters.yrad`` the Y Radius of the processing neighborhood
+
+- ``-parameters.yrad`` the Y Radius of the processing neighborhood
    (default value is 2 pixels)
--  ``-parameters.xoff`` the :math:`\Delta`\ X Offset for the
+
+- ``-parameters.xoff`` the :math:`\Delta`\ X Offset for the
    co-occurrence computation (default value is 1 pixel)
--  ``-parameters.yoff`` the :math:`\Delta`\ Y Offset for the
+
+- ``-parameters.yoff`` the :math:`\Delta`\ Y Offset for the
    co-occurrence computation (default value is 1 pixel)
--  ``-parameters.nbbin`` the number of bin per axis for histogram
+
+- ``-parameters.nbbin`` the number of bin per axis for histogram
    generation (default value is 8)
--  ``-out`` the output multi band image containing the selected texture
+
+- ``-out`` the output multi band image containing the selected texture
    features (one feature per band)
 
 The available values for -texture with their relevant features are:
 
--  ``-texture=simple:`` In this case, 8 local Haralick textures features
+- ``-texture=simple:`` In this case, 8 local Haralick textures features
    will be processed. The 8 output image channels are: Energy, Entropy,
    Correlation, Inverse Difference Moment, Inertia, Cluster Shade,
    Cluster Prominence and Haralick Correlation. They are provided in
@@ -282,43 +324,46 @@ The available values for -texture with their relevant features are:
    radius. To improve the speed of computation, a variant of Grey Level
    Co-occurrence Matrix(GLCM) called Grey Level Co-occurrence Indexed
    List (GLCIL) is used. Given below is the mathematical explanation on
-   the computation of each textures. Here :math:\` g(i, j) \` is the
+   the computation of each textures. Here :math:`g(i, j)` is the
    frequency of element in the GLCIL whose index is i, j. GLCIL stores a
    pair of frequency of two pixels taken from the given offset and the
    cell index (i, j) of the pixel in the neighborhood window. :(where
    each element in GLCIL is a pair of pixel index and it’s frequency,
-   :math:\` g(i, j) \` is the frequency value of the pair having index
-   is i, j).
+   :math:`g(i, j)` is the frequency value of the pair having index is
+   i, j).
 
-   “Energy” :math:\` = f\_1 = sum\_{i, j}g(i, j)^2 \`
+   “Energy” :math:`= f_1 = \sum_{i, j}g(i, j)^2`
 
-   “Entropy” :math:\` = f\_2 = -sum\_{i, j}g(i, j) log\_2 g(i, j), or 0
-   if :math:g(i, j) = 0\`
+   “Entropy” :math:`= f_2 = -\sum_{i, j}g(i, j) \log_2 g(i, j)`, or 0
+   if :math:`g(i, j) = 0`
 
-   “Correlation” :math:\` = f\_3 = sum\_{i, j}frac{(i - mu)(j - mu)g(i,
-   j)}{sigma^2} \`
+   “Correlation”
+   :math:`= f_3 = \sum_{i, j}\frac{(i - \mu)(j - \mu)g(i, j)}{\sigma^2}`
 
-   “Inverse Difference Moment” :math:\`= f_4 = \sum_{i, j}\frac{1}{1 + (i - j)^2}g(i, j) `
+   “Inverse Difference Moment”
+   :math:`= f_4 = \sum_{i, j}\frac{1}{1 + (i - j)^2}g(i, j)`
 
-   “Inertia” :math:\` = f\_5 = sum\_{i, j}(i - j)^2g(i, j) \` (sometimes
+   “Inertia” :math:`= f_5 = \sum_{i, j}(i - j)^2g(i, j)` (sometimes
    called “contrast”)
 
-   “Cluster Shade” :math:\` = f\_6 = sum\_{i, j}((i - mu) + (j - mu))^3
-   g(i, j) \`
+   “Cluster Shade”
+   :math:`= f_6 = \sum_{i, j}((i - \mu) + (j - \mu))^3 g(i, j)`
 
-   “Cluster Prominence” :math:\` = f\_7 = sum\_{i, j}((i - mu) + (j -
-   mu))^4 g(i, j) \`
+   “Cluster Prominence”
+   :math:`= f_7 = \sum_{i, j}((i - \mu) + (j - \mu))^4 g(i, j)`
 
-   “Haralick’s Correlation” :math:\` = f\_8 = frac{sum\_{i, j}(i, j)
-   g(i, j) -mu\_t^2}{sigma\_t^2} \` where :math:`\mu_t` and
-   :math:`\sigma_t` are the mean and standard deviation of the row (or
-   column, due to symmetry) sums. Above, :math:\` mu = \` (weighted
-   pixel average) :math:\` = sum\_{i, j}i cdot g(i, j) = sum\_{i, j}j
-   cdot g(i, j) \` (due to matrix symmetry), and :math:\` sigma = \`
-   (weighted pixel variance) :math:\` = sum\_{i, j}(i - mu)^2 cdot g(i,
-   j) = sum\_{i, j}(j - mu)^2 cdot g(i, j) \` (due to matrix symmetry).
+   “Haralick’s Correlation”
+   :math:`= f_8 = \frac{\sum_{i, j}(i, j) g(i, j) -\mu_t^2}{\sigma_t^2}`
+   where :math:`\mu_t` and :math:`\sigma_t` are the mean and standard
+   deviation of the row (or column, due to symmetry) sums. Above,
+   :math:`\mu =` (weighted pixel average)
+   :math:`= \sum_{i, j}i \cdot g(i, j) = \sum_{i, j}j \cdot g(i, j)`
+   (due to matrix symmetry), and :math:`\sigma =` (weighted pixel
+   variance)
+   :math:`= \sum_{i, j}(i - \mu)^2 \cdot g(i, j) = \sum_{i, j}(j - \mu)^2 \cdot g(i, j)`
+   (due to matrix symmetry).
 
--  ``-texture=advanced:`` In this case, 10 advanced texture features
+- ``-texture=advanced:`` In this case, 10 advanced texture features
    will be processed. The 10 output image channels are: Mean, Variance,
    Dissimilarity, Sum Average, Sum Variance, Sum Entropy, Difference of
    Entropies, Difference of Variances, IC1 and IC2. They are provided in
@@ -328,49 +373,49 @@ The available values for -texture with their relevant features are:
    To improve the speed of computation, a variant of Grey Level
    Co-occurrence Matrix(GLCM) called Grey Level Co-occurrence Indexed
    List (GLCIL) is used. Given below is the mathematical explanation on
-   the computation of each textures. Here :math:\` g(i, j) \` is the
+   the computation of each textures. Here :math:`g(i, j)` is the
    frequency of element in the GLCIL whose index is i, j. GLCIL stores a
    pair of frequency of two pixels taken from the given offset and the
    cell index (i, j) of the pixel in the neighborhood window. :(where
    each element in GLCIL is a pair of pixel index and it’s frequency,
-   :math:\` g(i, j) \` is the frequency value of the pair having index
-   is i, j).
+   :math:`g(i, j)` is the frequency value of the pair having index is
+   i, j).
 
-   “Mean” :math:\` = sum\_{i, j}i g(i, j) \`
+   “Mean” :math:`= \sum_{i, j}i g(i, j)`
 
-   “Sum of squares: Variance” :math:\` = f\_4 = sum\_{i, j}(i - mu)^2
-   g(i, j) \`
+   “Sum of squares: Variance”
+   :math:`= f_4 = \sum_{i, j}(i - \mu)^2 g(i, j)`
 
-   “Dissimilarity” :math:\` = f\_5 = sum\_{i, j}(i - j) g(i, j)^2 \`
+   “Dissimilarity” :math:`= f_5 = \sum_{i, j}(i - j) g(i, j)^2`
 
-   “Sum average” :math:\` = f\_6 = -sum\_{i}i g\_{x+y}(i) \`
+   “Sum average” :math:`= f_6 = -\sum_{i}i g_{x+y}(i)`
 
-   “Sum Variance” :math:\` = f\_7 = sum\_{i}(i - f\_8)^2 g\_{x+y}(i) \`
+   “Sum Variance” :math:`= f_7 = \sum_{i}(i - f_8)^2 g_{x+y}(i)`
 
-   “Sum Entropy” :math:\`= f_8 = -\sum_{i}g_{x+y}(i) log (g_{x+y}(i)) `
+   “Sum Entropy” :math:`= f_8 = -\sum_{i}g_{x+y}(i) log (g_{x+y}(i))`
 
-   “Difference variance” :math:\` = f\_10 = variance of g\_{x-y}(i) \`
+   “Difference variance” :math:`= f_10 = variance of g_{x-y}(i)`
 
-   “Difference entropy” :math:\` = f\_11 = -sum\_{i}g\_{x-y}(i) log
-   (g\_{x-y}(i)) \`
+   “Difference entropy”
+   :math:`= f_11 = -\sum_{i}g_{x-y}(i) log (g_{x-y}(i))`
 
-   “Information Measures of Correlation IC1” :math:\` = f\_12 =
-   frac{f\_9 - HXY1}{H} \`
+   “Information Measures of Correlation IC1”
+   :math:`= f_12 = \frac{f_9 - HXY1}{H}`
 
-   “Information Measures of Correlation IC2” :math:\` = f\_13 = sqrt{1 -
-   exp{-2}\|HXY2 - f\_9\|} \`
+   “Information Measures of Correlation IC2”
+   :math:`= f_13 = \sqrt{1 - \exp{-2}|HXY2 - f_9|}`
 
-   Above, :math:\` mu = \` (weighted pixel average) :math:\` = sum\_{i,
-   j}i cdot g(i, j) = sum\_{i, j}j cdot g(i, j) \` (due to matrix
-   summetry), and
+   Above, :math:`\mu = ` (weighted pixel average)
+   :math:`= \sum_{i, j}i \cdot g(i, j) =  \sum_{i, j}j \cdot g(i, j)`
+   (due to matrix summetry), and
 
-   :math:\` g\_{x+y}(k) = sum\_{i}sum\_{j}g(i) \` where :math:\` i+j=k
-   \` and :math:\` k = 2, 3, .., 2N\_{g} \` and
+   :math:`g_{x+y}(k) =  \sum_{i}\sum_{j}g(i)` where :math:`i+j=k`
+   and :math:`k = 2, 3, .., 2N_{g}` and
 
-   :math:\` g\_{x-y}(k) = sum\_{i}sum\_{j}g(i) \` where :math:\` i-j=k
-   \` and :math:\` k = 0, 1, .., N\_{g}-1 \`
+   :math:`g_{x-y}(k) =  \sum_{i}\sum_{j}g(i)` where :math:`i-j=k`
+   and :math:`k = 0, 1, .., N_{g}-1`
 
--  ``-texture=higher:`` In this case, 11 local higher order statistics
+- ``-texture=higher:`` In this case, 11 local higher order statistics
    texture coefficients based on the grey level run-length matrix will
    be processed. The 11 output image channels are: Short Run Emphasis,
    Long Run Emphasis, Grey-Level Nonuniformity, Run Length
@@ -380,41 +425,41 @@ The available values for -texture with their relevant features are:
    Run High Grey-Level Emphasis. They are provided in this exact order
    in the output image. Thus, this application computes the following
    Haralick textures over a sliding window with user defined radius:
-   (where :math:\` p(i, j) \` is the element in cell i, j of a
-   normalized Run Length Matrix, :math:`n_r` is the total number of runs
-   and :math:`n_p` is the total number of pixels):
+   (where :math:`p(i, j)` is the element in cell i, j of a normalized
+   Run Length Matrix, :math:`n_r` is the total number of runs and
+   :math:`n_p` is the total number of pixels):
 
-   “Short Run Emphasis” :math:\` = SRE = frac{1}{n\_r} sum\_{i,
-   j}frac{p(i, j)}{j^2} \`
+   “Short Run Emphasis”
+   :math:`= SRE = \frac{1}{n_r} \sum_{i, j}\frac{p(i, j)}{j^2}`
 
-   “Long Run Emphasis” :math:\` = LRE = frac{1}{n\_r} sum\_{i, j}p(i, j)
-   \* j^2 \`
+   “Long Run Emphasis”
+   :math:`= LRE = \frac{1}{n_r} \sum_{i, j}p(i, j) * j^2`
 
-   “Grey-Level Nonuniformity” :math:\` = GLN = frac{1}{n\_r} sum\_{i}
-   left( sum\_{j}{p(i, j)} right)^2 \`
+   “Grey-Level Nonuniformity”
+   :math:`= GLN = \frac{1}{n_r} \sum_{i} \left( \sum_{j}{p(i, j)} \right)^2`
 
-   “Run Length Nonuniformity” :math:\` = RLN = frac{1}{n\_r} sum\_{j}
-   left( sum\_{i}{p(i, j)} right)^2 \`
+   “Run Length Nonuniformity”
+   :math:`= RLN = \frac{1}{n_r} \sum_{j} \left( \sum_{i}{p(i, j)} \right)^2`
 
-   “Run Percentage” :math:\` = RP = frac{n\_r}{n\_p} \`
+   “Run Percentage” :math:`= RP = \frac{n_r}{n_p}`
 
-   “Low Grey-Level Run Emphasis” :math:\` = LGRE = frac{1}{n\_r}
-   sum\_{i, j}frac{p(i, j)}{i^2} \`
+   “Low Grey-Level Run Emphasis”
+   :math:`= LGRE = \frac{1}{n_r} \sum_{i, j}\frac{p(i, j)}{i^2}`
 
-   “High Grey-Level Run Emphasis” :math:\` = HGRE = frac{1}{n\_r}
-   sum\_{i, j}p(i, j) \* i^2 \`
+   “High Grey-Level Run Emphasis”
+   :math:`= HGRE = \frac{1}{n_r} \sum_{i, j}p(i, j) * i^2`
 
-   “Short Run Low Grey-Level Emphasis” :math:\` = SRLGE = frac{1}{n\_r}
-   sum\_{i, j}frac{p(i, j)}{i^2 j^2} \`
+   “Short Run Low Grey-Level Emphasis”
+   :math:`= SRLGE = \frac{1}{n_r} \sum_{i, j}\frac{p(i, j)}{i^2 j^2}`
 
-   “Short Run High Grey-Level Emphasis” :math:\` = SRHGE = frac{1}{n\_r}
-   sum\_{i, j}frac{p(i, j) \* i^2}{j^2} \`
+   “Short Run High Grey-Level Emphasis”
+   :math:`= SRHGE = \frac{1}{n_r} \sum_{i, j}\frac{p(i, j) * i^2}{j^2}`
 
-   “Long Run Low Grey-Level Emphasis” :math:\` = LRLGE = frac{1}{n\_r}
-   sum\_{i, j}frac{p(i, j) \* j^2}{i^2} \`
+   “Long Run Low Grey-Level Emphasis”
+   :math:`= LRLGE = \frac{1}{n_r} \sum_{i, j}\frac{p(i, j) * j^2}{i^2}`
 
-   “Long Run High Grey-Level Emphasis” :math:\` = LRHGE = frac{1}{n\_r}
-   sum\_{i, j} p(i, j) i^2 j^2 \`
+   “Long Run High Grey-Level Emphasis”
+   :math:`= LRHGE = \frac{1}{n_r} \sum_{i, j} p(i, j) i^2 j^2`
 
 The application can be used like this:
 
@@ -450,19 +495,27 @@ constant alpha and the ratio Maximum Consideration Number, which
 describes the shape contour around the central pixel, are used to
 compute the :math:`w - mean` value.
 
-The application has the following input parameters:
+The *SFSTextureExtraction* application has the following input
+parameters:
 
--  ``-in`` the input image to compute the features on
--  ``-channel`` the selected channel index in the input image to be
+- ``-in`` the input image to compute the features on
+
+- ``-channel`` the selected channel index in the input image to be
    processed (default value is 1)
--  ``-parameters.spethre`` the spectral threshold (default value is 50)
--  ``-parameters.spathre`` the spatial threshold (default value is 100
+
+- ``-parameters.spethre`` the spectral threshold (default value is 50)
+
+- ``-parameters.spathre`` the spatial threshold (default value is 100
    pixels)
--  ``-parameters.nbdir`` the number of directions (default value is 20)
--  ``-parameters.alpha`` the alpha value (default value is 1)
--  ``-parameters.maxcons`` the ratio Maximum Consideration Number
+
+- ``-parameters.nbdir`` the number of directions (default value is 20)
+
+- ``-parameters.alpha`` the alpha value (default value is 1)
+
+- ``-parameters.maxcons`` the ratio Maximum Consideration Number
    (default value is 5)
--  ``-out`` the output multi band image containing the selected texture
+
+- ``-out`` the output multi band image containing the selected texture
    features (one feature per band)
 
 The application can be used like this:

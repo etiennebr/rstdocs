@@ -4,64 +4,73 @@ A brief tour of OTB-Applications
 Introduction
 ------------
 
-was perhaps the older package of the suite after the OTB package itself.
-Since the is a library providing remote sensing functionalities, the
+**OTB Applications** was perhaps the older package of the **Orfeo
+Toolbox** suite after the OTB package itself. Since the **Orfeo
+Toolbox** is a library providing remote sensing functionalities, the
 only applications that were distributed at the beginning were the
 examples from the Software Guide and the tests. These applications are
 very useful for the developer because their code is very short and only
 demonstrates one functionality at a time. In many cases, a real
 application would require :
 
--  combining together two or more functions from the
+-  combining together two or more functions from the **Orfeo Toolbox**
 
 -  providing a nice high level interface to handle : parameters, input
    data, output data and communication with the user
 
-The package was originally designed to provide applications performing
-simple remote sensing tasks, more complex than simple examples from the
-Software Guide, and with a more user-friendly interface (either
-graphical or command-line), to demonstrate the use of the functions. The
-most popular applications are maybe the , which allows to open a
-collection of images and navigate in them, and the , which allowed to
-delineate training regions of interest on the image and classify the
-image with a SVM classifier trained with these regions (this application
-is no longer maintained since the same functionnality is available
-through the corresponding module). During the first 3 years of the
-development, many more applications have been added to this package, to
-perform various tasks. Most of them came with a graphical user
-interface, apart from some small utilities that are command-line.
+The **OTB Applications** package was originally designed to provide
+applications performing simple remote sensing tasks, more complex than
+simple examples from the Software Guide, and with a more user-friendly
+interface (either graphical or command-line), to demonstrate the use of
+the **Orfeo Toolbox** functions. The most popular applications are maybe
+the *otbImageViewerManager* , which allows to open a collection of
+images and navigate in them, and the
+*otbSupervisedClassificationApplication* , which allowed to delineate
+training regions of interest on the image and classify the image with a
+SVM classifier trained with these regions (this application is no longer
+maintained since the same functionnality is available through the
+corresponding **Monteverdi** module). During the first 3 years of the
+**Orfeo Toolbox** development, many more applications have been added to
+this package, to perform various tasks. Most of them came with a
+graphical user interface, apart from some small utilities that are
+command-line.
 
-The development and release of the software (see
+The development and release of the **Monteverdi** software (see
 chapter [chap:Monteverdi] at the end of year 2009 changed a lot of
-things for the package: most of non-developer users were looking for
-quite a long time for an application providing functionalities under a
-unified graphical interface. Many applications from the package were
-integrated to as modules, and the package lost a lot of its usefulness.
-No more applications were added to the package and it was barely
-maintained, as new graphical tools were directly embedded within .
+things for the **OTB Applications** package: most of non-developer users
+were looking for quite a long time for an application providing **Orfeo
+Toolbox** functionalities under a unified graphical interface. Many
+applications from the **OTB Applications** package were integrated to
+**Monteverdi** as modules, and the **OTB Applications** package lost a
+lot of its usefulness. No more applications were added to the package
+and it was barely maintained, as new graphical tools were directly
+embedded within **Monteverdi** .
 
-Then, some people started to regain interest in the package. is a great
-tool to perform numerous remote sensing and image processing task in a
-minute, but it is not well adapted to heavier (and longer) processing,
-scripting and batch processing. Therefore, in 2010 the package has been
+Then, some people started to regain interest in the **OTB Applications**
+package. **Monteverdi** is a great tool to perform numerous remote
+sensing and image processing task in a minute, but it is not well
+adapted to heavier (and longer) processing, scripting and batch
+processing. Therefore, in 2010 the **OTB Applications** package has been
 revamped: old applications have been moved to a legacy folder for
 backward compatibility, and the development team started to populate the
 package with compact command-line tools to perform various heavy
 processing tasks.
 
-Later on in 2011, the has been further revamped. Because of the
-increasing need to interface the into other software and to provide
-auto-generated interfaces, the development team decided to develop a new
-application framework. The main idea of this framework is the following:
-each application is written once for all in a shared library (also known
-as plugin). This plugin can be auto-loaded into appropriate tools
-wihtout recompiling, and is able to fully describe its parameters,
-behaviour and documentation.
+Later on in 2011, the **OTB Applications** has been further revamped.
+Because of the increasing need to interface the **OTB Applications**
+into other software and to provide auto-generated interfaces, the
+**Orfeo Toolbox** development team decided to develop a new application
+framework. The main idea of this framework is the following: each
+application is written once for all in a shared library (also known as
+plugin). This plugin can be auto-loaded into appropriate tools wihtout
+recompiling, and is able to fully describe its parameters, behaviour and
+documentation.
 
-The tools to use the plugins can be extended, but shipped the following:
+The tools to use the plugins can be extended, but **Orfeo Toolbox**
+shipped the following:
 
 -  A command-line laucher, which is almost equivalent to the former
-   command-line interface,
+   **OTB Applications** command-line interface,
 
 -  A graphical launcher, with an auto-generated QT interface, providing
    ergonomic parameters setting, display of documentation, and progress
@@ -71,19 +80,19 @@ The tools to use the plugins can be extended, but shipped the following:
    set-up and executed into a high-level language such as Python or Java
    for instance.
 
-Additionally, `QGis <http://www.qgis.org/>`_ plugins built on top of
+Additionally, `QGis <http://www.qgis.org/>`_  plugins built on top of
 the SWIG/Python interface are available with seamless integration within
 QGis. You can find a short guide about it
-`here <http://wiki.orfeo-toolbox.org/index.php/Quantum_GIS_access_to_OTB_applications>`_.
+`here <http://wiki.orfeo-toolbox.org/index.php/Quantum_GIS_access_to_OTB_applications>`_ .
 
 To facilitate the use of these tools and applications, they will now be
-shipped with the standard package. It means that the former
-**OTB-Applications** package has entered its maintenance cycle : no new
-feature will be pushed there, and all development is done directly
-inside the paackage.
+shipped with the standard **Orfeo Toolbox** package. It means that the
+former **OTB-Applications** package has entered its maintenance cycle :
+no new feature will be pushed there, and all development is done
+directly inside the **Orfeo Toolbox** paackage.
 
-The are now rich of more than 40 tools, which are listed in the the
-applications reference documentation, presented in
+The **OTB Applications** are now rich of more than 40 tools, which are
+listed in the the applications reference documentation, presented in
 chapter [chap:apprefdoc], page .
 
 Installation
@@ -100,7 +109,8 @@ We provide different binary packages for OTB-Applications:
 -  for MacOSX through MacPorts software
 
 If you want build from source or if we don’t provide packages for your
-system, some informations are available into the , in the section
+system, some informations are available into the `OTB Software
+Guide <http://orfeo-toolbox.org/SoftwareGuide>`_  , in the section
 **(**\ Building from Source)
 
 Windows XP/Seven
@@ -135,7 +145,12 @@ shell the list of available applications:
 MacOS X
 ~~~~~~~
 
-OTB Applications are now available on `MacPorts <http://http://www.macports.org/>`_. The port name is called orfeotoolbox. You can follow the MacPorts documentation  to install MacPorts first, then install the orfeotoolbox port. After the installation, you can used directly on your system, the OTB applications.
+OTB Applications are now available on
+`MacPorts <http://http://www.macports.org/>`_ . The port name is called
+orfeotoolbox. You can follow the `MacPorts
+documentation <http://guide.macports.org/>`_  to install MacPorts
+first, then install the orfeotoolbox port. After the installation, you
+can used directly on your system, the OTB applications.
 
 Ubuntu 12.04 and higher
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -150,7 +165,7 @@ as Debian packages through APT repositories:
 -  **python-otb** for python applications
 
 Since release 3.14.1, OTB Applications packages are available in the
-`ubuntugis-unstable <https://launchpad.net/~ubuntugis/+archive/ubuntugis-unstable>`_
+`ubuntugis-unstable <https://launchpad.net/~ubuntugis/+archive/ubuntugis-unstable>`_ 
 repository.
 
 You can add it by using these command-lines:
@@ -170,7 +185,7 @@ If you are using *Synaptic*, you can add the repositories, update and
 install the packages through the graphical interface.
 
 For further informations about Ubuntu packages go to
-`ubuntugis-unstable <https://launchpad.net/~ubuntugis/+archive/ubuntugis-unstable>`_
+`ubuntugis-unstable <https://launchpad.net/~ubuntugis/+archive/ubuntugis-unstable>`_ 
 launchpad page and click on **Read about installing**.
 
 **apt-add-repository** will try to retrieve the GPG keys of the
@@ -207,7 +222,9 @@ Now run:
     sudo zypper install OrfeoToolbox
     sudo zypper install OrfeoToolbox-python
 
-Alternatively you can use the One-Click Installer from the `openSUSE Download page <http://software.opensuse.org/search?q=Orfeo&baseproject=openSUSE%3A11.4&lang=en&include_home=true&exclude_debug=true>`_
+Alternatively you can use the One-Click Installer from the `openSUSE
+Download
+page <http://software.opensuse.org/search?q=Orfeo&baseproject=openSUSE%3A11.4&lang=en&include_home=true&exclude_debug=true>`_ 
 or add the above repositories and install through Yast Package
 Management.
 
@@ -229,25 +246,26 @@ and then add the OTB packages as shown above.
 Using the applications
 ----------------------
 
-Using the new framework is slightly more complex than launching a
-command-line tool. This section describes all the ways to launch the new
-applications. Apart from the simplified access, which is similar to the
-former access to , you will need to know the application name and
-optionally the path where the applications plugins are stored. For
-applications shipped with , the name of each application can be found in
+Using the new **OTB Applications** framework is slightly more complex
+than launching a command-line tool. This section describes all the ways
+to launch the new applications. Apart from the simplified access, which
+is similar to the former access to **OTB Applications** , you will need
+to know the application name and optionally the path where the
+applications plugins are stored. For applications shipped with **Orfeo
+Toolbox** , the name of each application can be found in
 chapter [chap:apprefdoc], page .
 
 Simplified use
 ~~~~~~~~~~~~~~
 
-All standard applications delivered in with comes with simplified
-scripts in the system path, allowing to launch the command-line and
-graphical user interface versions of the application in the same simple
-way we used to launch the old applications. The command-line interface
-is prefixed by ``otbcli_``, while the Qt interface is prefixed by
-``otbgui_``. For instance, calling ``otbcli_Convert`` will launch the
-command-line interface of the **Convert** application, while
-``otbgui_Convert`` will launch its GUI.
+All standard applications delivered in with **Orfeo Toolbox** comes with
+simplified scripts in the system path, allowing to launch the
+command-line and graphical user interface versions of the application in
+the same simple way we used to launch the old applications. The
+command-line interface is prefixed by ``otbcli_``, while the Qt
+interface is prefixed by ``otbgui_``. For instance, calling
+``otbcli_Convert`` will launch the command-line interface of the
+**Convert** application, while ``otbgui_Convert`` will launch its GUI.
 
 Passing arguments to the command-line version (prefixed by ``otbcli_``)
 is explained in next sub-section.
@@ -310,7 +328,7 @@ example with the **OrthoRectification** application:
     EXAMPLE OF USE: 
     otbcli_OrthoRectification -io.in QB_TOULOUSE_MUL_Extract_500_500.tif -io.out QB_Toulouse_ortho.tif
 
-    DOCUMENTATION http://www.orfeo-toolbox.org/Applications/OrthoRectification.html
+    DOCUMENTATION: http://www.orfeo-toolbox.org/Applications/OrthoRectification.html
     ======================= PARAMETERS =======================
             -progress                        <boolean>        Report progress 
     MISSING -io.in                           <string>         Input Image 
@@ -367,7 +385,7 @@ The application paths can be set with the ``ITK_AUTOLOAD_PATH``
 environment variable, as for the command line launcher. Also, as for the
 command-line application, a more simple script is generated and
 installed by OTB to ease the configuration of the module path : to
-launch the graphical user interface, one will start the
+launch the *Rescale* graphical user interface, one will start the
 ``otbgui_Rescale`` script.
 
 The resulting graphical application displays a window with several tabs:
@@ -388,15 +406,15 @@ In this interface, every optional parameter has a check box that you
 have to tick if you want to set a value and use this parameter. The
 mandatory parameters cannot be unchecked.
 
-The interface of the application is shown here as an example.
+The interface of the application *Rescale* is shown here as an example.
 
-|image1| [fig:rescaleParam]
+image1 [fig:rescaleParam]
 
-|image2| [fig:rescaleLogs]
+image2 [fig:rescaleLogs]
 
-|image3| [fig:rescaleProgress]
+image3 [fig:rescaleProgress]
 
-|image4| [fig:rescaleDocumentation]
+image4 [fig:rescaleDocumentation]
 
 Using the Python interface
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -518,7 +536,7 @@ the application name. Use in this case:
 It will retrieve the application name and related parameters from the
 input xml file and launch in this case the BandMath applications.
 
-.. |image1| image:: ./Art/QtImages/rescale_param.png
-.. |image2| image:: ./Art/QtImages/rescale_logs.png
-.. |image3| image:: ./Art/QtImages/rescale_progress.png
-.. |image4| image:: ./Art/QtImages/rescale_documentation.png
+.. image1 ./Art/QtImages/rescale_param.png
+.. image2 ./Art/QtImages/rescale_logs.png
+.. image3 ./Art/QtImages/rescale_progress.png
+.. image4 ./Art/QtImages/rescale_documentation.png

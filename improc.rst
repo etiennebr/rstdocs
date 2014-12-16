@@ -4,12 +4,13 @@ Image processing and information extraction
 Simple calculus with channels
 -----------------------------
 
-The application provides a simple and efficient way to perform band
-operations. The command line application and the corresponding
-Monteverdi module (shown in the section [Band:sub:`m`\ ath module]) are
-based on the same standards. It computes a band wise operation according
-to a user defined mathematical expression. The following code computes
-the absolute difference between first bands of two images:
+The *BandMath* application provides a simple and efficient way to
+perform band operations. The command line application and the
+corresponding Monteverdi module (shown in the section [Band:sub:`m`\ ath
+module]) are based on the same standards. It computes a band wise
+operation according to a user defined mathematical expression. The
+following code computes the absolute difference between first bands of
+two images:
 
 ::
 
@@ -20,8 +21,8 @@ the absolute difference between first bands of two images:
 The naming convention “im[x]b[y]” designates the yth band of the xth
 input image.
 
-The application embeds built-in operators and functions (listed
-`here <http://muparser.sourceforge.net/mup_features.html#idDef2>`__),
+The *BandMath* application embeds built-in operators and functions
+(listed in the `muparser documentation <http://muparser.sourceforge.net/mup_features.html#idDef2>`_ 
 allowing a vast choice of possible operations.
 
 Segmentation
@@ -41,10 +42,10 @@ result of the segmentation process itself is difficult to represent and
 manipulate efficiently.
 
 The experience of segmenting large remote sensing images is packed into
-a single in .
+a single *Segmentation* in **OTB Applications** .
 
 You can find more information about this application
-`here <http://blog.orfeo-toolbox.org/preview/coming-next-large-scale-segmentation>`__.
+`here <http://blog.orfeo-toolbox.org/preview/coming-next-large-scale-segmentation>`_ .
 
 Large-Scale Mean-Shift (LSMS) segmentation
 ------------------------------------------
@@ -64,7 +65,7 @@ Step 1: Mean-Shift Smoothing
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The first step of the workflow is to perform Mean-Shift smoothing with
-the application:
+the *MeanShiftSmoothing* application:
 
 ::
 
@@ -91,13 +92,13 @@ Step 2: Segmentation
 ~~~~~~~~~~~~~~~~~~~~
 
 The next step is to produce an initial segmentation based on the
-smoothed images produced by the application. To do so, the will process
-them by tiles whose dimensions are defined by the *tilesizex* and
-*tilesizey* parameters, and by writing intermediate images to disk, thus
-keeping the memory consumption very low throughout the process. The
-segmentation will group together adjacent pixels whose range distance is
-below the *ranger* parameter and (optionally) spatial distance is below
-the *spatialr* parameter.
+smoothed images produced by the *MeanShiftSmoothing* application. To do
+so, the *LSMSSegmentation* will process them by tiles whose dimensions
+are defined by the *tilesizex* and *tilesizey* parameters, and by
+writing intermediate images to disk, thus keeping the memory consumption
+very low throughout the process. The segmentation will group together
+adjacent pixels whose range distance is below the *ranger* parameter and
+(optionally) spatial distance is below the *spatialr* parameter.
 
 ::
 
@@ -122,24 +123,25 @@ sequentially with respect to the order in which tiles are processed. You
 will see after the result of the vectorization step that there are no
 artifacts in the results.
 
-The application will write as many intermediate files as tiles needed
-during processing. As such, it may require twice as free disk space as
-the final size of the final image. The *cleanup* option (active by
-default) will clear the intermediate files during the processing as soon
-as they are not needed anymore. By default, files will be written to the
-current directory. The *tmpdir* option allows to specify a different
-directory for these intermediate files.
+The *LSMSSegmentation* application will write as many intermediate files
+as tiles needed during processing. As such, it may require twice as free
+disk space as the final size of the final image. The *cleanup* option
+(active by default) will clear the intermediate files during the
+processing as soon as they are not needed anymore. By default, files
+will be written to the current directory. The *tmpdir* option allows to
+specify a different directory for these intermediate files.
 
 Step 3 (optional): Merging small regions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The application allows to filter out small segments. In the output
-segmented image, those segments will be removed and replaced by the
-background label (0). Another solution to deal with the small regions is
-to merge them with the closest big enough adjacent region in terms of
-radiometry. This is handled by the application, which will output a
-segmented image where small regions have been merged. Again, the
-*uint32* image type is advised for this output image.
+The *LSMSSegmentation* application allows to filter out small segments.
+In the output segmented image, those segments will be removed and
+replaced by the background label (0). Another solution to deal with the
+small regions is to merge them with the closest big enough adjacent
+region in terms of radiometry. This is handled by the
+*LSMSSmallRegionsMerging* application, which will output a segmented
+image where small regions have been merged. Again, the *uint32* image
+type is advised for this output image.
 
 ::
 
@@ -151,11 +153,12 @@ segmented image where small regions have been merged. Again, the
                                    -tilesizey 256
 
 The *minsize* parameter allows to specify the threshold on the size of
-the regions to be merged. Like the application, this application will
-process the input images tile-wise to keep resources usage low, with the
-guarantee of identical results. You can set the tile size using the
-*tilesizex* and *tilesizey* parameters. However unlike the application,
-it does not require to write any temporary file to disk.
+the regions to be merged. Like the *LSMSSegmentation* application, this
+application will process the input images tile-wise to keep resources
+usage low, with the guarantee of identical results. You can set the tile
+size using the *tilesizex* and *tilesizey* parameters. However unlike
+the *LSMSSegmentation* application, it does not require to write any
+temporary file to disk.
 
 Step 4: Vectorization
 ~~~~~~~~~~~~~~~~~~~~~
@@ -180,8 +183,8 @@ projection, so does the output GIS file).
 This application will process the input images tile-wise to keep
 resources usage low, with the guarantee of identical results. You can
 set the tile size using the *tilesizex* and *tilesizey* parameters.
-However unlike the application, it does not require to write any
-temporary file to disk.
+However unlike the *LSMSSegmentation* application, it does not require
+to write any temporary file to disk.
 
 Dempster Shafer based Classifier Fusion
 ---------------------------------------
@@ -195,9 +198,9 @@ input geometrical features.
 Fuzzy Model (requisite)
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-The application performs the fuzzy model estimation (once by use case:
-descriptor set / Belief support / Plausibility support). It has the
-following input parameters :
+The *DSFuzzyModelEstimation* application performs the fuzzy model
+estimation (once by use case: descriptor set / Belief support /
+Plausibility support). It has the following input parameters :
 
 -  ``-psin`` a vector data of positive samples enriched according to the
    “Compute Descriptors” part
@@ -231,8 +234,8 @@ First Step: Compute Descriptors
 
 The first step in the classifier fusion based validation is to compute,
 for each studied polyline, the choosen descriptors. In this context, the
-application can be used for a large range of descriptors. It has the
-following inputs :
+*ComputePolylineFeatureFromImage* application can be used for a large
+range of descriptors. It has the following inputs :
 
 -  ``-in`` an image (of the sudied scene) corresponding to the choosen
    descriptor (NDVI, building Mask…)
@@ -278,16 +281,17 @@ must be repeated for each choosen descriptor:
                                            -out   VD_NONDVI_ROADSA_NOBUIL.shp
 
 Both ``NDVI.TIF`` and ``roadSpectralAngle.TIF`` can be produced using
-feature extraction capabilities, and ``Buildings.TIF`` can be generated
-using rasterization module. From now on, ``VD_NONDVI_ROADSA_NOBUIL.shp``
-contains three descriptor fields. It will be used in the following part.
+**Monteverdi** feature extraction capabilities, and ``Buildings.TIF``
+can be generated using **Monteverdi** rasterization module. From now on,
+``VD_NONDVI_ROADSA_NOBUIL.shp`` contains three descriptor fields. It
+will be used in the following part.
 
 Second Step: Feature Validation
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The final application () will validate or unvalidate the studied samples
-using `the Dempster-Shafer
-theory <http://en.wikipedia.org/wiki/Dempster%E2%80%93Shafer_theory>`__
+The final application (*VectorDataDSValidation* ) will validate or
+unvalidate the studied samples using `the Dempster-Shafer
+theory <http://en.wikipedia.org/wiki/Dempster%E2%80%93Shafer_theory>`_ 
 . Its inputs are :
 
 -  ``-in`` an enriched vector data “VD\_NONDVI\_ROADSA\_NOBUIL.shp”

@@ -44,7 +44,7 @@ type. Two levels of calibration are usually distinguished:
    and amount of aerosol gasses.
 
 This transformation can be done either with **OTB Applications** or with
-**Monteverdi**. Sensor-related parameters such as gain, date, spectral
+**Monteverdi** . Sensor-related parameters such as gain, date, spectral
 sensitivity and sensor position are seamlessly read from the image
 metadata. Atmospheric parameters can be tuned by the user. Supported
 sensors are :
@@ -63,14 +63,14 @@ sensors are :
 
 -  Formosat.
 
-Optical calibration with **OTB Applications**
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Optical calibration with **OTB Applications** 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The application allows to perform optical calibration. The mandatory
-parameters are the input and output images. All other parameters are
-optional. By default the level of calibration is set to TOA (Top Of
-Atmosphere). The output images are expressed in thousandth of
-reflectivity using a 16 bits unsigned integer type.
+The *OpticalCalibration* application allows to perform optical
+calibration. The mandatory parameters are the input and output images.
+All other parameters are optional. By default the level of calibration
+is set to TOA (Top Of Atmosphere). The output images are expressed in
+thousandth of reflectivity using a 16 bits unsigned integer type.
 
 A basic TOA calibration task can be performed with the following command
 :
@@ -86,10 +86,10 @@ A basic TOC calibration task can be performed with the following command
 
     otbcli_OpticalCalibration -in  input_image -out output_image -level toc
 
-Optical calibration with **Monteverdi**
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Optical calibration with **Monteverdi** 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-These transformations can also be done in **Monteverdi**.
+These transformations can also be done in **Monteverdi** .
 
 The 6S model needs atmospheric parameters to be able to compute
 radiative terms to estimate the atmospheric contributions on the input
@@ -113,9 +113,9 @@ The module produces four outputs:
 -  Difference TOA-TOC image, which allows to get the estimation of
    atmospheric contribution.
 
-|image1| [fig:opticalcalibration]
+image1 [fig:opticalcalibration]
 
-|image2| [fig:opticalcalibrationoutput]
+image2 [fig:opticalcalibrationoutput]
 
 Pan-sharpening
 --------------
@@ -159,22 +159,22 @@ This fusion operation requires two different steps :
    pixels of the multi-spectral and panchromatic image to obtain the
    fused pixels.
 
-Using either **OTB Applications** or modules from **Monteverdi**, it is
+Using either **OTB Applications** or modules from **Monteverdi** , it is
 possible to perform both steps in a row, or step-by-step fusion, as
 described in the above sections.
 
-Pan-sharpening with **OTB Applications**
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Pan-sharpening with **OTB Applications** 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The application allows to perform both steps in a row. Seamless sensor
-modelling is used to perform zooming and registration of the
-multi-spectral image on the panchromatic image. In the case of a
-Pléiades bundle, a different approach is used : an affine transform is
-used to zoom the multi-spectral image and apply a residual translation.
-This translation is computed based on metadata about the geometric
-processing of the bundle. This zooming and registration of the
+The *BundleToPerfectSensor* application allows to perform both steps in
+a row. Seamless sensor modelling is used to perform zooming and
+registration of the multi-spectral image on the panchromatic image. In
+the case of a Pléiades bundle, a different approach is used : an affine
+transform is used to zoom the multi-spectral image and apply a residual
+translation. This translation is computed based on metadata about the
+geometric processing of the bundle. This zooming and registration of the
 multi-spectral image over the panchromatic image can also be performed
-by the application.
+by the *Superimpose* application.
 
 After the registration step, a simple pan-sharpening is applied,
 according to the following formula:
@@ -186,7 +186,8 @@ panchromatic image, :math:`XS` is the multi-spectral image and
 :math:`PAN_{smooth}` is the panchromatic image smoothed with a kernel to
 fit the multi-spectral image scale.
 
-Here is a simple example of how to use the application:
+Here is a simple example of how to use the *BundleToPerfectSensor*
+application:
 
 ::
 
@@ -223,33 +224,34 @@ Increasing the available amount of RAM may also result in better
 computation time, seems it optimises the use of the system resources.
 Default value is 256 Mb.
 
-Pan-sharpening with **Monteverdi**
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Pan-sharpening with **Monteverdi** 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Monteverdi** allows to perform step-by-step fusion. The followings
 screenshots highlight operations needed to perform Pan-Sharpening.
 
 -  Open panchromatic and multispectral images in monteverdi using the
-   module or using the ``-il`` option of the **Monteverdi** executable.
+   *Open Dataset* module or using the ``-il`` option of the
+   **Monteverdi** executable.
 
--  The module is used to zoomed and registered the multispectral on the
-   panchromatic image. As a result, we get a multispectral dataset with
-   the same geographic extension and the same resolution as the
-   panchromatic image, cf  [fig:qbmulsuper].
+-  The *Superimpose* module is used to zoomed and registered the
+   multispectral on the panchromatic image. As a result, we get a
+   multispectral dataset with the same geographic extension and the same
+   resolution as the panchromatic image, cf  [fig:qbmulsuper].
 
-   |image3| |image4| [fig:qbmulsuper]
+   image3 image4 [fig:qbmulsuper]
 
--  Now the module can be used using the panchromatic and the
-   multispectral images as inputs. It produces a multispectral image
-   with the same resolution and geographic extension (cf
-    [fig:pansharpen]).
+-  Now the *Simple RCS pan-sharpening* module can be used using the
+   panchromatic and the multispectral images as inputs. It produces a
+   multispectral image with the same resolution and geographic extension
+   (cf  [fig:pansharpen]).
 
-   |image5| [fig:pansharpen]
+   image5 [fig:pansharpen]
 
 Please also note that since registration and zooming of the
 multi-spectral image with the panchromatic image relies on sensor
 modelling, this tool will work only for images whose sensor models is
-available in **Orfeo ToolBox** (see section [ssec:ortho] for a detailed
+available in **Orfeo Toolbox** (see section [ssec:ortho] for a detailed
 list). It will also work with ortho-ready products in cartographic
 projection.
 
@@ -271,19 +273,19 @@ Two main available DEM, free of charges, and with worldwide cover, are
 both delivered as 1 degree by 1 degree tiles:
 
 -  `The Shuttle Radar topographic Mission
-   (SRTM) <http://www2.jpl.nasa.gov/srtm/>`_ is a 90 meters resolution
+   (SRTM) <http://www2.jpl.nasa.gov/srtm/>`_  is a 90 meters resolution
    DEM, obtained by radar interferometry during a campaign of the
    Endeavour space shuttle from NASA in 2000.
 
 -  The `Advanced Spaceborne Thermal Emission and Reflection Radiometer
-   (ASTER) <http://www.ersdac.or.jp/GDEM/E/2.html>`_ is a 30 meters
+   (ASTER) <http://www.ersdac.or.jp/GDEM/E/2.html>`_  is a 30 meters
    resolution DEM obtained by stereoscopic processing of the archive of
    the ASTER instrument.
 
-The **Orfeo ToolBox** relies on capabilities for sensor modelling and DEM
-handling. Tiles of a given DEM are supposed to be located within a
-single directory. General elevation support is also supported from
-GeoTIFF files.
+The **Orfeo Toolbox** relies on `OSSIM <http://www.ossim.org/>`_ 
+capabilities for sensor modelling and DEM handling. Tiles of a given DEM
+are supposed to be located within a single directory. General elevation
+support is also supported from GeoTIFF files.
 
 Whenever an application or **Monteverdi** module requires a DEM, the
 option **elev.dem** allows set the DEM directory. This directory must
@@ -294,7 +296,9 @@ Depending on the reference of the elevation, you also need to use a
 geoid to manage elevation accurately. For this, you need to specify a
 path to a file which contains the geoid. `Geoid <http://en.wikipedia.org/wiki/Geoid>`_ corresponds to the
 equipotential surface that would coincide with the mean ocean surface of
-the Earth. We provide one geoid in the `OTB-Data <http://hg.orfeo-toolbox.org/OTB-Data/file/4722d9e672c6/Input/DEM/egm96.grd>`_ repository.
+the Earth . We provide one geoid in the OTB-Data repository available [#]
+
+.. [#] http://hg.orfeo-toolbox.org/OTB-Data/file/4722d9e672c6/Input/DEM/egm96.grd> .
 
 In all applications, the option **elev.geoid** allows to manage the path
 to the geoid. Finally, it is also possible to use an average elevation
@@ -336,9 +340,11 @@ raw image are then interpolated according to this grid in order to fill
 the ortho-rectified pixels.
 
 Ortho-rectification can be performed either with **OTB Applications** or
-**Monteverdi**. Sensor parameters and image meta-data are seamlessly
+**Monteverdi** . Sensor parameters and image meta-data are seamlessly
 read from the image files without needing any user interaction, provided
-that all auxiliary files are available. The sensor for which **Orfeo ToolBox** supports ortho-rectification of raw products are the following:
+that all auxiliary files are available. The sensor for which **Orfeo
+Toolbox** supports ortho-rectification of raw products are the
+following:
 
 -  Pleiades,
 
@@ -353,7 +359,7 @@ that all auxiliary files are available. The sensor for which **Orfeo ToolBox** s
 -  WorldView.
 
 In addition, GeoTiff and other file format with geographical information
-are seamlessly read by **Orfeo ToolBox**, and the ortho-rectification
+are seamlessly read by **Orfeo Toolbox** , and the ortho-rectification
 tools can be used to re-sample these images in another map projection.
 
 Beware of “ortho-ready” products
@@ -378,11 +384,11 @@ it. Obviously, this map projection is not as accurate as the sensor
 parameters of the raw geometry. In addition, the impact of the elevation
 model can’t be observed if the map projection is used. In order to
 perform an ortho-rectification on this type of product, the map
-projection has to be hidden from **Orfeo ToolBox**.
+projection has to be hidden from **Orfeo Toolbox** .
 
 You can see if a product is an “ortho-ready” product by using tools such
-as ``gdalinfo`` or (see [app:ReadImageInfo]), and check if the product
-verifies the 2 following conditions :
+as ``gdalinfo`` or *ReadImageInfo* (see [app:ReadImageInfo]), and check
+if the product verifies the 2 following conditions :
 
 -  The product is in raw geometry : you should expect the presence of
    RPC coefficients and a non-empty OSSIM keywordlist.
@@ -390,22 +396,26 @@ verifies the 2 following conditions :
 -  The product has a map projection : you should see a projection name
    with physical origin and spacing.
 
-In that case, you can hide the map projection from the **Orfeo ToolBox** 
-by using *extended* filenames. Instead of using the plain input
-image path, you append a specific key at the end :
+In that case, you can hide the map projection from the **Orfeo Toolbox**
+by using *extended* filenames. Instead of using the plain input image
+path, you append a specific key at the end :
 
 ::
 
     "path_to_image?&skipcarto=true"
 
 The double quote can be necessary for a successful parsing. More details
-about the extended filenames can be found in the `wiki <http://wiki.orfeo-toolbox.org/index.php/ExtendedFileName>`_
+about the extended filenames can be found
+`here <http://wiki.orfeo-toolbox.org/index.php/ExtendedFileName>`_ , and
+also in the `OTB Software
+Guide <http://orfeo-toolbox.org/SoftwareGuide>`_  .
 
-Ortho-rectification with **OTB Applications**
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Ortho-rectification with **OTB Applications** 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The application allows to perform ortho-rectification and map
-re-projection. The simplest way to use it is the following command:
+The *OrthoRectification* application allows to perform
+ortho-rectification and map re-projection. The simplest way to use it is
+the following command:
 
 ::
 
@@ -447,25 +457,23 @@ used (example with *lambert93* map projection):
 Map projections handled by the application are the following (please
 note that the ellipsoid is always WGS84):
 
--  | UTM : ``-map utm``   | The UTM zone and hemisphere can be set by the options    ``-map.utm.zone`` and ``-map.utm.northhem``.
+-  | UTM : ``-map utm``   | The UTM zone and hemisphere can be set by the options ``-map.utm.zone`` and ``-map.utm.northhem``.
 
--  Lambert 2 etendu: ``-map lambert2``
+-  Lambert 2 etendu: ``-map lambert2`` 
 
 -  Lambert 93: ``-map lambert93``
 
--  | TransMercator: ``-map transmercator``  | The related parameters (false easting, false northing and scale factor) can be set by the options   ``-map.transmercator.falseeasting``,  ``-map.transmercator.falsenorthing`` and ``-map.transmercator.scale``
+-  | TransMercator: ``-map transmercator``  | The related parameters (false easting, false northing and scale factor) can be set by the options ``-map.transmercator.falseeasting``, ``-map.transmercator.falsenorthing`` and ``-map.transmercator.scale``
 
 -  WGS : ``-map wgs``
 
--  | Any map projection system with an EPSG code : ``-map epsg``
-   | The EPSG code is set with the option ``-map.epsg.code``
+-  | Any map projection system with an EPSG code : ``-map epsg`` | The EPSG code is set with the option ``-map.epsg.code``
 
 The group ``outputs`` contains parameters to set the origin, size and
 spacing of the output image. For instance, the ground spacing can be
 specified as follows:
 
 ::
-
 
     otbcli_OrthoRectification -io.in input_image
                               -io.out output_image
@@ -520,237 +528,8 @@ A few more interesting options are available:
    this value to fit the available memory on your computer might
    speed-up the processing.
 
-Residual registration
----------------------
-
-Image registration is a fundamental problem in image processing. The aim
-is to align two or more images of the same scene often taken at
-different times, from different viewpoints, or by different sensors. It
-is a basic step for orthorectification, image stitching, image fusion,
-change detection…But this process is also critical for stereo
-reconstruction process to be able to obtain an accurate estimation of
-epipolar geometry.
-
-Sensor model is generally not sufficient to provide image registrations.
-Indeed, several sources of geometric distortion can be contained in
-optical remote sensing images including earth rotation, platform
-movement, non linearity…
-
-They result in geometric errors on scene level, image level and pixel
-level. It is critical to rectify the errors before a thematic map is
-generated, especially when the remote sensing data need to be integrated
-together with other GIS data.
-
-This figure illustrates the generic workflow in the case of image series
-registration:
-
-[scale=0.15] (-1,-12) rectangle (75,17); in 5,...,1 (,) rectangle
-+(4,4); (InputSeries) at (4,-1) Input series; (9,5) – +(3,0); (12.2,3)
-rectangle +(6,4); (SensorModel) at (15,5) Sensor Model; (1,-10)
-rectangle +(4,4); (DEM) at (5,-11) DEM; (3,-5.5) – ++(0,3) – ++(12,0) –
-++(0,5); (18.5,5) – +(3,0); in 5,...,1 (,) rectangle +(4,4);
-(GeoRefSeries) at (28,-1) Geo-referenced Series;
-
-(25.5,8.5) – +(0,3);
-
-(22,12) rectangle +(8.5,4); (HomPoExtr) at (27,14) Homologous Points;
-
-(21.5,14) – +(-2.5,0);
-
-(11,12) rectangle +(8,4); (BBAdj) at (15.5,14) Bundle-block Adjustement;
-
-(15,11.5) – +(0,-4);
-
-(30,5) – +(3,0); (33.2,2.5) rectangle +(6,4.5); (FineRegistration) at
-(36,4.9) Fine Registration;
-
-(39.5,5) – +(3,0); in 5,...,1 (,) rectangle +(4,4); (RegistSeries) at
-(47,-1) Registered Series; (36,2) – ++(0,-10) – ++(-30,0);
-
-(52,5) – +(3,0); (55.2,2.5) rectangle +(6,4.5); (CartoProjection) at
-(57.5,4.9) Map Projection;
-
-(61.5,5) – +(3,0); in 5,...,1 (,) rectangle +(4,4); (CartoSeries) at
-(68,-1) Cartographic Series;
-
-We will now illustrate this process by applying this workflow to
-register two images. This process can be easily extended to perform
-image series registration.
-
-The aim of this example is to describe how to register a Level 1
-QuickBird image over an orthorectify Pleiades image over the area of
-Toulouse, France.
-
-|image6| |image7| [fig:InputImagesRegistration]
-
-Extract metadata from the image reference
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-We first dump geometry metadata of the image we want to refine in a text
-file. In OTB, we use the extension *.geom* for this type of file. As you
-will see the application which will estimate a refine geometry only
-needs as input this metadata and a set of homologous points. The
-refinement application will create a new *.geom* file containing refined
-geometry parameters which can be used after for reprojection for
-example.
-
-The use of external *.geom* file is available in OTB since release
-:math:`3.16`. See `here <http://wiki.orfeo-toolbox.org/index.php/ExtendedFileName>`_ for more information.
-
-::
-
-    otbcli_ReadImageInfo   -in slave_image -outkwl TheGeom.geom
-
-Extract homologous points from images
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-The main idea of the residual registration is to estimate an second
-transformation (after the application of sensors model).
-
-The homologous point application use interest point detection method to
-get a set of point which match in both images.
-
-The basic idea is to use this set of homologous points and estimate with
-them a residual transformation between the two images.
-
-There is a wide variety of keypoint detector in the literature. They
-allow to detect and describe local features in images. These algorithms
-provide for each interesting point a “feature description”. This
-descriptor has the property to be invariant to image translation,
-scaling, and rotation, partially invariant to illumination changes and
-robust to local geometric distortion. keypoints. Features extracted from
-the input images are then matched against each other. These
-correspondences are then used to create the homologous points.
-
-`SIFT <http://en.wikipedia.org/wiki/Scale-invariant_feature_transform>`_
-or `SURF <http://en.wikipedia.org/wiki/SURF>`_ keypoints can be
-computed in the application. The band on which keypoints are computed
-can be set independently for both images.
-
-The application offers two modes :
-
--  the first is the full mode where keypoints are extracted from the
-   full extent of both images (please note that in this mode large image
-   file are not supported).
-
--  The second mode, called *geobins*, allows to set-up spatial binning
-   so as to get fewer points spread across the entire image. In this
-   mode, the corresponding spatial bin in the second image is estimated
-   using geographical transform or sensor modeling, and is padded
-   according to the user defined precision.
-
-Moreover, in both modes the application can filter matches whose
-co-localization in the first image exceed this precision. Last, the
-elevation parameters allow to deal more precisely with sensor modelling
-in case of sensor geometry data. The *outvector* option allows to create
-a vector file with segments corresponding to the localization error
-between the matches.
-
-Finally, with the *2wgs84* option, you can match two sensor geometry
-images or a sensor geometry image with an ortho-rectified reference. In
-all cases, you get a list of ground control points spread all over your
-image.
-
-::
-
-
-
-    otbcli_HomologousPointsExtraction   -in1 slave_image
-                                        -in2 reference_image
-                                        -algorithm surf
-                                        -mode geobins
-                                        -mode.geobins.binstep 512
-                                        -mode.geobins.binsize 512
-                                        -mfilter 1
-                                        -precision 20
-                                        -2wgs84 1
-                                        -out homologous_points.txt
-                                        -outvector points.shp
-                                        -elev.dem dem_path/SRTM4-HGT/
-                                        -elev.geoid OTB-Data/Input/DEM/egm96.grd
-
-Note that for a proper use of the application, elevation must be
-correctly set (including DEM and geoid file).
-
-Geometry refinement using homologous points
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Now that we can use this set of tie points to estimate a residual
-transformation.For this we use the dedicated application called
-**RefineSensorModel**. This application make use of OSSIM capabilities
-to align the sensor model.
-
-It reads the input geometry metadata file (*.geom*) which contains the
-sensor model information that we want to refine and the text file
-(homologous\_points.txt) containing the list of ground control point. It
-performs a least-square fit of the sensor model adjustable parameters to
-these tie points and produces an updated geometry file as output (the
-extension which is always use is *.geom*)
-
-The application can provide as well an optional ground control points
-based statistics file and a vector file containing residues that you can
-display in a GIS software.
-
-Please note again that for a proper use of the application, elevation
-must be correctly set (including DEM and geoid file). The map parameters
-allows to choose a map projection in which the accuracy will be
-estimated (in meters).
-
-Accuracy values are provided as output of the application (computed
-using tie points location) and allow also to control the precision of
-the estimated model.
-
-::
-
-
-    otbcli_RefineSensorModel   -elev.dem dem_path/SRTM4-HGT/
-                               -elev.geoid OTB-Data/Input/DEM/egm96.grd
-                               -ingeom slave_image.geom
-                               -outgeom refined_slave_image.geom
-                               -inpoints homologous_points.txt
-                               -outstat stats.txt
-                               -outvector refined_slave_image.shp
-
-Orthorecrtify image using the affine geometry
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Now we will show how we can use this new sensor model. In our case we’ll
-use this sensor model to orthorectify the image over the Pléiades
-reference. **Orfeo ToolBox** offers since version 3.16 the possibility to
-use hrefhttp://wiki.orfeo-toolbox.org/index.php/ExtendedFileNameextend
-image path to use different metadata file as input. That’s what we are
-going to use there to orthorectify the QuickBird image using the *.geom*
-file obtained by the **RefineSensorModel** applications. over the first
-one using for the second image estimated sensor model which take into
-account the original sensor model of the slave and which also fit to the
-set of tie points.
-
-::
-
-
-    otbcli_OrthoRectification   -io.in slave_image?&geom=TheRefinedGeom.geom
-                                -io.out ortho_slave_image
-                                -elev.dem dem_path/SRTM4-HGT/
-                                -elev.geoid OTB-Data/Input/DEM/egm96.grd
-                         
-
-As a result, if you’ve got enough homologous points in images and
-control that the residual error between the set of tie points and the
-estimated sensor model is small, you must achieve a good registration
-now between the 2 rectified images. Normally far better than ’only’
-performing separate orthorectification over the 2 images.
-
-This methodology can be adapt and apply in several cases, for example :
-
--  register stereo pair of images and estimate accurate epipolar
-   geometry
-
--  registration prior to change detection
-
-.. |image1| image:: ./Art/MonteverdiImages/monteverdi_optical_calibration.png
-.. |image2| image:: ./Art/MonteverdiImages/monteverdi_optical_calibration_outputs.png
-.. |image3| image:: ./Art/MonteverdiImages/monteverdi_QB_PAN_ROI.png
-.. |image4| image:: ./Art/MonteverdiImages/monteverdi_QB_MUL_Superimpose.png
-.. |image5| image:: ./Art/MonteverdiImages/monteverdi_QB_XS_pan-sharpened.png
-.. |image6| image:: ./Art/MonteverdiImages/registration_pleiades_ql.png
-.. |image7| image:: ./Art/MonteverdiImages/registration_quickbird_ql.png
+.. image1 ./Art/MonteverdiImages/monteverdi_optical_calibration.png
+.. image2 ./Art/MonteverdiImages/monteverdi_optical_calibration_outputs.png
+.. image3 ./Art/MonteverdiImages/monteverdi_QB_PAN_ROI.png
+.. image4 ./Art/MonteverdiImages/monteverdi_QB_MUL_Superimpose.png
+.. image5 ./Art/MonteverdiImages/monteverdi_QB_XS_pan-sharpened.png

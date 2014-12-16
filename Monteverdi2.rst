@@ -24,8 +24,8 @@ Installation
 Installation of **Monteverdi2** is very simple. Standard installer
 packages are available on the main platforms thanks to OTB-Developpers
 and external users. These packages are available few days after the
-release. Get the latest information on binary packages on the in the
-section download.
+release. Get the latest information on binary packages on the `Orfeo
+ToolBox website <http://orfeo-toolbox.org>`_  in the section download.
 
 We will discribe in the following sections the way to install
 **Monteverdi2** on:
@@ -37,22 +37,26 @@ We will discribe in the following sections the way to install
 -  MacOSX 10.8
 
 If you want build from source or if we don’t provide packages for your
-system, some informations are available into the , in the section
+system, some informations are available into the `OTB Software
+Guide <http://orfeo-toolbox.org/SoftwareGuide>`_  , in the section
 **(**\ Building from Source)
 
 Windows XP/Seven/8.1
 ~~~~~~~~~~~~~~~~~~~~
 
 For Windows XP/Seven/8.1 users, there is a classical standalone
-installation program for **Monteverdi2** , available from the after each
-release of **Monteverdi2** .
+installation program for **Monteverdi2** , available from the `OTB
+download page <http://sourceforge.net/projects/orfeo-toolbox/>`_  after
+each release of **Monteverdi2** .
 
 MacOS X
 ~~~~~~~
 
 A standard DMG package is available for **Monteverdi2** for MacOS X
-10.8. Please go the . Click on the file to launch **Monteverdi2** . We
-will provide in the next release a package for MacOSX 10.9.
+10.8. Please go the `OTB download
+page <http://sourceforge.net/projects/orfeo-toolbox/>`_  . Click on the
+file to launch **Monteverdi2** . We will provide in the next release a
+package for MacOSX 10.9.
 
 Ubuntu 12.04 and higher
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -61,7 +65,7 @@ For Ubuntu 12.04 and higher, **Monteverdi2** package may be available as
 Debian package through APT repositories.
 
 Since release 0.2, **Monteverdi2** packages are available in the
-`ubuntugis-unstable <https://launchpad.net/~ubuntugis/+archive/ubuntugis-unstable>`__
+`ubuntugis-unstable <https://launchpad.net/~ubuntugis/+archive/ubuntugis-unstable>`_ 
 repository.
 
 You can add it by using these command-lines:

@@ -4,13 +4,16 @@ Stereoscopic reconstruction from VHR optical images pair
 This section describes how to convert pair of stereo images into
 elevation information.
 
-The standard problem of terrain reconstruction with available contains
-the following steps:
+The standard problem of terrain reconstruction with available **OTB
+Applications** contains the following steps:
 
 -  Estimation of displacements grids for epipolar geometry
    transformation
+
 -  Epipolar resampling of the image pair using those grids
+
 -  Dense disparity map estimation
+
 -  Projection of the disparities on a Digital Surface Model (DSM)
 
 Let’s go to the third dimension!
@@ -19,8 +22,9 @@ Estimate epipolar geometry transformation
 -----------------------------------------
 
 The aim of this application is to generate resampled grids to transform
-images in epipolar geometry. Epipolar geometry is the geometry of stereo
-vision (see `here <http://en.wikipedia.org/wiki/Epipolar_geometry>`_).
+images in epipolar geometry. `Epipolar geometry <http://en.wikipedia.org/wiki/Epipolar_geometry>`_ is the geometry of stereo
+vision.
+
 The operation of stereo rectification determines transformations to
 apply to each image such that pairs of conjugate epipolar lines become
 collinear, parallel to one of the image axes and aligned. In this
@@ -75,12 +79,13 @@ complicated in the case of VHR optical images.That is because most of
 passive remote sensing from space use a push-broom sensor, which
 corresponds to a line of sensors arranged perpendicularly to the flight
 direction of the spacecraft. This acquisition configuration implies a
-slightly different strategy for stereo-rectification (see
-`here <http://en.wikipedia.org/wiki/Epipolar_geometry#Epipolar_geometry_of_pushbroom_sensor>`_).
+slightly different strategy for stereo-rectification (see [#]
 
-We will now explain how to use the application to produce two images
-which are **deformation grids** to resample the two images in epipolar
-geometry.
+.. [#] http://en.wikipedia.org/wiki/Epipolar_geometry#Epipolar_geometry_of_pushbroom_sensor>.
+
+We will now explain how to use the *StereoRectificationGridGenerator*
+application to produce two images which are **deformation grids** to
+resample the two images in epipolar geometry.
 
 ::
 
@@ -124,12 +129,12 @@ we can now move forward to the resampling in epipolar geometry.
 Resample images in epipolar geometry
 ------------------------------------
 
-The former application generates two grids of displacements. The allows
-to resample the two input images in the epipolar geometry using these
-grids. These grids are intermediary results not really useful on their
-own in most cases. This second step *only* consists in applying the
-transformation and resample both images. This application can obviously
-be used in lot of other contexts.
+The former application generates two grids of displacements. The
+*GridBasedImageResampling* allows to resample the two input images in
+the epipolar geometry using these grids. These grids are intermediary
+results not really useful on their own in most cases. This second step
+*only* consists in applying the transformation and resample both images.
+This application can obviously be used in lot of other contexts.
 
 The two commands to generate epipolar images are:
 
@@ -150,8 +155,8 @@ The two commands to generate epipolar images are:
                                     -out.sizey 2951
 
 As you can see, we set *sizex* and *sizey* parameters using output
-values given by the application to set the size of the output epipolar
-images.
+values given by the *StereoRectificationGridGenerator* application to
+set the size of the output epipolar images.
 
 image1 image2 [fig:EpipolarImages]
 
@@ -166,7 +171,7 @@ Disparity estimation: Block matching along epipolar lines
 Finally, we can begin the stereo correspondences lookup process!
 
 Things are becoming a little bit more complex but do not worry. First,
-we will describe the power of the application.
+we will describe the power of the *BlockMatching* application.
 
 The resampling of our images in epipolar geometry allows us to constrain
 the search along a 1-dimensional line as opposed to both dimensions, but
@@ -176,11 +181,14 @@ can be directly linked to the local elevation
 
 An almost complete spectrum of stereo correspondence algorithms has been
 published and it is still augmented at a significant rate! See for
-example `. <http://en.wikipedia.org/wiki/Block-matching_algorithm>`_
-The implements different strategies for block matching:
+example `. <http://en.wikipedia.org/wiki/Block-matching_algorithm>`_ 
+The **Orfeo Toolbox** implements different strategies for block
+matching:
 
 -  Sum of Square Distances block-matching (SSD)
+
 -  Normalized Cross-Correlation (NCC)
+
 -  Lp pseudo-norm (LP)
 
 An other important parameter (mandatory in the application!) is the
@@ -188,8 +196,7 @@ range of disparities. In theory, the block matching can perform a blind
 exploration and search for a infinite range of disparities between the
 stereo pair. We need now to evaluate a range of disparities where the
 block matching will be performed (in the general case from the deepest
-point on Earth, `the Challenger
-Deep <http://en.wikipedia.org/wiki/Challenger_Deep>`_. to the Everest
+point on Earth, `the Challenger Deep <http://en.wikipedia.org/wiki/Challenger_Deep>`_ . to the Everest
 summit!)
 
 We deliberately exaggerated but you can imagine that without a smaller
@@ -209,20 +216,20 @@ horizontal exploration, we must set the minimum value lower than
 image1 to image2).
 
 Note that this estimation can be simplified using an external DEM in the
-application. Regarding the vertical disparity, in the first step we said
-that we reduced the problem of 3-D extraction to a 1-D problem, but this
-is not completely true in general cases. There might be small
-disparities in the vertical direction which are due to parallax errors
-(i.e. epipolar lines exhibit a small shift in the vertical direction,
-around 1 pixel). In fact, the exploration is typically smaller along the
-vertical direction of disparities than along the horizontal one. You can
-also estimate them on the epipolar pair (in our case we use a range of
-:math:`-1` to :math:`1`).
+*StereoRectificationGridGenerator* application. Regarding the vertical
+disparity, in the first step we said that we reduced the problem of 3-D
+extraction to a 1-D problem, but this is not completely true in general
+cases. There might be small disparities in the vertical direction which
+are due to parallax errors (i.e. epipolar lines exhibit a small shift in
+the vertical direction, around 1 pixel). In fact, the exploration is
+typically smaller along the vertical direction of disparities than along
+the horizontal one. You can also estimate them on the epipolar pair (in
+our case we use a range of :math:`-1` to :math:`1`).
 
 One more time, take care of the sign of this minimum and this maximum
 for disparities (always from image1 to image2).
 
-The command line for the application is :
+The command line for the *BlockMatching* application is :
 
 ::
 
@@ -244,19 +251,21 @@ The command line for the application is :
 The application creates by default a two bands image : the horizontal
 and vertical disparities.
 
-The application gives access to a lot of other powerful functionalities
-to improve the quality of the output disparity map.
+The *BlockMatching* application gives access to a lot of other powerful
+functionalities to improve the quality of the output disparity map.
 
 Here are a few of these functionalities:
 
 -  -io.outmetric: if the optimal metric values image is activated, it
    will be concatenated to the output image (which will then have three
    bands: horizontal disparity, vertical disparity and metric value)
+
 -  -bm.subpixel: Perform sub-pixel estimation of disparities
+
 -  -mask.inleft and -mask.inright: you can specify a no-data value which
    will discard pixels with this value (for example the epipolar
    geometry can generate large part of images with black pixels) This
-   mask can be easily generated using the application:
+   mask can be easily generated using the *BandMath* application:
 
    ::
 
@@ -273,6 +282,7 @@ Here are a few of these functionalities:
 -  -mask.variancet : The block matching algorithm has difficulties to
    find matches on uniform areas. We can use the variance threshold to
    discard those regions and speed-up computation time.
+
 -  -bm.medianfilter.radius 5 and -bm.medianfilter.incoherence 2.0:
    Applies a median filter to the disparity map. The median filter
    belongs to the family of nonlinear filters. It is used to smooth an
@@ -302,9 +312,9 @@ from the triangulation of the “left-right” pairs of matched pixels. When
 several elevations are available on a DSM cell, the highest one is kept.
 
 First, an important point is that it is often a good idea to rework the
-disparity map given by the application to only keep relevant
-disparities. For this purpose, we can use the output optimal metric
-image and filter disparities with respect to this value.
+disparity map given by the *BlockMatching* application to only keep
+relevant disparities. For this purpose, we can use the output optimal
+metric image and filter disparities with respect to this value.
 
 For example, if we used Normalized Cross-Correlation (NCC), we can keep
 only disparities where optimal metric value is superior to :math:`0.9`.
@@ -312,10 +322,10 @@ Disparities below this value can be consider as inaccurate and will not
 be used to compute elevation information (the *-io.mask* parameter can
 be used for this purpose).
 
-This filtering can be easily done with .
+This filtering can be easily done with **OTB Applications** .
 
-We first use the application to filter disparities according to their
-optimal metric value:
+We first use the *BandMath* application to filter disparities according
+to their optimal metric value:
 
 ::
 
@@ -323,15 +333,16 @@ optimal metric value:
                     -out thres_hdisparity.tif uint8
                     -exp "if(im1b3>0.9,255,0)"
 
-Then, we concatenate thresholded disparities using the :
+Then, we concatenate thresholded disparities using the
+*ConcatenateImages* :
 
 ::
 
     otbcli_ConcatenateImages -il thres_hdisparity.tif thres_vdisparity.tif
                              -out thres_hvdisparity.tif
 
-Now, we can use the application to compute the elevation map from the
-filtered disparity maps.
+Now, we can use the *DisparityMapToElevationMap* application to compute
+the elevation map from the filtered disparity maps.
 
 ::
 
@@ -359,45 +370,54 @@ One application to rule them all in multi stereo framework scheme
 -----------------------------------------------------------------
 
 An application has been added to fuse one or multiple stereo
-reconstruction(s) using all in one approach : . It computes the DSM from
-one or several stereo pair. First of all the user have to choose his
-input data and defines stereo couples using *-input.co* string
-parameter. This parameter use the following formatting convention “
-:math:`index_{0}` :math:`index_{1}`, :math:`index_{2}`
-:math:`index_{3}`, …”, which will create a first couple with image
-:math:`index_{0}` and :math:`index_{1}`, a second with image
-:math:`index_{1}` and :math:`index_{2}`, and so on. If left blank images
-are processed by pairs (which is equivalent as using “ 0 1,2 3,4 5 ” …).
-In addition to the usual elevation and projection parameters, main
-parameters have been splitted in groups detailled below:
+reconstruction(s) using all in one approach : *StereoFramework* . It
+computes the DSM from one or several stereo pair. First of all the user
+have to choose his input data and defines stereo couples using
+*-input.co* string parameter. This parameter use the following
+formatting convention “ :math:`index_{0}` :math:`index_{1}`,
+:math:`index_{2}` :math:`index_{3}`, …”, which will create a first
+couple with image :math:`index_{0}` and :math:`index_{1}`, a second with
+image :math:`index_{1}` and :math:`index_{2}`, and so on. If left blank
+images are processed by pairs (which is equivalent as using “ 0 1,2 3,4
+5 ” …). In addition to the usual elevation and projection parameters,
+main parameters have been splitted in groups detailled below:
 
 Output :
     output parameters : DSM resolution, NoData value, Cell Fusion
     method,
 
     -  : output projection map selection.
+
     -  : Spatial Sampling Distance of the output DSM in meters
+
     -  : DSM empty cells are filled with this float value (-32768 by
        default)
+
     -  : Choice of fusion strategy in each DSM cell (max, min, mean,
        acc)
+
     -  : Output DSM
+
     -  : Output DSM extent choice
 
 Stereorect :
     Direct and inverse stereorectification grid subsampling parameters
 
     -  : Step of the direct deformation grid (in pixels)
+
     -  : Sub-sampling of the inverse epipolar grid
 
 BM :
     Block Matching parameters.
 
     -  : Block-matching metric choice (robust SSD, SSD, NCC, Lp Norm)
+
     -  : Radius of blocks for matching filter (in pixels, :math:`2` by
        default)
+
     -  : Minimum altitude below the selected elevation source (in
        meters, -20.0 by default)
+
     -  : Maximum altitude above the selected elevation source (in
        meters, 20.0 by default)
 
@@ -407,7 +427,9 @@ Postproc :
     -  : use bijection consistency. Right to Left correlation is
        computed to validate Left to Right disparities. If bijection is
        not found pixel is rejected
+
     -  : use median disparities filtering (disabled by default)
+
     -  : use block matching metric output to discard pixels with low
        correlation value (disabled by default, float value)");
 
@@ -416,8 +438,10 @@ Mask :
 
     -  : Mask for left input image (must have the same size for all
        couples)
+
     -  : Mask for right input image (must have the same size for all
        couples)
+
     -  : This parameter allows to discard pixels whose local variance is
        too small. The size of the neighborhood is given by the radius
        parameter. (disabledd by default)
@@ -441,8 +465,8 @@ carefully chosen in case of large image processing.
 
 To reduce time consumption it would be useful to crop all sensor images
 to the same extent. The easiest way to do that is to choose an image as
-reference, and then apply application on the other sensor images using
-the fit mode option.
+reference, and then apply *ExtractROI* application on the other sensor
+images using the fit mode option.
 
 Algorithm outline
 -----------------
@@ -452,16 +476,30 @@ pair
 
 -  Compute the epipolar deformation grids from the stereo pair (direct
    and inverse)
+
 -  Resample into epipolar geometry with BCO interpolator
+
 -  Create masks for each epipolar image : remove black borders and
    resample input masks
+
 -  Compute horizontal disparities with a block matching algorithm
+
 -  Refing Disparities to sub-pixel precision with a dichotomy algorithm
+
 -  Apply an optional Median filter
+
 -  Filter disparities based on the correlation score (optional) and
    exploration bounds
+
 -  Translate disparities in sensor geometry
+
 -  Convert disparity map to 3D map
 
 Then fuse all 3D maps to produce DSM with desired geographic or
 cartographic projection and parametrizable extent.
+
+.. image1 ./Art/MonteverdiImages/stereo_image1_epipolar.png
+.. image2 ./Art/MonteverdiImages/stereo_image2_epipolar.png
+.. image3 ./Art/MonteverdiImages/stereo_disparity_horizontal.png
+.. image4 ./Art/MonteverdiImages/stereo_disparity_metric.png
+.. image5 ./Art/MonteverdiImages/stereo_dem_zoom.png
