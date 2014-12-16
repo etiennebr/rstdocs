@@ -165,7 +165,7 @@ Anatomy of the applications
 What does it look like?
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-image1 [fig:mainwindow]
+|image1| [fig:mainwindow]
 
 This is Monteverdi’s main window (figure  [fig:mainwindow]) where the
 menus are available and where you can see the different modules, which
@@ -175,7 +175,7 @@ therefore, you build a processing pipeline sequentially. Figure
  [fig:inputswindow] shows the generic window which allows to specify
 output(s) of Monteverdi’s modules.
 
-image2 [fig:inputswindow]
+|image2| [fig:inputswindow]
 
 Let’s have a look at the different menus. The first one is of course the
 “File” menu. This menu allows you to open a data set, to save it and to
@@ -230,19 +230,19 @@ The viewer offers three types of data visualisation:
       displays the estimate location of the current pixel (country +
       city)
 
-image3 [fig:viewerpixeldescription]
+|image3| [fig:viewerpixeldescription]
 
 The Visualization offers others great functionnalities which are
 available in the detached window. It is for example possible to
 superpose vector dataset to the input image (see figure
  [fig:viewervectordata]).
 
-image4 [fig:viewervectordata]
+|image4| [fig:viewervectordata]
 
 The “Setup Tab” allows to modify the RGB composition or use the
 grayscale mode to display only one layer.
 
-image5 [fig:rgbcomposition]
+|image5| [fig:rgbcomposition]
 
 The “Histogram Tab” get access to the dynamic of the displayed layers.
 The basic idea is to convert the output of the pixel representation to a
@@ -251,12 +251,12 @@ to 0-255 with a transfer function and a clamping operation. By default,
 the dynamic of each layer is modified by clamping the histogram at
 :math:`min + 2\%` and :math:`max - 2\%`.
 
-image6 [fig:histogram]
+|image6| [fig:histogram]
 
 There is also possible to select pixel coordinates and get access to all
 the informations available in the “Pixel description Box”.
 
-image7 [fig:pixeldescriptioninformations]
+|image7| [fig:pixeldescriptioninformations]
 
 Cache dataset
 ~~~~~~~~~~~~~
@@ -286,7 +286,7 @@ before visualization will generate the whole data set in advance
 allowing for a more swift display. All modules allow you to cache their
 input data sets.
 
-image8 [fig:cachingmodule]
+|image8| [fig:cachingmodule]
 
 Dynamic GUI definition
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -342,7 +342,7 @@ Concatenating images into one single multiple-bands image (they need to
 have the same size), and to be able to create for example RGB
 composition with the inputs layer.
 
-image9 [fig:concatenate]
+|image9| [fig:concatenate]
 
 Save dataset to file
 ^^^^^^^^^^^^^^^^^^^^
@@ -369,7 +369,7 @@ centimeters). Since the module allows to cast pixels in other types :
 
 -  unsigned int (32 bits)
 
-image10 [fig:exportdataset]
+|image10| [fig:exportdataset]
 
 Geometric process
 ~~~~~~~~~~~~~~~~~
@@ -413,7 +413,7 @@ tabs:
    the user change the “Size X” or “Size Y” values in the “Output Image”
    tab.
 
-image11 [fig:ortho]
+|image11| [fig:ortho]
 
 Estimating sensor model based on ground control points
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -506,9 +506,9 @@ subtraction of the Water indice on 2 images which was taken before and
 during the crisis event. The difference was produced by the band math
 module and allows to get a reliable estimation of the flood events.
 
-image12 image13 [fig:bandmathndviwithres]
+|image12| |image13| [fig:bandmathndviwithres]
 
-image14 [fig:ndwi2]
+|image14| [fig:ndwi2]
 
 Connected Component Segmentation module
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -582,7 +582,7 @@ Segmentation after small object rejection :
 Filter Output :
     final output after object based analysis opening post processing.
 
-image15 [fig:connected:sub:`c`\ omponent\ :sub:`m`\ odule]
+|image15| [fig:connected:sub:`c`\ omponent\ :sub:`m`\ odule]
 
 Available variables for each expression can be found using item list
 *variables names*. available functions can be found in help windows by
@@ -613,9 +613,9 @@ the
 A boat detection example is presented on Figure [fig:boat detection].
 Results can be seen on Figure [fig:boat detection result].
 
-image16 [fig:boat detection]
+|image16| [fig:boat detection]
 
-image17 [fig:boat detection result]
+|image17| [fig:boat detection result]
 
 Feature extraction
 ^^^^^^^^^^^^^^^^^^
@@ -634,7 +634,7 @@ spatial and color center of this set is then computed and the algorithm
 iterates with this new spatial and color center. The Mean-shift can be
 used for edge-preserving smoothing, or for clustering.
 
-image18 [fig:meanshift]
+|image18| [fig:meanshift]
 
 Learning
 ~~~~~~~~
@@ -731,7 +731,7 @@ Modules in the Conversion subsection allow to proceed these conversions
 between matrix representations. Allowed conversion and input images
 types are described in the following figure  [fig:sarpolconv].
 
-image19 [fig:sarpolconv]
+|image19| [fig:sarpolconv]
 
 Analysis
 ''''''''
@@ -754,22 +754,22 @@ methods. It allows to compute:
 
    -  output: 3 bands real image
 
-.. image1| image:: ./Art/MonteverdiImages/monteverdi_mainwindow.png
-.. image2| image:: ./Art/MonteverdiImages/monteverdi_inputs_window.png
-.. image3| image:: ./Art/MonteverdiImages/monteverdi_viewer_pixel_description.png
-.. image4| image:: ./Art/MonteverdiImages/monteverdi_viewer_vector_data.png
-.. image5| image:: ./Art/MonteverdiImages/monteverdi_viewer_rgb_composition.png
-.. image6| image:: ./Art/MonteverdiImages/monteverdi_viewer_histogram.png
-.. image7| image:: ./Art/MonteverdiImages/monteverdi_viewer_pixel_description.png
-.. image8| image:: ./Art/MonteverdiImages/monteverdi_caching_module.png
-.. image9| image:: ./Art/MonteverdiImages/monteverdi_concatenate_before_after.png
-.. image10| image:: ./Art/MonteverdiImages/monteverdi_export_dataset.png
-.. image11| image:: ./Art/MonteverdiImages/monteverdi_ortho_extent.png
-.. image12| image:: ./Art/MonteverdiImages/monteverdi_band_math_ndvi_threshold.png
-.. image13| image:: ./Art/MonteverdiImages/monteverdi_band_math_result.png
-.. image14| image:: ./Art/MonteverdiImages/monteverdi_NDWI2_substraction.png
-.. image15| image:: ./Art/MonteverdiImages/monteverdi_connected_component_segmentation.png
-.. image16| image:: ./Art/MonteverdiImages/monteverdi_Capture_Boats.png
-.. image17| image:: ./Art/MonteverdiImages/monteverdi_Capture_Boats_CC.png
-.. image18| image:: ./Art/MonteverdiImages/monteverdi_mean_shift.png
-.. image19| image:: ./Art/MonteverdiImages/monteverdi_sarpol_conversion_schema.png
+.. |image1| image:: ./Art/MonteverdiImages/monteverdi_mainwindow.png
+.. |image2| image:: ./Art/MonteverdiImages/monteverdi_inputs_window.png
+.. |image3| image:: ./Art/MonteverdiImages/monteverdi_viewer_pixel_description.png
+.. |image4| image:: ./Art/MonteverdiImages/monteverdi_viewer_vector_data.png
+.. |image5| image:: ./Art/MonteverdiImages/monteverdi_viewer_rgb_composition.png
+.. |image6| image:: ./Art/MonteverdiImages/monteverdi_viewer_histogram.png
+.. |image7| image:: ./Art/MonteverdiImages/monteverdi_viewer_pixel_description.png
+.. |image8| image:: ./Art/MonteverdiImages/monteverdi_caching_module.png
+.. |image9| image:: ./Art/MonteverdiImages/monteverdi_concatenate_before_after.png
+.. |image10| image:: ./Art/MonteverdiImages/monteverdi_export_dataset.png
+.. |image11| image:: ./Art/MonteverdiImages/monteverdi_ortho_extent.png
+.. |image12| image:: ./Art/MonteverdiImages/monteverdi_band_math_ndvi_threshold.png
+.. |image13| image:: ./Art/MonteverdiImages/monteverdi_band_math_result.png
+.. |image14| image:: ./Art/MonteverdiImages/monteverdi_NDWI2_substraction.png
+.. |image15| image:: ./Art/MonteverdiImages/monteverdi_connected_component_segmentation.png
+.. |image16| image:: ./Art/MonteverdiImages/monteverdi_Capture_Boats.png
+.. |image17| image:: ./Art/MonteverdiImages/monteverdi_Capture_Boats_CC.png
+.. |image18| image:: ./Art/MonteverdiImages/monteverdi_mean_shift.png
+.. |image19| image:: ./Art/MonteverdiImages/monteverdi_sarpol_conversion_schema.png

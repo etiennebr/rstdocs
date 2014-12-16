@@ -156,7 +156,7 @@ As you can see, we set *sizex* and *sizey* parameters using output
 values given by the *StereoRectificationGridGenerator* application to
 set the size of the output epipolar images.
 
-image1 image2 [fig:EpipolarImages]
+|image1| |image2| [fig:EpipolarImages]
 
 We obtain two images in epipolar geometry, as shown in
 figure [fig:EpipolarImages]. Note that the application allows to
@@ -297,7 +297,7 @@ Here are a few of these functionalities:
 Of course all these parameters can be combined to improve the disparity
 map.
 
-image3 image4 [fig:DisparityMetric]
+|image3| |image4| [fig:DisparityMetric]
 
 From disparity to Digital Surface Model
 ---------------------------------------
@@ -360,7 +360,7 @@ It produces the elevation map projected in WGS84 (EPSG
 code:\ :math:`4326`) over the ground area covered by the stereo pair.
 Pixels values are expressed in meters.
 
-image5 [fig:stereo:sub:`o`\ ut]
+|image5| [fig:stereo:sub:`o`\ ut]
 
 This is it ! Figure [fig:stereo\ :sub:`o`\ ut] shows the output DEM from
 the Cheops pair.
@@ -497,8 +497,8 @@ pair
 Then fuse all 3D maps to produce DSM with desired geographic or
 cartographic projection and parametrizable extent.
 
-.. image1| image:: ./Art/MonteverdiImages/stereo_image1_epipolar.png
-.. image2| image:: ./Art/MonteverdiImages/stereo_image2_epipolar.png
-.. image3| image:: ./Art/MonteverdiImages/stereo_disparity_horizontal.png
-.. image4| image:: ./Art/MonteverdiImages/stereo_disparity_metric.png
-.. image5| image:: ./Art/MonteverdiImages/stereo_dem_zoom.png
+.. |image1| image:: ./Art/MonteverdiImages/stereo_image1_epipolar.png
+.. |image2| image:: ./Art/MonteverdiImages/stereo_image2_epipolar.png
+.. |image3| image:: ./Art/MonteverdiImages/stereo_disparity_horizontal.png
+.. |image4| image:: ./Art/MonteverdiImages/stereo_disparity_metric.png
+.. |image5| image:: ./Art/MonteverdiImages/stereo_dem_zoom.png

@@ -50,7 +50,7 @@ Please note that the positive examples in the vector data should have a
 \`\`Class\`\` field with a label value higher than 1 and coherent in
 each images.
 
-image1 [fig:vectoModuleDataSetCreation]
+|image1| [fig:vectoModuleDataSetCreation]
 
 You can generate the vector data set with `Quantum
 GIS <http://www.qgis.org/>`_  software for example and save it in an OGR
@@ -183,7 +183,7 @@ roofs. Data is available in the OTB-Data
 and this image is produced with the commands inside this
 `file <http://hg.orfeo-toolbox.org/OTB-Applications/file/3ce975605013/Testing/Classification/CMakeLists.txt>`_ .
 
-image2 image3 image4 [fig:MeanShiftVectorImageFilter]
+|image2| |image3| |image4| [fig:MeanShiftVectorImageFilter]
 
 Fusion of classification maps
 -----------------------------
@@ -244,7 +244,7 @@ mapping by the same LUT. Thus, 4 classes (water: blue, roads: gray,
 vegetation: green, buildings with red roofs: red) are observable on each
 of them.
 
-image5 image6 image7 image8 image9 image10
+|image5| |image6| |image7| |image8| |image9| |image10|
 [fig:ClassificationMapFusionApplication]
 
 As an example of the *FusionOfClassifications* application by *majority
@@ -257,7 +257,7 @@ input classifications. The white parts of the fused image correspond to
 the undecided class labels, i.e. to pixels for which there is not a
 unique majority voting.
 
-image11 image12 [fig:ClassificationMapFusionApplicationMV]
+|image11| |image12| [fig:ClassificationMapFusionApplicationMV]
 
 Dempster Shafer framework for the fusion of classifications
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -309,7 +309,7 @@ classification map illustrated on the right in Fig.
 fusion gives access to a more precise and robust classification map
 based on the confidence level in each classifier.
 
-image13 image14 [fig:ClassificationMapFusionApplicationDS]
+|image13| |image14| [fig:ClassificationMapFusionApplicationDS]
 
 Recommandations to properly use the fusion of classification maps
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -424,22 +424,22 @@ element is equal to 3 pixels, which corresponds to a ball included in a
 7 x 7 pixels square. Pixels with more than one majority class keep their
 original labels.
 
-image15 image16 image17 [fig:ClassificationMapRegularizationApplication]
+|image15| |image16| |image17| [fig:ClassificationMapRegularizationApplication]
 
-.. image1| image:: ./Art/MonteverdiImages/monteverdi_vectorization_module_for_classification.png
-.. image2| image:: ./Art/MonteverdiImages/classification_chain_inputimage.jpg
-.. image3| image:: ./Art/MonteverdiImages/classification_chain_fancyclassif_fusion.jpg
-.. image4| image:: ./Art/MonteverdiImages/classification_chain_fancyclassif.jpg
-.. image5| image:: ./Art/MonteverdiImages/QB_1_ortho_C1_CM.png
-.. image6| image:: ./Art/MonteverdiImages/QB_1_ortho_C2_CM.png
-.. image7| image:: ./Art/MonteverdiImages/QB_1_ortho_C3_CM.png
-.. image8| image:: ./Art/MonteverdiImages/QB_1_ortho_C4_CM.png
-.. image9| image:: ./Art/MonteverdiImages/QB_1_ortho_C5_CM.png
-.. image10| image:: ./Art/MonteverdiImages/QB_1_ortho_C6_CM.png
-.. image11| image:: ./Art/MonteverdiImages/classification_chain_inputimage.jpg
-.. image12| image:: ./Art/MonteverdiImages/QB_1_ortho_MV_C123456_CM.png
-.. image13| image:: ./Art/MonteverdiImages/classification_chain_inputimage.jpg
-.. image14| image:: ./Art/MonteverdiImages/QB_1_ortho_DS_V_P_C123456_CM.png
-.. image15| image:: ./Art/MonteverdiImages/classification_chain_inputimage.jpg
-.. image16| image:: ./Art/MonteverdiImages/classification_chain_fancyclassif_CMR_input.png
-.. image17| image:: ./Art/MonteverdiImages/classification_chain_fancyclassif_CMR_3.png
+.. |image1| image:: ./Art/MonteverdiImages/monteverdi_vectorization_module_for_classification.png
+.. |image2| image:: ./Art/MonteverdiImages/classification_chain_inputimage.jpg
+.. |image3| image:: ./Art/MonteverdiImages/classification_chain_fancyclassif_fusion.jpg
+.. |image4| image:: ./Art/MonteverdiImages/classification_chain_fancyclassif.jpg
+.. |image5| image:: ./Art/MonteverdiImages/QB_1_ortho_C1_CM.png
+.. |image6| image:: ./Art/MonteverdiImages/QB_1_ortho_C2_CM.png
+.. |image7| image:: ./Art/MonteverdiImages/QB_1_ortho_C3_CM.png
+.. |image8| image:: ./Art/MonteverdiImages/QB_1_ortho_C4_CM.png
+.. |image9| image:: ./Art/MonteverdiImages/QB_1_ortho_C5_CM.png
+.. |image10| image:: ./Art/MonteverdiImages/QB_1_ortho_C6_CM.png
+.. |image11| image:: ./Art/MonteverdiImages/classification_chain_inputimage.jpg
+.. |image12| image:: ./Art/MonteverdiImages/QB_1_ortho_MV_C123456_CM.png
+.. |image13| image:: ./Art/MonteverdiImages/classification_chain_inputimage.jpg
+.. |image14| image:: ./Art/MonteverdiImages/QB_1_ortho_DS_V_P_C123456_CM.png
+.. |image15| image:: ./Art/MonteverdiImages/classification_chain_inputimage.jpg
+.. |image16| image:: ./Art/MonteverdiImages/classification_chain_fancyclassif_CMR_input.png
+.. |image17| image:: ./Art/MonteverdiImages/classification_chain_fancyclassif_CMR_3.png

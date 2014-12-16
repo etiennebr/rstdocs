@@ -88,9 +88,9 @@ Opening a `Pleiades <http://smsc.cnes.fr/PLEIADES/index.htm>`_  image in
 the *Open Dataset* item from the *File* menu, and select the JP2 file
 corresponding to you image using the file browser.
 
-image1 [fig:pleiades:sub:`o`\ pen]
+|image1| [fig:pleiades:sub:`o`\ pen]
 
-image2 [fig:pleiades:sub:`m`\ onteverdi]
+|image2| [fig:pleiades:sub:`m`\ onteverdi]
 
 Figure [fig:pleiades\ :sub:`o`\ pen], page  shows the dialog box when
 opening a `Pleiades <http://smsc.cnes.fr/PLEIADES/index.htm>`_  image in
@@ -162,7 +162,7 @@ traditional progress bar. This is because **Monteverdi** already loaded
 the quick-look upon opening, and we do not need to re-compute it each
 time the image is opened in the *Viewer Module*.
 
-image3 [fig:pleiades:sub:`v`\ iewer]
+|image3| [fig:pleiades:sub:`v`\ iewer]
 
 Figure [fig:pleiades\ :sub:`v`\ iewer], page  shows a
 `Pleiades <http://smsc.cnes.fr/PLEIADES/index.htm>`_  image displayed in
@@ -206,7 +206,7 @@ figure [fig:pleiades\ :sub:`m`\ tiles\ :sub:`o`\ pen], page . One can
 then use this dataset as a regular
 `Pleiades <http://smsc.cnes.fr/PLEIADES/index.htm>`_  dataset.
 
-image4 [fig:pleiades:sub:`m`\ tiles\ :sub:`o`\ pen]
+|image4| [fig:pleiades:sub:`m`\ tiles\ :sub:`o`\ pen]
 
 Partial uncompressing of `Pleiades <http://smsc.cnes.fr/PLEIADES/index.htm>`_  images in **Monteverdi** 
 --------------------------------------------------------------------------------------------------------
@@ -241,7 +241,7 @@ the *.geom* extension) with all useful metadata in it, so that when
 reading back the file in **Monteverdi** or in **OTB Applications** ,
 geometry and radiometry based functionalities can still be used.
 
-image5 [fig:pleiades:sub:`u`\ ncom]
+|image5| [fig:pleiades:sub:`u`\ ncom]
 
 Other processing of `Pleiades <http://smsc.cnes.fr/PLEIADES/index.htm>`_  images with **Monteverdi** 
 -----------------------------------------------------------------------------------------------------
@@ -272,8 +272,8 @@ resolution level starting at 0. For instance, one can use the following:
 
     otbcli_ExtractROI -in IMG_PHR1A_PMS_201201151100183_SEN_IPU_20120222_0901-001_R2C1.JP2:5 -out test.tif uint16
 
-.. image1| image:: ./Art/MonteverdiImages/pleiades_open.png
-.. image2| image:: ./Art/MonteverdiImages/pleiades_monteverdi.png
-.. image3| image:: ./Art/MonteverdiImages/pleiades_viewer.png
-.. image4| image:: ./Art/MonteverdiImages/pleiades_mtiles_open.png
-.. image5| image:: ./Art/MonteverdiImages/pleiades_uncom.png
+.. |image1| image:: ./Art/MonteverdiImages/pleiades_open.png
+.. |image2| image:: ./Art/MonteverdiImages/pleiades_monteverdi.png
+.. |image3| image:: ./Art/MonteverdiImages/pleiades_viewer.png
+.. |image4| image:: ./Art/MonteverdiImages/pleiades_mtiles_open.png
+.. |image5| image:: ./Art/MonteverdiImages/pleiades_uncom.png

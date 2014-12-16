@@ -408,13 +408,13 @@ mandatory parameters cannot be unchecked.
 
 The interface of the application *Rescale* is shown here as an example.
 
-image1 [fig:rescaleParam]
+|image1| [fig:rescaleParam]
 
-image2 [fig:rescaleLogs]
+|image2| [fig:rescaleLogs]
 
-image3 [fig:rescaleProgress]
+|image3| [fig:rescaleProgress]
 
-image4 [fig:rescaleDocumentation]
+|image4| [fig:rescaleDocumentation]
 
 Using the Python interface
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -536,7 +536,7 @@ the application name. Use in this case:
 It will retrieve the application name and related parameters from the
 input xml file and launch in this case the BandMath applications.
 
-.. image1| image:: ./Art/QtImages/rescale_param.png
-.. image2| image:: ./Art/QtImages/rescale_logs.png
-.. image3| image:: ./Art/QtImages/rescale_progress.png
-.. image4| image:: ./Art/QtImages/rescale_documentation.png
+.. |image1| image:: ./Art/QtImages/rescale_param.png
+.. |image2| image:: ./Art/QtImages/rescale_logs.png
+.. |image3| image:: ./Art/QtImages/rescale_progress.png
+.. |image4| image:: ./Art/QtImages/rescale_documentation.png
