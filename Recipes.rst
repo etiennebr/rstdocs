@@ -5,11 +5,12 @@ Recipes
    :maxdepth: 6
 
 
-   pleiades
-   optpreproc
-   improc
-   pbclassif
-   featextract
-   stereo
-   bandmathx
+   recipes/pleiades.rst
+   recipes/optpreproc.rst
+   recipes/improc.rst
+   recipes/pbclassif.rst
+   recipes/featextract.rst
+   recipes/stereo.rst
+   recipes/bandmathx.rst
+
 
