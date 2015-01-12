@@ -5,14 +5,13 @@ Applications
 .. toctree::
 	:maxdepth: 2
 
-
-	Applications/Image Manipulation
-	Applications/Vector Data Manipulation
-	Applications/Calibration
-	Applications/Geometry
-	Applications/Image Filtering
-	Applications/Feature Extraction
-	Applications/Stereo
-	Applications/Learning
-	Applications/Segmentation
-	Applications/Miscellaneous
+	Applications_Image_Manipulation.rst
+	Applications_Vector_Data_Manipulation.rst
+	Applications_Calibration.rst
+	Applications_Geometry.rst
+	Applications_Image_Filtering.rst
+	Applications_Feature_Extraction.rst
+	Applications_Stereo.rst
+	Applications_Learning.rst
+	Applications_Segmentation.rst
+	Applications_Miscellaneous.rst

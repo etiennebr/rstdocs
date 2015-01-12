@@ -1,0 +1,16 @@
+Learning
+========
+
+
+.. toctree::
+	:maxdepth: 2
+
+
+	app_ClassificationMapRegularization
+	app_ComputeConfusionMatrix
+	app_ComputeImagesStatistics
+	app_FusionOfClassifications
+	app_ImageClassifier
+	app_KMeansClassification
+	app_SOMClassification
+	app_TrainImagesClassifier
