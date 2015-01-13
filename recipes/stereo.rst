@@ -155,10 +155,17 @@ As you can see, we set *sizex* and *sizey* parameters using output
 values given by the *StereoRectificationGridGenerator* application to
 set the size of the output epipolar images.
 
-|image1| |image2| [fig:EpipolarImages]
+.. figure:: ../Art/MonteverdiImages/stereo_image1_epipolar.png
+
+
+.. figure:: ../Art/MonteverdiImages/stereo_image2_epipolar.png
+
+
+Figure 1: Extract of resample image1 and image2 in epipolar geometry over Pyramids of Cheops. ©CNES 2012 
+
 
 We obtain two images in epipolar geometry, as shown in
-figure [fig:EpipolarImages]. Note that the application allows to
+`Figure 1`. Note that the application allows to
 resample only a part of the image using the *-out.ulx* and *-out.uly*
 parameters.
 
@@ -295,7 +302,14 @@ Here are a few of these functionalities:
 Of course all these parameters can be combined to improve the disparity
 map.
 
-|image3| |image4| [fig:DisparityMetric]
+.. figure:: ../Art/MonteverdiImages/stereo_disparity_horizontal.png
+
+
+.. figure:: ../Art/MonteverdiImages/stereo_disparity_metric.png
+
+Figure 2: Horizontal disparity and optimal metric map
+
+
 
 From disparity to Digital Surface Model
 ---------------------------------------
@@ -358,10 +372,11 @@ It produces the elevation map projected in WGS84 (EPSG
 code:\ :math:`4326`) over the ground area covered by the stereo pair.
 Pixels values are expressed in meters.
 
-|image5| [fig:stereo:sub:`o`\ ut]
+.. figure:: ../Art/MonteverdiImages/stereo_dem_zoom.png
 
-This is it ! Figure [fig:stereo\ :sub:`o`\ ut] shows the output DEM from
-the Cheops pair.
+Figure 3: Extract of the elevation map over Pyramids of Cheops. 
+
+This is it `Figure 3` shows the output DEM from the Cheops pair.
 
 One application to rule them all in multi stereo framework scheme
 -----------------------------------------------------------------
@@ -494,9 +509,3 @@ pair
 
 Then fuse all 3D maps to produce DSM with desired geographic or
 cartographic projection and parametrizable extent.
-
-.. |image1| image:: ../Art/MonteverdiImages/stereo_image1_epipolar.png
-.. |image2| image:: ../Art/MonteverdiImages/stereo_image2_epipolar.png
-.. |image3| image:: ../Art/MonteverdiImages/stereo_disparity_horizontal.png
-.. |image4| image:: ../Art/MonteverdiImages/stereo_disparity_metric.png
-.. |image5| image:: ../Art/MonteverdiImages/stereo_dem_zoom.png
