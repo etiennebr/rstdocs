@@ -1,4 +1,4 @@
-#!/bin/bash
+!/bin/bash
 if [ "$#" -ne 2 ]; then
     echo "Insufficient args "
     exit -1;
@@ -7,7 +7,8 @@ texdir=$1
 rstdir=$2
 pandoc=/usr/bin/pandoc
 declare -a texfiles=('featextract' 'improc' 'Monteverdi2' 'Monteverdi' 'optpreproc' 'pbclassif' 'pleiades' 'stereo' 'OTB-Applications');
-###declare -a texfiles=('pleiades');
+###declare -a texfiles=('residual_registration');
+
 for texfile in "${texfiles[@]}" ; do 
     #append newcommand to begining
     texfile1="/tmp/$texfile-1.tex"
