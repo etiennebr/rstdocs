@@ -122,18 +122,18 @@ Choice of segmentation algorithm (mean-shift by default). Available choices are:
 - **Mean-Shift** : OTB implementation of the Mean-Shift algorithm (multi-threaded).
 
 
- - **Spatial radius** : Spatial radius of the neighborhood.
+  - **Spatial radius** : Spatial radius of the neighborhood.
 
- - **Range radius** : Range radius defining the radius (expressed in radiometry unit) in the multispectral space.
+  - **Range radius** : Range radius defining the radius (expressed in radiometry unit) in the multispectral space.
 
- - **Mode convergence threshold** : Algorithm iterative scheme will stop if mean-shift vector is below this threshold or if iteration number reached maximum number of iterations.
+  - **Mode convergence threshold** : Algorithm iterative scheme will stop if mean-shift vector is below this threshold or if iteration number reached maximum number of iterations.
 
- - **Maximum number of iterations** : Algorithm iterative scheme will stop if convergence hasn't been reached after the maximum number of iterations.
+  - **Maximum number of iterations** : Algorithm iterative scheme will stop if convergence hasn't been reached after the maximum number of iterations.
 
- - **Minimum region size** : Minimum size of a region (in pixel unit) in segmentation. Smaller clusters will be merged to the neighboring cluster with the closest radiometry. If set to 0 no pruning is done.
+  - **Minimum region size** : Minimum size of a region (in pixel unit) in segmentation. Smaller clusters will be merged to the neighboring cluster with the closest radiometry. If set to 0 no pruning is done.
 
 
- - **Edison mean-shift** : Edison implementation of mean-shift algorithm, by its authors.
+- **Edison mean-shift** : Edison implementation of mean-shift algorithm, by its authors.
 
 
   - **Spatial radius** : Spatial radius defining neighborhood.
@@ -145,30 +145,29 @@ Choice of segmentation algorithm (mean-shift by default). Available choices are:
   - **Scale factor** : Scaling of the image before processing. This is useful for images with narrow decimal ranges (like [0,1] for instance). .
 
 
-  - **Connected components** : Simple pixel-based connected-components algorithm with a user-defined connection condition.
+- **Connected components** : Simple pixel-based connected-components algorithm with a user-defined connection condition.
+
+  - **Condition** : User defined connection condition, written as a mathematical expression. Available variables are p(i)b(i), intensity_p(i) and distance (example of expression : distance < 10 ).
 
 
-   - **Condition** : User defined connection condition, written as a mathematical expression. Available variables are p(i)b(i), intensity_p(i) and distance (example of expression : distance < 10 ).
+- **Watershed** : The traditional watershed algorithm. The height function is the gradient magnitude of the amplitude (square root of the sum of squared bands).
 
 
-   - **Watershed** : The traditional watershed algorithm. The height function is the gradient magnitude of the amplitude (square root of the sum of squared bands).
+  - **Depth Threshold** : Depth threshold Units in percentage of the maximum depth in the image.
+
+  - **Flood Level** : flood level for generating the merge tree from the initial segmentation (between 0 and 1).
 
 
-    - **Depth Threshold** : Depth threshold Units in percentage of the maximum depth in the image.
-
-    - **Flood Level** : flood level for generating the merge tree from the initial segmentation (between 0 and 1).
+- **Morphological profiles based segmentation** : Segmentation based on morphological profiles, as described in Martino Pesaresi and Jon Alti Benediktsson, Member, IEEE: A new approach for the morphological segmentation of high resolution satellite imagery. IEEE Transactions on geoscience and remote sensing, vol. 39, NO. 2, February 2001, p. 309-320.
 
 
-    - **Morphological profiles based segmentation** : Segmentation based on morphological profiles, as described in Martino Pesaresi and Jon Alti Benediktsson, Member, IEEE: A new approach for the morphological segmentation of high resolution satellite imagery. IEEE Transactions on geoscience and remote sensing, vol. 39, NO. 2, February 2001, p. 309-320.
+  - **Profile Size** : Size of the profiles.
 
+  - **Initial radius** : Initial radius of the structuring element (in pixels).
 
-     - **Profile Size** : Size of the profiles.
+  - **Radius step.** : Radius step along the profile (in pixels).
 
-     - **Initial radius** : Initial radius of the structuring element (in pixels).
-
-     - **Radius step.** : Radius step along the profile (in pixels).
-
-     - **Threshold of the final decision rule** : Profiles values under the threshold will be ignored.
+  - **Threshold of the final decision rule** : Profiles values under the threshold will be ignored.
 
 
 
@@ -178,32 +177,32 @@ Choice of processing mode, either raster or large-scale. Available choices are:
 - **Tile-based large-scale segmentation with vector output** : In this mode, the application will output a vector file or database, and process the input image piecewise. This allows to perform segmentation of very large images.
 
 
- - **Output vector file** : The output vector file or database (name can be anything understood by OGR).
+  - **Output vector file** : The output vector file or database (name can be anything understood by OGR).
 
- - **Writing mode for the output vector file** : This allows to set the writing behaviour for the output vector file. Please note that the actual behaviour depends on the file format.
+  - **Writing mode for the output vector file** : This allows to set the writing behaviour for the output vector file. Please note that the actual behaviour depends on the file format.
 
- - **Mask Image** : Only pixels whose mask value is strictly positive will be segmented.
+  - **Mask Image** : Only pixels whose mask value is strictly positive will be segmented.
 
- - **8-neighbor connectivity** : Activate 8-Neighborhood connectivity (default is 4).
+  - **8-neighbor connectivity** : Activate 8-Neighborhood connectivity (default is 4).
 
- - **Stitch polygons** : Scan polygons on each side of tiles and stitch polygons which connect by more than one pixel.
+  - **Stitch polygons** : Scan polygons on each side of tiles and stitch polygons which connect by more than one pixel.
 
- - **Minimum object size** : Objects whose size is below the minimum object size (area in pixels) will be ignored during vectorization.
+  - **Minimum object size** : Objects whose size is below the minimum object size (area in pixels) will be ignored during vectorization.
 
- - **Simplify polygons** : Simplify polygons according to a given tolerance (in pixel). This option allows to reduce the size of the output file or database.
+  - **Simplify polygons** : Simplify polygons according to a given tolerance (in pixel). This option allows to reduce the size of the output file or database.
 
- - **Layer name** : Name of the layer in the vector file or database (default is Layer).
+  - **Layer name** : Name of the layer in the vector file or database (default is Layer).
 
- - **Geometry index field name** : Name of the field holding the geometry index in the output vector file or database.
+  - **Geometry index field name** : Name of the field holding the geometry index in the output vector file or database.
 
- - **Tiles size** : User defined tiles size for tile-based segmentation. Optimal tile size is selected according to available RAM if null.
+  - **Tiles size** : User defined tiles size for tile-based segmentation. Optimal tile size is selected according to available RAM if null.
 
- - **Starting geometry index** : Starting value of the geometry index field.
+  - **Starting geometry index** : Starting value of the geometry index field.
 
- - **OGR options for layer creation** : A list of layer creation options in the form KEY=VALUE that will be passed directly to OGR without any validity checking. Options may depend on the file format, and can be found in OGR documentation.
+  - **OGR options for layer creation** : A list of layer creation options in the form KEY=VALUE that will be passed directly to OGR without any validity checking. Options may depend on the file format, and can be found in OGR documentation.
 
 
- - **Standard segmentation with labeled raster output** : In this mode, the application will output a standard labeled raster. This mode can not handle large data.
+- **Standard segmentation with labeled raster output** : In this mode, the application will output a standard labeled raster. This mode can not handle large data.
 
 
   - **Output labeled image** : The output labeled image.
