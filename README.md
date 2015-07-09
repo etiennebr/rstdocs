@@ -32,16 +32,11 @@ HowTo generate OTB CookBook in RST
       - pip install sphinx
    2. use your favourite package manager
       
-5. run sphinx-quickstart
-
-   sphinx-quickstart
-
-   This is an interactive configuration tool. prefer all default options expect listed below.
-   > Project name: OTBCookBook
-   > Author name(s): OTB-Team
-   > Please enter a new file name, or rename the existing file and press Enter [index]: index2
-   > mathjax: include math, rendered in the browser by MathJax (y/n) [n]: y
-   > viewcode: include links to the source code of documented Python objects (y/n) [n]: y
+5. To make html docs, Run:
+    make html
+    
+6. To make pdf docs, Run:
+    make pdf
 
 Re-create/update rst docs for OTB applications
 ==============================================
@@ -52,7 +47,16 @@ NOTE: you can easily update these files manually. Do not try to generate these f
    
 2. If you really want to do so
 
-1. python otbGenerateWrappersRstDoc.py
+a) Install OTB python wrapping
+
+   For Fedora 20 / 21, you can install OTB from Fedora Copr repository
+     https://copr.fedoraproject.org/coprs/orfeotoolbox/otb/
+     
+     # dnf copr enable orfeotoolbox/otb
+
+     # yum install -y otb-python
+     
+b) python otbGenerateWrappersRstDoc.py
 
    4.1 If you get below error:
    
@@ -62,7 +66,11 @@ NOTE: you can easily update these files manually. Do not try to generate these f
    ImportError: No module named otbApplication
 
    please add path to otbApplication.py to your PYTHONPATH and relauch python scirpt
-   export PYTHONPATH=$PYTHONPATH:$HOME/install/OTB/
-   python otbGenerateWrappersRstDoc.py
+   
+   # export PYTHONPATH=$PYTHONPATH:/usr/lib64/otb/python
+   
+   # export ITK_AUTOLOAD_PATH=/usr/lib64/otb/applications
+   
+   # python otbGenerateWrappersRstDoc.py
     
  
