@@ -256,7 +256,6 @@ def ApplicationParametersToRst(app,paramlist,deep = False,current=""):
     return output
 
 def GetApplicationExampleCommandLine(app,idx):
-#####    output= "\\begin{lstlisting}[language=ksh,breaklines=true,breakatwhitespace=true,frame = tb,framerule = 0.25pt,fontadjust,backgroundcolor={\\color{listlightgray}},basicstyle = {\\ttfamily\\scriptsize},keywordstyle = {\\ttfamily\\color{listkeyword}\\textbf},identifierstyle = {\\ttfamily},commentstyle = {\\ttfamily\\color{listcomment}\\textit},stringstyle = {\\ttfamily},showstringspaces = false,showtabs = false,numbers = none,numbersep = 6pt, numberstyle={\\ttfamily\\color{listnumbers}},tabsize = 2]" + linesep
 
     output = "%s%s%s\t%s" % ("::", linesep , linesep, "otbcli_")
     output+= ConvertString(app.GetName())
@@ -370,26 +369,9 @@ def GetApplicationExamplePythonSnippet(app,idx,expand = False, inputpath="",outp
     return output,printable
 
 def GetApplicationExamplePython(app,idx):
-####    output= "\\begin{lstlisting}[language=python,breaklines=true,breakatwhitespace=true,frame = tb,framerule = 0.25pt,fontadjust,backgroundcolor={\\color{listlightgray}},basicstyle = {\\ttfamily\\scriptsize},keywordstyle = {\\ttfamily\\color{listkeyword}\\textbf},identifierstyle = {\\ttfamily},commentstyle = {\\ttfamily\\color{listcomment}\\textit},stringstyle = {\\ttfamily},showstringspaces = false,showtabs = false,numbers = none,numbersep = 6pt, numberstyle={\\ttfamily\\color{listnumbers}},tabsize = 2]" + linesep
-
     output, printable = GetApplicationExamplePythonSnippet(app,idx) 
     output+= linesep 
     return output
-
-def GetApplicationExampleResults(app,idx):
-    pyscript,printable = GetApplicationExamplePythonSnippet(app,idx,True,"/home/jmichel/Projets/otb/src/OTB-Data","/home/jmichel/Temporary/wrappers-doc/outputs")
-    #scriptfilename = "pyscripts/"+ConvertString(app.GetName())+str(idx)+".py"
-    #scriptfile = open(scriptfilename,'w')
-    #scriptfile.write(pyscript)
-    #scriptfile.close()
-    print "Generating outputs for example "+ str(idx+1) + " of application "+app.GetName() + "..."
-    try:
-        exec pyscript
-        print "Printable results are : ", printable
-        print "Done."
-    except:
-        print "Failed."
-        pass
 
 def RstHeading(text, delimiter):
     heading = text + linesep
@@ -468,6 +450,9 @@ def GenerateRstForApplications():
     blackList = ["TestApplication", "Example"]
     appIndexFile = open('Applications.rst', 'w')
     appNames = [app for app in otbApplication.Registry.GetAvailableApplications() if app not in blackList]
+    if not appNames:
+			print 'No OTB applications available. Please check ITK_AUTOLOAD_PATH env variable'
+			sys.exit(1)
     sectionTags = ["Image Manipulation","Vector Data Manipulation", "Calibration","Geometry", "Image Filtering","Feature Extraction","Stereo","Learning","Segmentation"]
     appIndexFile.write(RstPageHeading("Applications"))
 
@@ -475,24 +460,26 @@ def GenerateRstForApplications():
         directory= "Applications/" + tag
         if not os.path.exists(directory):
             os.makedirs(directory)
-        appIndexFile.write('\tApplications/' + tag + linesep)
-        chapterIndexFile = open('Applications/' + tag + '.rst', 'w')
-        chapterIndexFile.write(RstPageHeading(tag))
-        print linesep + RstHeading(tag, '=')
+        tag_ = tag.replace(' ', '_')						
+        appIndexFile.write('\tApplications/' + tag_ + '.rst' + linesep)
+        #chapterIndexFile = open('Applications/' + tag + '.rst', 'w')
+        #chapterIndexFile.write(RstPageHeading(tag))
+        #print linesep + RstHeading(tag, '=')
         appsRemoved = []
         for appName in appNames:
             apptags = GetApplicationTags(appName)
+            
             if apptags.count(tag) > 0:
                 print "Generating " + appName + ".rst"
-                chapterIndexFile.write("\t" + tag + '/' + appName + linesep)
-                appFile = open('Applications/' + tag + '/' + appName + '.rst', 'w')
+                #chapterIndexFile.write("\t" + tag + '/' + appName + linesep)
+                appFile = open('Applications/app_'  + appName + '.rst', 'w')
                 out = ApplicationToRst(appName)
                 appFile.write(out)
                 appFile.close()
                 appsRemoved.append(appName)
         for appName in appsRemoved:
             appNames.remove(appName)
-        chapterIndexFile.close()
+        #chapterIndexFile.close()
 
     misctag = "Miscellaneous" #should this be Utilities
     if not os.path.exists("Applications/" + misctag):
@@ -500,16 +487,15 @@ def GenerateRstForApplications():
 
     appIndexFile.write('\tApplications/' + misctag + linesep)
     appIndexFile.close()
-
-    miscChapterIndexFile = open("Applications/" + misctag + '.rst', 'w')
-    miscChapterIndexFile.write(RstPageHeading(misctag))
+    #miscChapterIndexFile = open("Applications/" + misctag + '.rst', 'w')
+    #miscChapterIndexFile.write(RstPageHeading(misctag))
     for appName in appNames:
         print "Generating " + appName + ".rst"
-        appFile = open("Applications/" + misctag + '/'  + appName + '.rst', 'w')
+        appFile = open("Applications/app_" +   + appName + ".rst", 'w')
         out = ApplicationToRst(appName)
         appFile.write(out)
         appFile.close()
-        miscChapterIndexFile.write('\t' + misctag + '/' + appName + linesep)
+        #miscChapterIndexFile.write('\t' + misctag + '/' + appName + linesep)
         out = ""
     return out
 
@@ -522,6 +508,6 @@ parser.add_option("-m",dest="module",help="Generate rst only for this module (eg
 
 if not options.appname is None:
     out = ApplicationToRst(options.appname)
-    print out
+    #print out
 else:
     GenerateRstForApplications()
