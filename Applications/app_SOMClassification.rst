@@ -28,8 +28,6 @@ This section describes in details the parameters available for this application.
 +-------------+--------------------------+----------------------------------+
 |ts           |Int                       |Int                               |
 +-------------+--------------------------+----------------------------------+
-|sl           |Int                       |Int                               |
-+-------------+--------------------------+----------------------------------+
 |som          |Output image              |Output image                      |
 +-------------+--------------------------+----------------------------------+
 |sx           |Int                       |Int                               |
@@ -67,8 +65,6 @@ This section describes in details the parameters available for this application.
 
 - **TrainingSetSize:** Maximum training set size (in pixels).
 
-- **StreamingLines:** Number of lines in each streaming block (used during data sampling).
-
 - **SOM Map:** Output image containing the Self-Organizing Map.
 
 - **SizeX:** X size of the SOM map.
@@ -103,7 +99,7 @@ Example
 To run this example in command-line, use the following: 
 ::
 
-	otbcli_SOMClassification -in QB_1_ortho.tif -out SOMClassification.tif -tp 1.0 -ts 16384 -sl 32 -sx 32 -sy 32 -nx 10 -ny 10 -ni 5 -bi 1.0 -bf 0.1 -iv 0
+	otbcli_SOMClassification -in QB_1_ortho.tif -out SOMClassification.tif -tp 1.0 -ts 16384 -sx 32 -sy 32 -nx 10 -ny 10 -ni 5 -bi 1.0 -bf 0.1 -iv 0
 
 To run this example from Python, use the following code snippet: 
 
@@ -125,8 +121,6 @@ To run this example from Python, use the following code snippet:
 	SOMClassification.SetParameterFloat("tp", 1.0)
 
 	SOMClassification.SetParameterInt("ts", 16384)
-
-	SOMClassification.SetParameterInt("sl", 32)
 
 	SOMClassification.SetParameterInt("sx", 32)
 

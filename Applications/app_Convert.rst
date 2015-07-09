@@ -7,7 +7,7 @@ Detailed description
 --------------------
 
 This application performs an image pixel type conversion (short, ushort, uchar, int, uint, float and double types are handled). The output image is written in the specified format (ie. that corresponds to the given extension).
- The convertion can include a rescale using the image 2 percent minimum and maximum values. The rescale can be linear or log2.
+ The conversion can include a rescale using the image 2 percent minimum and maximum values. The rescale can be linear or log2.
 
 Parameters
 ----------

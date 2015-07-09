@@ -61,7 +61,7 @@ This section describes in details the parameters available for this application.
 Geom file containing the generated RPC sensor model.
 
 **Input file containing tie points**
-Input file containing tie points. Points are stored in following format: row col lon lat. Line beginning with # are ignored.
+Input file containing tie points. Points are stored in following format: col row lon lat. Line beginning with # are ignored.
 
 **Output file containing output precision statistics**
 Output file containing the following info: ref_lon ref_lat elevation predicted_lon predicted_lat x_error_ref(meters) y_error_ref(meters) global_error_ref(meters) x_error(meters) y_error(meters) overall_error(meters).

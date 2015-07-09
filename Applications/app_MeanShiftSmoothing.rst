@@ -24,6 +24,8 @@ This section describes in details the parameters available for this application.
 +-------------+--------------------------+----------------------------------+
 |foutpos      |Output image              |Output image                      |
 +-------------+--------------------------+----------------------------------+
+|ram          |Int                       |Int                               |
++-------------+--------------------------+----------------------------------+
 |spatialr     |Int                       |Int                               |
 +-------------+--------------------------+----------------------------------+
 |ranger       |Float                     |Float                             |
@@ -46,6 +48,8 @@ This section describes in details the parameters available for this application.
 - **Filtered output:** The filtered output image.
 
 - **Spatial image:**  The spatial image output. Spatial image output is a displacement map (pixel position after convergence).
+
+- **Available RAM (Mb):** Available memory for processing (in MB).
 
 - **Spatial radius:** Spatial radius of the neighborhood.
 
