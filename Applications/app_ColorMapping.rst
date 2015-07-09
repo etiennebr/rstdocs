@@ -139,11 +139,16 @@ Selection of color mapping methods and their parameters. Available choices are:
 
   - **Mapping range higher value** : Set the higher input value of the mapping range.
 
-  - **Compute an optimized look-up table** : [label to color] Compute an optimal look-up table such that neighboring labels in a segmentation are mapped to highly contrasted colors. [color to label] Searching all the colors present in the image to compute a continuous label list
+
+  - **Compute an optimized look-up table** : [label to color] Compute an optimal look-up table such that neighboring labels in a segmentation are mapped to highly contrasted colors.
+[color to label] Searching all the colors present in the image to compute a continuous label list
+
 
    - **Background label** : Value of the background label.
 
+
    - **Color mapping with look-up table calculated on support image**
+
 
     - **Support Image** : Support image filename. For each label, the LUT is calculated from the mean pixel value in the support image, over the corresponding labeled areas. First of all, the support image is normalized with extrema rejection.
 
@@ -152,6 +157,8 @@ Selection of color mapping methods and their parameters. Available choices are:
     - **lower quantile** : lower quantile for image normalization.
 
     - **upper quantile** : upper quantile for image normalization.
+
+
 
 **Load otb application from xml file**
 Load otb application from xml file.
