@@ -1,7 +1,4 @@
 # Ignore backup files
 *~
 *.bak
-Makefile
 _build
-_static
-_templates
