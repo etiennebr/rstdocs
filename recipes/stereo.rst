@@ -116,7 +116,7 @@ In our case, we have:
     epi.baseline:  0.2094
 
 The epi.baseline parameter provides the mean value (in
-:math:`pixels.meters^{-1}`) of the baseline to sensor altitude ratio. It
+:math:`pixels \cdot meters^{-1}`) of the baseline to sensor altitude ratio. It
 can be used to convert disparities to physical elevation, since a
 disparity of this value will correspond to an elevation offset of one
 meter with respect to the mean elevation.
