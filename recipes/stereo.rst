@@ -88,9 +88,9 @@ resample the two images in epipolar geometry.
 
     otbcli_StereoRectificationGridGenerator -io.inleft image1.tif
                                             -io.inright image2.tif
-                                            -epi.elevation.avg.value 50
-                                            -epi.step 5
-                                            -io.outimage1 outimage1_grid.tif
+                                            -epi.elevation.default 50
+                                            -epi.step 10
+                                            -io.outleft outimage1_grid.tif
                                             -io.outright outimage1_grid.tif
 
 The application estimates the displacement to apply to each pixel in
